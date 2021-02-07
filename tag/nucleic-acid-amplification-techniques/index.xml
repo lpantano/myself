@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nucleic acid amplification techniques | My bits</title>
+    <link>http://lpantano.github.io/tag/nucleic-acid-amplification-techniques/</link>
+      <atom:link href="http://lpantano.github.io/tag/nucleic-acid-amplification-techniques/index.xml" rel="self" type="application/rss+xml" />
+    <description>nucleic acid amplification techniques</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2008 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>nucleic acid amplification techniques</title>
+      <link>http://lpantano.github.io/tag/nucleic-acid-amplification-techniques/</link>
+    </image>
+    
+    <item>
+      <title>ProSeeK: A web server for MLPA probe design</title>
+      <link>http://lpantano.github.io/publication/pantano-2008/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2008/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ProSeeK: A web server for MLPA probe design</title>
+      <link>http://lpantano.github.io/publication/pantano-2008/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2008/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

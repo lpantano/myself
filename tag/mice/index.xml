@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mice | My bits</title>
+    <link>http://lpantano.github.io/tag/mice/</link>
+      <atom:link href="http://lpantano.github.io/tag/mice/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mice</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Mice</title>
+      <link>http://lpantano.github.io/tag/mice/</link>
+    </image>
+    
+    <item>
+      <title>Genomic analyses identify molecular subtypes of pancreatic cancer</title>
+      <link>http://lpantano.github.io/publication/bailey-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/bailey-2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paternal Diet Defines Offspring Chromatin State and Intergenerational Obesity</title>
+      <link>http://lpantano.github.io/publication/ost-2014/</link>
+      <pubDate>Mon, 01 Dec 2014 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/ost-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A non-biased framework for the annotation and classification of the non-miRNA small RNA transcriptome.</title>
+      <link>http://lpantano.github.io/publication/pantano-2011/</link>
+      <pubDate>Tue, 01 Nov 2011 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fibroblast-derived induced pluripotent stem cells show no common retroviral vector insertions.</title>
+      <link>http://lpantano.github.io/publication/varas-2009/</link>
+      <pubDate>Sun, 01 Feb 2009 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/varas-2009/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sĺvia Porta | My bits</title>
+    <link>http://lpantano.github.io/author/slvia-porta/</link>
+      <atom:link href="http://lpantano.github.io/author/slvia-porta/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sĺvia Porta</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2010 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Sĺvia Porta</title>
+      <link>http://lpantano.github.io/author/slvia-porta/</link>
+    </image>
+    
+    <item>
+      <title>A myriad of miRNA variants in control and Huntington&#39;s disease brain regions detected by massively parallel sequencing</title>
+      <link>http://lpantano.github.io/publication/marti-2010/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/marti-2010/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

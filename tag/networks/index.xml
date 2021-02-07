@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>networks | My bits</title>
+    <link>http://lpantano.github.io/tag/networks/</link>
+      <atom:link href="http://lpantano.github.io/tag/networks/index.xml" rel="self" type="application/rss+xml" />
+    <description>networks</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 12 Aug 2018 09:00:00 -0400</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>networks</title>
+      <link>http://lpantano.github.io/tag/networks/</link>
+    </image>
+    
+    <item>
+      <title>How to plot miRNA, gene expression and functional analysis together</title>
+      <link>http://lpantano.github.io/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/</link>
+      <pubDate>Sun, 12 Aug 2018 09:00:00 -0400</pubDate>
+      <guid>http://lpantano.github.io/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/</guid>
+      <description>&lt;p&gt;This post should show you an easy way to get the following data type
+integrated into a figure:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;functional enrichment analysis&lt;/li&gt;
+&lt;li&gt;gene expression data from any technology&lt;/li&gt;
+&lt;li&gt;miRNA expression data from any technology&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I am using the function &lt;code&gt;isoNetwork&lt;/code&gt; from the package &lt;code&gt;isomiRs&lt;/code&gt;, that of
+course is developed by me :) My ego is not that big, it is just I wanted
+a figure showing that information, and I couldn&amp;rsquo;t find any at a time,
+but if you know any, tweet me about it to @lopantano.&lt;/p&gt;
+&lt;p&gt;This function needs some pre-computed information, like the normalized
+expression and the targeted genes by miRNAs. Normally, the significant
+genes and miRNAs from a differentially expression analysis would do it.&lt;/p&gt;
+&lt;p&gt;The first requirement is two have these two datasets into a
+SummarizedExperiment object As an example, I am using the published data
+from Folic Acid Mouse model (GSE65267) that has been analyzed with
+bcbio-nextgen pipeline and bcbioRNASeq package.&lt;/p&gt;
+&lt;p&gt;I saved these analysis into an R object that contains:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;fa_mrna: gene expression&lt;/li&gt;
+&lt;li&gt;fa_mirna: miRNA expression&lt;/li&gt;
+&lt;li&gt;fa_cold: metadata&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;From that, I ran DESeq2 to get the significant genes and miRNAs from the
+comparison day14 vs day0 (normal).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;R&amp;gt; load(&amp;quot;fa_isonetwork.rda&amp;quot;)
+R&amp;gt; library(isomiRs)
+R&amp;gt; library(DESeq2)
+R&amp;gt; library(SummarizedExperiment)
+R&amp;gt;
+R&amp;gt; mi_cold = fa_cold[colnames(fa_mirna), , drop = F]
+R&amp;gt; mi_dse = DESeqDataSetFromMatrix(round(2^fa_mirna), mi_cold, design = ~day)
+R&amp;gt; mi_dse = DESeq(mi_dse)
+R&amp;gt; mi_res = results(mi_dse, name = &amp;quot;day_day14_vs_normal&amp;quot;)
+R&amp;gt; mi_res = mi_res[!is.na(mi_res$padj), ]
+R&amp;gt; mi_top = row.names(mi_res[mi_res$padj &amp;lt; 0.05, ])
+R&amp;gt; mi_rse = SummarizedExperiment(assays = SimpleList(norm = fa_mirna), colData = mi_cold,
++     metadata = list(sign = mi_top))
+R&amp;gt;
+R&amp;gt; m_cold = fa_cold[colnames(fa_mrna), , drop = F]
+R&amp;gt; m_dse = DESeqDataSetFromMatrix(round(2^fa_mrna), m_cold, design = ~day)
+R&amp;gt; m_dse = DESeq(m_dse)
+R&amp;gt; m_res = results(m_dse, name = &amp;quot;day_day14_vs_normal&amp;quot;)
+R&amp;gt; m_res = m_res[!is.na(m_res$padj), ]
+R&amp;gt; m_top = row.names(m_res[m_res$padj &amp;lt; 0.05, ])
+R&amp;gt; m_rse = SummarizedExperiment(assays = SimpleList(norm = fa_mrna), colData = m_cold,
++     metadata = list(sign = m_top))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After that, I ran the functional analysis with &lt;a href=&#34;http://bioconductor.org/packages/release/bioc/html/clusterProfiler.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;clusterProfiler&lt;/code&gt; Bioc
+package&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;R&amp;gt; library(org.Mm.eg.db)
+R&amp;gt; library(clusterProfiler)
+R&amp;gt;
+R&amp;gt;
+R&amp;gt; ego &amp;lt;- enrichGO(m_top, org.Mm.eg.db, &amp;quot;ENSEMBL&amp;quot;, ont = &amp;quot;MF&amp;quot;, universe = rownames(m_res))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Actually, it could be anything as far as the table have the same naming
+that the one coming from this package.&lt;/p&gt;
+&lt;p&gt;Last step before the real integration analysis, is to get the predicted
+targets of the miRNA. This can be done with any package as far as you
+get a table with two columns: gene and mirna.&lt;/p&gt;
+&lt;p&gt;I used two options, one using the already implemented code in the
+package (that uses targetscan database):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;R&amp;gt; library(targetscan.Mm.eg.db)
+R&amp;gt; m2t = mirna2targetscan(mi_top, species = &amp;quot;mmu&amp;quot;, org = org.Mm.eg.db, keytype = &amp;quot;ENSEMBL&amp;quot;)
+R&amp;gt;
+R&amp;gt; mirna_targets = findTargets(mi_rse, m_rse, m2t[, c(&amp;quot;ENSEMBL&amp;quot;, &amp;quot;mir&amp;quot;)], summarize = &amp;quot;day&amp;quot;,
++     min_cor = -0.7)
+
+## Dimmension of cor matrix: 49 5233
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or using the function &lt;code&gt;get_multimir&lt;/code&gt; implemented on &lt;a href=&#34;http://bioconductor.org/packages/release/bioc/html/multiMir.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;multiMiR&lt;/code&gt; Bioc
+package&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;R&amp;gt; library(multiMiR)
+R&amp;gt; multimir_results &amp;lt;- get_multimir(org = &amp;quot;mmu&amp;quot;, mirna = mi_top, table = &amp;quot;validated&amp;quot;,
++     summary = TRUE)
+R&amp;gt;
+R&amp;gt; library(magrittr)
+R&amp;gt; m2t_multimir = slot(multimir_results, &amp;quot;data&amp;quot;)[, c(&amp;quot;target_ensembl&amp;quot;, &amp;quot;mature_mirna_id&amp;quot;)] %&amp;gt;%
++     dplyr::filter(target_ensembl != &amp;quot;&amp;quot;) %&amp;gt;% dplyr::distinct()
+R&amp;gt;
+R&amp;gt; mirna_targets = findTargets(mi_rse, m_rse, m2t_multimir, summarize = &amp;quot;day&amp;quot;,
++     min_cor = -0.7)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In both cases, I ran &lt;code&gt;findTargets&lt;/code&gt; to use the expression data to make
+sure the correlation between the miRNA and predicted gene is negative
+since is the known biological function of miRNAs, being negative
+modulators.&lt;/p&gt;
+&lt;p&gt;Finally, we use &lt;code&gt;isoNetwork&lt;/code&gt; to put all the data together, and
+&lt;code&gt;isoPlotNet&lt;/code&gt; to create the final figure with all information.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;R&amp;gt; data &amp;lt;- isoNetwork(mi_rse, m_rse, min_fc = 0.1, summarize = &amp;quot;day&amp;quot;, target = mirna_targets,
++     enrich = ego)
+
+## Dimmension of cor matrix: 49 305
+
+R&amp;gt; isoPlotNet(data, minGenes = 1)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/code-blog/isonetwork/post_files/figure-markdown_strict/unnamed-chunk-5-1.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;It is an easy way to spot what pathways contain genes that are targeted
+by miRNAs.&lt;/p&gt;
+&lt;p&gt;Note that this function won&amp;rsquo;t indicate if a pathway is enriched on miRNA
+targets. It shows how these three different data set can be put together
+to explore the relationship among them.&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;self-control in bioinformatics: be nice to your collaborator when
+they can not open a TSV file with excel.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

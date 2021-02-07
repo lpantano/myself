@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xavier Estivill | My bits</title>
+    <link>http://lpantano.github.io/author/xavier-estivill/</link>
+      <atom:link href="http://lpantano.github.io/author/xavier-estivill/index.xml" rel="self" type="application/rss+xml" />
+    <description>Xavier Estivill</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Xavier Estivill</title>
+      <link>http://lpantano.github.io/author/xavier-estivill/</link>
+    </image>
+    
+    <item>
+      <title>Circulating miRNAs, isomiRs and small RNA clusters in human plasma and breast milk</title>
+      <link>http://lpantano.github.io/publication/rubio-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/rubio-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Specific small-RNA signatures in the amygdala at premotor and motor stages of Parkinson&#39;s disease revealed by deep sequencing analysis.</title>
+      <link>http://lpantano.github.io/publication/pantano-2015/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A highly expressed miR-101 isomiR is a functional silencing small RNA.</title>
+      <link>http://lpantano.github.io/publication/llorens-2013/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/llorens-2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Pathogenic Mechanism in Huntington&#39;s Disease Involves Small CAG-Repeated RNAs with Neurotoxic Activity.</title>
+      <link>http://lpantano.github.io/publication/banez-coronel-2012/</link>
+      <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/banez-coronel-2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A non-biased framework for the annotation and classification of the non-miRNA small RNA transcriptome.</title>
+      <link>http://lpantano.github.io/publication/pantano-2011/</link>
+      <pubDate>Tue, 01 Nov 2011 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A myriad of miRNA variants in control and Huntington&#39;s disease brain regions detected by massively parallel sequencing</title>
+      <link>http://lpantano.github.io/publication/marti-2010/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/marti-2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SeqBuster, a bioinformatic tool for the processing and analysis of small RNAs datasets, reveals ubiquitous miRNA modifications in human embryonic cells</title>
+      <link>http://lpantano.github.io/publication/pantano-2010/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Identification of Copy Number Variants Defining Genomic Differences among Major Human Groups</title>
+      <link>http://lpantano.github.io/publication/armengol-2009/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/armengol-2009/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ProSeeK: A web server for MLPA probe design</title>
+      <link>http://lpantano.github.io/publication/pantano-2008/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2008/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genome assembly comparison identifies structural variants in the human genome.</title>
+      <link>http://lpantano.github.io/publication/khaja-2006/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/khaja-2006/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1357 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="This post will show how to configure quickly the colors for the annotation of rows/columns that go on top or on the side of a heatmap.
+I normally use pheatmap a lot.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://lpantano.github.io/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.min.2da9fc7ecccb62374ee4667dc6583d14.css">
+
+  
+
+
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="http://lpantano.github.io/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@lopantano">
+  <meta property="twitter:creator" content="@lopantano">
+  
+  <meta property="og:site_name" content="My bits">
+  <meta property="og:url" content="http://lpantano.github.io/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/">
+  <meta property="og:title" content="Get colors for your heatmap annotation | My bits">
+  <meta property="og:description" content="This post will show how to configure quickly the colors for the annotation of rows/columns that go on top or on the side of a heatmap.
+I normally use pheatmap a lot."><meta property="og:image" content="http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2018-09-21T10:13:02-04:00">
+    
+    <meta property="article:modified_time" content="2018-09-21T10:13:02-04:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://lpantano.github.io/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/"
+  },
+  "headline": "Get colors for your heatmap annotation",
+  
+  "datePublished": "2018-09-21T10:13:02-04:00",
+  "dateModified": "2018-09-21T10:13:02-04:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "My bits",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "This post will show how to configure quickly the colors for the annotation of rows/columns that go on top or on the side of a heatmap.\nI normally use pheatmap a lot."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Get colors for your heatmap annotation | My bits</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">My bits</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">My bits</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Get colors for your heatmap annotation</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Sep 21, 2018
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    5 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>This post will show how to configure quickly the colors for the annotation of rows/columns that go on top or on the side of a heatmap.</p>
+<p>I normally use <code>pheatmap</code> a lot. Recently I discovered <code>ComplexHeatmap</code>. In both cases I spend always sometime changing the colors of the annotations. I ended up coding a function inside my package <code>DEGreport</code> to do that.</p>
+<p>Given a data.frame with metadata data information will do:</p>
+<ul>
+<li>white-black scale for numerical variables</li>
+<li>blue-orange for categorical values with only two categories</li>
+<li><code>Set2</code> palette for categorical values with more than two categories</li>
+</ul>
+<p>All three color sets can be changed using the <a href="http://lpantano.github.io/DEGreport/reference/degColors.html" target="_blank" rel="noopener">parameters function</a>.</p>
+<pre><code class="language-r">library(DEGreport)
+library(stemHypoxia)
+data(stemHypoxia)
+</code></pre>
+<p>I am going to use this <a href="https://bioconductor.org/packages/release/data/experiment/html/stemHypoxia.html" target="_blank" rel="noopener">stemcell experiment dataset</a> I found randomly in Bioconductor page.</p>
+<pre><code class="language-r">exp = as.matrix(M[,3:30])
+rownames(exp) = M[,2]
+rownames(design) = colnames(exp)
+design = design[,c(1:2)]
+design$time = as.factor(design$time)
+</code></pre>
+<p>I&rsquo;ll find the most variable genes.</p>
+<pre><code class="language-r">most_variable = names(tail(sort(apply(exp, 1, sd)), 1000))
+design$mean_gene = colMeans(exp[most_variable,])
+</code></pre>
+<p>And we can plot the heatmap with new colors with need to specify each variable at a time.</p>
+<pre><code class="language-r">library(pheatmap)
+pheatmap(exp[most_variable,], scale = &quot;row&quot;, show_rownames = FALSE,
+         annotation_col = design,
+         annotation_colors = degColors(design))
+</code></pre>
+<p><img src="https://github.com/lpantano/mypubs/raw/master/code-blog/degcolor/degcolors_files/figure-markdown_github/unnamed-chunk-4-1.png" alt=""></p>
+<p>If you use <code>ComplexHeatmap</code> you can activate <code>col_fun = TRUE</code> to get it working.</p>
+<ul>
+<li>R Session</li>
+</ul>
+<pre><code class="language-r">devtools::session_info()
+</code></pre>
+<pre><code>## Warning: 'DESCRIPTION' file has an 'Encoding' field and re-encoding is not
+## possible
+
+## Session info -------------------------------------------------------------
+
+##  setting  value
+##  version  R version 3.5.1 (2018-07-02)
+##  system   x86_64, darwin15.6.0
+##  ui       X11
+##  language (EN)
+##  collate  en_US.UTF-8
+##  tz       America/New_York
+##  date     2018-09-21
+
+## Packages -----------------------------------------------------------------
+
+##  package              * version   date       source
+##  acepack                1.4.1     2016-10-29 cran (@1.4.1)
+##  annotate               1.58.0    2018-05-01 cran (@1.58.0)
+##  AnnotationDbi          1.42.1    2018-05-08 Bioconductor
+##  assertthat             0.2.0     2017-04-11 CRAN (R 3.5.0)
+##  backports              1.1.2     2017-12-13 CRAN (R 3.5.0)
+##  base                 * 3.5.1     2018-07-05 local
+##  base64enc              0.1-3     2015-07-28 CRAN (R 3.5.0)
+##  bindr                  0.1.1     2018-03-13 CRAN (R 3.5.0)
+##  bindrcpp               0.2.2     2018-03-29 CRAN (R 3.5.0)
+##  Biobase                2.40.0    2018-05-01 Bioconductor
+##  BiocGenerics           0.26.0    2018-05-01 Bioconductor
+##  BiocParallel           1.14.2    2018-07-08 cran (@1.14.2)
+##  bit                    1.1-14    2018-05-29 CRAN (R 3.5.0)
+##  bit64                  0.9-7     2017-05-08 CRAN (R 3.5.0)
+##  bitops                 1.0-6     2013-08-17 cran (@1.0-6)
+##  blob                   1.1.1     2018-03-25 CRAN (R 3.5.0)
+##  broom                  0.5.0     2018-07-17 CRAN (R 3.5.0)
+##  checkmate              1.8.5     2017-10-24 cran (@1.8.5)
+##  circlize               0.4.4     2018-06-10 cran (@0.4.4)
+##  cluster                2.0.7-1   2018-04-13 CRAN (R 3.5.1)
+##  colorspace             1.3-2     2016-12-14 CRAN (R 3.5.0)
+##  compiler               3.5.1     2018-07-05 local
+##  ComplexHeatmap         1.18.1    2018-06-19 cran (@1.18.1)
+##  ConsensusClusterPlus   1.44.0    2018-05-01 cran (@1.44.0)
+##  cowplot                0.9.3     2018-07-15 cran (@0.9.3)
+##  crayon                 1.3.4     2017-09-16 CRAN (R 3.5.0)
+##  data.table             1.11.4    2018-05-27 cran (@1.11.4)
+##  datasets             * 3.5.1     2018-07-05 local
+##  DBI                    1.0.0     2018-05-02 CRAN (R 3.5.0)
+##  DEGreport            * 1.17.5    2018-09-04 local (lpantano/DEGreport@NA)
+##  DelayedArray           0.6.5     2018-08-15 cran (@0.6.5)
+##  DESeq2                 1.20.0    2018-05-01 Bioconductor
+##  devtools               1.13.6    2018-06-27 CRAN (R 3.5.0)
+##  digest                 0.6.16    2018-08-22 CRAN (R 3.5.0)
+##  dplyr                  0.7.6     2018-06-29 CRAN (R 3.5.1)
+##  edgeR                  3.22.3    2018-06-21 cran (@3.22.3)
+##  evaluate               0.11      2018-07-17 CRAN (R 3.5.0)
+##  foreign                0.8-71    2018-07-20 CRAN (R 3.5.0)
+##  Formula                1.2-3     2018-05-03 cran (@1.2-3)
+##  genefilter             1.62.0    2018-05-01 cran (@1.62.0)
+##  geneplotter            1.58.0    2018-05-01 cran (@1.58.0)
+##  GenomeInfoDb           1.16.0    2018-05-01 cran (@1.16.0)
+##  GenomeInfoDbData       1.1.0     2018-08-31 Bioconductor
+##  GenomicRanges          1.32.6    2018-07-20 cran (@1.32.6)
+##  GetoptLong             0.1.7     2018-06-10 cran (@0.1.7)
+##  ggdendro               0.1-20    2016-04-27 cran (@0.1-20)
+##  ggplot2                3.0.0     2018-07-03 CRAN (R 3.5.0)
+##  ggrepel                0.8.0     2018-05-09 cran (@0.8.0)
+##  GlobalOptions          0.1.0     2018-06-09 cran (@0.1.0)
+##  glue                   1.3.0     2018-07-17 CRAN (R 3.5.0)
+##  graphics             * 3.5.1     2018-07-05 local
+##  grDevices            * 3.5.1     2018-07-05 local
+##  grid                   3.5.1     2018-07-05 local
+##  gridExtra              2.3       2017-09-09 cran (@2.3)
+##  gtable                 0.2.0     2016-02-26 CRAN (R 3.5.0)
+##  Hmisc                  4.1-1     2018-01-03 cran (@4.1-1)
+##  htmlTable              1.12      2018-05-26 cran (@1.12)
+##  htmltools              0.3.6     2017-04-28 CRAN (R 3.5.0)
+##  htmlwidgets            1.2       2018-04-19 cran (@1.2)
+##  IRanges                2.14.11   2018-08-24 Bioconductor
+##  knitr                  1.20      2018-02-20 CRAN (R 3.5.0)
+##  lasso2                 1.2-19    2014-05-31 cran (@1.2-19)
+##  lattice                0.20-35   2017-03-25 CRAN (R 3.5.1)
+##  latticeExtra           0.6-28    2016-02-09 cran (@0.6-28)
+##  lazyeval               0.2.1     2017-10-29 CRAN (R 3.5.0)
+##  limma                  3.36.3    2018-08-25 cran (@3.36.3)
+##  locfit                 1.5-9.1   2013-04-20 cran (@1.5-9.1)
+##  logging                0.7-103   2013-04-12 cran (@0.7-103)
+##  magrittr               1.5       2014-11-22 CRAN (R 3.5.0)
+##  MASS                   7.3-50    2018-04-30 CRAN (R 3.5.1)
+##  Matrix                 1.2-14    2018-04-13 CRAN (R 3.5.1)
+##  matrixStats            0.54.0    2018-07-23 cran (@0.54.0)
+##  memoise                1.1.0     2017-04-21 CRAN (R 3.5.0)
+##  methods              * 3.5.1     2018-07-05 local
+##  mnormt                 1.5-5     2016-10-15 cran (@1.5-5)
+##  munsell                0.5.0     2018-06-12 CRAN (R 3.5.0)
+##  nlme                   3.1-137   2018-04-07 CRAN (R 3.5.1)
+##  nnet                   7.3-12    2016-02-02 CRAN (R 3.5.1)
+##  Nozzle.R1              1.1-1     2013-05-15 cran (@1.1-1)
+##  parallel               3.5.1     2018-07-05 local
+##  pheatmap             * 1.0.10    2018-05-19 CRAN (R 3.5.0)
+##  pillar                 1.3.0     2018-07-14 CRAN (R 3.5.0)
+##  pkgconfig              2.0.2     2018-08-16 CRAN (R 3.5.0)
+##  plyr                   1.8.4     2016-06-08 CRAN (R 3.5.0)
+##  psych                  1.8.4     2018-05-06 cran (@1.8.4)
+##  purrr                  0.2.5     2018-05-29 CRAN (R 3.5.0)
+##  R6                     2.2.2     2017-06-17 CRAN (R 3.5.0)
+##  RColorBrewer           1.1-2     2014-12-07 CRAN (R 3.5.0)
+##  Rcpp                   0.12.18   2018-07-23 CRAN (R 3.5.0)
+##  RCurl                  1.95-4.11 2018-07-15 cran (@1.95-4.)
+##  reshape                0.8.7     2017-08-06 cran (@0.8.7)
+##  rjson                  0.2.20    2018-06-08 cran (@0.2.20)
+##  rlang                  0.2.2     2018-08-16 CRAN (R 3.5.0)
+##  rmarkdown              1.10      2018-06-11 CRAN (R 3.5.0)
+##  rpart                  4.1-13    2018-02-23 CRAN (R 3.5.1)
+##  rprojroot              1.3-2     2018-01-03 CRAN (R 3.5.0)
+##  RSQLite                2.1.1     2018-05-06 CRAN (R 3.5.0)
+##  rstudioapi             0.7       2017-09-07 CRAN (R 3.5.0)
+##  S4Vectors              0.18.3    2018-06-08 Bioconductor
+##  scales                 1.0.0     2018-08-09 CRAN (R 3.5.0)
+##  shape                  1.4.4     2018-02-07 cran (@1.4.4)
+##  splines                3.5.1     2018-07-05 local
+##  stats                * 3.5.1     2018-07-05 local
+##  stats4                 3.5.1     2018-07-05 local
+##  stemHypoxia          * 1.16.0    2018-09-21 Bioconductor
+##  stringi                1.2.4     2018-07-20 CRAN (R 3.5.0)
+##  stringr                1.3.1     2018-05-10 CRAN (R 3.5.0)
+##  SummarizedExperiment   1.10.1    2018-05-11 Bioconductor
+##  survival               2.42-6    2018-07-13 CRAN (R 3.5.0)
+##  tibble                 1.4.2     2018-01-22 CRAN (R 3.5.0)
+##  tidyr                  0.8.1     2018-05-18 CRAN (R 3.5.0)
+##  tidyselect             0.2.4     2018-02-26 CRAN (R 3.5.0)
+##  tools                  3.5.1     2018-07-05 local
+##  utils                * 3.5.1     2018-07-05 local
+##  withr                  2.1.2     2018-03-15 CRAN (R 3.5.0)
+##  XML                    3.98-1.16 2018-08-19 cran (@3.98-1.)
+##  xtable                 1.8-3     2018-08-29 cran (@1.8-3)
+##  XVector                0.20.0    2018-05-01 cran (@0.20.0)
+##  yaml                   2.2.0     2018-07-25 CRAN (R 3.5.0)
+##  zlibbioc               1.26.0    2018-05-01 cran (@1.26.0)
+</code></pre>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/r/">R</a>
+  
+  <a class="badge badge-light" href="/tag/visualization/">Visualization</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http://lpantano.github.io/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/&amp;text=Get%20colors%20for%20your%20heatmap%20annotation" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http://lpantano.github.io/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/&amp;t=Get%20colors%20for%20your%20heatmap%20annotation" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Get%20colors%20for%20your%20heatmap%20annotation&amp;body=http://lpantano.github.io/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http://lpantano.github.io/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/&amp;title=Get%20colors%20for%20your%20heatmap%20annotation" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Get%20colors%20for%20your%20heatmap%20annotation%20http://lpantano.github.io/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http://lpantano.github.io/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/&amp;title=Get%20colors%20for%20your%20heatmap%20annotation" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="http://lpantano.github.io/"><img class="avatar mr-3 avatar-circle" src="/author/avatar_hua735c4bd12b5368408d6d400f29b21ec_801139_270x270_fill_q75_lanczos_center.jpg" alt=""></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="http://lpantano.github.io/"></a></h5>
+      <h6 class="card-subtitle">Principal Scientist in Computational Biology</h6>
+      <p class="card-text">My research interests include genomics, visualizationa and modelling.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/lopantano" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.co.uk/citations?user=MeQGlRwAAAAJ&amp;hl" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/lpantano" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/">How to plot miRNA, gene expression and functional analysis together</a></li>
+      
+      <li><a href="/post/legacy/2017-08-24-subset-object-creates-bigger-file/">Subset of object creates bigger RDA file size than original object</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/wowchemy.min.7c1f36db068b19853b100160e00076ac.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

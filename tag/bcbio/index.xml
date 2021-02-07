@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bcbio | My bits</title>
+    <link>http://lpantano.github.io/tag/bcbio/</link>
+      <atom:link href="http://lpantano.github.io/tag/bcbio/index.xml" rel="self" type="application/rss+xml" />
+    <description>bcbio</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 05 Apr 2019 10:13:02 -0400</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>bcbio</title>
+      <link>http://lpantano.github.io/tag/bcbio/</link>
+    </image>
+    
+    <item>
+      <title>How to set up public dataset analysis with bcbio-nextgen</title>
+      <link>http://lpantano.github.io/post/2019/2019-04-05-how-to-setup-remote-samples-with-bcbio/</link>
+      <pubDate>Fri, 05 Apr 2019 10:13:02 -0400</pubDate>
+      <guid>http://lpantano.github.io/post/2019/2019-04-05-how-to-setup-remote-samples-with-bcbio/</guid>
+      <description>&lt;p&gt;We use &lt;a href=&#34;https://github.com/bcbio/bcbio-nextgen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bcbio-nextgen&lt;/a&gt; for the analysis of sequencing data, mainly, (sc)RNAseq,
+smallRNAseq, DNASeq and ChIPSeq. It is not rare that we get collaborators who
+wants to re-analyze public data-set.&lt;/p&gt;
+&lt;p&gt;Inside &lt;code&gt;bcbio&lt;/code&gt;, we have &lt;a href=&#34;https://bcbio-nextgen.readthedocs.io/en/latest/contents/configuration.html#multiple-files-per-sample&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;bcbio_prepare_samples.py&lt;/code&gt;&lt;/a&gt;
+to help to merge multiple
+files that belong to the same sample into one file to make easier the configuration
+of &lt;strong&gt;bcbio&lt;/strong&gt;. We extended this script to pull down data from &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/geo/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GEO&lt;/a&gt; and
+&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/sra&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SRA&lt;/a&gt; repository.&lt;/p&gt;
+&lt;p&gt;If you have &lt;strong&gt;bcbio&lt;/strong&gt;. installed, you can create a &lt;code&gt;example.csv&lt;/code&gt; file like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;samplenames,description
+GSM3508215,HEK293T
+SRR8311268,Hela
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And then run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bcbio_prepare_samples.py --csv example.csv --out fastq
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will download and create all the files inside &lt;code&gt;fastq&lt;/code&gt; folder. If the samples
+is paired-end, it will generated the two associated files: R1 and R2.&lt;/p&gt;
+&lt;p&gt;Cool options to use:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;--remove-source&lt;/code&gt;: if you want to keep only final files.&lt;/li&gt;
+&lt;li&gt;you can use full FTP addresses as well under &lt;code&gt;samplenames&lt;/code&gt; column&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nextflow.io/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NextFlow&lt;/a&gt; accepts these SRA ids as well, &lt;a href=&#34;https://www.nextflow.io/blog/2019/release-19.03.0-edge.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;take a look&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And &lt;a href=&#34;https://ewels.github.io/sra-explorer/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sra-explorer&lt;/a&gt; from &lt;a href=&#34;https://github.com/ewels&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Phil Ewels&lt;/a&gt;
+will create a bash script to download the FASTQ files and It has a great search engine where
+you can use any of these terms to find your public data:
+&lt;code&gt;GSE30567, SRP043510, PRJEB8073, ERP009109 or human liver miRNA.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The only advantage of &lt;strong&gt;bcbio&lt;/strong&gt; is that in the case of multiple files associated to the same
+sample, it will merge the files together. For instance, if you search in &lt;strong&gt;sra-explorer&lt;/strong&gt; for this&lt;br&gt;
+term: &lt;code&gt;GSM2598386&lt;/code&gt;, you see that multiple files. &lt;strong&gt;bcbio&lt;/strong&gt;. will merge all  of them into one and
+you can run your pipeline directly afterwards. And pretty convenient if you
+use any of the &lt;strong&gt;bcbio&lt;/strong&gt; pipelines :).&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;happiness in bioinformatics: when your collaborators give you  a CSV file
+with all the metadata for your raw data and they match.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

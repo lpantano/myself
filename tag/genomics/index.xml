@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>*Genomics | My bits</title>
+    <link>http://lpantano.github.io/tag/genomics/</link>
+      <atom:link href="http://lpantano.github.io/tag/genomics/index.xml" rel="self" type="application/rss+xml" />
+    <description>*Genomics</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>*Genomics</title>
+      <link>http://lpantano.github.io/tag/genomics/</link>
+    </image>
+    
+    <item>
+      <title>Genomic analyses identify molecular subtypes of pancreatic cancer</title>
+      <link>http://lpantano.github.io/publication/bailey-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/bailey-2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microarray and deep sequencing cross-platform analysis of the mirRNome and isomiR variation in response to epidermal growth factor.</title>
+      <link>http://lpantano.github.io/publication/llorens-2013-a/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/llorens-2013-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Pathogenic Mechanism in Huntington&#39;s Disease Involves Small CAG-Repeated RNAs with Neurotoxic Activity.</title>
+      <link>http://lpantano.github.io/publication/banez-coronel-2012/</link>
+      <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/banez-coronel-2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genome assembly comparison identifies structural variants in the human genome.</title>
+      <link>http://lpantano.github.io/publication/khaja-2006/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/khaja-2006/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

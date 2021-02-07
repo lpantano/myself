@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jeffery Ma on My BioBits</title>
+    <link>http://lpantano.github.io/authors/jeffery-ma/</link>
+    <description>Recent content in Jeffery Ma on My BioBits</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="http://lpantano.github.io/authors/jeffery-ma/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Unification of miRNA and isomiR research: the mirGFF3 format and the mirtop API</title>
+      <link>http://lpantano.github.io/publication/desvignes-2018/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://lpantano.github.io/publication/desvignes-2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

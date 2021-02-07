@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>small RNA | My bits</title>
+    <link>http://lpantano.github.io/tag/small-rna/</link>
+      <atom:link href="http://lpantano.github.io/tag/small-rna/index.xml" rel="self" type="application/rss+xml" />
+    <description>small RNA</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2013 08:05:56 -0400</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>small RNA</title>
+      <link>http://lpantano.github.io/tag/small-rna/</link>
+    </image>
+    
+    <item>
+      <title>small RNA abundance [miss-] viz</title>
+      <link>http://lpantano.github.io/post/legacy/2013-10-29-small-rna-abundance-miss-viz/</link>
+      <pubDate>Tue, 29 Oct 2013 08:05:56 -0400</pubDate>
+      <guid>http://lpantano.github.io/post/legacy/2013-10-29-small-rna-abundance-miss-viz/</guid>
+      <description>&lt;p&gt;My PhD was focused on small RNA sequencing data. I had a problem when I wanted to visualized the amount of small RNAs from the beginning. Here the problem, assume that you have a certain distribution of small RNA sequences abundance:&lt;/p&gt;
+&lt;p&gt;seq1: 1500 times&lt;br&gt;
+seq2: 3 times&lt;br&gt;
+seq3: 2 times&lt;/p&gt;
+&lt;p&gt;And you want to show the nucleotide composition of the first nucleotide. You can do it either counting the # of sequences (or abundance) in your set (1505) or the number of unique (different) sequences (3). You result will be very bias depending on that. If you go for the first option, you can obtain:&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/ntabundance11.png&#34; &gt;
+
+
+  &lt;img src=&#34;http://lpantano.github.io/media/images/ntabundance11.png&#34; alt=&#34;&#34; width=&#34;1000px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;and if you go for the second option:&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/ntabundance2.png&#34; &gt;
+
+
+  &lt;img src=&#34;http://lpantano.github.io/media/images/ntabundance2.png&#34; alt=&#34;&#34; width=&#34;1000px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Which is the best option? well, although papers in small RNA data still continue showing the first option, I think that this should be validated some way.&lt;/p&gt;
+&lt;p&gt;When using unique sequences (only counting different sequences), you can under-estimated the real signal. In NGS, you can have a lot of noise, that may hide the biological signal using this approach. But, you can get the same, if you use directly the abundance, because if your set contains one sequence that is 90% of the data, you will get always a signal, that may be not important, for instance, ribosomal RNA that is expected to be there.&lt;/p&gt;
+&lt;p&gt;One solution is to plot the data according both values: percentage of abundance and percentage of unique sequences. And you can do this for each position and nucleotide.&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/ntabundance3.png&#34; &gt;
+
+
+  &lt;img src=&#34;http://lpantano.github.io/media/images/ntabundance3.png&#34; alt=&#34;&#34; width=&#34;1000px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;We can conclude that at position 1, there are few sequences starting with A that are  90 of the data. Also we can see how the 60% of unique sequences have a G at position 10. This helps us to catch any biological signature if it exists, and avoid the misleading information in this kind of figures.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>miRNA annotation: complex scenarios</title>
+      <link>http://lpantano.github.io/post/legacy/2013-05-27-mirna-annotation-complex-scenarios/</link>
+      <pubDate>Mon, 27 May 2013 10:13:02 -0400</pubDate>
+      <guid>http://lpantano.github.io/post/legacy/2013-05-27-mirna-annotation-complex-scenarios/</guid>
+      <description>&lt;p&gt;Everybody who is working with microRNA knows about miRBase, it was the first miRNA catalogue. Everybody is using it to annotate small RNA sequences as miRNA or not. And it is great, and very helpfully&amp;hellip;but there are some cases that we should investigate our results.&lt;/p&gt;
+&lt;p&gt;For instance, what happens with miR-1246? it is a recent miRNA, primate specific, detected by sequencing in different studies (1,2,3). The counts related to these sequences are not so high, actually very low after normalization, but still are there. miRBase gives a precursor this region: chr2: 177465708-177465780 [-]&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-fig-1-mir1246&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/mir1246.png&#34; data-caption=&#34;Fig 1: mir1246&#34;&gt;
+
+
+  &lt;img src=&#34;http://lpantano.github.io/media/images/mir1246.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Fig 1: mir1246
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;We see that there is a repeat element (ERV, retrovirus) and also it is a pretty conserved region. Until here, everything allright. But, I realized some time ago, annotating some data that I had, that the mature miRNA annotates in other regions:&lt;/p&gt;
+&lt;table border=&#34;1&#34;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;chr:start-end strand&lt;/td&gt;
+&lt;td&gt;type&lt;/td&gt;
+&lt;td&gt;conservation&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;chr13:21,186,304-21,186,473 +&lt;/td&gt;
+&lt;td&gt;U2&lt;/td&gt;
+&lt;td&gt;human&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;chr14:96,850,961-96,851,148 +&lt;/td&gt;
+&lt;td&gt;U2&lt;/td&gt;
+&lt;td&gt;rhesus&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;chr5:157,403,780-157,403,964 -&lt;/td&gt;
+&lt;td&gt;U2&lt;/td&gt;
+&lt;td&gt;rhesus&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;chr6:89,773,226-89,773,409 -&lt;/td&gt;
+&lt;td&gt;U2&lt;/td&gt;
+&lt;td&gt;rhesus&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;chr13:46,948,540-46,948,725 -&lt;/td&gt;
+&lt;td&gt;U2&lt;/td&gt;
+&lt;td&gt;rhesus&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;chr3:127,793,920-127,794,092 -&lt;/td&gt;
+&lt;td&gt;U2&lt;/td&gt;
+&lt;td&gt;rhesus&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;chr2:177,465,708-177,465,780 -&lt;/td&gt;
+&lt;td&gt;miR-1246&lt;/td&gt;
+&lt;td&gt;rhesus,mouse,dog,elephant&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;All of them are copies of a RNA repeat according RepBase, specifically the snRNA U2 class (150-200 nt). In addition, I got much more reads inside those (extra) locations than inside the annotated precursor (3 orders bigger). Furthermore, all of them had a peak in their coverage profile (fig 2).&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-fig-2reads-coverage-of-u2&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/u2-3.png&#34; data-caption=&#34;Fig 2:Reads coverage of U2&#34;&gt;
+
+
+  &lt;img src=&#34;http://lpantano.github.io/media/images/u2-3.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Fig 2:Reads coverage of U2
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The question that arises now: is this a real miRNA, or a sub-product, or both? with any function? Maybe there is more than one precursor, or maybe it is a miRNA-like snRNA. Moreover, the secondary structure of these U2 is very similar to a miRNA precursor hairpin (fig 3).&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-fig-3u2-secondary-structure&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/u2-ss-strand.png&#34; data-caption=&#34;Fig 3:U2 secondary structure&#34;&gt;
+
+
+  &lt;img src=&#34;http://lpantano.github.io/media/images/u2-ss-strand.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Fig 3:U2 secondary structure
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;One cause of this annotation could be that the unique precursor conserved beyond primates is the one mentioned in miRBase, while the other U2 locations are primate-specific. Extra analyses should be done to reveal the real nature of this miRNA. Results suggest that, either the miRNA has more than one precursor, or a sub-product, or both.&lt;/p&gt;
+&lt;p&gt;As an extra-analysis, I took public data, KO Dicer and control, of HELA cells (GSM769512) to study the dependency od these sequences to DICER. You expect a decrease in the number of counts of miRNA sequences, between control and KO dicer. The exact miRNA sequence decrease 1/3 in KO dicer cells, assuming a Dicer dependency, and take this sequence as a real miRNA. But, we have a lot of other sequences in the U2 regions, but not in the annotated precursor, and only differ in one extra nucleotide (Adenosine) at the beginning (miR-1246: AAUGGAUUUUUGGAGCAGG and U2: &lt;strong&gt;A&lt;/strong&gt;AAUGGAUUUUUGGAGCAGG).This sequence can be annotated as miR-1246 if you allow 1 mismatch in the alignment (the A nt). This sequence had the same counts in normal cells and KO cells, suggesting that sequences from U2 are not Dicer-dependent. Summarizing, we have the mature annotated miRNA mapping in all these positions, and in addition, we have other sequences (one nt longer), that only map in the U2 positions. So, how we can differentiate what proportion of sequences comes from the precursors and what comes from the other positions? Well, one possibility is to detect the precursor by PCR in your samples, to assume that at least it is there, or try to see whether the coverage in the different locations makes sense more with one scenario or another&amp;hellip;Or maybe it is not a big deal, you have this small RNA, the question is whether it has any regulatory function or not.&lt;/p&gt;
+&lt;p&gt;From here, we may agree that it is better to double-check what is happening when annotating small RNAs, because there are many possibilities to take a wrong conclusion if you only believe in a preliminary analysis. Nowadays, data is increasing a lot, and scientists need to make a bunch of assumptions to obtain something, but be careful with those assumptions (indeed, they are needed to evolve in science) because you may be missing something else or getting something wrong or wasting your time with experiments to corroborate your computational results.&lt;/p&gt;
+&lt;p&gt;References&lt;/p&gt;
+&lt;p&gt;[1] PMID:18583537&lt;br&gt;
+&amp;ldquo;MicroRNA discovery and profiling in human embryonic stem cells by deep sequencing of small RNA libraries&amp;rdquo;&lt;br&gt;
+Bar M, Wyman SK, Fritz BR, Qi J, Garg KS, Parkin RK, Kroh EM, Bendoraite A, Mitchell PS, Nelson AM, Ruzzo WL, Ware C, Radich JP, Gentleman R, Ruohola-Baker H, Tewari M&lt;br&gt;
+Stem Cells. 26:2496-2505(2008).&lt;br&gt;
+[2] PMID:20300190&lt;br&gt;
+&amp;ldquo;Characterization of the Melanoma miRNAome by Deep Sequencing&amp;rdquo;&lt;br&gt;
+Stark MS, Tyagi S, Nancarrow DJ, Boyle GM, Cook AL, Whiteman DC, Parsons PG, Schmidt C, Sturm RA, Hayward NK&lt;br&gt;
+PLoS One. 5:e9685(2010).&lt;br&gt;
+[3] PMID:20459774&lt;br&gt;
+&amp;ldquo;Ultra-high throughput sequencing-based small RNA discovery and discrete statistical biomarker analysis in a collection of cervical tumours and matched controls&amp;rdquo;&lt;br&gt;
+Witten D, Tibshirani R, Gu SG, Fire A, Lui WO&lt;br&gt;
+BMC Biol. 8:58(2010).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>visualizing small RNA mapping complexity</title>
+      <link>http://lpantano.github.io/post/legacy/2012-09-18-visualizing-small-rna-mapping-complexity/</link>
+      <pubDate>Tue, 18 Sep 2012 12:10:24 -0400</pubDate>
+      <guid>http://lpantano.github.io/post/legacy/2012-09-18-visualizing-small-rna-mapping-complexity/</guid>
+      <description>&lt;p&gt;I spent all my PhD working with small RNA sequences data. The main problem was, always those sequences that map in multiple locations, also denominated ambiguous sequences. From the very beginning, this made that pipelines remove this kind of sequences from the analysis, because you cannot assign them a unique location in the genome. But these sequences are interesting to study, since many of them change in size, for instance. This complexity is due to repeats in the genome and the scenario I am talking about here it is shown in the following figure: ![]({{ site.url }}/assets/example1.png)&lt;/p&gt;
+&lt;p&gt;Each color it would be a different sRNA, and the lines show the locations of each sRNA. There are location shared by some of the sRNAs, and you can easily transform this into a network of vertexes and edges, where vertexes are locations and edges, are their relationship coming from the sRNAs inside them. In this case it would generate three circles connected between them. And that it was I did with a real data set. I used &lt;a href=&#34;http://igraph.sourceforge.net/&#34; title=&#34;igraph&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;igraph&lt;/a&gt; in R to represent this with the help of this great &lt;a href=&#34;http://nsaunders.wordpress.com/2010/04/21/experiments-with-igraph/&#34; title=&#34;igraph tutorial&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tutorial&lt;/a&gt;. The result is:&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/network.png&#34; &gt;
+
+
+  &lt;img src=&#34;http://lpantano.github.io/media/images/network.png&#34; alt=&#34;&#34; width=&#34;500px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;It is very easy to detect high complexity regions, where locations are connected because some sRNAs map to anywhere else. From here, you can add more information, as the average size of the sRNAs inside each location, or the expression (red: low, yellow:high).   ![]({{ site.baseurl }}/assets/net-exp-3.png &amp;ldquo;network of sRNA complexity&amp;rdquo;) In a quick view you can check the complexity of your small RNA data and the expression associated. The code is published at &lt;a href=&#34;http://rpubs.com/lpantano/1719&#34; title=&#34;sRNA mappability&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rpub repository&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

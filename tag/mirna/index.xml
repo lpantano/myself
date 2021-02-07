@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>miRNA | My bits</title>
+    <link>http://lpantano.github.io/tag/mirna/</link>
+      <atom:link href="http://lpantano.github.io/tag/mirna/index.xml" rel="self" type="application/rss+xml" />
+    <description>miRNA</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 12 Aug 2018 09:00:00 -0400</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>miRNA</title>
+      <link>http://lpantano.github.io/tag/mirna/</link>
+    </image>
+    
+    <item>
+      <title>How to plot miRNA, gene expression and functional analysis together</title>
+      <link>http://lpantano.github.io/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/</link>
+      <pubDate>Sun, 12 Aug 2018 09:00:00 -0400</pubDate>
+      <guid>http://lpantano.github.io/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/</guid>
+      <description>&lt;p&gt;This post should show you an easy way to get the following data type
+integrated into a figure:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;functional enrichment analysis&lt;/li&gt;
+&lt;li&gt;gene expression data from any technology&lt;/li&gt;
+&lt;li&gt;miRNA expression data from any technology&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I am using the function &lt;code&gt;isoNetwork&lt;/code&gt; from the package &lt;code&gt;isomiRs&lt;/code&gt;, that of
+course is developed by me :) My ego is not that big, it is just I wanted
+a figure showing that information, and I couldn&amp;rsquo;t find any at a time,
+but if you know any, tweet me about it to @lopantano.&lt;/p&gt;
+&lt;p&gt;This function needs some pre-computed information, like the normalized
+expression and the targeted genes by miRNAs. Normally, the significant
+genes and miRNAs from a differentially expression analysis would do it.&lt;/p&gt;
+&lt;p&gt;The first requirement is two have these two datasets into a
+SummarizedExperiment object As an example, I am using the published data
+from Folic Acid Mouse model (GSE65267) that has been analyzed with
+bcbio-nextgen pipeline and bcbioRNASeq package.&lt;/p&gt;
+&lt;p&gt;I saved these analysis into an R object that contains:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;fa_mrna: gene expression&lt;/li&gt;
+&lt;li&gt;fa_mirna: miRNA expression&lt;/li&gt;
+&lt;li&gt;fa_cold: metadata&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;From that, I ran DESeq2 to get the significant genes and miRNAs from the
+comparison day14 vs day0 (normal).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;R&amp;gt; load(&amp;quot;fa_isonetwork.rda&amp;quot;)
+R&amp;gt; library(isomiRs)
+R&amp;gt; library(DESeq2)
+R&amp;gt; library(SummarizedExperiment)
+R&amp;gt;
+R&amp;gt; mi_cold = fa_cold[colnames(fa_mirna), , drop = F]
+R&amp;gt; mi_dse = DESeqDataSetFromMatrix(round(2^fa_mirna), mi_cold, design = ~day)
+R&amp;gt; mi_dse = DESeq(mi_dse)
+R&amp;gt; mi_res = results(mi_dse, name = &amp;quot;day_day14_vs_normal&amp;quot;)
+R&amp;gt; mi_res = mi_res[!is.na(mi_res$padj), ]
+R&amp;gt; mi_top = row.names(mi_res[mi_res$padj &amp;lt; 0.05, ])
+R&amp;gt; mi_rse = SummarizedExperiment(assays = SimpleList(norm = fa_mirna), colData = mi_cold,
++     metadata = list(sign = mi_top))
+R&amp;gt;
+R&amp;gt; m_cold = fa_cold[colnames(fa_mrna), , drop = F]
+R&amp;gt; m_dse = DESeqDataSetFromMatrix(round(2^fa_mrna), m_cold, design = ~day)
+R&amp;gt; m_dse = DESeq(m_dse)
+R&amp;gt; m_res = results(m_dse, name = &amp;quot;day_day14_vs_normal&amp;quot;)
+R&amp;gt; m_res = m_res[!is.na(m_res$padj), ]
+R&amp;gt; m_top = row.names(m_res[m_res$padj &amp;lt; 0.05, ])
+R&amp;gt; m_rse = SummarizedExperiment(assays = SimpleList(norm = fa_mrna), colData = m_cold,
++     metadata = list(sign = m_top))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After that, I ran the functional analysis with &lt;a href=&#34;http://bioconductor.org/packages/release/bioc/html/clusterProfiler.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;clusterProfiler&lt;/code&gt; Bioc
+package&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;R&amp;gt; library(org.Mm.eg.db)
+R&amp;gt; library(clusterProfiler)
+R&amp;gt;
+R&amp;gt;
+R&amp;gt; ego &amp;lt;- enrichGO(m_top, org.Mm.eg.db, &amp;quot;ENSEMBL&amp;quot;, ont = &amp;quot;MF&amp;quot;, universe = rownames(m_res))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Actually, it could be anything as far as the table have the same naming
+that the one coming from this package.&lt;/p&gt;
+&lt;p&gt;Last step before the real integration analysis, is to get the predicted
+targets of the miRNA. This can be done with any package as far as you
+get a table with two columns: gene and mirna.&lt;/p&gt;
+&lt;p&gt;I used two options, one using the already implemented code in the
+package (that uses targetscan database):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;R&amp;gt; library(targetscan.Mm.eg.db)
+R&amp;gt; m2t = mirna2targetscan(mi_top, species = &amp;quot;mmu&amp;quot;, org = org.Mm.eg.db, keytype = &amp;quot;ENSEMBL&amp;quot;)
+R&amp;gt;
+R&amp;gt; mirna_targets = findTargets(mi_rse, m_rse, m2t[, c(&amp;quot;ENSEMBL&amp;quot;, &amp;quot;mir&amp;quot;)], summarize = &amp;quot;day&amp;quot;,
++     min_cor = -0.7)
+
+## Dimmension of cor matrix: 49 5233
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or using the function &lt;code&gt;get_multimir&lt;/code&gt; implemented on &lt;a href=&#34;http://bioconductor.org/packages/release/bioc/html/multiMir.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;multiMiR&lt;/code&gt; Bioc
+package&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;R&amp;gt; library(multiMiR)
+R&amp;gt; multimir_results &amp;lt;- get_multimir(org = &amp;quot;mmu&amp;quot;, mirna = mi_top, table = &amp;quot;validated&amp;quot;,
++     summary = TRUE)
+R&amp;gt;
+R&amp;gt; library(magrittr)
+R&amp;gt; m2t_multimir = slot(multimir_results, &amp;quot;data&amp;quot;)[, c(&amp;quot;target_ensembl&amp;quot;, &amp;quot;mature_mirna_id&amp;quot;)] %&amp;gt;%
++     dplyr::filter(target_ensembl != &amp;quot;&amp;quot;) %&amp;gt;% dplyr::distinct()
+R&amp;gt;
+R&amp;gt; mirna_targets = findTargets(mi_rse, m_rse, m2t_multimir, summarize = &amp;quot;day&amp;quot;,
++     min_cor = -0.7)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In both cases, I ran &lt;code&gt;findTargets&lt;/code&gt; to use the expression data to make
+sure the correlation between the miRNA and predicted gene is negative
+since is the known biological function of miRNAs, being negative
+modulators.&lt;/p&gt;
+&lt;p&gt;Finally, we use &lt;code&gt;isoNetwork&lt;/code&gt; to put all the data together, and
+&lt;code&gt;isoPlotNet&lt;/code&gt; to create the final figure with all information.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;R&amp;gt; data &amp;lt;- isoNetwork(mi_rse, m_rse, min_fc = 0.1, summarize = &amp;quot;day&amp;quot;, target = mirna_targets,
++     enrich = ego)
+
+## Dimmension of cor matrix: 49 305
+
+R&amp;gt; isoPlotNet(data, minGenes = 1)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/code-blog/isonetwork/post_files/figure-markdown_strict/unnamed-chunk-5-1.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;It is an easy way to spot what pathways contain genes that are targeted
+by miRNAs.&lt;/p&gt;
+&lt;p&gt;Note that this function won&amp;rsquo;t indicate if a pathway is enriched on miRNA
+targets. It shows how these three different data set can be put together
+to explore the relationship among them.&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;self-control in bioinformatics: be nice to your collaborator when
+they can not open a TSV file with excel.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>miRTOP: An open source community project for the development of a unified format file for miRNA data</title>
+      <link>http://lpantano.github.io/talk/bosc2018/</link>
+      <pubDate>Wed, 27 Jun 2018 13:13:02 -0900</pubDate>
+      <guid>http://lpantano.github.io/talk/bosc2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>miRNA Annotation Tools Comparison</title>
+      <link>http://lpantano.github.io/post/legacy/2016-03-24-mirna-annotation-tools-comparison/</link>
+      <pubDate>Thu, 24 Mar 2016 19:49:01 -0400</pubDate>
+      <guid>http://lpantano.github.io/post/legacy/2016-03-24-mirna-annotation-tools-comparison/</guid>
+      <description>&lt;p&gt;In summary: I will show which is the best miRNA mapping tool. I used several options for this benchmarking:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;miraligner from &lt;a href=&#34;http://github.com/lpantano/seqbuster&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SeqBuster&lt;/a&gt; suit (I am one of the authors)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bowtie-bio.sourceforge.net/bowtie2/index.shtml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bowtie2&lt;/a&gt; and &lt;a href=&#34;http://bowtie-bio.sourceforge.net/index.shtml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bowtie&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.novocraft.com/main/index.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;novoalign&lt;/a&gt; from novocraft suit&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://algorithms.cnag.cat/wiki/The_GEM_library&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GEM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://arn.ugr.es/srnabench/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;srnabench&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.seqan.de/projects/MicroRazerS.html.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;microrazer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/alexdobin/STAR&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;STAR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://mirexpress.mbc.nctu.edu.tw/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;miRExpress&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I think that these are the most used, and other not used but good to try them. They were clearly developed for other purposes, but as well, they generate the input of many miRNA pipelines. I just wanted to know how well my tool was doing. The first aim to develop miraligner was to get annotated additions of nucleotides at the end of miRNA sequences, something that is very common in mirna biogenesis: &lt;a href=&#34;http://en.wikipedia.org/wiki/IsomiR&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;isomirs&lt;/a&gt; and often they are missed by short read and fast mappers. I have a &lt;a href=&#34;https://github.com/lpantano/mypubs/tree/master/mirna/mirannotation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;repository&lt;/a&gt; for this kind of things, so anybody can reproduce my results, and check if I did something wrong, or comment on it. In this post I just want to know which tool detects more miRNA, for that I did two main steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;simulate a bunch of miRNAs (isomirs) with my python &lt;a href=&#34;https://github.com/lpantano/seqbuster/blob/master/misc/miRNA.simulator.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;script&lt;/a&gt; that is part of SeqBuster suit. I generated around 10000 sequences. Normally, one small-RNAseq library produces around half million different sequences.&lt;/li&gt;
+&lt;li&gt;use only miRBase human precursors as reference genome&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I used default parameter for all, so probably there is a set of parameters that would be better for some tools, but I didn&amp;rsquo;t search for them this time (happy to accept issues to add them). The &lt;a href=&#34;http://rawgit.com/lpantano/mypubs/master/mirna/mirannotation/stats.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;results&lt;/a&gt; are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;miraligner&lt;/strong&gt; and &lt;strong&gt;STAR&lt;/strong&gt; map &lt;strong&gt;more sequences&lt;/strong&gt;. miraligner loses sequences shorter than 15 nt, normally (miRNA) are around 21, and those sequences map to repeat elements&lt;/li&gt;
+&lt;li&gt;STAR is the best mapping, but need some parsing to reduce false positive. I think that pipelines should change to this tool.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GEM&lt;/strong&gt; has problems with &lt;strong&gt;additions and nt substitutions&lt;/strong&gt; in many cases, same as novoaligner (I will look at this in the future)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;bowtie2/bowtie is the second&lt;/strong&gt; that annotated most (and best)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;microrazer&lt;/strong&gt; has a problem with &lt;strong&gt;mismatches&lt;/strong&gt;, but maybe there is some parameter to trick&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;miRExpress&lt;/strong&gt; with default options only will map perfect matches sequences to precursor, so strongly recommended to allow errors to increase sensibility.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I have to say that the advantage of &lt;a href=&#34;https://github.com/lpantano/seqbuster/wiki/miraligner&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;miraligner&lt;/a&gt; is that it gives you the sequence annotated as miRNA or precursor, and gives you the exactly modifications that sequences have if they are compared to miRBase database. And you could feed the results to my &lt;a href=&#34;https://github.com/lpantano/seqbuster/wiki/isomiRs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R package&lt;/a&gt; to plot isomers distribution of samples from different groups, and do differential expression analysis with DESeq2, or another tool. I didn&amp;rsquo;t add time consumption because all of them run in a couple of minutes. In my next post I will focus in the the correct annotation of each sequence, and the possible problems with cross-mapping events, when the sequence comes from another regions of the genome but map to miRBase precursor as well [see my previous &lt;a href=&#34;http://lorenapantano.wordpress.com/2013/05/27/mirna-annotation-complex-scenarios/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;post&lt;/a&gt; for more details]. As well I will use STAR with the full genome and see if the mapping continues being the best. In that case I will add a script to SeqBuster to parse the output of STAR for those who can map with STAR (need up to 32G for human genome)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>small RNA abundance [miss-] viz</title>
+      <link>http://lpantano.github.io/post/legacy/2013-10-29-small-rna-abundance-miss-viz/</link>
+      <pubDate>Tue, 29 Oct 2013 08:05:56 -0400</pubDate>
+      <guid>http://lpantano.github.io/post/legacy/2013-10-29-small-rna-abundance-miss-viz/</guid>
+      <description>&lt;p&gt;My PhD was focused on small RNA sequencing data. I had a problem when I wanted to visualized the amount of small RNAs from the beginning. Here the problem, assume that you have a certain distribution of small RNA sequences abundance:&lt;/p&gt;
+&lt;p&gt;seq1: 1500 times&lt;br&gt;
+seq2: 3 times&lt;br&gt;
+seq3: 2 times&lt;/p&gt;
+&lt;p&gt;And you want to show the nucleotide composition of the first nucleotide. You can do it either counting the # of sequences (or abundance) in your set (1505) or the number of unique (different) sequences (3). You result will be very bias depending on that. If you go for the first option, you can obtain:&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/ntabundance11.png&#34; &gt;
+
+
+  &lt;img src=&#34;http://lpantano.github.io/media/images/ntabundance11.png&#34; alt=&#34;&#34; width=&#34;1000px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;and if you go for the second option:&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/ntabundance2.png&#34; &gt;
+
+
+  &lt;img src=&#34;http://lpantano.github.io/media/images/ntabundance2.png&#34; alt=&#34;&#34; width=&#34;1000px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Which is the best option? well, although papers in small RNA data still continue showing the first option, I think that this should be validated some way.&lt;/p&gt;
+&lt;p&gt;When using unique sequences (only counting different sequences), you can under-estimated the real signal. In NGS, you can have a lot of noise, that may hide the biological signal using this approach. But, you can get the same, if you use directly the abundance, because if your set contains one sequence that is 90% of the data, you will get always a signal, that may be not important, for instance, ribosomal RNA that is expected to be there.&lt;/p&gt;
+&lt;p&gt;One solution is to plot the data according both values: percentage of abundance and percentage of unique sequences. And you can do this for each position and nucleotide.&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/ntabundance3.png&#34; &gt;
+
+
+  &lt;img src=&#34;http://lpantano.github.io/media/images/ntabundance3.png&#34; alt=&#34;&#34; width=&#34;1000px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;We can conclude that at position 1, there are few sequences starting with A that are  90 of the data. Also we can see how the 60% of unique sequences have a G at position 10. This helps us to catch any biological signature if it exists, and avoid the misleading information in this kind of figures.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

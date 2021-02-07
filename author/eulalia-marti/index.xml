@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eulàlia Martí | My bits</title>
+    <link>http://lpantano.github.io/author/eulalia-marti/</link>
+      <atom:link href="http://lpantano.github.io/author/eulalia-marti/index.xml" rel="self" type="application/rss+xml" />
+    <description>Eulàlia Martí</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Eulàlia Martí</title>
+      <link>http://lpantano.github.io/author/eulalia-marti/</link>
+    </image>
+    
+    <item>
+      <title>A High-Throughput Screening Identifies MicroRNA Inhibitors That Influence Neuronal Maintenance and/or Response to Oxidative Stress.</title>
+      <link>http://lpantano.github.io/publication/pallarsalbanell-2019/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pallarsalbanell-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Specific small-RNA signatures in the amygdala at premotor and motor stages of Parkinson&#39;s disease revealed by deep sequencing analysis.</title>
+      <link>http://lpantano.github.io/publication/pantano-2015/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A highly expressed miR-101 isomiR is a functional silencing small RNA.</title>
+      <link>http://lpantano.github.io/publication/llorens-2013/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/llorens-2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microarray and deep sequencing cross-platform analysis of the mirRNome and isomiR variation in response to epidermal growth factor.</title>
+      <link>http://lpantano.github.io/publication/llorens-2013-a/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/llorens-2013-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Pathogenic Mechanism in Huntington&#39;s Disease Involves Small CAG-Repeated RNAs with Neurotoxic Activity.</title>
+      <link>http://lpantano.github.io/publication/banez-coronel-2012/</link>
+      <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/banez-coronel-2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A non-biased framework for the annotation and classification of the non-miRNA small RNA transcriptome.</title>
+      <link>http://lpantano.github.io/publication/pantano-2011/</link>
+      <pubDate>Tue, 01 Nov 2011 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A myriad of miRNA variants in control and Huntington&#39;s disease brain regions detected by massively parallel sequencing</title>
+      <link>http://lpantano.github.io/publication/marti-2010/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/marti-2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SeqBuster, a bioinformatic tool for the processing and analysis of small RNAs datasets, reveals ubiquitous miRNA modifications in human embryonic cells</title>
+      <link>http://lpantano.github.io/publication/pantano-2010/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2010/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

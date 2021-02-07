@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>miRTOP group | My bits</title>
+    <link>http://lpantano.github.io/author/mirtop-group/</link>
+      <atom:link href="http://lpantano.github.io/author/mirtop-group/index.xml" rel="self" type="application/rss+xml" />
+    <description>miRTOP group</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 09 Feb 2019 00:00:00 -0500</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>miRTOP group</title>
+      <link>http://lpantano.github.io/author/mirtop-group/</link>
+    </image>
+    
+    <item>
+      <title>miRNA variants (isomiRs): real molecules or sequencing artifacts?</title>
+      <link>http://lpantano.github.io/talk/bioclub2019/</link>
+      <pubDate>Sat, 09 Feb 2019 00:00:00 -0500</pubDate>
+      <guid>http://lpantano.github.io/talk/bioclub2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MiRNA Wars: The isomiRs menance</title>
+      <link>http://lpantano.github.io/talk/big2018/</link>
+      <pubDate>Sun, 02 Dec 2018 15:06:12 -0500</pubDate>
+      <guid>http://lpantano.github.io/talk/big2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

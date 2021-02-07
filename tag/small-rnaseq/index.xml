@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>small RNAseq | My bits</title>
+    <link>http://lpantano.github.io/tag/small-rnaseq/</link>
+      <atom:link href="http://lpantano.github.io/tag/small-rnaseq/index.xml" rel="self" type="application/rss+xml" />
+    <description>small RNAseq</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Mar 2017 17:50:01 -0400</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>small RNAseq</title>
+      <link>http://lpantano.github.io/tag/small-rnaseq/</link>
+    </image>
+    
+    <item>
+      <title>DEGreport to plot nice RNA-seq figures</title>
+      <link>http://lpantano.github.io/post/legacy/2017-03-20-degreport-rnaseq-figures/</link>
+      <pubDate>Mon, 20 Mar 2017 17:50:01 -0400</pubDate>
+      <guid>http://lpantano.github.io/post/legacy/2017-03-20-degreport-rnaseq-figures/</guid>
+      <description>&lt;p&gt;Differentially gene expression analysis with &lt;a href=&#34;https://en.wikipedia.org/wiki/RNA-Seq&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RNA-seq&lt;/a&gt; data is quite common nowadays, and there are pretty good &lt;a href=&#34;http://bioconductor.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bioconductor&lt;/a&gt; packages for that: &lt;a href=&#34;http://bioconductor.org/packages/release/bioc/html/limma.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;limma::voom&lt;/a&gt;, &lt;a href=&#34;http://bioconductor.org/packages/release/bioc/html/DESeq2.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DESeq2&lt;/a&gt; &amp;hellip;&lt;/p&gt;
+&lt;p&gt;The code for that part is quite simple, being super quick to get a list of de-regulated genes. However, downstream analyses vary a lot depending on the project itself. But I found myself doing the same plots and analyses many times for different project, so I put together a bunch of plots and analyses using code from my colleagues at work (&lt;a href=&#34;http://bioinformatics.sph.harvard.edu&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@HSPH bioinformatics core&lt;/a&gt;) and myself.&lt;/p&gt;
+&lt;p&gt;There are many possibilities, including QC figures, but the features that seem more interesting are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;plot of individual genes using multiple variables from the metadata. This would be an evolution of plotCounts function from DESeq2. Fig1&lt;/li&gt;
+&lt;li&gt;plot volcano plots labeling some genes. Fig2&lt;/li&gt;
+&lt;li&gt;clustering set of genes to find common patterns expression. Most useful for time seria data. You get as well the list of genes that follows that pattern, so you can use it for functional analysis, for instance. Fig3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;note: maybe some features only available with development version&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-1.png&#34; alt=&#34;fig1&#34;&gt;
+&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-3.png&#34; alt=&#34;fig2&#34;&gt;
+&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-2.png&#34; alt=&#34;fig3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Package available at &lt;a href=&#34;http://bioconductor.org/packages/devel/bioc/html/DEGreport.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BioC page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The code is available &lt;a href=&#34;https://github.com/lpantano/mypubs/blob/master/DEG_viz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hope you enjoy!&lt;/p&gt;
+&lt;p&gt;Any suggestion and/or issue is welcome &lt;a href=&#34;https://support.bioconductor.org/p/new/post/?tag_val=DEGreport&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;sincerity in bioinformatics: try hard to explain the limitation of your analysis to non-computational researchers&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aristeidis G. Telonis | My bits</title>
+    <link>http://lpantano.github.io/author/aristeidis-g.-telonis/</link>
+      <atom:link href="http://lpantano.github.io/author/aristeidis-g.-telonis/index.xml" rel="self" type="application/rss+xml" />
+    <description>Aristeidis G. Telonis</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 27 Jun 2018 13:13:02 -0900</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Aristeidis G. Telonis</title>
+      <link>http://lpantano.github.io/author/aristeidis-g.-telonis/</link>
+    </image>
+    
+    <item>
+      <title>miRTOP: An open source community project for the development of a unified format file for miRNA data</title>
+      <link>http://lpantano.github.io/talk/bosc2018/</link>
+      <pubDate>Wed, 27 Jun 2018 13:13:02 -0900</pubDate>
+      <guid>http://lpantano.github.io/talk/bosc2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1872 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Integrated genomic analysis of 456 pancreatic ductal adenocarcinomas identified 32 recurrently mutated genes that aggregate into 10 pathways: KRAS, TGF-beta, WNT, NOTCH, ROBO/SLIT signalling, G1/S transition, SWI-SNF, chromatin modification, DNA repair and RNA processing. Expression analysis defined 4 subtypes: (1) squamous; (2) pancreatic progenitor; (3) immunogenic; and (4) aberrantly differentiated endocrine exocrine (ADEX) that correlate with histopathological characteristics. Squamous tumours are enriched for TP53 and KDM6A mutations, upregulation of the TP63N transcriptional network, hypermethylation of pancreatic endodermal cell-fate determining genes and have a poor prognosis. Pancreatic progenitor tumours preferentially express genes involved in early pancreatic development (FOXA2/3, PDX1 and MNX1). ADEX tumours displayed upregulation of genes that regulate networks involved in KRAS activation, exocrine (NR5A2 and RBPJL), and endocrine differentiation (NEUROD1 and NKX2-2). Immunogenic tumours contained upregulated immune networks including pathways involved in acquired immune suppression. These data infer differences in the molecular evolution of pancreatic cancer subtypes and identify opportunities for therapeutic development.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://lpantano.github.io/publication/bailey-2016/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.min.2da9fc7ecccb62374ee4667dc6583d14.css">
+
+  
+
+
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="http://lpantano.github.io/publication/bailey-2016/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@lopantano">
+  <meta property="twitter:creator" content="@lopantano">
+  
+  <meta property="og:site_name" content="My bits">
+  <meta property="og:url" content="http://lpantano.github.io/publication/bailey-2016/">
+  <meta property="og:title" content="Genomic analyses identify molecular subtypes of pancreatic cancer | My bits">
+  <meta property="og:description" content="Integrated genomic analysis of 456 pancreatic ductal adenocarcinomas identified 32 recurrently mutated genes that aggregate into 10 pathways: KRAS, TGF-beta, WNT, NOTCH, ROBO/SLIT signalling, G1/S transition, SWI-SNF, chromatin modification, DNA repair and RNA processing. Expression analysis defined 4 subtypes: (1) squamous; (2) pancreatic progenitor; (3) immunogenic; and (4) aberrantly differentiated endocrine exocrine (ADEX) that correlate with histopathological characteristics. Squamous tumours are enriched for TP53 and KDM6A mutations, upregulation of the TP63N transcriptional network, hypermethylation of pancreatic endodermal cell-fate determining genes and have a poor prognosis. Pancreatic progenitor tumours preferentially express genes involved in early pancreatic development (FOXA2/3, PDX1 and MNX1). ADEX tumours displayed upregulation of genes that regulate networks involved in KRAS activation, exocrine (NR5A2 and RBPJL), and endocrine differentiation (NEUROD1 and NKX2-2). Immunogenic tumours contained upregulated immune networks including pathways involved in acquired immune suppression. These data infer differences in the molecular evolution of pancreatic cancer subtypes and identify opportunities for therapeutic development."><meta property="og:image" content="http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2019-09-08T18:14:44&#43;00:00">
+    
+    <meta property="article:modified_time" content="2016-01-01T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://lpantano.github.io/publication/bailey-2016/"
+  },
+  "headline": "Genomic analyses identify molecular subtypes of pancreatic cancer",
+  
+  "datePublished": "2019-09-08T18:14:44Z",
+  "dateModified": "2016-01-01T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "P Bailey"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "My bits",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "Integrated genomic analysis of 456 pancreatic ductal adenocarcinomas identified 32 recurrently mutated genes that aggregate into 10 pathways: KRAS, TGF-beta, WNT, NOTCH, ROBO/SLIT signalling, G1/S transition, SWI-SNF, chromatin modification, DNA repair and RNA processing. Expression analysis defined 4 subtypes: (1) squamous; (2) pancreatic progenitor; (3) immunogenic; and (4) aberrantly differentiated endocrine exocrine (ADEX) that correlate with histopathological characteristics. Squamous tumours are enriched for TP53 and KDM6A mutations, upregulation of the TP63N transcriptional network, hypermethylation of pancreatic endodermal cell-fate determining genes and have a poor prognosis. Pancreatic progenitor tumours preferentially express genes involved in early pancreatic development (FOXA2/3, PDX1 and MNX1). ADEX tumours displayed upregulation of genes that regulate networks involved in KRAS activation, exocrine (NR5A2 and RBPJL), and endocrine differentiation (NEUROD1 and NKX2-2). Immunogenic tumours contained upregulated immune networks including pathways involved in acquired immune suppression. These data infer differences in the molecular evolution of pancreatic cancer subtypes and identify opportunities for therapeutic development."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Genomic analyses identify molecular subtypes of pancreatic cancer | My bits</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">My bits</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">My bits</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+
+
+
+<div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Genomic analyses identify molecular subtypes of pancreatic cancer</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span ><a href="/author/p-bailey/">P Bailey</a></span>, <span ><a href="/author/d-k-chang/">D K Chang</a></span>, <span ><a href="/author/k-nones/">K Nones</a></span>, <span ><a href="/author/a-l-johns/">A L Johns</a></span>, <span ><a href="/author/a-m-patch/">A M Patch</a></span>, <span ><a href="/author/m-c-gingras/">M C Gingras</a></span>, <span ><a href="/author/d-k-miller/">D K Miller</a></span>, <span ><a href="/author/a-n-christ/">A N Christ</a></span>, <span ><a href="/author/t-j-bruxner/">T J Bruxner</a></span>, <span ><a href="/author/m-c-quinn/">M C Quinn</a></span>, <span ><a href="/author/c-nourse/">C Nourse</a></span>, <span ><a href="/author/l-c-murtaugh/">L C Murtaugh</a></span>, <span ><a href="/author/i-harliwong/">I Harliwong</a></span>, <span ><a href="/author/s-idrisoglu/">S Idrisoglu</a></span>, <span ><a href="/author/s-manning/">S Manning</a></span>, <span ><a href="/author/e-nourbakhsh/">E Nourbakhsh</a></span>, <span ><a href="/author/s-wani/">S Wani</a></span>, <span ><a href="/author/l-fink/">L Fink</a></span>, <span ><a href="/author/o-holmes/">O Holmes</a></span>, <span ><a href="/author/v-chin/">V Chin</a></span>, <span ><a href="/author/m-j-anderson/">M J Anderson</a></span>, <span ><a href="/author/s-kazakoff/">S Kazakoff</a></span>, <span ><a href="/author/c-leonard/">C Leonard</a></span>, <span ><a href="/author/f-newell/">F Newell</a></span>, <span ><a href="/author/s-wood/">S Wood</a></span>, <span ><a href="/author/q-xu/">Q Xu</a></span>, <span ><a href="/author/p-j-wilson/">P J Wilson</a></span>, <span ><a href="/author/n-cloonan/">N Cloonan</a></span>, <span ><a href="/author/k-s-kassahn/">K S Kassahn</a></span>, <span ><a href="/author/d-taylor/">D Taylor</a></span>, <span ><a href="/author/k-quek/">K Quek</a></span>, <span ><a href="/author/a-robertson/">A Robertson</a></span>, <span ><a href="/author/l-pantano/">L Pantano</a></span>, <span ><a href="/author/l-mincarelli/">L Mincarelli</a></span>, <span ><a href="/author/l-n-sanchez/">L N Sanchez</a></span>, <span ><a href="/author/l-evers/">L Evers</a></span>, <span ><a href="/author/j-wu/">J Wu</a></span>, <span ><a href="/author/m-pinese/">M Pinese</a></span>, <span ><a href="/author/m-j-cowley/">M J Cowley</a></span>, <span ><a href="/author/m-d-jones/">M D Jones</a></span>, <span ><a href="/author/e-k-colvin/">E K Colvin</a></span>, <span ><a href="/author/a-m-nagrial/">A M Nagrial</a></span>, <span ><a href="/author/e-s-humphrey/">E S Humphrey</a></span>, <span ><a href="/author/l-a-chantrill/">L A Chantrill</a></span>, <span ><a href="/author/a-mawson/">A Mawson</a></span>, <span ><a href="/author/j-humphris/">J Humphris</a></span>, <span ><a href="/author/a-chou/">A Chou</a></span>, <span ><a href="/author/m-pajic/">M Pajic</a></span>, <span ><a href="/author/c-j-scarlett/">C J Scarlett</a></span>, <span ><a href="/author/a-v-pinho/">A V Pinho</a></span>, <span ><a href="/author/m-giry-laterriere/">M Giry-Laterriere</a></span>, <span ><a href="/author/i-rooman/">I Rooman</a></span>, <span ><a href="/author/j-s-samra/">J S Samra</a></span>, <span ><a href="/author/j-g-kench/">J G Kench</a></span>, <span ><a href="/author/j-a-lovell/">J A Lovell</a></span>, <span ><a href="/author/n-d-merrett/">N D Merrett</a></span>, <span ><a href="/author/c-w-toon/">C W Toon</a></span>, <span ><a href="/author/k-epari/">K Epari</a></span>, <span ><a href="/author/n-q-nguyen/">N Q Nguyen</a></span>, <span ><a href="/author/a-barbour/">A Barbour</a></span>, <span ><a href="/author/n-zeps/">N Zeps</a></span>, <span ><a href="/author/k-moran-jones/">K Moran-Jones</a></span>, <span ><a href="/author/n-b-jamieson/">N B Jamieson</a></span>, <span ><a href="/author/j-s-graham/">J S Graham</a></span>, <span ><a href="/author/f-duthie/">F Duthie</a></span>, <span ><a href="/author/k-oien/">K Oien</a></span>, <span ><a href="/author/j-hair/">J Hair</a></span>, <span ><a href="/author/r-grutzmann/">R Grutzmann</a></span>, <span ><a href="/author/a-maitra/">A Maitra</a></span>, <span ><a href="/author/c-a-iacobuzio-donahue/">C A Iacobuzio-Donahue</a></span>, <span ><a href="/author/c-l-wolfgang/">C L Wolfgang</a></span>, <span ><a href="/author/r-a-morgan/">R A Morgan</a></span>, <span ><a href="/author/r-t-lawlor/">R T Lawlor</a></span>, <span ><a href="/author/v-corbo/">V Corbo</a></span>, <span ><a href="/author/c-bassi/">C Bassi</a></span>, <span ><a href="/author/b-rusev/">B Rusev</a></span>, <span ><a href="/author/p-capelli/">P Capelli</a></span>, <span ><a href="/author/r-salvia/">R Salvia</a></span>, <span ><a href="/author/g-tortora/">G Tortora</a></span>, <span ><a href="/author/d-mukhopadhyay/">D Mukhopadhyay</a></span>, <span ><a href="/author/g-m-petersen/">G M Petersen</a></span>, <span ><a href="/author/initiative-australian-pancreatic-cancer-genome/">Initiative Australian Pancreatic Cancer Genome</a></span>, <span ><a href="/author/d-m-munzy/">D M Munzy</a></span>, <span ><a href="/author/w-e-fisher/">W E Fisher</a></span>, <span ><a href="/author/s-a-karim/">S A Karim</a></span>, <span ><a href="/author/j-r-eshleman/">J R Eshleman</a></span>, <span ><a href="/author/r-h-hruban/">R H Hruban</a></span>, <span ><a href="/author/c-pilarsky/">C Pilarsky</a></span>, <span ><a href="/author/j-p-morton/">J P Morton</a></span>, <span ><a href="/author/o-j-sansom/">O J Sansom</a></span>, <span ><a href="/author/a-scarpa/">A Scarpa</a></span>, <span ><a href="/author/e-a-musgrove/">E A Musgrove</a></span>, <span ><a href="/author/u-m-bailey/">U M Bailey</a></span>, <span ><a href="/author/o-hofmann/">O Hofmann</a></span>, <span ><a href="/author/r-l-sutherland/">R L Sutherland</a></span>, <span ><a href="/author/d-a-wheeler/">D A Wheeler</a></span>, <span ><a href="/author/a-j-gill/">A J Gill</a></span>, <span ><a href="/author/r-a-gibbs/">R A Gibbs</a></span>, <span ><a href="/author/j-v-pearson/">J V Pearson</a></span>, <span ><a href="/author/n-waddell/">N Waddell</a></span>, <span ><a href="/author/a-v-biankin/">A V Biankin</a></span>, <span ><a href="/author/s-m-grimmond/">S M Grimmond</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    January 2016
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="http://www.ncbi.nlm.nih.gov/pubmed/26909576" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/10.1038/nature16965" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract">Integrated genomic analysis of 456 pancreatic ductal adenocarcinomas identified 32 recurrently mutated genes that aggregate into 10 pathways: KRAS, TGF-beta, WNT, NOTCH, ROBO/SLIT signalling, G1/S transition, SWI-SNF, chromatin modification, DNA repair and RNA processing. Expression analysis defined 4 subtypes: (1) squamous; (2) pancreatic progenitor; (3) immunogenic; and (4) aberrantly differentiated endocrine exocrine (ADEX) that correlate with histopathological characteristics. Squamous tumours are enriched for TP53 and KDM6A mutations, upregulation of the TP63N transcriptional network, hypermethylation of pancreatic endodermal cell-fate determining genes and have a poor prognosis. Pancreatic progenitor tumours preferentially express genes involved in early pancreatic development (FOXA2/3, PDX1 and MNX1). ADEX tumours displayed upregulation of genes that regulate networks involved in KRAS activation, exocrine (NR5A2 and RBPJL), and endocrine differentiation (NEUROD1 and NKX2-2). Immunogenic tumours contained upregulated immune networks including pathways involved in acquired immune suppression. These data infer differences in the molecular evolution of pancreatic cancer subtypes and identify opportunities for therapeutic development.</p>
+    
+
+    
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            <a href="/publication/#2">
+              Journal article
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9"><em>Nature</em></div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/genomics/">*Genomics</a>
+  
+  <a class="badge badge-light" href="/tag/animals/">Animals</a>
+  
+  <a class="badge badge-light" href="/tag/basic-helix-loop-helix-transcription-factors/genet/">Basic Helix-Loop-Helix Transcription Factors/genet</a>
+  
+  <a class="badge badge-light" href="/tag/carcinoma/">Carcinoma</a>
+  
+  <a class="badge badge-light" href="/tag/pancreatic/">Pancreatic</a>
+  
+  <a class="badge badge-light" href="/tag/cell-line/">Cell Line</a>
+  
+  <a class="badge badge-light" href="/tag/tumor/">Tumor</a>
+  
+  <a class="badge badge-light" href="/tag/dna-methylation/">DNA Methylation</a>
+  
+  <a class="badge badge-light" href="/tag/dna-binding-proteins/genetics/">DNA-Binding Proteins/genetics</a>
+  
+  <a class="badge badge-light" href="/tag/ductal/classification/genetics/immunology/metaboli/">Ductal/classification/genetics/immunology/metaboli</a>
+  
+  <a class="badge badge-light" href="/tag/gene-expression-regulation/">Gene Expression Regulation</a>
+  
+  <a class="badge badge-light" href="/tag/neoplastic/">Neoplastic</a>
+  
+  <a class="badge badge-light" href="/tag/gene-regulatory-networks/">Gene Regulatory Networks</a>
+  
+  <a class="badge badge-light" href="/tag/genes/">Genes</a>
+  
+  <a class="badge badge-light" href="/tag/neoplasm/genetics/">Neoplasm/*genetics</a>
+  
+  <a class="badge badge-light" href="/tag/genome/">Genome</a>
+  
+  <a class="badge badge-light" href="/tag/human/genetics/">Human/*genetics</a>
+  
+  <a class="badge badge-light" href="/tag/hepatocyte-nuclear-factor-3-beta/genetics/">Hepatocyte Nuclear Factor 3-beta/genetics</a>
+  
+  <a class="badge badge-light" href="/tag/hepatocyte-nuclear-factor-3-gamma/genetics/">Hepatocyte Nuclear Factor 3-gamma/genetics</a>
+  
+  <a class="badge badge-light" href="/tag/histone-demethylases/genetics/">Histone Demethylases/genetics</a>
+  
+  <a class="badge badge-light" href="/tag/homeodomain-proteins/genetics/">Homeodomain Proteins/genetics</a>
+  
+  <a class="badge badge-light" href="/tag/humans/">Humans</a>
+  
+  <a class="badge badge-light" href="/tag/mice/">Mice</a>
+  
+  <a class="badge badge-light" href="/tag/mutation/genetics/">Mutation/*genetics</a>
+  
+  <a class="badge badge-light" href="/tag/nuclear-proteins/genetics/">Nuclear Proteins/genetics</a>
+  
+  <a class="badge badge-light" href="/tag/pancreatic-neoplasms/classification/genetics/imm/">Pancreatic Neoplasms/*classification/*genetics/imm</a>
+  
+  <a class="badge badge-light" href="/tag/prognosis/">Prognosis</a>
+  
+  <a class="badge badge-light" href="/tag/receptors/">Receptors</a>
+  
+  <a class="badge badge-light" href="/tag/cytoplasmic-and-nuclear/genetics/">Cytoplasmic and Nuclear/genetics</a>
+  
+  <a class="badge badge-light" href="/tag/survival-analysis/">Survival Analysis</a>
+  
+  <a class="badge badge-light" href="/tag/trans-activators/genetics/">Trans-Activators/genetics</a>
+  
+  <a class="badge badge-light" href="/tag/transcription-factors/genetics/">Transcription Factors/genetics</a>
+  
+  <a class="badge badge-light" href="/tag/transcription/">Transcription</a>
+  
+  <a class="badge badge-light" href="/tag/genetic/">Genetic</a>
+  
+  <a class="badge badge-light" href="/tag/transcriptome/">Transcriptome</a>
+  
+  <a class="badge badge-light" href="/tag/tumor-suppressor-protein-p53/genetics/">Tumor Suppressor Protein p53/genetics</a>
+  
+  <a class="badge badge-light" href="/tag/tumor-suppressor-proteins/genetics/">Tumor Suppressor Proteins/genetics</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http://lpantano.github.io/publication/bailey-2016/&amp;text=Genomic%20analyses%20identify%20molecular%20subtypes%20of%20pancreatic%20cancer" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http://lpantano.github.io/publication/bailey-2016/&amp;t=Genomic%20analyses%20identify%20molecular%20subtypes%20of%20pancreatic%20cancer" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Genomic%20analyses%20identify%20molecular%20subtypes%20of%20pancreatic%20cancer&amp;body=http://lpantano.github.io/publication/bailey-2016/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http://lpantano.github.io/publication/bailey-2016/&amp;title=Genomic%20analyses%20identify%20molecular%20subtypes%20of%20pancreatic%20cancer" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Genomic%20analyses%20identify%20molecular%20subtypes%20of%20pancreatic%20cancer%20http://lpantano.github.io/publication/bailey-2016/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http://lpantano.github.io/publication/bailey-2016/&amp;title=Genomic%20analyses%20identify%20molecular%20subtypes%20of%20pancreatic%20cancer" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/publication/llorens-2013-a/">Microarray and deep sequencing cross-platform analysis of the mirRNome and isomiR variation in response to epidermal growth factor.</a></li>
+      
+      <li><a href="/publication/pantano-2011/">A non-biased framework for the annotation and classification of the non-miRNA small RNA transcriptome.</a></li>
+      
+      <li><a href="/publication/varas-2009/">Fibroblast-derived induced pluripotent stem cells show no common retroviral vector insertions.</a></li>
+      
+      <li><a href="/publication/ost-2014/">Paternal Diet Defines Offspring Chromatin State and Intergenerational Obesity</a></li>
+      
+      <li><a href="/publication/khaja-2006/">Genome assembly comparison identifies structural variants in the human genome.</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</div>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/wowchemy.min.7c1f36db068b19853b100160e00076ac.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

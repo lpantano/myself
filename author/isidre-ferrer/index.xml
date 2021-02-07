@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Isidre Ferrer | My bits</title>
+    <link>http://lpantano.github.io/author/isidre-ferrer/</link>
+      <atom:link href="http://lpantano.github.io/author/isidre-ferrer/index.xml" rel="self" type="application/rss+xml" />
+    <description>Isidre Ferrer</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Nov 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Isidre Ferrer</title>
+      <link>http://lpantano.github.io/author/isidre-ferrer/</link>
+    </image>
+    
+    <item>
+      <title>Specific small-RNA signatures in the amygdala at premotor and motor stages of Parkinson&#39;s disease revealed by deep sequencing analysis.</title>
+      <link>http://lpantano.github.io/publication/pantano-2015/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A highly expressed miR-101 isomiR is a functional silencing small RNA.</title>
+      <link>http://lpantano.github.io/publication/llorens-2013/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/llorens-2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Pathogenic Mechanism in Huntington&#39;s Disease Involves Small CAG-Repeated RNAs with Neurotoxic Activity.</title>
+      <link>http://lpantano.github.io/publication/banez-coronel-2012/</link>
+      <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/banez-coronel-2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A myriad of miRNA variants in control and Huntington&#39;s disease brain regions detected by massively parallel sequencing</title>
+      <link>http://lpantano.github.io/publication/marti-2010/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/marti-2010/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

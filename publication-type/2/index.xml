@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 | My bits</title>
+    <link>http://lpantano.github.io/publication-type/2/</link>
+      <atom:link href="http://lpantano.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>2</title>
+      <link>http://lpantano.github.io/publication-type/2/</link>
+    </image>
+    
+    <item>
+      <title>Single-cell cloning of human T-cell lines reveals clonal variation in cell death responses to chemotherapeutics.</title>
+      <link>http://lpantano.github.io/publication/hanlon-2019/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/hanlon-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sex Differences in Adrenal Bmal1 Deletion-Induced Augmentation of Glucocorticoid Responses to Stress and ACTH in Mice.</title>
+      <link>http://lpantano.github.io/publication/engeland-2019/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/engeland-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A High-Throughput Screening Identifies MicroRNA Inhibitors That Influence Neuronal Maintenance and/or Response to Oxidative Stress.</title>
+      <link>http://lpantano.github.io/publication/pallarsalbanell-2019/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pallarsalbanell-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multi omics analysis of fibrotic kidneys in two mouse models.</title>
+      <link>http://lpantano.github.io/publication/pavkovic-2019/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pavkovic-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evolutionary and functional impact of common polymorphic inversions in the human genome</title>
+      <link>http://lpantano.github.io/publication/giner-2019-evolutionary/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/giner-2019-evolutionary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sex-dependent changes in miRNA expression in the bed nucleus of the stria terminalis following stress</title>
+      <link>http://lpantano.github.io/publication/mavrikaki-2019-sex/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/mavrikaki-2019-sex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unification of miRNA and isomiR research: the mirGFF3 format and the mirtop API</title>
+      <link>http://lpantano.github.io/publication/desvignes-2018/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/desvignes-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The circulating metabolome of human starvation</title>
+      <link>http://lpantano.github.io/publication/steinhauser-2018/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/steinhauser-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Circulating miRNAs, isomiRs and small RNA clusters in human plasma and breast milk</title>
+      <link>http://lpantano.github.io/publication/rubio-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/rubio-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bcbioRNASeq: R package for bcbio RNA-seq analysis</title>
+      <link>http://lpantano.github.io/publication/steinbaugh-2017/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/steinbaugh-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maintenance of macrophage transcriptional programs and intestinal homeostasis by epigenetic reader SP140</title>
+      <link>http://lpantano.github.io/publication/mehta-2017/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/mehta-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Molecular, phenotypic, and sample-associated data to describe pluripotent stem cell lines and derivatives</title>
+      <link>http://lpantano.github.io/publication/daily-2017/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/daily-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comparative analysis of LIN28-RNA binding sites identified at single nucleotide resolution</title>
+      <link>http://lpantano.github.io/publication/ransey-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/ransey-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Empirical comparison of reduced representation bisulfite sequencing and Infinium BeadChip reproducibility and coverage of DNA methylation in humans</title>
+      <link>http://lpantano.github.io/publication/carmona-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/carmona-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Viewing RNA-seq data on the entire human genome</title>
+      <link>http://lpantano.github.io/publication/busby-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/busby-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genomic analyses identify molecular subtypes of pancreatic cancer</title>
+      <link>http://lpantano.github.io/publication/bailey-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/bailey-2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Specific small-RNA signatures in the amygdala at premotor and motor stages of Parkinson&#39;s disease revealed by deep sequencing analysis.</title>
+      <link>http://lpantano.github.io/publication/pantano-2015/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The small RNA content of human sperm reveals pseudogene-derived piRNAs complementary to protein-coding genes.</title>
+      <link>http://lpantano.github.io/publication/pantano-2015-a/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2015-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Functional Impact and Evolution of a Novel Human Polymorphic Inversion That Disrupts a Gene and Creates a Fusion Transcript</title>
+      <link>http://lpantano.github.io/publication/puig-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/puig-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paternal Diet Defines Offspring Chromatin State and Intergenerational Obesity</title>
+      <link>http://lpantano.github.io/publication/ost-2014/</link>
+      <pubDate>Mon, 01 Dec 2014 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/ost-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>InvFEST, a database integrating information of polymorphic inversions in the human genome</title>
+      <link>http://lpantano.github.io/publication/martinez-fundichely-2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/martinez-fundichely-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regulation of miRNA strand selection: follow the leader?</title>
+      <link>http://lpantano.github.io/publication/meijer-2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/meijer-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A highly expressed miR-101 isomiR is a functional silencing small RNA.</title>
+      <link>http://lpantano.github.io/publication/llorens-2013/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/llorens-2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microarray and deep sequencing cross-platform analysis of the mirRNome and isomiR variation in response to epidermal growth factor.</title>
+      <link>http://lpantano.github.io/publication/llorens-2013-a/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/llorens-2013-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Pathogenic Mechanism in Huntington&#39;s Disease Involves Small CAG-Repeated RNAs with Neurotoxic Activity.</title>
+      <link>http://lpantano.github.io/publication/banez-coronel-2012/</link>
+      <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/banez-coronel-2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A non-biased framework for the annotation and classification of the non-miRNA small RNA transcriptome.</title>
+      <link>http://lpantano.github.io/publication/pantano-2011/</link>
+      <pubDate>Tue, 01 Nov 2011 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A myriad of miRNA variants in control and Huntington&#39;s disease brain regions detected by massively parallel sequencing</title>
+      <link>http://lpantano.github.io/publication/marti-2010/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/marti-2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SeqBuster, a bioinformatic tool for the processing and analysis of small RNAs datasets, reveals ubiquitous miRNA modifications in human embryonic cells</title>
+      <link>http://lpantano.github.io/publication/pantano-2010/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fibroblast-derived induced pluripotent stem cells show no common retroviral vector insertions.</title>
+      <link>http://lpantano.github.io/publication/varas-2009/</link>
+      <pubDate>Sun, 01 Feb 2009 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/varas-2009/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Identification of Copy Number Variants Defining Genomic Differences among Major Human Groups</title>
+      <link>http://lpantano.github.io/publication/armengol-2009/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/armengol-2009/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ProSeeK: A web server for MLPA probe design</title>
+      <link>http://lpantano.github.io/publication/pantano-2008/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2008/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Highlights from the Third International Society for Computational Biology Student Council Symposium at the Fifteenth Annual International Conference on Intelligent Systems for Molecular Biology</title>
+      <link>http://lpantano.github.io/publication/grynberg-2007/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/grynberg-2007/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genome assembly comparison identifies structural variants in the human genome.</title>
+      <link>http://lpantano.github.io/publication/khaja-2006/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/khaja-2006/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

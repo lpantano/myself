@@ -1,0 +1,1292 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="MicroRNAs (miRNAs) are small RNA molecules (20-27 nt long) that are involved in eukaryotic  gene regulation. They regulate targeted genes by RNA complementarity, generally between the miRNA seed region and the 3’ UTR of messenger RNAs. They have become relevant to the study of developmental stages and diseases. With the advance of sequencing technology, the cost of detecting the miRNA transcriptome has decreased substantially, and has led to the discovery of isomiRs (with slight sequence variations relative to the annotated miRNAs). As a consequence, the amount of miRNA data has increased exponentially in the last 5 years, together with the number of pipelines to analyze it. However, there is still a lack of consensus standards in storing and sharing such data, generating diverse output files; hindering comparison between tools, data sharing, and development of downstream analyses independent of the tools used for miRNA detection and quantification. Here, we present a community based, open source project to work toward the standardization of miRNA pipelines and encourage the development of downstream tools for visualization, differential expression, sample clustering, and model prediction analyses. This project is an international collaboration, with experts from different countries that have been developing miRNA pipelines and resources. We have described a standard format for the output of miRNA detection and quantification tools using small RNA-seq data. The format is based on the GFF3 standard in order to support reference coordinates and parent/child relationships between the features. The format contains information foreach sequence and its annotation to the miRNA precursor, the definition of reference or isomiR sequence, its quality, the isomiR type, and abundance in the data set. Moreover, we support a command line python tool to manage the miRNA GFF3 format (miRTop). Currently, miRTop can convert the output of commonly used small RNA-Seq pipelines, such as seqbuster, isomiR-SEA, sRNAbench, and Prost!, as well as BAM files to the miRNA GFF3 format. Importantly, the miRge pipeline has adapted the GFF3 format natively. miRTop can convert miRNA GFF3 files to a count matrix that can be easily imported to any downstream tool (i.e. for differential expression analysis). Furthermore, the tool can export the miRNA GFF file to the isomiRs package, improving the usability of this tool and rendering it independent of the upstream methods used for quantifying miRNA sequences. Together, we believe that the miRTop project will improve accessibility and uniformity of the results oft miRNA pipelines, the possibility to easily run benchmarking analyses, and promote the development of miRNA tools downstream of the detection and quantification steps.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://lpantano.github.io/talk/bosc2018/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.min.2da9fc7ecccb62374ee4667dc6583d14.css">
+
+  
+
+
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="http://lpantano.github.io/talk/bosc2018/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@lopantano">
+  <meta property="twitter:creator" content="@lopantano">
+  
+  <meta property="og:site_name" content="My bits">
+  <meta property="og:url" content="http://lpantano.github.io/talk/bosc2018/">
+  <meta property="og:title" content="miRTOP: An open source community project for the development of a unified format file for miRNA data | My bits">
+  <meta property="og:description" content="MicroRNAs (miRNAs) are small RNA molecules (20-27 nt long) that are involved in eukaryotic  gene regulation. They regulate targeted genes by RNA complementarity, generally between the miRNA seed region and the 3’ UTR of messenger RNAs. They have become relevant to the study of developmental stages and diseases. With the advance of sequencing technology, the cost of detecting the miRNA transcriptome has decreased substantially, and has led to the discovery of isomiRs (with slight sequence variations relative to the annotated miRNAs). As a consequence, the amount of miRNA data has increased exponentially in the last 5 years, together with the number of pipelines to analyze it. However, there is still a lack of consensus standards in storing and sharing such data, generating diverse output files; hindering comparison between tools, data sharing, and development of downstream analyses independent of the tools used for miRNA detection and quantification. Here, we present a community based, open source project to work toward the standardization of miRNA pipelines and encourage the development of downstream tools for visualization, differential expression, sample clustering, and model prediction analyses. This project is an international collaboration, with experts from different countries that have been developing miRNA pipelines and resources. We have described a standard format for the output of miRNA detection and quantification tools using small RNA-seq data. The format is based on the GFF3 standard in order to support reference coordinates and parent/child relationships between the features. The format contains information foreach sequence and its annotation to the miRNA precursor, the definition of reference or isomiR sequence, its quality, the isomiR type, and abundance in the data set. Moreover, we support a command line python tool to manage the miRNA GFF3 format (miRTop). Currently, miRTop can convert the output of commonly used small RNA-Seq pipelines, such as seqbuster, isomiR-SEA, sRNAbench, and Prost!, as well as BAM files to the miRNA GFF3 format. Importantly, the miRge pipeline has adapted the GFF3 format natively. miRTop can convert miRNA GFF3 files to a count matrix that can be easily imported to any downstream tool (i.e. for differential expression analysis). Furthermore, the tool can export the miRNA GFF file to the isomiRs package, improving the usability of this tool and rendering it independent of the upstream methods used for quantifying miRNA sequences. Together, we believe that the miRTop project will improve accessibility and uniformity of the results oft miRNA pipelines, the possibility to easily run benchmarking analyses, and promote the development of miRNA tools downstream of the detection and quantification steps."><meta property="og:image" content="http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2018-06-27T13:13:02-09:00">
+    
+    <meta property="article:modified_time" content="2018-06-27T13:13:02-09:00">
+  
+
+  
+
+
+
+  
+    
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://lpantano.github.io/talk/bosc2018/"
+  },
+  "name": "miRTOP: An open source community project for the development of a unified format file for miRNA data",
+  
+  "location": {
+    "@type": "Place",
+    "name": "Portland, OR"
+  },
+  
+  
+  "startDate": "2018-06-27T13:13:02-09:00",
+  
+  
+  "performer": {
+    "@type": "Person",
+    "name": "Thomas Desvignes"
+  },
+  
+  "description": "MicroRNAs (miRNAs) are small RNA molecules (20-27 nt long) that are involved in eukaryotic  gene regulation. They regulate targeted genes by RNA complementarity, generally between the miRNA seed region and the 3’ UTR of messenger RNAs. They have become relevant to the study of developmental stages and diseases. With the advance of sequencing technology, the cost of detecting the miRNA transcriptome has decreased substantially, and has led to the discovery of isomiRs (with slight sequence variations relative to the annotated miRNAs). As a consequence, the amount of miRNA data has increased exponentially in the last 5 years, together with the number of pipelines to analyze it. However, there is still a lack of consensus standards in storing and sharing such data, generating diverse output files; hindering comparison between tools, data sharing, and development of downstream analyses independent of the tools used for miRNA detection and quantification. Here, we present a community based, open source project to work toward the standardization of miRNA pipelines and encourage the development of downstream tools for visualization, differential expression, sample clustering, and model prediction analyses. This project is an international collaboration, with experts from different countries that have been developing miRNA pipelines and resources. We have described a standard format for the output of miRNA detection and quantification tools using small RNA-seq data. The format is based on the GFF3 standard in order to support reference coordinates and parent/child relationships between the features. The format contains information foreach sequence and its annotation to the miRNA precursor, the definition of reference or isomiR sequence, its quality, the isomiR type, and abundance in the data set. Moreover, we support a command line python tool to manage the miRNA GFF3 format (miRTop). Currently, miRTop can convert the output of commonly used small RNA-Seq pipelines, such as seqbuster, isomiR-SEA, sRNAbench, and Prost!, as well as BAM files to the miRNA GFF3 format. Importantly, the miRge pipeline has adapted the GFF3 format natively. miRTop can convert miRNA GFF3 files to a count matrix that can be easily imported to any downstream tool (i.e. for differential expression analysis). Furthermore, the tool can export the miRNA GFF file to the isomiRs package, improving the usability of this tool and rendering it independent of the upstream methods used for quantifying miRNA sequences. Together, we believe that the miRTop project will improve accessibility and uniformity of the results oft miRNA pipelines, the possibility to easily run benchmarking analyses, and promote the development of miRNA tools downstream of the detection and quantification steps."
+}
+</script>
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>miRTOP: An open source community project for the development of a unified format file for miRNA data | My bits</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">My bits</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">My bits</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>miRTOP: An open source community project for the development of a unified format file for miRNA data</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span ><a href="/author/thomas-desvignes/">Thomas Desvignes</a></span>, <span ><a href="/author/karen-eilbeck/">Karen Eilbeck</a></span>, <span ><a href="/author/ioannis-s.-vlachos/">Ioannis S. Vlachos</a></span>, <span ><a href="/author/bastian-fromm/">Bastian Fromm</a></span>, <span ><a href="/author/yin-lu/">Yin Lu</a></span>, <span ><a href="/author/marc-k.-halushka/">Marc K. Halushka</a></span>, <span ><a href="/author/michael-hackenberg/">Michael Hackenberg</a></span>, <span ><a href="/author/gianvito-urgese/">Gianvito Urgese</a></span>, <span ><a href="/author/elisa-ficarra/">Elisa Ficarra</a></span>, <span ><a href="/author/shruthi-bandyadka/">Shruthi Bandyadka</a></span>, <span ><a href="/author/jason-sydes/">Jason Sydes</a></span>, <span ><a href="/author/peter-batzel/">Peter Batzel</a></span>, <span ><a href="/author/john-h.-postlethwait/">John H. Postlethwait</a></span>, <span ><a href="/author/phillipe-loher/">Phillipe Loher</a></span>, <span ><a href="/author/eric-londin/">Eric Londin</a></span>, <span ><a href="/author/aristeidis-g.-telonis/">Aristeidis G. Telonis</a></span>, <span ><a href="/author/isidore-rigoutsos/">Isidore Rigoutsos</a></span>, <span ><a href="/author/lorena-pantano/">Lorena Pantano</a></span>
+  </div>
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="https://f1000research.com/slides/7-953#" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://f1000research.com/slides/7-953" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    
+      <h3>Abstract</h3>
+      <p class="pub-abstract">MicroRNAs (miRNAs) are small RNA molecules (20-27 nt long) that are involved in eukaryotic  gene regulation. They regulate targeted genes by RNA complementarity, generally between the miRNA seed region and the 3’ UTR of messenger RNAs. They have become relevant to the study of developmental stages and diseases. With the advance of sequencing technology, the cost of detecting the miRNA transcriptome has decreased substantially, and has led to the discovery of isomiRs (with slight sequence variations relative to the annotated miRNAs). As a consequence, the amount of miRNA data has increased exponentially in the last 5 years, together with the number of pipelines to analyze it. However, there is still a lack of consensus standards in storing and sharing such data, generating diverse output files; hindering comparison between tools, data sharing, and development of downstream analyses independent of the tools used for miRNA detection and quantification. Here, we present a community based, open source project to work toward the standardization of miRNA pipelines and encourage the development of downstream tools for visualization, differential expression, sample clustering, and model prediction analyses. This project is an international collaboration, with experts from different countries that have been developing miRNA pipelines and resources. We have described a standard format for the output of miRNA detection and quantification tools using small RNA-seq data. The format is based on the GFF3 standard in order to support reference coordinates and parent/child relationships between the features. The format contains information foreach sequence and its annotation to the miRNA precursor, the definition of reference or isomiR sequence, its quality, the isomiR type, and abundance in the data set. Moreover, we support a command line python tool to manage the miRNA GFF3 format (miRTop). Currently, miRTop can convert the output of commonly used small RNA-Seq pipelines, such as seqbuster, isomiR-SEA, sRNAbench, and Prost!, as well as BAM files to the miRNA GFF3 format. Importantly, the miRge pipeline has adapted the GFF3 format natively. miRTop can convert miRNA GFF3 files to a count matrix that can be easily imported to any downstream tool (i.e. for differential expression analysis). Furthermore, the tool can export the miRNA GFF file to the isomiRs package, improving the usability of this tool and rendering it independent of the upstream methods used for quantifying miRNA sequences. Together, we believe that the miRTop project will improve accessibility and uniformity of the results oft miRNA pipelines, the possibility to easily run benchmarking analyses, and promote the development of miRNA tools downstream of the detection and quantification steps.</p>
+    
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Date</div>
+          <div class="col-12 col-md-9">
+            Jun 27, 2018 1:13 PM
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Event</div>
+          <div class="col-12 col-md-9">
+            <a href="https://gccbosc2018.sched.com/" target="_blank" rel="noopener">
+            Bioinformatics Open Source Conference 2018
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Location</div>
+          <div class="col-12 col-md-9">Portland, OR</div>
+          
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style">
+      
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/mirna/">miRNA</a>
+  
+  <a class="badge badge-light" href="/tag/isomir/">isomiR</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http://lpantano.github.io/talk/bosc2018/&amp;text=miRTOP:%20An%20open%20source%20community%20project%20for%20the%20development%20of%20a%20unified%20format%20file%20for%20miRNA%20data" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http://lpantano.github.io/talk/bosc2018/&amp;t=miRTOP:%20An%20open%20source%20community%20project%20for%20the%20development%20of%20a%20unified%20format%20file%20for%20miRNA%20data" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=miRTOP:%20An%20open%20source%20community%20project%20for%20the%20development%20of%20a%20unified%20format%20file%20for%20miRNA%20data&amp;body=http://lpantano.github.io/talk/bosc2018/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http://lpantano.github.io/talk/bosc2018/&amp;title=miRTOP:%20An%20open%20source%20community%20project%20for%20the%20development%20of%20a%20unified%20format%20file%20for%20miRNA%20data" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=miRTOP:%20An%20open%20source%20community%20project%20for%20the%20development%20of%20a%20unified%20format%20file%20for%20miRNA%20data%20http://lpantano.github.io/talk/bosc2018/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http://lpantano.github.io/talk/bosc2018/&amp;title=miRTOP:%20An%20open%20source%20community%20project%20for%20the%20development%20of%20a%20unified%20format%20file%20for%20miRNA%20data" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/publication/desvignes-2018/">Unification of miRNA and isomiR research: the mirGFF3 format and the mirtop API</a></li>
+      
+      <li><a href="/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/">How to plot miRNA, gene expression and functional analysis together</a></li>
+      
+      <li><a href="/post/legacy/2016-03-24-mirna-annotation-tools-comparison/">miRNA Annotation Tools Comparison</a></li>
+      
+      <li><a href="/post/legacy/2013-10-29-small-rna-abundance-miss-viz/">small RNA abundance [miss-] viz</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</div>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/wowchemy.min.7c1f36db068b19853b100160e00076ac.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Small Untranslated | My bits</title>
+    <link>http://lpantano.github.io/tag/small-untranslated/</link>
+      <atom:link href="http://lpantano.github.io/tag/small-untranslated/index.xml" rel="self" type="application/rss+xml" />
+    <description>Small Untranslated</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Nov 2011 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Small Untranslated</title>
+      <link>http://lpantano.github.io/tag/small-untranslated/</link>
+    </image>
+    
+    <item>
+      <title>A non-biased framework for the annotation and classification of the non-miRNA small RNA transcriptome.</title>
+      <link>http://lpantano.github.io/publication/pantano-2011/</link>
+      <pubDate>Tue, 01 Nov 2011 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2011/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

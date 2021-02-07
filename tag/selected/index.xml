@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>selected | My bits</title>
+    <link>http://lpantano.github.io/tag/selected/</link>
+      <atom:link href="http://lpantano.github.io/tag/selected/index.xml" rel="self" type="application/rss+xml" />
+    <description>selected</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>selected</title>
+      <link>http://lpantano.github.io/tag/selected/</link>
+    </image>
+    
+    <item>
+      <title>The circulating metabolome of human starvation</title>
+      <link>http://lpantano.github.io/publication/steinhauser-2018/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/steinhauser-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Empirical comparison of reduced representation bisulfite sequencing and Infinium BeadChip reproducibility and coverage of DNA methylation in humans</title>
+      <link>http://lpantano.github.io/publication/carmona-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/carmona-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Specific small-RNA signatures in the amygdala at premotor and motor stages of Parkinson&#39;s disease revealed by deep sequencing analysis.</title>
+      <link>http://lpantano.github.io/publication/pantano-2015/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The small RNA content of human sperm reveals pseudogene-derived piRNAs complementary to protein-coding genes.</title>
+      <link>http://lpantano.github.io/publication/pantano-2015-a/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2015-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A non-biased framework for the annotation and classification of the non-miRNA small RNA transcriptome.</title>
+      <link>http://lpantano.github.io/publication/pantano-2011/</link>
+      <pubDate>Tue, 01 Nov 2011 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A myriad of miRNA variants in control and Huntington&#39;s disease brain regions detected by massively parallel sequencing</title>
+      <link>http://lpantano.github.io/publication/marti-2010/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/marti-2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SeqBuster, a bioinformatic tool for the processing and analysis of small RNAs datasets, reveals ubiquitous miRNA modifications in human embryonic cells</title>
+      <link>http://lpantano.github.io/publication/pantano-2010/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/pantano-2010/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

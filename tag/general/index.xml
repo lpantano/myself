@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>general | My bits</title>
+    <link>http://lpantano.github.io/tag/general/</link>
+      <atom:link href="http://lpantano.github.io/tag/general/index.xml" rel="self" type="application/rss+xml" />
+    <description>general</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 13 Apr 2012 10:45:07 -0400</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>general</title>
+      <link>http://lpantano.github.io/tag/general/</link>
+    </image>
+    
+    <item>
+      <title>Bionformatics evolution 2005-2012</title>
+      <link>http://lpantano.github.io/post/legacy/2012-04-13-bionformatics-evolution-2005-2012/</link>
+      <pubDate>Fri, 13 Apr 2012 10:45:07 -0400</pubDate>
+      <guid>http://lpantano.github.io/post/legacy/2012-04-13-bionformatics-evolution-2005-2012/</guid>
+      <description>&lt;p&gt;How much keywords in &lt;a href=&#34;http://en.wikipedia.org/wiki/Bioinformatics&#34; title=&#34;bioinformatics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bioinformatics&lt;/a&gt; has changed in the past 7 years?&lt;br&gt;
+I did a small and quick experiment. I took the abstract of the papers published in Bioinformatics during Jan-2005 and during Jan-2012. Then I represented the words according to their frequency with the &lt;a href=&#34;http://www.wordle.net/&#34; title=&#34;wordle&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wordle&lt;/a&gt; tool. And the result was:&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/jan2005bioinformatics.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;http://lpantano.github.io/media/images/jan2005bioinformatics.jpg&#34; alt=&#34;&#34; width=&#34;500px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/jan2012bioinformatics.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;http://lpantano.github.io/media/images/jan2012bioinformatics.jpg&#34; alt=&#34;&#34; width=&#34;500px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;What is main difference? There are new concepts, of course, but the main difference is the size of the word DATA and the word METHOD, as it happens in the real world, data increased a lot, so we put it much more in our work, and we need a lof of new methods, so we highlight this in our work.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

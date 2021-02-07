@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Magdalena Gayà-Vidal | My bits</title>
+    <link>http://lpantano.github.io/author/magdalena-gaya-vidal/</link>
+      <atom:link href="http://lpantano.github.io/author/magdalena-gaya-vidal/index.xml" rel="self" type="application/rss+xml" />
+    <description>Magdalena Gayà-Vidal</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Magdalena Gayà-Vidal</title>
+      <link>http://lpantano.github.io/author/magdalena-gaya-vidal/</link>
+    </image>
+    
+    <item>
+      <title>Evolutionary and functional impact of common polymorphic inversions in the human genome</title>
+      <link>http://lpantano.github.io/publication/giner-2019-evolutionary/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/giner-2019-evolutionary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Functional Impact and Evolution of a Novel Human Polymorphic Inversion That Disrupts a Gene and Creates a Fusion Transcript</title>
+      <link>http://lpantano.github.io/publication/puig-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/puig-2015/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

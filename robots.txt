@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: http://lpantano.github.io/sitemap.xml
