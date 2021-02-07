@@ -32,7 +32,8 @@ date_format = "Jan 2006"
   * Leading visualization plarform to boost biological interpretation
   * Developing bioinformatic tools
   * Senior manager and Mentor
-
+  """
+ 
 [[experience]]
   title = "Senior Computational Biologist"
   company = "eGenesis Bio"
