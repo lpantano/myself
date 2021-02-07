@@ -18,6 +18,22 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
+  title = "Principal Scientist in Computational Biologist"
+  company = "Axcella Health"
+  company_url = "https://axcellahealth.com/"
+  location = "Cambridge"
+  date_start = "2020-09-25"
+  # date_end = "2020-09-20"
+  description = """
+  Responsibilities include:
+
+  * Leading development pipelines with computational strategies
+  * Analysing genomic/metabolimic/transcriptomic data
+  * Leading visualization plarform to boost biological interpretation
+  * Developing bioinformatic tools
+  * Senior manager and Mentor
+
+[[experience]]
   title = "Senior Computational Biologist"
   company = "eGenesis Bio"
   company_url = "https://egenesisbio.com/"
