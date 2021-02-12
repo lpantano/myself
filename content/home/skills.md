@@ -16,7 +16,7 @@ subtitle = ""
 [[feature]]
   icon = "r-project"
   icon_pack = "fab"
-  name = "R"
+  name = "R/Rshiny"
   description = "100%"
 
 [[feature]]
