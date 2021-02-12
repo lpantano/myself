@@ -30,7 +30,7 @@ date_format = "Jan 2006"
   * Leading R&D pipelines with computational strategies
   * Analysing genomic/metabolimic/transcriptomic data
   * Leading visualization plarform to boost biological interpretation
-  * Developing bioinformatic infrastructure to ensure reproducibility
+  * Developing bioinformatic infrastructure to ensure reproducibility and scalability
   * Senior Manager and Mentor
   """
  
