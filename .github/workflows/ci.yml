@@ -29,7 +29,6 @@ jobs:
           github_token: ${{ secrets.API_TOKEN_GITHUB }}
           publish_dir: ./public
       - name: Publish
-        if: ${{ github.ref == 'refs/heads/master' }}
         uses: cpina/github-action-push-to-another-repository@master
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
