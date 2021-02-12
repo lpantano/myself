@@ -28,3 +28,13 @@ jobs:
         with:
           github_token: ${{ secrets.API_TOKEN_GITHUB }}
           publish_dir: ./public
+      
+      - name: Publish
+        uses: cpina/github-action-push-to-another-repository@master
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: 'public'
+          destination-github-username: 'lpantano'
+          destination-repository-name: 'lpantano.github.io'
+          user-email: lorena.pantano@gmail.com
