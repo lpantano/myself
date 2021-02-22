@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My bits</title>
-    <link>http://lpantano.github.io/</link>
-      <atom:link href="http://lpantano.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://lpantano.github.io/myself/</link>
+      <atom:link href="https://lpantano.github.io/myself/index.xml" rel="self" type="application/rss+xml" />
     <description>My bits</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 03 Oct 2019 17:42:40 -0400</lastBuildDate>
     <image>
-      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://lpantano.github.io/myself/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>My bits</title>
-      <link>http://lpantano.github.io/</link>
+      <link>https://lpantano.github.io/myself/</link>
     </image>
     
     <item>
       <title>Academia EOF &amp;&amp; cat &gt; eGenesis &lt;&lt;</title>
-      <link>http://lpantano.github.io/post/2019/2019-10-03-move-to-egenesis/</link>
+      <link>https://lpantano.github.io/myself/post/2019/2019-10-03-move-to-egenesis/</link>
       <pubDate>Thu, 03 Oct 2019 17:42:40 -0400</pubDate>
-      <guid>http://lpantano.github.io/post/2019/2019-10-03-move-to-egenesis/</guid>
+      <guid>https://lpantano.github.io/myself/post/2019/2019-10-03-move-to-egenesis/</guid>
       <description>&lt;p&gt;If you came here it is because the twitter wasn’t enough for you and somehow you are curious about why I moved to industry after so many years in academia. Although I am sure this event has a p-value &amp;gt; 0.05 , then &lt;a href=&#34;https://www.americanscientist.org/article/the-statistical-crisis-in-science&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;~is not significant.~ &lt;/a&gt;(wink wink)&lt;/p&gt;
 &lt;p&gt;But if you know me a little bit, you may be surprised about this change in my career. It was a difficult decision for me, indeed. Somehow, I see this as a no turning back point, maybe is not totally true.  I have advocated, so many times, that my reason to stay in academia is that there are more chances to help each other, to create open-source resources, to move forward together… that somehow, moving to industry is the opposite of all that.&lt;/p&gt;
 &lt;p&gt;However, academia couldn’t give me more, and I didn&amp;rsquo;t feel I was giving more. I decided a while ago to give up on a tenured career and dedicated many years to work inside a core facility at HSPH. I met awesome people, I learned from the best, I got to work with really amazing data…but there is a price for that. Being mainly an analyst made me see some parts that weren’t that nice. I realized many researchers will see you as a machine of producing data/figures/tables. They only care about that figure that will show the reviewer they were right. I saw how I couldn’t get into the project more than for a &amp;lsquo;quick&amp;rsquo; analysis of the data, without getting into the biology or the goal of the project.&lt;/p&gt;
@@ -54,17 +54,17 @@
     
     <item>
       <title>Single-cell cloning of human T-cell lines reveals clonal variation in cell death responses to chemotherapeutics.</title>
-      <link>http://lpantano.github.io/publication/hanlon-2019/</link>
+      <link>https://lpantano.github.io/myself/publication/hanlon-2019/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/hanlon-2019/</guid>
+      <guid>https://lpantano.github.io/myself/publication/hanlon-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How to set up cellranger to make your hpc admin happy</title>
-      <link>http://lpantano.github.io/post/2019/2019-07-12-cellranger-efficiency-in-hpc-copy/</link>
+      <link>https://lpantano.github.io/myself/post/2019/2019-07-12-cellranger-efficiency-in-hpc-copy/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/post/2019/2019-07-12-cellranger-efficiency-in-hpc-copy/</guid>
+      <guid>https://lpantano.github.io/myself/post/2019/2019-07-12-cellranger-efficiency-in-hpc-copy/</guid>
       <description>&lt;p&gt;I found myself to force to use &lt;a href=&#34;https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/cluster-mode&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cellranger&lt;/a&gt;. Meanwhile it helps a lot to
 run from &lt;a href=&#34;https://www.illumina.com/informatics/sequencing-data-analysis/sequence-file-formats.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bcl&lt;/a&gt; files to single cell counts matrixes, I discovered that is
 quite difficult to control many options related to optimization.&lt;/p&gt;
@@ -247,33 +247,33 @@ fi
     
     <item>
       <title>Sex Differences in Adrenal Bmal1 Deletion-Induced Augmentation of Glucocorticoid Responses to Stress and ACTH in Mice.</title>
-      <link>http://lpantano.github.io/publication/engeland-2019/</link>
+      <link>https://lpantano.github.io/myself/publication/engeland-2019/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/engeland-2019/</guid>
+      <guid>https://lpantano.github.io/myself/publication/engeland-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A High-Throughput Screening Identifies MicroRNA Inhibitors That Influence Neuronal Maintenance and/or Response to Oxidative Stress.</title>
-      <link>http://lpantano.github.io/publication/pallarsalbanell-2019/</link>
+      <link>https://lpantano.github.io/myself/publication/pallarsalbanell-2019/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/pallarsalbanell-2019/</guid>
+      <guid>https://lpantano.github.io/myself/publication/pallarsalbanell-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Multi omics analysis of fibrotic kidneys in two mouse models.</title>
-      <link>http://lpantano.github.io/publication/pavkovic-2019/</link>
+      <link>https://lpantano.github.io/myself/publication/pavkovic-2019/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/pavkovic-2019/</guid>
+      <guid>https://lpantano.github.io/myself/publication/pavkovic-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How to set up public dataset analysis with bcbio-nextgen</title>
-      <link>http://lpantano.github.io/post/2019/2019-04-05-how-to-setup-remote-samples-with-bcbio/</link>
+      <link>https://lpantano.github.io/myself/post/2019/2019-04-05-how-to-setup-remote-samples-with-bcbio/</link>
       <pubDate>Fri, 05 Apr 2019 10:13:02 -0400</pubDate>
-      <guid>http://lpantano.github.io/post/2019/2019-04-05-how-to-setup-remote-samples-with-bcbio/</guid>
+      <guid>https://lpantano.github.io/myself/post/2019/2019-04-05-how-to-setup-remote-samples-with-bcbio/</guid>
       <description>&lt;p&gt;We use &lt;a href=&#34;https://github.com/bcbio/bcbio-nextgen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bcbio-nextgen&lt;/a&gt; for the analysis of sequencing data, mainly, (sc)RNAseq,
 smallRNAseq, DNASeq and ChIPSeq. It is not rare that we get collaborators who
 wants to re-analyze public data-set.&lt;/p&gt;
@@ -317,49 +317,49 @@ with all the metadata for your raw data and they match.&lt;/p&gt;
     
     <item>
       <title>miRNA variants (isomiRs): real molecules or sequencing artifacts?</title>
-      <link>http://lpantano.github.io/talk/bioclub2019/</link>
+      <link>https://lpantano.github.io/myself/talk/bioclub2019/</link>
       <pubDate>Sat, 09 Feb 2019 00:00:00 -0500</pubDate>
-      <guid>http://lpantano.github.io/talk/bioclub2019/</guid>
+      <guid>https://lpantano.github.io/myself/talk/bioclub2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Evolutionary and functional impact of common polymorphic inversions in the human genome</title>
-      <link>http://lpantano.github.io/publication/giner-2019-evolutionary/</link>
+      <link>https://lpantano.github.io/myself/publication/giner-2019-evolutionary/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/giner-2019-evolutionary/</guid>
+      <guid>https://lpantano.github.io/myself/publication/giner-2019-evolutionary/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sex-dependent changes in miRNA expression in the bed nucleus of the stria terminalis following stress</title>
-      <link>http://lpantano.github.io/publication/mavrikaki-2019-sex/</link>
+      <link>https://lpantano.github.io/myself/publication/mavrikaki-2019-sex/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/mavrikaki-2019-sex/</guid>
+      <guid>https://lpantano.github.io/myself/publication/mavrikaki-2019-sex/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MiRNA Wars: The isomiRs menance</title>
-      <link>http://lpantano.github.io/talk/big2018/</link>
+      <link>https://lpantano.github.io/myself/talk/big2018/</link>
       <pubDate>Sun, 02 Dec 2018 15:06:12 -0500</pubDate>
-      <guid>http://lpantano.github.io/talk/big2018/</guid>
+      <guid>https://lpantano.github.io/myself/talk/big2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Unification of miRNA and isomiR research: the mirGFF3 format and the mirtop API</title>
-      <link>http://lpantano.github.io/publication/desvignes-2018/</link>
+      <link>https://lpantano.github.io/myself/publication/desvignes-2018/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/desvignes-2018/</guid>
+      <guid>https://lpantano.github.io/myself/publication/desvignes-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Get colors for your heatmap annotation</title>
-      <link>http://lpantano.github.io/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/</link>
+      <link>https://lpantano.github.io/myself/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/</link>
       <pubDate>Fri, 21 Sep 2018 10:13:02 -0400</pubDate>
-      <guid>http://lpantano.github.io/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/</guid>
+      <guid>https://lpantano.github.io/myself/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/</guid>
       <description>&lt;p&gt;This post will show how to configure quickly the colors for the annotation of rows/columns that go on top or on the side of a heatmap.&lt;/p&gt;
 &lt;p&gt;I normally use &lt;code&gt;pheatmap&lt;/code&gt; a lot. Recently I discovered &lt;code&gt;ComplexHeatmap&lt;/code&gt;. In both cases I spend always sometime changing the colors of the annotations. I ended up coding a function inside my package &lt;code&gt;DEGreport&lt;/code&gt; to do that.&lt;/p&gt;
 &lt;p&gt;Given a data.frame with metadata data information will do:&lt;/p&gt;
@@ -540,9 +540,9 @@ pheatmap(exp[most_variable,], scale = &amp;quot;row&amp;quot;, show_rownames = F
     
     <item>
       <title>How to plot miRNA, gene expression and functional analysis together</title>
-      <link>http://lpantano.github.io/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/</link>
+      <link>https://lpantano.github.io/myself/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/</link>
       <pubDate>Sun, 12 Aug 2018 09:00:00 -0400</pubDate>
-      <guid>http://lpantano.github.io/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/</guid>
+      <guid>https://lpantano.github.io/myself/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/</guid>
       <description>&lt;p&gt;This post should show you an easy way to get the following data type
 integrated into a figure:&lt;/p&gt;
 &lt;ul&gt;
@@ -657,41 +657,41 @@ they can not open a TSV file with excel.&amp;rdquo;&lt;/p&gt;
     
     <item>
       <title>The circulating metabolome of human starvation</title>
-      <link>http://lpantano.github.io/publication/steinhauser-2018/</link>
+      <link>https://lpantano.github.io/myself/publication/steinhauser-2018/</link>
       <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/steinhauser-2018/</guid>
+      <guid>https://lpantano.github.io/myself/publication/steinhauser-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>miRTOP: An open source community project for the development of a unified format file for miRNA data</title>
-      <link>http://lpantano.github.io/talk/bosc2018/</link>
+      <link>https://lpantano.github.io/myself/talk/bosc2018/</link>
       <pubDate>Wed, 27 Jun 2018 13:13:02 -0900</pubDate>
-      <guid>http://lpantano.github.io/talk/bosc2018/</guid>
+      <guid>https://lpantano.github.io/myself/talk/bosc2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Circulating miRNAs, isomiRs and small RNA clusters in human plasma and breast milk</title>
-      <link>http://lpantano.github.io/publication/rubio-2018/</link>
+      <link>https://lpantano.github.io/myself/publication/rubio-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/rubio-2018/</guid>
+      <guid>https://lpantano.github.io/myself/publication/rubio-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>bcbioRNASeq: R package for bcbio RNA-seq analysis</title>
-      <link>http://lpantano.github.io/publication/steinbaugh-2017/</link>
+      <link>https://lpantano.github.io/myself/publication/steinbaugh-2017/</link>
       <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/steinbaugh-2017/</guid>
+      <guid>https://lpantano.github.io/myself/publication/steinbaugh-2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Subset of object creates bigger RDA file size than original object</title>
-      <link>http://lpantano.github.io/post/legacy/2017-08-24-subset-object-creates-bigger-file/</link>
+      <link>https://lpantano.github.io/myself/post/legacy/2017-08-24-subset-object-creates-bigger-file/</link>
       <pubDate>Wed, 23 Aug 2017 17:50:01 -0400</pubDate>
-      <guid>http://lpantano.github.io/post/legacy/2017-08-24-subset-object-creates-bigger-file/</guid>
+      <guid>https://lpantano.github.io/myself/post/legacy/2017-08-24-subset-object-creates-bigger-file/</guid>
       <description>&lt;p&gt;This is a funny story, and I will try to tell you how I realized I don&amp;rsquo;t know anything about R in 400 words.&lt;/p&gt;
 &lt;p&gt;I work at the Bioinformatic Core at Harvard TH School. People who know us, or collaborate with us, knows that we mainly use
 &lt;a href=&#34;https://github.com/chapmanb/bcbio-nextgen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bcbio&lt;/a&gt; to analyze sequencing data (check it out, super cool tool).&lt;/p&gt;
@@ -810,9 +810,9 @@ loaded via a namespace (and not attached):
     
     <item>
       <title>DEGreport to plot nice RNA-seq figures</title>
-      <link>http://lpantano.github.io/post/legacy/2017-03-20-degreport-rnaseq-figures/</link>
+      <link>https://lpantano.github.io/myself/post/legacy/2017-03-20-degreport-rnaseq-figures/</link>
       <pubDate>Mon, 20 Mar 2017 17:50:01 -0400</pubDate>
-      <guid>http://lpantano.github.io/post/legacy/2017-03-20-degreport-rnaseq-figures/</guid>
+      <guid>https://lpantano.github.io/myself/post/legacy/2017-03-20-degreport-rnaseq-figures/</guid>
       <description>&lt;p&gt;Differentially gene expression analysis with &lt;a href=&#34;https://en.wikipedia.org/wiki/RNA-Seq&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RNA-seq&lt;/a&gt; data is quite common nowadays, and there are pretty good &lt;a href=&#34;http://bioconductor.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bioconductor&lt;/a&gt; packages for that: &lt;a href=&#34;http://bioconductor.org/packages/release/bioc/html/limma.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;limma::voom&lt;/a&gt;, &lt;a href=&#34;http://bioconductor.org/packages/release/bioc/html/DESeq2.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DESeq2&lt;/a&gt; &amp;hellip;&lt;/p&gt;
 &lt;p&gt;The code for that part is quite simple, being super quick to get a list of de-regulated genes. However, downstream analyses vary a lot depending on the project itself. But I found myself doing the same plots and analyses many times for different project, so I put together a bunch of plots and analyses using code from my colleagues at work (&lt;a href=&#34;http://bioinformatics.sph.harvard.edu&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@HSPH bioinformatics core&lt;/a&gt;) and myself.&lt;/p&gt;
 &lt;p&gt;There are many possibilities, including QC figures, but the features that seem more interesting are:&lt;/p&gt;
@@ -837,57 +837,57 @@ loaded via a namespace (and not attached):
     
     <item>
       <title>Maintenance of macrophage transcriptional programs and intestinal homeostasis by epigenetic reader SP140</title>
-      <link>http://lpantano.github.io/publication/mehta-2017/</link>
+      <link>https://lpantano.github.io/myself/publication/mehta-2017/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/mehta-2017/</guid>
+      <guid>https://lpantano.github.io/myself/publication/mehta-2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Molecular, phenotypic, and sample-associated data to describe pluripotent stem cell lines and derivatives</title>
-      <link>http://lpantano.github.io/publication/daily-2017/</link>
+      <link>https://lpantano.github.io/myself/publication/daily-2017/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/daily-2017/</guid>
+      <guid>https://lpantano.github.io/myself/publication/daily-2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Comparative analysis of LIN28-RNA binding sites identified at single nucleotide resolution</title>
-      <link>http://lpantano.github.io/publication/ransey-2017/</link>
+      <link>https://lpantano.github.io/myself/publication/ransey-2017/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/ransey-2017/</guid>
+      <guid>https://lpantano.github.io/myself/publication/ransey-2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Empirical comparison of reduced representation bisulfite sequencing and Infinium BeadChip reproducibility and coverage of DNA methylation in humans</title>
-      <link>http://lpantano.github.io/publication/carmona-2017/</link>
+      <link>https://lpantano.github.io/myself/publication/carmona-2017/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/carmona-2017/</guid>
+      <guid>https://lpantano.github.io/myself/publication/carmona-2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Viewing RNA-seq data on the entire human genome</title>
-      <link>http://lpantano.github.io/publication/busby-2017/</link>
+      <link>https://lpantano.github.io/myself/publication/busby-2017/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/busby-2017/</guid>
+      <guid>https://lpantano.github.io/myself/publication/busby-2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Characterization of the small RNA transcriptome using the bcbio-nextgen python framework</title>
-      <link>http://lpantano.github.io/talk/bosc2016/</link>
+      <link>https://lpantano.github.io/myself/talk/bosc2016/</link>
       <pubDate>Sat, 09 Jul 2016 14:54:17 +0100</pubDate>
-      <guid>http://lpantano.github.io/talk/bosc2016/</guid>
+      <guid>https://lpantano.github.io/myself/talk/bosc2016/</guid>
       <description></description>
     </item>
     
     <item>
       <title>miRNA Annotation Tools Comparison</title>
-      <link>http://lpantano.github.io/post/legacy/2016-03-24-mirna-annotation-tools-comparison/</link>
+      <link>https://lpantano.github.io/myself/post/legacy/2016-03-24-mirna-annotation-tools-comparison/</link>
       <pubDate>Thu, 24 Mar 2016 19:49:01 -0400</pubDate>
-      <guid>http://lpantano.github.io/post/legacy/2016-03-24-mirna-annotation-tools-comparison/</guid>
+      <guid>https://lpantano.github.io/myself/post/legacy/2016-03-24-mirna-annotation-tools-comparison/</guid>
       <description>&lt;p&gt;In summary: I will show which is the best miRNA mapping tool. I used several options for this benchmarking:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;miraligner from &lt;a href=&#34;http://github.com/lpantano/seqbuster&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SeqBuster&lt;/a&gt; suit (I am one of the authors)&lt;/li&gt;
@@ -919,65 +919,65 @@ loaded via a namespace (and not attached):
     
     <item>
       <title>Genomic analyses identify molecular subtypes of pancreatic cancer</title>
-      <link>http://lpantano.github.io/publication/bailey-2016/</link>
+      <link>https://lpantano.github.io/myself/publication/bailey-2016/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/bailey-2016/</guid>
+      <guid>https://lpantano.github.io/myself/publication/bailey-2016/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Specific small-RNA signatures in the amygdala at premotor and motor stages of Parkinson&#39;s disease revealed by deep sequencing analysis.</title>
-      <link>http://lpantano.github.io/publication/pantano-2015/</link>
+      <link>https://lpantano.github.io/myself/publication/pantano-2015/</link>
       <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/pantano-2015/</guid>
+      <guid>https://lpantano.github.io/myself/publication/pantano-2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The small RNA content of human sperm reveals pseudogene-derived piRNAs complementary to protein-coding genes.</title>
-      <link>http://lpantano.github.io/publication/pantano-2015-a/</link>
+      <link>https://lpantano.github.io/myself/publication/pantano-2015-a/</link>
       <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/pantano-2015-a/</guid>
+      <guid>https://lpantano.github.io/myself/publication/pantano-2015-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Functional Impact and Evolution of a Novel Human Polymorphic Inversion That Disrupts a Gene and Creates a Fusion Transcript</title>
-      <link>http://lpantano.github.io/publication/puig-2015/</link>
+      <link>https://lpantano.github.io/myself/publication/puig-2015/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/puig-2015/</guid>
+      <guid>https://lpantano.github.io/myself/publication/puig-2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Paternal Diet Defines Offspring Chromatin State and Intergenerational Obesity</title>
-      <link>http://lpantano.github.io/publication/ost-2014/</link>
+      <link>https://lpantano.github.io/myself/publication/ost-2014/</link>
       <pubDate>Mon, 01 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/ost-2014/</guid>
+      <guid>https://lpantano.github.io/myself/publication/ost-2014/</guid>
       <description></description>
     </item>
     
     <item>
       <title>InvFEST, a database integrating information of polymorphic inversions in the human genome</title>
-      <link>http://lpantano.github.io/publication/martinez-fundichely-2014/</link>
+      <link>https://lpantano.github.io/myself/publication/martinez-fundichely-2014/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/martinez-fundichely-2014/</guid>
+      <guid>https://lpantano.github.io/myself/publication/martinez-fundichely-2014/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Regulation of miRNA strand selection: follow the leader?</title>
-      <link>http://lpantano.github.io/publication/meijer-2014/</link>
+      <link>https://lpantano.github.io/myself/publication/meijer-2014/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/meijer-2014/</guid>
+      <guid>https://lpantano.github.io/myself/publication/meijer-2014/</guid>
       <description></description>
     </item>
     
     <item>
       <title>small RNA abundance [miss-] viz</title>
-      <link>http://lpantano.github.io/post/legacy/2013-10-29-small-rna-abundance-miss-viz/</link>
+      <link>https://lpantano.github.io/myself/post/legacy/2013-10-29-small-rna-abundance-miss-viz/</link>
       <pubDate>Tue, 29 Oct 2013 08:05:56 -0400</pubDate>
-      <guid>http://lpantano.github.io/post/legacy/2013-10-29-small-rna-abundance-miss-viz/</guid>
+      <guid>https://lpantano.github.io/myself/post/legacy/2013-10-29-small-rna-abundance-miss-viz/</guid>
       <description>&lt;p&gt;My PhD was focused on small RNA sequencing data. I had a problem when I wanted to visualized the amount of small RNAs from the beginning. Here the problem, assume that you have a certain distribution of small RNA sequences abundance:&lt;/p&gt;
 &lt;p&gt;seq1: 1500 times&lt;br&gt;
 seq2: 3 times&lt;br&gt;
@@ -1026,9 +1026,9 @@ seq3: 2 times&lt;/p&gt;
     
     <item>
       <title>Lying factor in figures</title>
-      <link>http://lpantano.github.io/post/legacy/2013-08-07-lying-factor-in-figures/</link>
+      <link>https://lpantano.github.io/myself/post/legacy/2013-08-07-lying-factor-in-figures/</link>
       <pubDate>Wed, 07 Aug 2013 11:36:25 -0400</pubDate>
-      <guid>http://lpantano.github.io/post/legacy/2013-08-07-lying-factor-in-figures/</guid>
+      <guid>https://lpantano.github.io/myself/post/legacy/2013-08-07-lying-factor-in-figures/</guid>
       <description>&lt;p&gt;What is the lying factor in figures?&lt;/p&gt;
 &lt;p&gt;It is the ratio between the difference of two numbers and the difference of the visualization of those two numbers. For instance:&lt;/p&gt;
 &lt;p&gt;You have two groups, each group is represented by 4 and 2. The difference between 4 and 2 is 2. Since &amp;ldquo;a picture is worth a thousand words&amp;rdquo;, someone decides to represents those groups in a figure (yes, in excel to make it worst):&lt;/p&gt;
@@ -1056,9 +1056,9 @@ seq3: 2 times&lt;/p&gt;
     
     <item>
       <title>miRNA annotation: complex scenarios</title>
-      <link>http://lpantano.github.io/post/legacy/2013-05-27-mirna-annotation-complex-scenarios/</link>
+      <link>https://lpantano.github.io/myself/post/legacy/2013-05-27-mirna-annotation-complex-scenarios/</link>
       <pubDate>Mon, 27 May 2013 10:13:02 -0400</pubDate>
-      <guid>http://lpantano.github.io/post/legacy/2013-05-27-mirna-annotation-complex-scenarios/</guid>
+      <guid>https://lpantano.github.io/myself/post/legacy/2013-05-27-mirna-annotation-complex-scenarios/</guid>
       <description>&lt;p&gt;Everybody who is working with microRNA knows about miRBase, it was the first miRNA catalogue. Everybody is using it to annotate small RNA sequences as miRNA or not. And it is great, and very helpfully&amp;hellip;but there are some cases that we should investigate our results.&lt;/p&gt;
 &lt;p&gt;For instance, what happens with miR-1246? it is a recent miRNA, primate specific, detected by sequencing in different studies (1,2,3). The counts related to these sequences are not so high, actually very low after normalization, but still are there. miRBase gives a precursor this region: chr2: 177465708-177465780 [-]&lt;/p&gt;
 
@@ -1166,25 +1166,25 @@ BMC Biol. 8:58(2010).&lt;/p&gt;
     
     <item>
       <title>A highly expressed miR-101 isomiR is a functional silencing small RNA.</title>
-      <link>http://lpantano.github.io/publication/llorens-2013/</link>
+      <link>https://lpantano.github.io/myself/publication/llorens-2013/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/llorens-2013/</guid>
+      <guid>https://lpantano.github.io/myself/publication/llorens-2013/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Microarray and deep sequencing cross-platform analysis of the mirRNome and isomiR variation in response to epidermal growth factor.</title>
-      <link>http://lpantano.github.io/publication/llorens-2013-a/</link>
+      <link>https://lpantano.github.io/myself/publication/llorens-2013-a/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/llorens-2013-a/</guid>
+      <guid>https://lpantano.github.io/myself/publication/llorens-2013-a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>visualizing small RNA mapping complexity</title>
-      <link>http://lpantano.github.io/post/legacy/2012-09-18-visualizing-small-rna-mapping-complexity/</link>
+      <link>https://lpantano.github.io/myself/post/legacy/2012-09-18-visualizing-small-rna-mapping-complexity/</link>
       <pubDate>Tue, 18 Sep 2012 12:10:24 -0400</pubDate>
-      <guid>http://lpantano.github.io/post/legacy/2012-09-18-visualizing-small-rna-mapping-complexity/</guid>
+      <guid>https://lpantano.github.io/myself/post/legacy/2012-09-18-visualizing-small-rna-mapping-complexity/</guid>
       <description>&lt;p&gt;I spent all my PhD working with small RNA sequences data. The main problem was, always those sequences that map in multiple locations, also denominated ambiguous sequences. From the very beginning, this made that pipelines remove this kind of sequences from the analysis, because you cannot assign them a unique location in the genome. But these sequences are interesting to study, since many of them change in size, for instance. This complexity is due to repeats in the genome and the scenario I am talking about here it is shown in the following figure: ![]({{ site.url }}/assets/example1.png)&lt;/p&gt;
 &lt;p&gt;Each color it would be a different sRNA, and the lines show the locations of each sRNA. There are location shared by some of the sRNAs, and you can easily transform this into a network of vertexes and edges, where vertexes are locations and edges, are their relationship coming from the sRNAs inside them. In this case it would generate three circles connected between them. And that it was I did with a real data set. I used &lt;a href=&#34;http://igraph.sourceforge.net/&#34; title=&#34;igraph&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;igraph&lt;/a&gt; in R to represent this with the help of this great &lt;a href=&#34;http://nsaunders.wordpress.com/2010/04/21/experiments-with-igraph/&#34; title=&#34;igraph tutorial&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tutorial&lt;/a&gt;. The result is:&lt;/p&gt;
 
@@ -1204,9 +1204,9 @@ BMC Biol. 8:58(2010).&lt;/p&gt;
     
     <item>
       <title>Visualizing science is also cool @polychart</title>
-      <link>http://lpantano.github.io/post/legacy/2012-08-14-visualizing-science-is-also-cool-polychart/</link>
+      <link>https://lpantano.github.io/myself/post/legacy/2012-08-14-visualizing-science-is-also-cool-polychart/</link>
       <pubDate>Tue, 14 Aug 2012 15:28:12 -0400</pubDate>
-      <guid>http://lpantano.github.io/post/legacy/2012-08-14-visualizing-science-is-also-cool-polychart/</guid>
+      <guid>https://lpantano.github.io/myself/post/legacy/2012-08-14-visualizing-science-is-also-cool-polychart/</guid>
       <description>&lt;p&gt;One of my interest in science is finding new ways to visualize Big Data. Scientist are used to work with static visualization, that of course, is wonderful in the majority of the case. But it wouldn&amp;rsquo;t be better dynamic visualization for exploration? Play with your data, explore, and finally when you get that great figure that tell you everything you was looking for, you can export it to an image portable format.&lt;/p&gt;
 &lt;p&gt;I played many time with javascript/HTML5 resources, but are no so easy to implement if you are not an expert, and some times, huge data makes difficult the easy interaction. Well, recently I found &lt;a href=&#34;http://polychart.com/&#34; title=&#34;polychart&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Polychart&lt;/a&gt;, is still in beta version, but I am using one of the feature they provide: Graph builder. And this is how it looks like after loading a file with 5000 rows and 37 columns:&lt;/p&gt;
 
@@ -1227,9 +1227,9 @@ BMC Biol. 8:58(2010).&lt;/p&gt;
     
     <item>
       <title>Bionformatics evolution 2005-2012</title>
-      <link>http://lpantano.github.io/post/legacy/2012-04-13-bionformatics-evolution-2005-2012/</link>
+      <link>https://lpantano.github.io/myself/post/legacy/2012-04-13-bionformatics-evolution-2005-2012/</link>
       <pubDate>Fri, 13 Apr 2012 10:45:07 -0400</pubDate>
-      <guid>http://lpantano.github.io/post/legacy/2012-04-13-bionformatics-evolution-2005-2012/</guid>
+      <guid>https://lpantano.github.io/myself/post/legacy/2012-04-13-bionformatics-evolution-2005-2012/</guid>
       <description>&lt;p&gt;How much keywords in &lt;a href=&#34;http://en.wikipedia.org/wiki/Bioinformatics&#34; title=&#34;bioinformatics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bioinformatics&lt;/a&gt; has changed in the past 7 years?&lt;br&gt;
 I did a small and quick experiment. I took the abstract of the papers published in Bioinformatics during Jan-2005 and during Jan-2012. Then I represented the words according to their frequency with the &lt;a href=&#34;http://www.wordle.net/&#34; title=&#34;wordle&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wordle&lt;/a&gt; tool. And the result was:&lt;/p&gt;
 
@@ -1260,73 +1260,73 @@ I did a small and quick experiment. I took the abstract of the papers published 
     
     <item>
       <title>A Pathogenic Mechanism in Huntington&#39;s Disease Involves Small CAG-Repeated RNAs with Neurotoxic Activity.</title>
-      <link>http://lpantano.github.io/publication/banez-coronel-2012/</link>
+      <link>https://lpantano.github.io/myself/publication/banez-coronel-2012/</link>
       <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/banez-coronel-2012/</guid>
+      <guid>https://lpantano.github.io/myself/publication/banez-coronel-2012/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A non-biased framework for the annotation and classification of the non-miRNA small RNA transcriptome.</title>
-      <link>http://lpantano.github.io/publication/pantano-2011/</link>
+      <link>https://lpantano.github.io/myself/publication/pantano-2011/</link>
       <pubDate>Tue, 01 Nov 2011 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/pantano-2011/</guid>
+      <guid>https://lpantano.github.io/myself/publication/pantano-2011/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A myriad of miRNA variants in control and Huntington&#39;s disease brain regions detected by massively parallel sequencing</title>
-      <link>http://lpantano.github.io/publication/marti-2010/</link>
+      <link>https://lpantano.github.io/myself/publication/marti-2010/</link>
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/marti-2010/</guid>
+      <guid>https://lpantano.github.io/myself/publication/marti-2010/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SeqBuster, a bioinformatic tool for the processing and analysis of small RNAs datasets, reveals ubiquitous miRNA modifications in human embryonic cells</title>
-      <link>http://lpantano.github.io/publication/pantano-2010/</link>
+      <link>https://lpantano.github.io/myself/publication/pantano-2010/</link>
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/pantano-2010/</guid>
+      <guid>https://lpantano.github.io/myself/publication/pantano-2010/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fibroblast-derived induced pluripotent stem cells show no common retroviral vector insertions.</title>
-      <link>http://lpantano.github.io/publication/varas-2009/</link>
+      <link>https://lpantano.github.io/myself/publication/varas-2009/</link>
       <pubDate>Sun, 01 Feb 2009 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/varas-2009/</guid>
+      <guid>https://lpantano.github.io/myself/publication/varas-2009/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Identification of Copy Number Variants Defining Genomic Differences among Major Human Groups</title>
-      <link>http://lpantano.github.io/publication/armengol-2009/</link>
+      <link>https://lpantano.github.io/myself/publication/armengol-2009/</link>
       <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/armengol-2009/</guid>
+      <guid>https://lpantano.github.io/myself/publication/armengol-2009/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ProSeeK: A web server for MLPA probe design</title>
-      <link>http://lpantano.github.io/publication/pantano-2008/</link>
+      <link>https://lpantano.github.io/myself/publication/pantano-2008/</link>
       <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/pantano-2008/</guid>
+      <guid>https://lpantano.github.io/myself/publication/pantano-2008/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Highlights from the Third International Society for Computational Biology Student Council Symposium at the Fifteenth Annual International Conference on Intelligent Systems for Molecular Biology</title>
-      <link>http://lpantano.github.io/publication/grynberg-2007/</link>
+      <link>https://lpantano.github.io/myself/publication/grynberg-2007/</link>
       <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/grynberg-2007/</guid>
+      <guid>https://lpantano.github.io/myself/publication/grynberg-2007/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Genome assembly comparison identifies structural variants in the human genome.</title>
-      <link>http://lpantano.github.io/publication/khaja-2006/</link>
+      <link>https://lpantano.github.io/myself/publication/khaja-2006/</link>
       <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/khaja-2006/</guid>
+      <guid>https://lpantano.github.io/myself/publication/khaja-2006/</guid>
       <description></description>
     </item>
     

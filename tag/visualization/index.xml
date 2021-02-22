@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Visualization | My bits</title>
-    <link>http://lpantano.github.io/tag/visualization/</link>
-      <atom:link href="http://lpantano.github.io/tag/visualization/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://lpantano.github.io/myself/tag/visualization/</link>
+      <atom:link href="https://lpantano.github.io/myself/tag/visualization/index.xml" rel="self" type="application/rss+xml" />
     <description>Visualization</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 21 Sep 2018 10:13:02 -0400</lastBuildDate>
     <image>
-      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://lpantano.github.io/myself/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Visualization</title>
-      <link>http://lpantano.github.io/tag/visualization/</link>
+      <link>https://lpantano.github.io/myself/tag/visualization/</link>
     </image>
     
     <item>
       <title>Get colors for your heatmap annotation</title>
-      <link>http://lpantano.github.io/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/</link>
+      <link>https://lpantano.github.io/myself/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/</link>
       <pubDate>Fri, 21 Sep 2018 10:13:02 -0400</pubDate>
-      <guid>http://lpantano.github.io/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/</guid>
+      <guid>https://lpantano.github.io/myself/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/</guid>
       <description>&lt;p&gt;This post will show how to configure quickly the colors for the annotation of rows/columns that go on top or on the side of a heatmap.&lt;/p&gt;
 &lt;p&gt;I normally use &lt;code&gt;pheatmap&lt;/code&gt; a lot. Recently I discovered &lt;code&gt;ComplexHeatmap&lt;/code&gt;. In both cases I spend always sometime changing the colors of the annotations. I ended up coding a function inside my package &lt;code&gt;DEGreport&lt;/code&gt; to do that.&lt;/p&gt;
 &lt;p&gt;Given a data.frame with metadata data information will do:&lt;/p&gt;

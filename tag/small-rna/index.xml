@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>small RNA | My bits</title>
-    <link>http://lpantano.github.io/tag/small-rna/</link>
-      <atom:link href="http://lpantano.github.io/tag/small-rna/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://lpantano.github.io/myself/tag/small-rna/</link>
+      <atom:link href="https://lpantano.github.io/myself/tag/small-rna/index.xml" rel="self" type="application/rss+xml" />
     <description>small RNA</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 29 Oct 2013 08:05:56 -0400</lastBuildDate>
     <image>
-      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://lpantano.github.io/myself/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>small RNA</title>
-      <link>http://lpantano.github.io/tag/small-rna/</link>
+      <link>https://lpantano.github.io/myself/tag/small-rna/</link>
     </image>
     
     <item>
       <title>small RNA abundance [miss-] viz</title>
-      <link>http://lpantano.github.io/post/legacy/2013-10-29-small-rna-abundance-miss-viz/</link>
+      <link>https://lpantano.github.io/myself/post/legacy/2013-10-29-small-rna-abundance-miss-viz/</link>
       <pubDate>Tue, 29 Oct 2013 08:05:56 -0400</pubDate>
-      <guid>http://lpantano.github.io/post/legacy/2013-10-29-small-rna-abundance-miss-viz/</guid>
+      <guid>https://lpantano.github.io/myself/post/legacy/2013-10-29-small-rna-abundance-miss-viz/</guid>
       <description>&lt;p&gt;My PhD was focused on small RNA sequencing data. I had a problem when I wanted to visualized the amount of small RNAs from the beginning. Here the problem, assume that you have a certain distribution of small RNA sequences abundance:&lt;/p&gt;
 &lt;p&gt;seq1: 1500 times&lt;br&gt;
 seq2: 3 times&lt;br&gt;
@@ -65,9 +65,9 @@ seq3: 2 times&lt;/p&gt;
     
     <item>
       <title>miRNA annotation: complex scenarios</title>
-      <link>http://lpantano.github.io/post/legacy/2013-05-27-mirna-annotation-complex-scenarios/</link>
+      <link>https://lpantano.github.io/myself/post/legacy/2013-05-27-mirna-annotation-complex-scenarios/</link>
       <pubDate>Mon, 27 May 2013 10:13:02 -0400</pubDate>
-      <guid>http://lpantano.github.io/post/legacy/2013-05-27-mirna-annotation-complex-scenarios/</guid>
+      <guid>https://lpantano.github.io/myself/post/legacy/2013-05-27-mirna-annotation-complex-scenarios/</guid>
       <description>&lt;p&gt;Everybody who is working with microRNA knows about miRBase, it was the first miRNA catalogue. Everybody is using it to annotate small RNA sequences as miRNA or not. And it is great, and very helpfully&amp;hellip;but there are some cases that we should investigate our results.&lt;/p&gt;
 &lt;p&gt;For instance, what happens with miR-1246? it is a recent miRNA, primate specific, detected by sequencing in different studies (1,2,3). The counts related to these sequences are not so high, actually very low after normalization, but still are there. miRBase gives a precursor this region: chr2: 177465708-177465780 [-]&lt;/p&gt;
 
@@ -175,9 +175,9 @@ BMC Biol. 8:58(2010).&lt;/p&gt;
     
     <item>
       <title>visualizing small RNA mapping complexity</title>
-      <link>http://lpantano.github.io/post/legacy/2012-09-18-visualizing-small-rna-mapping-complexity/</link>
+      <link>https://lpantano.github.io/myself/post/legacy/2012-09-18-visualizing-small-rna-mapping-complexity/</link>
       <pubDate>Tue, 18 Sep 2012 12:10:24 -0400</pubDate>
-      <guid>http://lpantano.github.io/post/legacy/2012-09-18-visualizing-small-rna-mapping-complexity/</guid>
+      <guid>https://lpantano.github.io/myself/post/legacy/2012-09-18-visualizing-small-rna-mapping-complexity/</guid>
       <description>&lt;p&gt;I spent all my PhD working with small RNA sequences data. The main problem was, always those sequences that map in multiple locations, also denominated ambiguous sequences. From the very beginning, this made that pipelines remove this kind of sequences from the analysis, because you cannot assign them a unique location in the genome. But these sequences are interesting to study, since many of them change in size, for instance. This complexity is due to repeats in the genome and the scenario I am talking about here it is shown in the following figure: ![]({{ site.url }}/assets/example1.png)&lt;/p&gt;
 &lt;p&gt;Each color it would be a different sRNA, and the lines show the locations of each sRNA. There are location shared by some of the sRNAs, and you can easily transform this into a network of vertexes and edges, where vertexes are locations and edges, are their relationship coming from the sRNAs inside them. In this case it would generate three circles connected between them. And that it was I did with a real data set. I used &lt;a href=&#34;http://igraph.sourceforge.net/&#34; title=&#34;igraph&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;igraph&lt;/a&gt; in R to represent this with the help of this great &lt;a href=&#34;http://nsaunders.wordpress.com/2010/04/21/experiments-with-igraph/&#34; title=&#34;igraph tutorial&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tutorial&lt;/a&gt;. The result is:&lt;/p&gt;
 
