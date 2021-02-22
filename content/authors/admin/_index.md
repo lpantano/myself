@@ -92,7 +92,6 @@ My favs Daily News:
 
 |               |                       |
 | ------------------| ------------------------------ |
-| [Skimm](https://www.theskimm.com/?r=25a90b86)| {{< figure library="1" src="images/thedailyskimm.png" width="100px" >}}
 | [The New Paper](https://thenewpaper.us16.list-manage.com/track/click?u=06f557062250e0bcfd6397dfa&id=d053f25441&e=83eacb81f7)| {{< figure library="1" src="images/thenewpaper.png" width="100px" >}}
 
 
