@@ -7,16 +7,16 @@
     <description>hpc</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 11 Jul 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>http://lpantano.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>hpc</title>
       <link>http://lpantano.github.io/tag/hpc/</link>
     </image>
     
     <item>
       <title>How to set up cellranger to make your hpc admin happy</title>
-      <link>http://lpantano.github.io/post/2019/2019-07-12-cellranger-efficiency-in-hpc-copy/</link>
+      <link>http://lpantano.github.io/post/2019/2019-07-12-cellranger-efficiency-in-hpc/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/post/2019/2019-07-12-cellranger-efficiency-in-hpc-copy/</guid>
+      <guid>http://lpantano.github.io/post/2019/2019-07-12-cellranger-efficiency-in-hpc/</guid>
       <description>&lt;p&gt;I found myself to force to use &lt;a href=&#34;https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/cluster-mode&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cellranger&lt;/a&gt;. Meanwhile it helps a lot to
 run from &lt;a href=&#34;https://www.illumina.com/informatics/sequencing-data-analysis/sequence-file-formats.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bcl&lt;/a&gt; files to single cell counts matrixes, I discovered that is
 quite difficult to control many options related to optimization.&lt;/p&gt;
