@@ -14,6 +14,6 @@ I did a small and quick experiment. I took the abstract of the papers published 
 
 {{< figure library="1" src="media/images/jan2005bioinformatics.jpg" width="500px" >}}
 
-{{< figure library="1" src="media/images/jan2012bioinformatics.jpg" width="500px" >}}
+![](../images/jan2012bioinformatics.jpg)
 
 What is main difference? There are new concepts, of course, but the main difference is the size of the word DATA and the word METHOD, as it happens in the real world, data increased a lot, so we put it much more in our work, and we need a lof of new methods, so we highlight this in our work.

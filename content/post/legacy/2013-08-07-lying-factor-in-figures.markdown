@@ -15,8 +15,7 @@ It is the ratio between the difference of two numbers and the difference of the 
 
 You have two groups, each group is represented by 4 and 2\. The difference between 4 and 2 is 2\. Since "a picture is worth a thousand words", someone decides to represents those groups in a figure (yes, in excel to make it worst):
 
-{{< figure library="true" src="images/lyingfactor.jpg" width="1000px" >}}
-
+![](../images/lyingfactor.jpg)
 
 That figure shows a difference of 4 between the two groups. Since 4 is twice than 2, we have a lying factor of 2.
 
@@ -26,7 +25,7 @@ Moreover, this is happening in science as well. For instance a (Nature) paper w
 
 They visualised a matrix correlation of the data using one method or another (b or c).
 
-![Screen Shot 2013-08-05 at 12.15.55 PM]({{ site.url }}/media/images/screen-shot-2013-08-05-at-12-15-55-pm.png)
+![Screen Shot 2013-08-05 at 12.15.55 PM](../images/screen-shot-2013-08-05-at-12-15-55-pm.png)
 
 If you only read colours, you won't see much difference, but there is. The problem was to use a different colour scale to show the same type of data. Probably they were produced separately, so the command to produce those figures (probably an R function) had to guess the scale by its own, resulting that 0.89 is equal to 0.75 .
 
