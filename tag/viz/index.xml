@@ -54,7 +54,7 @@
 
 
 
-&lt;figure  &gt;&lt;img src=&#34;media/images/lyingfactor.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable
+&lt;figure  &gt;&lt;img src=&#34;images/lyingfactor.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable
          width=&#34;1000px&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -62,7 +62,7 @@
 &lt;p&gt;Probably you think that this is not happening anywhere, it is ridiculous. It is, but probably you will find one of these cases in the news every day.&lt;/p&gt;
 &lt;p&gt;Moreover, this is happening in science as well. For instance a (Nature) paper which explains how authors are improving a method that analyzes NGS data.&lt;/p&gt;
 &lt;p&gt;They visualised a matrix correlation of the data using one method or another (b or c).&lt;/p&gt;
-&lt;p&gt;![Screen Shot 2013-08-05 at 12.15.55 PM]({{ site.url }}/assets/screen-shot-2013-08-05-at-12-15-55-pm.png)&lt;/p&gt;
+&lt;p&gt;![Screen Shot 2013-08-05 at 12.15.55 PM]({{ site.url }}/media/images/screen-shot-2013-08-05-at-12-15-55-pm.png)&lt;/p&gt;
 &lt;p&gt;If you only read colours, you won&amp;rsquo;t see much difference, but there is. The problem was to use a different colour scale to show the same type of data. Probably they were produced separately, so the command to produce those figures (probably an R function) had to guess the scale by its own, resulting that 0.89 is equal to 0.75 .&lt;/p&gt;
 &lt;p&gt;I leave my post here, and may say: take some time to think about it.&lt;/p&gt;
 &lt;p&gt;source:http://dx.doi.org/10.1038/nbt.2596&lt;/p&gt;
