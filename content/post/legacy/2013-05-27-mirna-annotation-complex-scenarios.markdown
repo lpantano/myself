@@ -12,7 +12,7 @@ Everybody who is working with microRNA knows about miRBase, it was the first miR
 
 For instance, what happens with miR-1246? it is a recent miRNA, primate specific, detected by sequencing in different studies (1,2,3). The counts related to these sequences are not so high, actually very low after normalization, but still are there. miRBase gives a precursor this region: chr2: 177465708-177465780 [-]
 
-{{< figure library="1" src="images/mir1246.png" title="Fig 1: mir1246" >}}
+{{< figure library="1" src="media/images/mir1246.png" title="Fig 1: mir1246" >}}
 
 We see that there is a repeat element (ERV, retrovirus) and also it is a pretty conserved region. Until here, everything allright. But, I realized some time ago, annotating some data that I had, that the mature miRNA annotates in other regions:
 
@@ -78,13 +78,13 @@ We see that there is a repeat element (ERV, retrovirus) and also it is a pretty 
 
 All of them are copies of a RNA repeat according RepBase, specifically the snRNA U2 class (150-200 nt). In addition, I got much more reads inside those (extra) locations than inside the annotated precursor (3 orders bigger). Furthermore, all of them had a peak in their coverage profile (fig 2).
 
-{{< figure library="1" src="images/u2-3.png" title="Fig 2:Reads coverage of U2" >}}
+{{< figure library="1" src="media/images/u2-3.png" title="Fig 2:Reads coverage of U2" >}}
 
 
 The question that arises now: is this a real miRNA, or a sub-product, or both? with any function? Maybe there is more than one precursor, or maybe it is a miRNA-like snRNA. Moreover, the secondary structure of these U2 is very similar to a miRNA precursor hairpin (fig 3).
 
 
-{{< figure library="1" src="images/u2-ss-strand.png" title="Fig 3:U2 secondary structure" >}}
+{{< figure library="1" src="media/images/u2-ss-strand.png" title="Fig 3:U2 secondary structure" >}}
 
 
 One cause of this annotation could be that the unique precursor conserved beyond primates is the one mentioned in miRBase, while the other U2 locations are primate-specific. Extra analyses should be done to reveal the real nature of this miRNA. Results suggest that, either the miRNA has more than one precursor, or a sub-product, or both.

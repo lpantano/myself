@@ -17,11 +17,11 @@ seq3: 2 times
 
 And you want to show the nucleotide composition of the first nucleotide. You can do it either counting the # of sequences (or abundance) in your set (1505) or the number of unique (different) sequences (3). You result will be very bias depending on that. If you go for the first option, you can obtain:
 
-{{< figure library="1" src="images/ntabundance11.png" width="1000px" >}}
+{{< figure library="1" src="media/images/ntabundance11.png" width="1000px" >}}
 
 and if you go for the second option:
 
-{{< figure library="1" src="images/ntabundance2.png" width="1000px" >}}
+{{< figure library="1" src="media/images/ntabundance2.png" width="1000px" >}}
 
 Which is the best option? well, although papers in small RNA data still continue showing the first option, I think that this should be validated some way.
 
@@ -29,6 +29,6 @@ When using unique sequences (only counting different sequences), you can under-e
 
 One solution is to plot the data according both values: percentage of abundance and percentage of unique sequences. And you can do this for each position and nucleotide.
 
-{{< figure library="1" src="images/ntabundance3.png" width="1000px" >}}
+{{< figure library="1" src="media/images/ntabundance3.png" width="1000px" >}}
 
 We can conclude that at position 1, there are few sequences starting with A that are  90 of the data. Also we can see how the 60% of unique sequences have a G at position 10\. This helps us to catch any biological signature if it exists, and avoid the misleading information in this kind of figures.

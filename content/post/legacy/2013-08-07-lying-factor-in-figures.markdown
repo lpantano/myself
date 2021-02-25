@@ -15,7 +15,7 @@ It is the ratio between the difference of two numbers and the difference of the 
 
 You have two groups, each group is represented by 4 and 2\. The difference between 4 and 2 is 2\. Since "a picture is worth a thousand words", someone decides to represents those groups in a figure (yes, in excel to make it worst):
 
-{{< figure library="1" src="images/lyingfactor.jpg" width="1000px" >}}
+{{< figure library="1" src="media/images/lyingfactor.jpg" width="1000px" >}}
 
 
 That figure shows a difference of 4 between the two groups. Since 4 is twice than 2, we have a lying factor of 2.
