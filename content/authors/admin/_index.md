@@ -90,7 +90,7 @@ contributing to: [nf-core](https://nf-co.re/), [bcbio-nextgen](https://github.co
 
 My favs Daily News:
 
-*[{{< figure library="1" src="media/images/thenewpaper.png" width="100px" >}}](https://thenewpaper.us16.list-manage.com/track/click?u=06f557062250e0bcfd6397dfa&id=d053f25441&e=83eacb81f7) 
+[{{< figure library="1" src="media/thenewpaper.png" width="100px" >}}](https://thenewpaper.us16.list-manage.com/track/click?u=06f557062250e0bcfd6397dfa&id=d053f25441&e=83eacb81f7)
 
 
 ### Hobbies
