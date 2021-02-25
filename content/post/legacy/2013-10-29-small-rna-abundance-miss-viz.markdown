@@ -17,7 +17,7 @@ seq3: 2 times
 
 And you want to show the nucleotide composition of the first nucleotide. You can do it either counting the # of sequences (or abundance) in your set (1505) or the number of unique (different) sequences (3). You result will be very bias depending on that. If you go for the first option, you can obtain:
 
-{{< figure library="1" src="media/images/ntabundance11.png" width="1000px" >}}
+{{< figure library="true" src="images/ntabundance11.png" width="1000px" >}}
 
 and if you go for the second option:
 
