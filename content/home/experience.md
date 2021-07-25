@@ -18,17 +18,34 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
+  title = "Head of Computational Biology"
+  company = "NextRNA Therapeutics"
+  company_url = "https://nextrna.com/"
+  location = "Cambridge"
+  date_start = "2021-05-06"
+  # date_end = "2020-09-20"
+  description = """
+  Responsibilities include:
+
+  * Leading the Target discovery pipelines integrating genomic data
+  * Analyzing RNA-Protein interaction high-throughput data
+  * Leading visualization plarforms in the discovery program
+  * Developing bioinformatic infrastructure to ensure reproducibility and scalability
+  * Senior Manager and Mentor
+  """
+
+[[experience]]
   title = "Principal Scientist in Computational Biology"
   company = "Axcella Health"
   company_url = "https://axcellahealth.com/"
   location = "Cambridge"
   date_start = "2020-09-25"
-  # date_end = "2020-09-20"
+  date_end = "2021-04-16"
   description = """
   Responsibilities include:
 
   * Leading R&D pipelines with computational strategies
-  * Analysing genomic/metabolimic/transcriptomic data
+  * Analysing metabolimic/transcriptomic data
   * Leading visualization plarform to boost biological interpretation
   * Developing bioinformatic infrastructure to ensure reproducibility and scalability
   * Senior Manager and Mentor
