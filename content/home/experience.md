@@ -22,7 +22,7 @@ date_format = "Jan 2006"
   company = "NextRNA Therapeutics"
   company_url = "https://nextrna.com/"
   location = "Cambridge"
-  date_start = "2020-05-06"
+  date_start = "2021-05-06"
   # date_end = "2020-09-20"
   description = """
   Responsibilities include:
