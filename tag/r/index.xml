@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R | My bits</title>
-    <link>https://lpantano.github.io/myself/tag/r/</link>
-      <atom:link href="https://lpantano.github.io/myself/tag/r/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://lpantano.github.io/tag/r/</link>
+      <atom:link href="http://lpantano.github.io/tag/r/index.xml" rel="self" type="application/rss+xml" />
     <description>R</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 21 Sep 2018 10:13:02 -0400</lastBuildDate>
     <image>
-      <url>https://lpantano.github.io/myself/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>R</title>
-      <link>https://lpantano.github.io/myself/tag/r/</link>
+      <link>http://lpantano.github.io/tag/r/</link>
     </image>
     
     <item>
       <title>Get colors for your heatmap annotation</title>
-      <link>https://lpantano.github.io/myself/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/</link>
+      <link>http://lpantano.github.io/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/</link>
       <pubDate>Fri, 21 Sep 2018 10:13:02 -0400</pubDate>
-      <guid>https://lpantano.github.io/myself/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/</guid>
+      <guid>http://lpantano.github.io/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/</guid>
       <description>&lt;p&gt;This post will show how to configure quickly the colors for the annotation of rows/columns that go on top or on the side of a heatmap.&lt;/p&gt;
 &lt;p&gt;I normally use &lt;code&gt;pheatmap&lt;/code&gt; a lot. Recently I discovered &lt;code&gt;ComplexHeatmap&lt;/code&gt;. In both cases I spend always sometime changing the colors of the annotations. I ended up coding a function inside my package &lt;code&gt;DEGreport&lt;/code&gt; to do that.&lt;/p&gt;
 &lt;p&gt;Given a data.frame with metadata data information will do:&lt;/p&gt;
@@ -197,9 +197,9 @@ pheatmap(exp[most_variable,], scale = &amp;quot;row&amp;quot;, show_rownames = F
     
     <item>
       <title>How to plot miRNA, gene expression and functional analysis together</title>
-      <link>https://lpantano.github.io/myself/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/</link>
+      <link>http://lpantano.github.io/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/</link>
       <pubDate>Sun, 12 Aug 2018 09:00:00 -0400</pubDate>
-      <guid>https://lpantano.github.io/myself/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/</guid>
+      <guid>http://lpantano.github.io/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/</guid>
       <description>&lt;p&gt;This post should show you an easy way to get the following data type
 integrated into a figure:&lt;/p&gt;
 &lt;ul&gt;
@@ -314,9 +314,9 @@ they can not open a TSV file with excel.&amp;rdquo;&lt;/p&gt;
     
     <item>
       <title>Subset of object creates bigger RDA file size than original object</title>
-      <link>https://lpantano.github.io/myself/post/legacy/2017-08-24-subset-object-creates-bigger-file/</link>
+      <link>http://lpantano.github.io/post/legacy/2017-08-24-subset-object-creates-bigger-file/</link>
       <pubDate>Wed, 23 Aug 2017 17:50:01 -0400</pubDate>
-      <guid>https://lpantano.github.io/myself/post/legacy/2017-08-24-subset-object-creates-bigger-file/</guid>
+      <guid>http://lpantano.github.io/post/legacy/2017-08-24-subset-object-creates-bigger-file/</guid>
       <description>&lt;p&gt;This is a funny story, and I will try to tell you how I realized I don&amp;rsquo;t know anything about R in 400 words.&lt;/p&gt;
 &lt;p&gt;I work at the Bioinformatic Core at Harvard TH School. People who know us, or collaborate with us, knows that we mainly use
 &lt;a href=&#34;https://github.com/chapmanb/bcbio-nextgen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bcbio&lt;/a&gt; to analyze sequencing data (check it out, super cool tool).&lt;/p&gt;

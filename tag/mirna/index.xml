@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>miRNA | My bits</title>
-    <link>https://lpantano.github.io/myself/tag/mirna/</link>
-      <atom:link href="https://lpantano.github.io/myself/tag/mirna/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://lpantano.github.io/tag/mirna/</link>
+      <atom:link href="http://lpantano.github.io/tag/mirna/index.xml" rel="self" type="application/rss+xml" />
     <description>miRNA</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 12 Aug 2018 09:00:00 -0400</lastBuildDate>
     <image>
-      <url>https://lpantano.github.io/myself/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>miRNA</title>
-      <link>https://lpantano.github.io/myself/tag/mirna/</link>
+      <link>http://lpantano.github.io/tag/mirna/</link>
     </image>
     
     <item>
       <title>How to plot miRNA, gene expression and functional analysis together</title>
-      <link>https://lpantano.github.io/myself/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/</link>
+      <link>http://lpantano.github.io/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/</link>
       <pubDate>Sun, 12 Aug 2018 09:00:00 -0400</pubDate>
-      <guid>https://lpantano.github.io/myself/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/</guid>
+      <guid>http://lpantano.github.io/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/</guid>
       <description>&lt;p&gt;This post should show you an easy way to get the following data type
 integrated into a figure:&lt;/p&gt;
 &lt;ul&gt;
@@ -131,17 +131,17 @@ they can not open a TSV file with excel.&amp;rdquo;&lt;/p&gt;
     
     <item>
       <title>miRTOP: An open source community project for the development of a unified format file for miRNA data</title>
-      <link>https://lpantano.github.io/myself/talk/bosc2018/</link>
+      <link>http://lpantano.github.io/talk/bosc2018/</link>
       <pubDate>Wed, 27 Jun 2018 13:13:02 -0900</pubDate>
-      <guid>https://lpantano.github.io/myself/talk/bosc2018/</guid>
+      <guid>http://lpantano.github.io/talk/bosc2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>miRNA Annotation Tools Comparison</title>
-      <link>https://lpantano.github.io/myself/post/legacy/2016-03-24-mirna-annotation-tools-comparison/</link>
+      <link>http://lpantano.github.io/post/legacy/2016-03-24-mirna-annotation-tools-comparison/</link>
       <pubDate>Thu, 24 Mar 2016 19:49:01 -0400</pubDate>
-      <guid>https://lpantano.github.io/myself/post/legacy/2016-03-24-mirna-annotation-tools-comparison/</guid>
+      <guid>http://lpantano.github.io/post/legacy/2016-03-24-mirna-annotation-tools-comparison/</guid>
       <description>&lt;p&gt;In summary: I will show which is the best miRNA mapping tool. I used several options for this benchmarking:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;miraligner from &lt;a href=&#34;http://github.com/lpantano/seqbuster&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SeqBuster&lt;/a&gt; suit (I am one of the authors)&lt;/li&gt;
@@ -173,21 +173,117 @@ they can not open a TSV file with excel.&amp;rdquo;&lt;/p&gt;
     
     <item>
       <title>small RNA abundance [miss-] viz</title>
-      <link>https://lpantano.github.io/myself/post/legacy/2013-10-29-small-rna-abundance-miss-viz/</link>
+      <link>http://lpantano.github.io/post/legacy/2013-10-29-small-rna-abundance-miss-viz/</link>
       <pubDate>Tue, 29 Oct 2013 08:05:56 -0400</pubDate>
-      <guid>https://lpantano.github.io/myself/post/legacy/2013-10-29-small-rna-abundance-miss-viz/</guid>
+      <guid>http://lpantano.github.io/post/legacy/2013-10-29-small-rna-abundance-miss-viz/</guid>
       <description>&lt;p&gt;My PhD was focused on small RNA sequencing data. I had a problem when I wanted to visualized the amount of small RNAs from the beginning. Here the problem, assume that you have a certain distribution of small RNA sequences abundance:&lt;/p&gt;
 &lt;p&gt;seq1: 1500 times&lt;br&gt;
 seq2: 3 times&lt;br&gt;
 seq3: 2 times&lt;/p&gt;
 &lt;p&gt;And you want to show the nucleotide composition of the first nucleotide. You can do it either counting the # of sequences (or abundance) in your set (1505) or the number of unique (different) sequences (3). You result will be very bias depending on that. If you go for the first option, you can obtain:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../images/ntabundance11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/ntabundance11.png&#34; &gt;
+
+
+  &lt;img src=&#34;http://lpantano.github.io/media/images/ntabundance11.png&#34; alt=&#34;&#34; width=&#34;1000px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
 &lt;p&gt;and if you go for the second option:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../images/ntabundance2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/ntabundance2.png&#34; &gt;
+
+
+  &lt;img src=&#34;http://lpantano.github.io/media/images/ntabundance2.png&#34; alt=&#34;&#34; width=&#34;1000px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
 &lt;p&gt;Which is the best option? well, although papers in small RNA data still continue showing the first option, I think that this should be validated some way.&lt;/p&gt;
 &lt;p&gt;When using unique sequences (only counting different sequences), you can under-estimated the real signal. In NGS, you can have a lot of noise, that may hide the biological signal using this approach. But, you can get the same, if you use directly the abundance, because if your set contains one sequence that is 90% of the data, you will get always a signal, that may be not important, for instance, ribosomal RNA that is expected to be there.&lt;/p&gt;
 &lt;p&gt;One solution is to plot the data according both values: percentage of abundance and percentage of unique sequences. And you can do this for each position and nucleotide.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../images/ntabundance3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/ntabundance3.png&#34; &gt;
+
+
+  &lt;img src=&#34;http://lpantano.github.io/media/images/ntabundance3.png&#34; alt=&#34;&#34; width=&#34;1000px&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
 &lt;p&gt;We can conclude that at position 1, there are few sequences starting with A that are  90 of the data. Also we can see how the 60% of unique sequences have a G at position 10. This helps us to catch any biological signature if it exists, and avoid the misleading information in this kind of figures.&lt;/p&gt;
 </description>
     </item>

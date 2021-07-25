@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dietmar Fernandez-Orth | My bits</title>
-    <link>https://lpantano.github.io/myself/author/dietmar-fernandez-orth/</link>
-      <atom:link href="https://lpantano.github.io/myself/author/dietmar-fernandez-orth/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://lpantano.github.io/author/dietmar-fernandez-orth/</link>
+      <atom:link href="http://lpantano.github.io/author/dietmar-fernandez-orth/index.xml" rel="self" type="application/rss+xml" />
     <description>Dietmar Fernandez-Orth</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://lpantano.github.io/myself/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>http://lpantano.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Dietmar Fernandez-Orth</title>
-      <link>https://lpantano.github.io/myself/author/dietmar-fernandez-orth/</link>
+      <link>http://lpantano.github.io/author/dietmar-fernandez-orth/</link>
     </image>
     
     <item>
       <title>Circulating miRNAs, isomiRs and small RNA clusters in human plasma and breast milk</title>
-      <link>https://lpantano.github.io/myself/publication/rubio-2018/</link>
+      <link>http://lpantano.github.io/publication/rubio-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://lpantano.github.io/myself/publication/rubio-2018/</guid>
+      <guid>http://lpantano.github.io/publication/rubio-2018/</guid>
       <description></description>
     </item>
     
