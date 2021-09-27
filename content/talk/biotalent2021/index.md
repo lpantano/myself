@@ -12,10 +12,8 @@ time_start = 2021-09-18T13:00:00-05:00
 authors = ["Bio Talent", "Lorena Pantano"]
 
 # Abstract and optional shortened version.
-abstract = "With a global push in recent years to encourage young women toward careers in STEM, the life sciences have benefited enormously from more inclusive priorities and populations at the entry-level. Where do we stand as an industry, though, in our advocacy for and support of women progressing upwards, and who does this responsibility sit with?
-
-Join us as we explore the progress we’ve made, and the journey still ahead in closing the gender gap at the leadership level within biotech + pharma. We’ll hear experiences from women at different phases of their paths to the top, their advice for the next generation of hopeful leaders, and discuss the ever-evolving glass ceiling – is there a dauntingly deep-rooted issue still at play, or can self-and-peer advocacy chip away at imposter syndrome and change the game for women looking upwards?"
-abstract_short = "Join us as we explore the progress we’ve made, and the journey still ahead in closing the gender gap at the leadership level within biotech + pharma. We’ll hear experiences from women at different phases of their paths to the top, their advice for the next generation of hopeful leaders, and discuss the ever-evolving glass ceiling"
+abstract = "With a global push in recent years to encourage young women toward careers in STEM, the life sciences have benefited enormously from more inclusive priorities and populations at the entry-level. Where do we stand as an industry, though, in our advocacy for and support of women progressing upwards, and who does this responsibility sit with?"
+abstract_short = "Join us as we explore the progress we’ve made, and the journey still ahead in closing the gender gap at the leadership level within biotech and pharma. We’ll hear experiences from women at different phases of their paths to the top, their advice for the next generation of hopeful leaders, and discuss the ever-evolving glass ceiling"
 
 # Name of event and optional event URL.
 event = "Bio Talent:Webinar #5"
