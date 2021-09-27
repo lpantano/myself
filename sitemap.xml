@@ -2,10 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://lpantano.github.io/post/2019/2019-10-03-move-to-egenesis/</loc>
-    <lastmod>2019-10-03T17:42:40-04:00</lastmod>
+    <loc>http://lpantano.github.io/authors/</loc>
+    <lastmod>2021-09-18T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/author/bio-talent/</loc>
+    <lastmod>2021-09-18T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/author/lorena-pantano/</loc>
+    <lastmod>2021-09-18T00:00:00-05:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/</loc>
+    <lastmod>2021-09-18T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/talk/</loc>
+    <lastmod>2021-09-18T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/talk/biotalent2021/</loc>
+    <lastmod>2021-09-18T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/talk/nextflow2021/</loc>
+    <lastmod>2021-09-15T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/author/nextflow/</loc>
+    <lastmod>2021-09-15T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/author/rob-lalonde/</loc>
+    <lastmod>2021-09-15T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/post/2019/2019-10-03-move-to-egenesis/</loc>
     <lastmod>2019-10-03T17:42:40-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/post/</loc>
@@ -18,9 +42,6 @@
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/author/arshed-al-obeidi/</loc>
-    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/authors/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/author/ben-a-croker/</loc>
@@ -42,9 +63,6 @@
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/author/kimberly-stegmaier/</loc>
-    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/author/lorena-pantano/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/author/meghan-bliss-moreau/</loc>
@@ -162,9 +180,6 @@
     <lastmod>2019-02-09T00:00:00-05:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/author/mirtop-group/</loc>
-    <lastmod>2019-02-09T00:00:00-05:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/talk/</loc>
     <lastmod>2019-02-09T00:00:00-05:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/author/others/</loc>
