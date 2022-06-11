@@ -10,12 +10,12 @@ authors:
 superuser: true
 
 # Role/position
-role: Principal Scientist in Computational Biology
+role: Head of Computational Biology
 
 # Organizations/Affiliations
 organizations:
-- name: Axcella Health
-  url: "https://www.axcellahealth.com/"
+- name: NextRNA Therapeutics
+  url: "https://www.nextrnatx.com/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include genomics, visualizationa and modelling.
