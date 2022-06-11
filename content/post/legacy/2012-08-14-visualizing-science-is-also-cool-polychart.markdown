@@ -12,8 +12,7 @@ One of my interest in science is finding new ways to visualize Big Data. Scienti
 
 I played many time with javascript/HTML5 resources, but are no so easy to implement if you are not an expert, and some times, huge data makes difficult the easy interaction. Well, recently I found [Polychart](http://polychart.com/ "polychart"), is still in beta version, but I am using one of the feature they provide: Graph builder. And this is how it looks like after loading a file with 5000 rows and 37 columns:
 
-{{< figure library="1" src="images/polychart.png" width="1000px" >}}
-
+![](../images/polychart.png)
 
 You can make different type of charts, like boxplot, barplot, piechart (although aren't well considered) etc. Also, you can customize titles and transform data. Quick complete for a beta version.
 
