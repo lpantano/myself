@@ -755,37 +755,37 @@
       <p>I spent all my PhD working with small RNA sequences data. The main problem was, always those sequences that map in multiple locations, also denominated ambiguous sequences. From the very beginning, this made that pipelines remove this kind of sequences from the analysis, because you cannot assign them a unique location in the genome. But these sequences are interesting to study, since many of them change in size, for instance. This complexity is due to repeats in the genome and the scenario I am talking about here it is shown in the following figure: ![]({{ site.url }}/assets/example1.png)</p>
 <p>Each color it would be a different sRNA, and the lines show the locations of each sRNA. There are location shared by some of the sRNAs, and you can easily transform this into a network of vertexes and edges, where vertexes are locations and edges, are their relationship coming from the sRNAs inside them. In this case it would generate three circles connected between them. And that it was I did with a real data set. I used <a href="http://igraph.sourceforge.net/" title="igraph" target="_blank" rel="noopener">igraph</a> in R to represent this with the help of this great <a href="http://nsaunders.wordpress.com/2010/04/21/experiments-with-igraph/" title="igraph tutorial" target="_blank" rel="noopener">tutorial</a>. The result is:</p>
 
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/media/images/network.png" >
-
-
-  <img src="/media/images/network.png" alt="" width="500px" >
-</a>
-
-
-
-</figure>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <figure >
+ 
+ 
+   <a data-fancybox="" href="/media/images/network.png" >
+ 
+ 
+   <img src="/media/images/network.png" alt="" width="500px" >
+ </a>
+ 
+ 
+ 
+ </figure>
 
 <p>It is very easy to detect high complexity regions, where locations are connected because some sRNAs map to anywhere else. From here, you can add more information, as the average size of the sRNAs inside each location, or the expression (red: low, yellow:high).   ![]({{ site.baseurl }}/assets/net-exp-3.png &ldquo;network of sRNA complexity&rdquo;) In a quick view you can check the complexity of your small RNA data and the expression associated. The code is published at <a href="http://rpubs.com/lpantano/1719" title="sRNA mappability" target="_blank" rel="noopener">Rpub repository</a>.</p>
 
@@ -1203,7 +1203,7 @@
     
     
     
-    <script src="/js/wowchemy.min.1b55bac779ab98485349023b750e9a72.js"></script>
+    <script src="/js/wowchemy.min.4be6abc28ede1fa5f6918f5d8c89c66f.js"></script>
 
     
 

@@ -569,7 +569,7 @@ modulators.&lt;/p&gt;
 
 R&amp;gt; isoPlotNet(data, minGenes = 1)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/code-blog/isonetwork/post_files/figure-markdown_strict/unnamed-chunk-5-1.png&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/code-blog/isonetwork/post_files/figure-markdown_strict/unnamed-chunk-5-1.png&#34; /&gt;
 &lt;p&gt;It is an easy way to spot what pathways contain genes that are targeted
 by miRNAs.&lt;/p&gt;
 &lt;p&gt;Note that this function won&amp;rsquo;t indicate if a pathway is enriched on miRNA
@@ -1118,37 +1118,37 @@ BMC Biol. 8:58(2010).&lt;/p&gt;
       <description>&lt;p&gt;I spent all my PhD working with small RNA sequences data. The main problem was, always those sequences that map in multiple locations, also denominated ambiguous sequences. From the very beginning, this made that pipelines remove this kind of sequences from the analysis, because you cannot assign them a unique location in the genome. But these sequences are interesting to study, since many of them change in size, for instance. This complexity is due to repeats in the genome and the scenario I am talking about here it is shown in the following figure: ![]({{ site.url }}/assets/example1.png)&lt;/p&gt;
 &lt;p&gt;Each color it would be a different sRNA, and the lines show the locations of each sRNA. There are location shared by some of the sRNAs, and you can easily transform this into a network of vertexes and edges, where vertexes are locations and edges, are their relationship coming from the sRNAs inside them. In this case it would generate three circles connected between them. And that it was I did with a real data set. I used &lt;a href=&#34;http://igraph.sourceforge.net/&#34; title=&#34;igraph&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;igraph&lt;/a&gt; in R to represent this with the help of this great &lt;a href=&#34;http://nsaunders.wordpress.com/2010/04/21/experiments-with-igraph/&#34; title=&#34;igraph tutorial&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tutorial&lt;/a&gt;. The result is:&lt;/p&gt;
 
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/network.png&#34; &gt;
-
-
-  &lt;img src=&#34;http://lpantano.github.io/media/images/network.png&#34; alt=&#34;&#34; width=&#34;500px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;figure &gt;
+ 
+ 
+   &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/network.png&#34; &gt;
+ 
+ 
+   &lt;img src=&#34;http://lpantano.github.io/media/images/network.png&#34; alt=&#34;&#34; width=&#34;500px&#34; &gt;
+ &lt;/a&gt;
+ 
+ 
+ 
+ &lt;/figure&gt;
 
 &lt;p&gt;It is very easy to detect high complexity regions, where locations are connected because some sRNAs map to anywhere else. From here, you can add more information, as the average size of the sRNAs inside each location, or the expression (red: low, yellow:high).   ![]({{ site.baseurl }}/assets/net-exp-3.png &amp;ldquo;network of sRNA complexity&amp;rdquo;) In a quick view you can check the complexity of your small RNA data and the expression associated. The code is published at &lt;a href=&#34;http://rpubs.com/lpantano/1719&#34; title=&#34;sRNA mappability&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rpub repository&lt;/a&gt;.&lt;/p&gt;
 </description>

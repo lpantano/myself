@@ -298,7 +298,7 @@ modulators.&lt;/p&gt;
 
 R&amp;gt; isoPlotNet(data, minGenes = 1)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/code-blog/isonetwork/post_files/figure-markdown_strict/unnamed-chunk-5-1.png&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/code-blog/isonetwork/post_files/figure-markdown_strict/unnamed-chunk-5-1.png&#34; /&gt;
 &lt;p&gt;It is an easy way to spot what pathways contain genes that are targeted
 by miRNAs.&lt;/p&gt;
 &lt;p&gt;Note that this function won&amp;rsquo;t indicate if a pathway is enriched on miRNA
