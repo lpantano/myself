@@ -40,7 +40,7 @@ subtitle = ""
   
 [[feature]]
   icon = "microchip-ai"
-  icon_pack = "fa"
+  icon_pack = "fas"
   name = "Machine-learning"
 
 
