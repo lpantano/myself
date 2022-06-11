@@ -38,9 +38,15 @@ subtitle = ""
   description = "70%"
 
 [[feature]]
-  icon = "brain"
+  icon = "server"
   icon_pack = "fas"
-  name = "Neurodegeneration"
+  name = "HPC"
+  description = "80%"
+  
+[[feature]]
+  icon = "microchip-ai"
+  icon_pack = "fas"
+  name = "Machine-learning"
   description = "80%"
 
 +++
