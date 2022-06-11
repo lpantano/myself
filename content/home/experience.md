@@ -31,6 +31,7 @@ date_format = "Jan 2006"
   * Analyzing RNA-Protein interaction high-throughput data
   * Leading visualization plarforms in the discovery program
   * Developing bioinformatic infrastructure to ensure reproducibility and scalability
+  * Multi-omics analysis of (genomics and clinical) data available through TCGA, PCAWG, and other type of controlled data
   * Senior Manager and Mentor
   """
 
