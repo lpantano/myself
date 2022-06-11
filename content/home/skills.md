@@ -17,30 +17,31 @@ subtitle = ""
   icon = "r-project"
   icon_pack = "fab"
   name = "R/Rshiny"
-  description = "100%"
 
 [[feature]]
   icon = "python"
   icon_pack = "fab"
   name = "python"
-  description = "90%"
 
 [[feature]]
   icon = "chart-line"
   icon_pack = "fas"
   name = "Statistics"
-  description = "80%"  
 
 [[feature]]
   icon = "palette"
   icon_pack = "fas"
   name = "Visualization"
-  description = "70%"
 
 [[feature]]
-  icon = "brain"
+  icon = "server"
   icon_pack = "fas"
-  name = "Neurodegeneration"
-  description = "80%"
+  name = "HPC"
+  
+[[feature]]
+  icon = "microchip-ai"
+  icon_pack = "fa"
+  name = "Machine-learning"
+
 
 +++
