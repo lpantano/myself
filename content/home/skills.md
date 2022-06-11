@@ -39,7 +39,7 @@ subtitle = ""
   name = "HPC"
   
 [[feature]]
-  icon = "computer-classic"
+  icon = "computer"
   icon_pack = "fas"
   name = "Machine-learning"
 
