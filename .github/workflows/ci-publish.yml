@@ -1,4 +1,4 @@
-name: github
+name: check and publish 
 
 on:
   push:
