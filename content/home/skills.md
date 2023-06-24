@@ -16,17 +16,12 @@ subtitle = ""
 [[feature]]
   icon = "r-project"
   icon_pack = "fab"
-  name = "R/Rshiny"
-
-[[feature]]
-  icon = "python"
-  icon_pack = "fab"
-  name = "python"
+  name = "OMICS-data"
 
 [[feature]]
   icon = "chart-line"
   icon_pack = "fas"
-  name = "Statistics"
+  name = "Strategy"
 
 [[feature]]
   icon = "palette"
@@ -36,7 +31,7 @@ subtitle = ""
 [[feature]]
   icon = "server"
   icon_pack = "fas"
-  name = "HPC"
+  name = "AWS Infrastructure"
   
 [[feature]]
   icon = "server"
