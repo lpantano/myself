@@ -69,7 +69,7 @@ user_groups:
 - Researchers
 ---
 
-Computational biologist focused on genomic regulation and data integration. 13 years of experience in biological data analysis using the most well-established tools and contributing to novel algorithms to improve the quantification and visualization of genomic data. I approach scientific challenges with passion and believe that a collaboration and not an individual alone can successfully conquer them. 
+Experienced computational biologist focused on developing strategy in Biotechs with need of genomic regulation and data integration analyses. 13 years of experience in biological data analysis using the most well-established tools and contributing to novel algorithms to improve the quantification and visualization of genomic data. I approach scientific challenges with passion and believe that a collaboration and not an individual alone can successfully conquer them.   
 
 ### Community
 
@@ -86,13 +86,8 @@ Computational biologist focused on genomic regulation and data integration. 13 y
 | [isomiRs](https://bioconductor.org/packages/3.6/bioc/html/isomiRs.html)   |    ![BioC Downloads](https://bioconductor.org//shields/downloads/isomiRs.svg)       |
 | [DEGreport](https://bioconductor.org/packages/3.6/bioc/html/DEGreport.html)   |    ![BioC Downloads](https://bioconductor.org//shields/downloads/DEGreport.svg)       |
 
-contributing to: [nf-core](https://nf-co.re/), [bcbio-nextgen](https://github.com/chapmanb/bcbio-nextgen), [cloudbiolinux](https://github.com/chapmanb/cloudbiolinux), [bcbioRNASeq](https://github.com/hbc/bcbioRNASeq), [bioconda](https://github.com/bioconda/bioconda-recipes), [multiqc](https://github.com/ewels/MultiQC)
+contributed to: [nf-core](https://nf-co.re/), [bcbio-nextgen](https://github.com/chapmanb/bcbio-nextgen), [cloudbiolinux](https://github.com/chapmanb/cloudbiolinux), [bcbioRNASeq](https://github.com/hbc/bcbioRNASeq), [bioconda](https://github.com/bioconda/bioconda-recipes), [multiqc](https://github.com/ewels/MultiQC)
 
-My favs Daily News:
-
-|               |                       |
-| ------------------| ------------------------------ |
-| [The New Paper](https://thenewpaper.us16.list-manage.com/track/click?u=06f557062250e0bcfd6397dfa&id=d053f25441&e=83eacb81f7)| {{< figure library="1" src="images/thenewpaper.png" width="100px" >}}
 
 
 ### Hobbies

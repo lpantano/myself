@@ -27,10 +27,11 @@ date_format = "Jan 2006"
   description = """
   Responsibilities include:
 
-  * Leading the Target discovery pipelines integrating genomic data
-  * Analyzing RNA-Protein interaction high-throughput data
+  * Preparing slides and data packages for partners and BoD
+  * Leading the in-silico Target discovery pipelines integrating genomic data
+  * Leading RNA-Protein interaction prediction from high-throughput sequencing data
   * Leading visualization plarforms in the discovery program
-  * Developing bioinformatic infrastructure to ensure reproducibility and scalability
+  * Mantaining and evolving bioinformatic infrastructure to ensure reproducibility and scalability under budget restrictions
   * Multi-omics analysis of (genomics and clinical) data available through TCGA, PCAWG, and other type of controlled data
   * Senior Manager and Mentor
   """
@@ -71,26 +72,6 @@ date_format = "Jan 2006"
   """
 
 [[experience]]
-  title = "Research Scientist - Bioinformatics Core Supervisor"
-  company = "Picower for Memory and Learning Institute - MIT"
-  company_url = "https://picower.mit.edu"
-  location = "Cambridge"
-  date_start = "2019-04-17"
-  date_end = "2019-09-26"
-  description = """
-  Responsibilities include:
-
-  * Leading miRNA transcriptomic open project
-  * Analysing genomic/transcriptomic data
-  * Developing bioinformatic tools
-  * Infrastructure architect
-  * Managing knowledge-base platform
-  * Teaching development
-  * Mentoring
-  * [Knowledge-base](https://pilm-bioinformatics.github.io/knowledgebase/)
-  """
-
-[[experience]]
   title = "Research Scientist"
   company = "Harvard Chan School"
   company_url = ""
@@ -100,6 +81,7 @@ date_format = "Jan 2006"
   description = """
   Responsibilities include:
 
+  * Leading computational analysis under a multi-group collaboration with Boehringer-ingelheim for 3 years
   * Leading miRNA transcriptomic open project
   * Analysing genomic data
   * Developing bioinformatic tools
