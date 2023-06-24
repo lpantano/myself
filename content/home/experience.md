@@ -27,10 +27,11 @@ date_format = "Jan 2006"
   description = """
   Responsibilities include:
 
-  * Leading the Target discovery pipelines integrating genomic data
-  * Analyzing RNA-Protein interaction high-throughput data
+  * Preparing slides and data packages for partners and BoD
+  * Leading the in-silico Target discovery pipelines integrating genomic data
+  * Leading RNA-Protein interaction prediction from high-throughput sequencing data
   * Leading visualization plarforms in the discovery program
-  * Developing bioinformatic infrastructure to ensure reproducibility and scalability
+  * Mantaining and evolving bioinformatic infrastructure to ensure reproducibility and scalability under budget restrictions
   * Multi-omics analysis of (genomics and clinical) data available through TCGA, PCAWG, and other type of controlled data
   * Senior Manager and Mentor
   """
