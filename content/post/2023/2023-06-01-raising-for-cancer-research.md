@@ -8,7 +8,7 @@ authors: []
 tags: []
 categories: []
 date: 2023-06-01T12:00:00-04:00
-lastmod: 2023-06-024T12:00:00-04:00
+lastmod: 2023-07-094T12:00:00-04:00
 featured: false
 draft: false
 
@@ -40,3 +40,6 @@ Chapter 02: One month later, doctors only gave her pain medication, all kinds, n
 
 ## July 1, 9 miles 
 Chapter 03: November 2022, my mom was getting worse, not able to move at all, and starting to lose short-term memory and not able to maintain a normal conversation. After a lot of push from my dad, they got a referral from primary care to get an MRI in a private clinic. We needed to wait for 1 more week now.
+
+## July 8, 10.5 miles
+Chapter 04: In December 2022, my mom got accepted into the hospital after having results from the MRI that showed some kind of cancer inside the bones. She had broken discs and ribs. In one day we knew it was MM, protein M levels were incredibly high. At this point, she was spending all the time in bed. She was disoriented. I bought a ticket to Spain right away.
