@@ -8,7 +8,7 @@ authors: []
 tags: []
 categories: []
 date: 2023-06-01T12:00:00-04:00
-lastmod: 2023-07-094T12:00:00-04:00
+lastmod: 2023-07-224T12:00:00-04:00
 featured: false
 draft: false
 
@@ -43,3 +43,9 @@ Chapter 03: November 2022, my mom was getting worse, not able to move at all, an
 
 ## July 8, 10.5 miles
 Chapter 04: In December 2022, my mom got accepted into the hospital after having results from the MRI that showed some kind of cancer inside the bones. She had broken discs and ribs. In one day we knew it was MM, protein M levels were incredibly high. At this point, she was spending all the time in bed. She was disoriented. I bought a ticket to Spain right away.
+
+## July 15, 12 miles
+Chapter 05: Still in December 2022, I arrived there to see my mom in bed and told me not to touch her too hard because it hurts...my heart broke. It was late, so I went to bed. The next morning I saw my mom standing up, so weak. That weak was all about finding new ways to make her more comfortable. She couldn't sit for more than 20 minutes, she could barely eat. It was week two of chemotherapy and nausea was a strong side effect.
+
+## July 22, 13.4 miles
+Chapter 06: Still in December 2022, we were figuring out everything still. In her third week of chemotherapy, she got a strong reaction to the skin. She was red all over the belly. It was scary, and her PCP didn't want to give her anything because she didn't know what could happen with her treatment. The PCP told us to go to her oncologist. But, and big BUT, the system is not ready to contact your oncologist. Your option is to go to ER and spend 6 hours until somebody decides if they contact the oncologist. I had to go with my dad to the hospital and intercept her oncologist in the corridor. But we didn't find him, so we asked a nurse who had some compassion for us and call the oncologist. He told us to come the next day and ask for an appointment during the day. We had to wait 3 hours the next day, with my mom in a wheelchair in pain and taking morphine every 2 hours. It was a reaction to some antibiotic. It took 2 weeks to go away.
