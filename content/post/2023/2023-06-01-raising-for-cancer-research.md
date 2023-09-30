@@ -58,3 +58,17 @@ Chapter 08: December 31st, Nothing else happened that last week of the year. New
 
 ## August 19, 12 miles (back on training mode)
 Chapter 09: January 2023, last week of treatment. The first week of January she started to be able to change clothes by herself. That was nice to see. Gain some independence. We decided to walk for 10 minutes one day, and we repeated the next day. That helped her. It was time for me to come back to Boston. After all this month, at least my mom was moving a little bit more, and treatment seemed to be working. Protein M reduced by 50%.
+
+## September 2, 16 miles (hike in CT)
+Chapter 10:  February 2023, the second cycle went without any surprise. Some skin reactions, but nothing compared to everything she went through in the past months. I tried to call every day, but it was difficult with work and time difference. Still, I could see she could move more. She kept walking 10min a day.
+
+## September 9, 18 miles 
+Chapter 11: May to August 2023. She went through 4 more cycles, a total of 6 at this point. Numbers were going down every time. Although she improved, the pain is still there. Two weeks before I went to visit this past summer, she got a stomach virus that left her in bed again. No strength. They spent 5h in the emergency room to know it was nothing related to the cancer. Still, scary.
+
+## September 16, 10 miles (15min/miles, that is fast...)
+Chapter 12: August 2023. When I got there she was better from the stomach and energy, but she got a respiratory virus. This was really scary, because she got fever and couldn't breathe. Again to the ER, 5h more. They said nothing more than a virus. We went home, and in the middle of the night, she woke up coughing like crazy to the point of not being able to breathe. She was very scared, we all were. We spent 1h in the bathroom with hot water, and that helped. I don't know how I could remember that. She told me stories that she would do that whenever I got sick when I was little. The night passed and another day went on. On top of that, the antibiotic she was taking was causing depression. I had to leave to Boston, she was better physically, but mentally really bad. 
+
+## September 23, 12 miles (last training day)
+Chapter 13: Current time. It took 4 weeks for my mom to recover from those infections. Now she is better, almost like she was before last month's episode. Treatment continues to work, but the pain is still there, and maybe forever there. I cannot stop thinking that with a diagnosis 1 month earlier, she could have a much better quality of life. I cannot stop thinking that the treatment is much better but there is no cure. That is why I am walking, and I appreciate everybody who read this and/or donated money in my name ( even now with all this crisis happening). Ultimately, this is why I am a researcher, because there is still a lot of work to do to give people with cancer a second chance.
+
+## October 1, 26.2 miles
