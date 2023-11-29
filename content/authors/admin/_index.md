@@ -69,7 +69,13 @@ user_groups:
 - Researchers
 ---
 
-Experienced computational biologist focused on developing strategy in Biotechs with need of genomic regulation and data integration analyses. 13 years of experience in biological data analysis using the most well-established tools and contributing to novel algorithms to improve the quantification and visualization of genomic data. I approach scientific challenges with passion and believe that a collaboration and not an individual alone can successfully conquer them.   
+13 years of experience working with high-dimensional genomic data, implementing new methods to interpret data for decision-making in research/development projects.
+Built and managed the Illumina and Nanopore sequencing capabilities in 3 companies applying the technology to platforms (target discovery, gene editing and SHAPE-MaP) and MoA projects.
+8 years studying neurodegenerative diseases, and 5 years working in Oncology field.
+Experience harmonizing thousands of multi-omics data in a unique dashboard for preclinical and clinical project stages. Accessed raw data from NIH protected datasets (i.e. TCGA).
+Built 6 bioinformatics packages commonly used nowadays by the open-source community.
+Managed a team of six scientists and engineers to build and maintain the infrastructure, reproducible analyses and data sharing with interactive web-apps.
+Managed efficiently cloud computing and storage infrastructure with AWS services, PostIt (Rstudio) and Nextflow Seqera.  
 
 ### Community
 
@@ -83,8 +89,8 @@ Experienced computational biologist focused on developing strategy in Biotechs w
 | [seqbuster](https://github.com/lpantano/seqbuster)            | ![seqbuster](https://anaconda.org/bioconda/seqbuster/badges/downloads.svg/)           |
 | [seqcluster](https://github.com/lpantano/seqcluster)   | ![seqcluster](https://anaconda.org/bioconda/seqcluster/badges/downloads.svg)           |
 | [seqclusterViz](https://github.com/lpantano/seqclusterViz)   |   [![viz](https://img.shields.io/badge/f1000research-18142.1-orange.svg)](https://doi.org/10.12688/f1000research.18142.1)         |
-| [isomiRs](https://bioconductor.org/packages/3.6/bioc/html/isomiRs.html)   |    ![BioC Downloads](https://bioconductor.org//shields/downloads/isomiRs.svg)       |
-| [DEGreport](https://bioconductor.org/packages/3.6/bioc/html/DEGreport.html)   |    ![BioC Downloads](https://bioconductor.org//shields/downloads/DEGreport.svg)       |
+| [isomiRs](https://bioconductor.org/packages/3.6/bioc/html/isomiRs.html)   |    ![BioC Downloads](https://bioconductor.org/shields/years-in-bioc/isomiRs.svg)       |
+| [DEGreport](https://bioconductor.org/packages/3.6/bioc/html/DEGreport.html)   |    ![BioC Downloads](https://bioconductor.org/shields/years-in-bioc/DEGreport.svg)       |
 
 contributed to: [nf-core](https://nf-co.re/), [bcbio-nextgen](https://github.com/chapmanb/bcbio-nextgen), [cloudbiolinux](https://github.com/chapmanb/cloudbiolinux), [bcbioRNASeq](https://github.com/hbc/bcbioRNASeq), [bioconda](https://github.com/bioconda/bioconda-recipes), [multiqc](https://github.com/ewels/MultiQC)
 
