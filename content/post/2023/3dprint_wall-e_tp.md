@@ -30,8 +30,8 @@ projects: []
 
 It was that time that after 6 months of having the TP holder broken, we decided to make a cute update. It took a couple of months to finish it. Thanks to [Thingverse](https://www.thingiverse.com) for the [model](https://www.thingiverse.com/thing:3709814) with some tweaks.
 
-![](walle/IMG_3353.png)
-![](walle/IMG_4178.png)
-![](walle/IMG_4179.png)
-![](walle/IMG_4193.png)
-![](walle/IMG_4195.png)
+![](images/walle/IMG_3353.png)
+![](images/walle/IMG_4178.png)
+![](images/walle/IMG_4179.png)
+![](images/walle/IMG_4193.png)
+![](images/walle/IMG_4195.png)
