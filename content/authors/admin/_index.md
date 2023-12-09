@@ -21,6 +21,7 @@ organizations:
 bio: My research interests include genomics, visualizationa and modelling.
 
 interests:
+- Sequencing based platforms
 - Transcriptomic
 - Methods optimization
 - Genomic Visualization
