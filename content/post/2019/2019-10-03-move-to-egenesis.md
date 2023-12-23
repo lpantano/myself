@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Academia EOF && cat > eGenesis <<"
+title: "My transition to biotech"
 subtitle: "From academia to industry"
 summary: "My personal experience giving up on academia to bet on industry"
 authors: []
@@ -52,13 +52,13 @@ So, of course, I decided to move on. If the only reason why you won’t make a c
 
 In summary, I got to meet myself again, after so many years doing what the system has told me to do to get a good job, and have a future. I remembered what is my passion, I remembered to believe in myself, and let life to reward my decisions differently (this I will know in a year or so).
 
-Some other things I did meanwhile I was in this crisis:
+Some other things I did meanwhile I was in this phase:
 
 - Write my research, teaching and diversity statements and apply for Associate Professors to 5 different positions to 5 different universities. I didn’t pass any filter.
     - Good mental exercise, yes, I know, 5 positions are nothing, you should apply to 30, or that was the main advice I got.
 - I explored to change totally my career, as a project manager or data scientist in a non-biomedical field. 
     - I took some courses, and I didn’t feel the click that I expect when you are in the right place.
 - I felt miserable and with the lowest self-esteem in my life. 
-    - I started climbing indoors and working out with a personal trainer. All those negative feelings went away with time. Now I can do 2 pulls-up is a row for the first time in my life at the age of 37.
+    - I started climbing indoors and working out with a personal trainer. All those negative feelings went away with time. Now I can do 2 pulls-up in a row for the first time in my life at the age of 37.
 
 
