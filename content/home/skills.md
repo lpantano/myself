@@ -35,7 +35,7 @@ subtitle = ""
 
 [[feature]]
   icon = "dna"
-  icon_pack = "fad"
+  icon_pack = "fas"
   name = "NGS"
 
 
