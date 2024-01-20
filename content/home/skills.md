@@ -14,29 +14,29 @@ subtitle = ""
 # 
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
 [[feature]]
-  icon = "r-project"
-  icon_pack = "fab"
-  name = "OMICS-data"
+  icon = "head-side-gear""
+  icon_pack = "far"
+  name = "Genomics Data AI Modelling"
 
 [[feature]]
   icon = "chart-line"
   icon_pack = "fas"
-  name = "Strategy"
+  name = "Scientific Strategy"
 
 [[feature]]
   icon = "palette"
   icon_pack = "fas"
-  name = "Visualization"
+  name = "Complex Data Visualization"
 
 [[feature]]
   icon = "server"
   icon_pack = "fas"
   name = "AWS Infrastructure"
-  
+
 [[feature]]
-  icon = "server"
-  icon_pack = "fas"
-  name = "Machine-learning"
+  icon = "dna"
+  icon_pack = "fad"
+  name = "NGS"
 
 
 +++

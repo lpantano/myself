@@ -21,10 +21,8 @@ organizations:
 bio: My research interests include genomics, visualizationa and modelling.
 
 interests:
-- Sequencing based platforms
-- Transcriptomic
-- Methods optimization
-- Genomic Visualization
+- Target Discovery and Patient Stratification in Oncology and Neurodegeneration
+- Sequencing-based Platforms, Multi-Omic Modelling and Genomic Visualization
 
 education:
   courses:
@@ -94,9 +92,3 @@ Managed efficiently cloud computing and storage infrastructure with AWS services
 | [DEGreport](https://bioconductor.org/packages/3.6/bioc/html/DEGreport.html)   |    ![BioC Downloads](https://bioconductor.org/shields/years-in-bioc/DEGreport.svg)       |
 
 contributed to: [nf-core](https://nf-co.re/), [bcbio-nextgen](https://github.com/chapmanb/bcbio-nextgen), [cloudbiolinux](https://github.com/chapmanb/cloudbiolinux), [bcbioRNASeq](https://github.com/hbc/bcbioRNASeq), [bioconda](https://github.com/bioconda/bioconda-recipes), [multiqc](https://github.com/ewels/MultiQC)
-
-
-
-### Hobbies
-
-* [My photo gallary](https://ljadventures.exposure.co)
