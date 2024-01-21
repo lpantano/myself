@@ -14,7 +14,7 @@ subtitle = ""
 # 
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
 [[feature]]
-  icon = "gear"
+  icon = "laptop-code"
   icon_pack = "fas"
   name = "Genomics Data AI Modelling"
 
