@@ -85,7 +85,6 @@ Managed efficiently cloud computing and storage infrastructure with AWS services
 | Tool           | Downloads                    |
 | ------------------| ------------------------------ |
 | [mirtop](https://github.com/mirtop/mirtop)            | ![mirtop](https://anaconda.org/bioconda/mirtop/badges/downloads.svg/)           |
-| [seqbuster](https://github.com/lpantano/seqbuster)            | ![seqbuster](https://anaconda.org/bioconda/seqbuster/badges/downloads.svg/)           |
 | [seqcluster](https://github.com/lpantano/seqcluster)   | ![seqcluster](https://anaconda.org/bioconda/seqcluster/badges/downloads.svg)           |
 | [seqclusterViz](https://github.com/lpantano/seqclusterViz)   |   [![viz](https://img.shields.io/badge/f1000research-18142.1-orange.svg)](https://doi.org/10.12688/f1000research.18142.1)         |
 | [isomiRs](https://bioconductor.org/packages/3.6/bioc/html/isomiRs.html)   |    ![BioC Downloads](https://bioconductor.org/shields/years-in-bioc/isomiRs.svg)       |
