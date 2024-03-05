@@ -22,11 +22,12 @@ date_format = "Jan 2006"
 title = "Biotech Consultant Advisor"
   date_start = "2020-09-30"
   date_end = ""
-  description = ""
+  description = """
   Responsibilities include:
 
 Advise on computational biology and bioinformatics strategy for emerging BioTechs using data lake analyses to accelerate the process of target discovery, gene editing and drug development pipelines
 
+"""
 
 [[experience]]
   title = "Director, Head of Computational Biology"
