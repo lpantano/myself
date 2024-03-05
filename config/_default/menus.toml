@@ -36,5 +36,5 @@
 # To enable, copy your resume/CV to `static/media/cv.pdf` and uncomment the lines below.
 [[main]]
   name = "CV"
-  url = "https://lpantano.github.io/mycv/lpantano-cv.pdf"
+  url = "static/media/LorenaPantano-format-2024-03.pdf"
   weight = 70

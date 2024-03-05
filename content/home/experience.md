@@ -17,23 +17,33 @@ date_format = "Jan 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
+
+[[experience]]
+title = "Biotech Consultant Advisor"
+  date_start = "2020-09-30"
+  date_end = ""
+  description = """
+  Responsibilities include:
+
+Advise on computational biology and bioinformatics strategy for emerging BioTechs using data lake analyses to accelerate the process of target discovery, gene editing and drug development pipelines
+
+
 [[experience]]
   title = "Director, Head of Computational Biology"
   company = "NextRNA Therapeutics"
   company_url = "https://nextrna.com/"
   location = "Cambridge"
   date_start = "2021-05-06"
-  # date_end = "2020-09-20"
+  date_end = "2024-02-23"
   description = """
   Responsibilities include:
 
-  * Preparing slides and data packages for partners and BoD
-  * Leading the in-silico Target discovery pipelines integrating genomic data
-  * Leading RNA-Protein interaction prediction from high-throughput sequencing data
-  * Leading visualization plarforms in the discovery program
-  * Mantaining and evolving bioinformatic infrastructure to ensure reproducibility and scalability under budget restrictions
-  * Multi-omics analysis of (genomics and clinical) data available through TCGA, PCAWG, and other type of controlled data
-  * Senior Manager and Mentor
+* Led the computational biology team and strategy by being the interface between Biology, Technology and Drug Discovery teams
+* Led the in-Silico Target discovery/validation team integrating NGS technology and innovative visualization methods
+* Managed Illumina and Nanopore sequencing technology with internal FTEs and CROs
+* Built the RNA structure and RNA-Protein interaction with machine learning methods and SHAPE-Seq derived data
+* Managed the cloud computational infrastructure to ensure reproducibility and scalability
+  
   """
 
 [[experience]]
@@ -46,11 +56,11 @@ date_format = "Jan 2006"
   description = """
   Responsibilities include:
 
-  * Leading R&D pipelines with computational strategies
-  * Analysing metabolimic/transcriptomic data
-  * Leading visualization plarform to boost biological interpretation
-  * Developing bioinformatic infrastructure to ensure reproducibility and scalability
-  * Senior Manager and Mentor
+* Led R&D pipelines with computational strategies
+* Led visualization platform with multi-omics data to understand gene regulation
+* Applied machine learning methods to understand population stratification in pre-clinical studies
+* Developed bioinformatics cloud infrastructure to ensure reproducibility and scalability* 
+
   """
  
 [[experience]]
@@ -63,12 +73,12 @@ date_format = "Jan 2006"
   description = """
   Responsibilities include:
 
-  * Leading genome editing QC pipeline
-  * Analysing genomic/transcriptomic data
-  * Developing bioinformatic tools
-  * Data structure architect
-  * Managing knowledge-base platform
-  * Mentoring 
+* Managed the internal NGS team with Oxford Nanopore and Illumina technologies
+* Led the research of epigenetics marks to enforce expression of transgenes with machine learning
+* Built the technical QA/QC genomic platform
+* Developed multi-Omics pipelines in a community environment
+* Managed the computational cloud infrastructure
+
   """
 
 [[experience]]
@@ -81,12 +91,11 @@ date_format = "Jan 2006"
   description = """
   Responsibilities include:
 
-  * Leading computational analysis under a multi-group collaboration with Boehringer-ingelheim for 3 years
-  * Leading miRNA transcriptomic open project
-  * Analysing genomic data
-  * Developing bioinformatic tools
-  * Managing knowledge-base platform
-  * Mentoring
+* Lead the bioinformatic activities in the cross-organ fibrosis project collaboration between Harvard University and Boehringer Ingelheim
+* Developed and contributed to the computational platform maintaining the system scalable and reproducible
+* Develop tools for NGS data analysis: small RNAseq, (Single Cell and bulk) RNA-seq, ChIP-seq, WholeGenome-seq as part of the bcbio-nextgen python framework *  Bioconductor platform
+* Developed the visualization and integration of multi-omics NGS data inside the bcbio-nextgen python framework
+
   """
 
 [[experience]]
@@ -97,7 +106,10 @@ date_format = "Jan 2006"
   date_start = "2014-05-26"
   date_end = "2017-06-01"
   description = """
-  Analyzed sequencing data in pathogenic conditions. Developed bioinformatics tools for sequencing data (RNA-seq, smallRNA-seq, ChIP-seq, ATAC-seq).
+  
+* Develop tools for NGS data analysis: small RNAseq, (Single Cell and bulk) RNA-seq, ChIP-seq, WholeGenome-seq as part of the bcbio-nextgen python framework *  Bioconductor platform
+* Developed the visualization and integration of multi-omics NGS data inside the bcbio-nextgen python framework
+
   """
 
 [[experience]]
@@ -108,6 +120,7 @@ date_format = "Jan 2006"
   date_start = "2013-02-01"
   date_end = "2014-04-30"
   description = """
+  
   Detected de-novo transcripts as effect of inversion in the HapMap population.Expression quantitive trait loci analysis of inversion in the HapMap population.
   """
 
@@ -119,6 +132,7 @@ date_format = "Jan 2006"
   date_start = "2011-09-01"
   date_end = "2013-02-01"
   description = """
+  
   Determined small RNA characterization in human sperm samples.
   """
 +++
