@@ -19,7 +19,7 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[experience]]
-title = "Biotech Consultant Advisor"
+title = "Biotech Consultant/Advisor"
   date_start = "2020-09-30"
   date_end = ""
   description = """
