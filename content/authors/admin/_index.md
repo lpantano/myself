@@ -70,6 +70,7 @@ user_groups:
 
 Visionary leader in computational biology, excelling in genomic and data visualization for decision-making processes, with a proven track record in Biotech for enhancing target discovery through innovative bioinformatics methods. Leveraged genomics methods expertise to pioneer research at Harvard.  Led cross-functional teams towards groundbreaking insights in fibrosis, oncology and neurodegeneration. Proficient in project coordination and mentoring scientists.
 
+
 ### Vision and Mission
 
 Accelerate decision-making process in biomedicine to impact people suffering from any conditions
