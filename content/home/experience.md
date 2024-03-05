@@ -41,7 +41,7 @@ Advise on technology, computational biology and bioinformatics strategy for emer
 * Led the computational biology team and strategy by being the interface between Biology, Technology and Drug Discovery teams
 * Led the in-Silico Target discovery/validation team integrating NGS technology and innovative visualization methods
 * Managed Illumina and Nanopore sequencing technology with internal FTEs and CROs
-* Built the RNA structure and RNA-Protein interaction with machine learning methods and SHAPE-Seq derived data
+* Built the RNA structure and RNA-Protein interaction AI engine from SHAPE-Seq and eCLIP-Seq derived data
 * Managed the cloud computational infrastructure to ensure reproducibility and scalability
   
   """
