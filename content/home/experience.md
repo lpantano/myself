@@ -25,8 +25,7 @@ title = "Biotech Consultant Advisor"
   description = """
   Responsibilities include:
 
-Advise on computational biology and bioinformatics strategy for emerging BioTechs using data lake analyses to accelerate the process of target discovery, gene editing and drug development pipelines
-
+Advise on technology, computational biology and bioinformatics strategy for emerging BioTechs building data lakes and novel methods to accelerate the process of target discovery, gene editing and drug development pipelines
 """
 
 [[experience]]
