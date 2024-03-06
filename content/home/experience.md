@@ -20,7 +20,7 @@ date_format = "Jan 2006"
 
 [[experience]]
 title = "Biotech Consultant/Advisor"
-  date_start = "Sept 2020"
+  date_start = "2020-09-30"
   date_end = ""
   description = """
 
@@ -32,8 +32,8 @@ Advise on technology, computational biology and bioinformatics strategy for emer
   company = "NextRNA Therapeutics"
   company_url = "https://nextrna.com/"
   location = "Cambridge"
-  date_start = "May 2021"
-  date_end = "March 2024"
+  date_start = "2021-05-06"
+  date_end = "2024-02-23"
   description = """
   Responsibilities include:
 
@@ -50,8 +50,8 @@ Advise on technology, computational biology and bioinformatics strategy for emer
   company = "Axcella Health"
   company_url = "https://axcellahealth.com/"
   location = "Cambridge"
-  date_start = "Sept 2020"
-  date_end = "April 2021"
+  date_start = "2020-09-25"
+  date_end = "2021-04-16"
   description = """
   Responsibilities include:
 
@@ -67,8 +67,8 @@ Advise on technology, computational biology and bioinformatics strategy for emer
   company = "eGenesis Bio"
   company_url = "https://egenesisbio.com/"
   location = "Cambridge"
-  date_start = "Sept 2019"
-  date_end = "Sept 2020"
+  date_start = "2019-09-25"
+  date_end = "2020-09-20"
   description = """
   Responsibilities include:
 
@@ -85,8 +85,8 @@ Advise on technology, computational biology and bioinformatics strategy for emer
   company = "Harvard Chan School"
   company_url = ""
   location = "Boston"
-  date_start = "June 2017"
-  date_end = "April 2019"
+  date_start = "2017-06-01"
+  date_end = "2019-04-16"
   description = """
   Responsibilities include:
 
@@ -102,8 +102,8 @@ Advise on technology, computational biology and bioinformatics strategy for emer
   company = "Harvard Chan School"
   company_url = ""
   location = "Boston"
-  date_start = "May 2014"
-  date_end = "June 2017"
+  date_start = "2014-05-26"
+  date_end = "2017-06-01"
   description = """
   
 * Develop tools for NGS data analysis: small RNAseq, (Single Cell and bulk) RNA-seq, ChIP-seq, WholeGenome-seq as part of the bcbio-nextgen python framework *  Bioconductor platform
@@ -116,8 +116,8 @@ Advise on technology, computational biology and bioinformatics strategy for emer
   company = "Institute of Biotechnology and Biomedicine"
   company_url = ""
   location = "Barcelona"
-  date_start = "Feb 2013"
-  date_end = "April 2014"
+  date_start = "2013-02-01"
+  date_end = "2014-04-30"
   description = """
   
   Detected de-novo transcripts as effect of inversion in the HapMap population.Expression quantitive trait loci analysis of inversion in the HapMap population.
@@ -128,8 +128,8 @@ Advise on technology, computational biology and bioinformatics strategy for emer
   company = "Institute of Predictive and Personalized Medicine of Cancer"
   company_url = ""
   location = "Barcelona"
-  date_start = "Sept 2011"
-  date_end = "Feb 2013"
+  date_start = "2011-09-01"
+  date_end = "2013-02-01"
   description = """
   
   Determined small RNA characterization in human sperm samples.
