@@ -68,26 +68,28 @@ user_groups:
 - Researchers
 ---
 
-13 years of experience working with high-dimensional genomic data, implementing new methods to interpret data for decision-making in research/development projects.
-Built and managed the Illumina and Nanopore sequencing capabilities in 3 companies applying the technology to platforms for target discovery, gene editing, SHAPE-MaP and MoA projects.
-8 years studying neurodegenerative diseases, and 5 years working in Oncology field.
-Experience harmonizing thousands of multi-omics data in a unique dashboard for preclinical and clinical project stages. Accessed controlled raw data from NIH protected datasets (i.e. TCGA).
-Built 6 bioinformatics packages commonly used nowadays by the open-source community.
-Managed a team of five scientists and engineers to build and maintain compute infrastructure, reproducible analyses and data sharing with interactive web-apps.
-Managed efficiently cloud computing and storage infrastructure with AWS services, PostIt (Rstudio) and Nextflow Seqera.  
+Visionary leader in computational biology, excelling in genomic and data visualization for decision-making processes, with a proven track record in Biotech for enhancing target discovery through innovative bioinformatics methods. Leveraged genomics methods expertise to pioneer research at Harvard. Led cross-functional teams towards groundbreaking insights in fibrosis, oncology and neurodegeneration. Proficient in project coordination and mentoring scientists.
+
+
+### Vision and Mission
+
+Accelerate decision-making process in biomedicine to impact people suffering from any conditions
+
+Build robust platforms with innovative genomic data analysis and visualization to communicate system biology
+
+
+### Leadership
+
+13 years of experience mentoring scientists and leading teams in Academia and Biotech environments. 
+
+Led cross-functional teams in BigPharma/Academia collaborations and biotech. 
+
+Experience in communication cross-teams and with business partners. Managed budget and timelines. Collaborate with business development team.
+
 
 ### Community
 
-[JOSS](https://joss.readthedocs.io/en/latest/index.html) editor. Join our [women in bioinformatics](https://www.meetup.com/boston-area-womens-bioinformatics/) in Boston area.
+[JOSS](https://joss.readthedocs.io/en/latest/index.html) editor. 
 
-### My tools
+Join our [women in bioinformatics](https://www.meetup.com/boston-area-womens-bioinformatics/) in Boston area.
 
-| Tool           | Downloads                    |
-| ------------------| ------------------------------ |
-| [mirtop](https://github.com/mirtop/mirtop)            | ![mirtop](https://anaconda.org/bioconda/mirtop/badges/downloads.svg/)           |
-| [seqcluster](https://github.com/lpantano/seqcluster)   | ![seqcluster](https://anaconda.org/bioconda/seqcluster/badges/downloads.svg)           |
-| [seqclusterViz](https://github.com/lpantano/seqclusterViz)   |   [![viz](https://img.shields.io/badge/f1000research-18142.1-orange.svg)](https://doi.org/10.12688/f1000research.18142.1)         |
-| [isomiRs](https://bioconductor.org/packages/3.6/bioc/html/isomiRs.html)   |    ![BioC Downloads](https://bioconductor.org/shields/years-in-bioc/isomiRs.svg)       |
-| [DEGreport](https://bioconductor.org/packages/3.6/bioc/html/DEGreport.html)   |    ![BioC Downloads](https://bioconductor.org/shields/years-in-bioc/DEGreport.svg)       |
-
-contributed to: [nf-core](https://nf-co.re/), [bcbio-nextgen](https://github.com/chapmanb/bcbio-nextgen), [cloudbiolinux](https://github.com/chapmanb/cloudbiolinux), [bcbioRNASeq](https://github.com/hbc/bcbioRNASeq), [bioconda](https://github.com/bioconda/bioconda-recipes), [multiqc](https://github.com/ewels/MultiQC)
