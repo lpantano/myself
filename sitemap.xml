@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://lpantano.github.io/authors/</loc>
+    <lastmod>2024-05-23T14:15:00-05:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/author/lorena-pantano/</loc>
+    <lastmod>2024-05-23T14:15:00-05:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/talk/nextflow2024/</loc>
+    <lastmod>2024-05-23T14:15:00-05:00</lastmod>
+  </url><url>
     <loc>http://lpantano.github.io/</loc>
-    <lastmod>2024-02-28T12:00:00-04:00</lastmod>
+    <lastmod>2024-05-23T14:15:00-05:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/author/nextflow/</loc>
+    <lastmod>2024-05-23T14:15:00-05:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/talk/</loc>
+    <lastmod>2024-05-23T14:15:00-05:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/post/2024/2024-02-learning-infrastructure/</loc>
     <lastmod>2024-02-28T12:00:00-04:00</lastmod>
@@ -17,25 +32,13 @@
     <loc>http://lpantano.github.io/post/2023/2023-06-01-raising-for-cancer-research/</loc>
     <lastmod>2023-09-30T12:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://lpantano.github.io/authors/</loc>
-    <lastmod>2021-09-18T00:00:00-05:00</lastmod>
-  </url><url>
     <loc>http://lpantano.github.io/author/bio-talent/</loc>
-    <lastmod>2021-09-18T00:00:00-05:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/author/lorena-pantano/</loc>
-    <lastmod>2021-09-18T00:00:00-05:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/talk/</loc>
     <lastmod>2021-09-18T00:00:00-05:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/talk/biotalent2021/</loc>
     <lastmod>2021-09-18T00:00:00-05:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/talk/nextflow2021/</loc>
-    <lastmod>2021-09-15T00:00:00-05:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/author/nextflow/</loc>
     <lastmod>2021-09-15T00:00:00-05:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/author/rob-lalonde/</loc>
