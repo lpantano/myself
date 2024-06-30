@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Head of Computational Biology
+role: Director of Bioinformatics Platform
 
 # Organizations/Affiliations
 organizations:
