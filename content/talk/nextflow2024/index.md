@@ -48,7 +48,7 @@ tags = []
 # Links (optional).
 url_pdf = ""
 url_slides = ""
-url_video = "https://www.youtube.com/watch?v=h09yusZie_k"
+url_video = ""
 url_code = ""
 
 # Featured image

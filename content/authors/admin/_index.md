@@ -10,12 +10,12 @@ authors:
 superuser: true
 
 # Role/position
-role: Head of Computational Biology
+role: Director of Bioinformatics Platform
 
 # Organizations/Affiliations
 organizations:
-- name: NextRNA Therapeutics
-  url: "https://www.nextrnatx.com/"
+- name: Harvard Chan School
+  url: "https://bioinformatics.sph.harvard.edu"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include genomics, visualizationa and modelling.
@@ -69,6 +69,9 @@ user_groups:
 ---
 
 Visionary leader in computational biology, excelling in genomic and data visualization for decision-making processes, with a proven track record in Biotech for enhancing target discovery through innovative bioinformatics methods. Leveraged genomics methods expertise to pioneer research at Harvard. Led cross-functional teams towards groundbreaking insights in fibrosis, oncology and neurodegeneration. Proficient in project coordination and mentoring scientists.
+
+
+**Biotech Consultant/Advisor** (2020 to present): Advise on technology, computational biology and bioinformatics strategy for emerging BioTechs building data lakes and novel methods to accelerate the process of target discovery, gene editing and drug development pipelines
 
 
 ### Vision and Mission

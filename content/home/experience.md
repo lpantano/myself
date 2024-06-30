@@ -17,15 +17,18 @@ date_format = "Jan 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
-
 [[experience]]
-title = "Biotech Consultant/Advisor"
-  date_start = "2020-09-30"
-  date_end = ""
+  title = "Director of Bioinformatics Platform"
+  company = "Harvard Chan Bioinformatics Core"
+  company_url = "https://bioinformatics.sph.harvard.edu"
+  location = "Boston"
+  date_start = "2024-04-01"
+  # date_end = "2024-02-23"
   description = """
 
-Advise on technology, computational biology and bioinformatics strategy for emerging BioTechs building data lakes and novel methods to accelerate the process of target discovery, gene editing and drug development pipelines
-"""
+My main responsibility is to manage bioinformatics pipelines, ensuring they're reliable, efficient, and scalable for analyzing genomic, transcriptomic, and other omics data. I am also leading the development of an interactive visualization platform, making complex biological data more accessible for multiple research programs. In addition to this, I am leading and mentoring a team of bioinformaticians, fostering a collaborative and innovative work environment. My role involves consulting with researchers and external collaborators to understand their bioinformatics needs and collaborating on interdisciplinary projects. Quality assurance and documentation are also part of my duties, ensuring the accuracy and reliability of analyses and maintaining comprehensive documentation for pipelines and workflows.
+
+""" 
 
 [[experience]]
   title = "Director, Head of Computational Biology"
