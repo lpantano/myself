@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BWCB | My bits</title>
+    <link>http://lpantano.github.io/author/bwcb/</link>
+      <atom:link href="http://lpantano.github.io/author/bwcb/index.xml" rel="self" type="application/rss+xml" />
+    <description>BWCB</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 12 Jun 2024 18:00:00 -0500</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_512x512_fill_lanczos_center_3.png</url>
+      <title>BWCB</title>
+      <link>http://lpantano.github.io/author/bwcb/</link>
+    </image>
+    
+    <item>
+      <title>BaWIB X BWCB joint meetup! Leveraging Mentorship Through Career Hurdles</title>
+      <link>http://lpantano.github.io/talk/panel2024wib/</link>
+      <pubDate>Wed, 12 Jun 2024 18:00:00 -0500</pubDate>
+      <guid>http://lpantano.github.io/talk/panel2024wib/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
