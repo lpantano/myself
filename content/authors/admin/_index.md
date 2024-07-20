@@ -73,6 +73,13 @@ Visionary leader in computational biology, excelling in genomic and data visuali
 
 **Biotech Consultant/Advisor** (2020 to present): Advise on technology, computational biology and bioinformatics strategy for emerging BioTechs building data lakes and novel methods to accelerate the process of target discovery, gene editing and drug development pipelines
 
+**Founder and Organizer of [Women in Bioinformatics](https://www.meetup.com/boston-area-womens-bioinformatics/) in the Boston Area** (2016 to present): Empowering women in computational biology and bioinformatics in academia and biotech by creating a safe and supportive space for career development alongside like-minded peers.
+
+**Board Member at [AWIS MASS](https://massawis.org/board-members-2024-2025/) - Mentoring committee** (2024 to present): Fostering the mentoring effort in the organization.
+
+**[Ambassador](https://www.nextflow.io/ambassadors.html) Nextflow** (2024 to present): Empowering the use of [Nextflow](https://www.nextflow.io/index.html) and [nf-core](https://nf-co.re) technology in the genomic space.
+
+**Co-chair of [Genomics Bioinformatics](https://abrf.org/research-groups/genomics/genomics-bioinformatics/) ABRF** (2024 to present): Continuing the effort to investigate genomics technologies applied in cores.
 
 ### Vision and Mission
 
