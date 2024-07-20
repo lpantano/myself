@@ -73,7 +73,7 @@ Visionary leader in computational biology, excelling in genomic and data visuali
 
 **Biotech Consultant/Advisor** (2020 to present): Advise on technology, computational biology and bioinformatics strategy for emerging BioTechs building data lakes and novel methods to accelerate the process of target discovery, gene editing and drug development pipelines
 
-**Board Member at [AWIS MASS](https://massawis.org/board-members-2024-2025/) - Mentoring committee** (2024 to present): Responsible of the mentoring effort in the organization.
+**Board Member at [AWIS MASS](https://massawis.org/board-members-2024-2025/) - Mentoring committee** (2024 to present): Fostering the mentoring effort in the organization.
 
 **[Ambassador](https://www.nextflow.io/ambassadors.html) Nextflow** (2024 to present): Empowering the use of [Nextflow](https://www.nextflow.io/index.html) and [nf-core](https://nf-co.re) technology in the genomic space.
 
