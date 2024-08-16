@@ -7,8 +7,8 @@ summary: "Talk to a computational biologist scientist from the idea not the data
 authors: []
 tags: []
 categories: []
-date: 2024-08-16T12:00:00-04:00
-lastmod: 2024-08-16T12:00:00-04:00
+date: 2024-08-15T12:00:00-04:00
+lastmod: 2024-08-15T12:00:00-04:00
 featured: true
 draft: false
 
