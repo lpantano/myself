@@ -5,12 +5,27 @@
     <link>http://lpantano.github.io/</link>
       <atom:link href="http://lpantano.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>My bits</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 12 Jun 2024 18:00:00 -0500</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 15 Aug 2024 12:00:00 -0400</lastBuildDate>
     <image>
       <url>http://lpantano.github.io/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_512x512_fill_lanczos_center_3.png</url>
       <title>My bits</title>
       <link>http://lpantano.github.io/</link>
     </image>
+    
+    <item>
+      <title>Perspective: Note directed to leadership in Biology, Translational, Chemistry and Technology.</title>
+      <link>http://lpantano.github.io/post/2024/2024-08-perspective1/</link>
+      <pubDate>Thu, 15 Aug 2024 12:00:00 -0400</pubDate>
+      <guid>http://lpantano.github.io/post/2024/2024-08-perspective1/</guid>
+      <description>&lt;p&gt;Do you work with Computational Biology/Bioinformatics scientists (CBS)? Do you value their work and relationship? Answer these questions and I will tell you:
+Have you ever generated data without talking to a CBS and then had a meeting to tell them what you need and what to do?
+Have you ever met with a CBS to tell them the figure you want or the analysis you wish for without discussing the scientific hypothesis?
+Have you ever made a timeline or assured delivery of a project that involves analysis of a CBS team without discussing it deeply with them?&lt;/p&gt;
+&lt;p&gt;If you answer YES to any of that, then you are not appreciating Computational Biology scientists (I know it isn&amp;rsquo;t what you mean) and you are making your life more difficult. Not only that, but your projects are NOT efficiently executed, and there will be a lot of frustration and delays because of not talking to us first.&lt;/p&gt;
+&lt;p&gt;But it is EASY to change. Next time you think you need to generate any high-throughput data, before even planning the experiment, start meeting with the CBS team. Explain your scientific hypothesis or question, and ask us: Do you know any technology to generate data that will support or not this hypothesis? What are the key aspects we need to think about for the experimental design? What resources do you need? What limitations do you see? Computational biologists are not a Microsoft Office Suite for other fields. We understand the technologies that generate the data we analyze. For instance, there is nothing simple about RNAseq. There are more than 60 steps from your cells to raw data, and there are more than 50 computational methods applied to the data to get you the best gene expression estimation. Protocols get cheaper, shorter and automated, but they are still COMPLEX. The analysis gets faster and cheaper, but they are still COMPLEX. Not because you don&amp;rsquo;t see it, it is not there. There is no perfect technology; all of them are approximations, and only the experts who have spent years with them will know how to go from estimation to insights.&lt;/p&gt;
+&lt;p&gt;I hope this post saves one project. Just try next time to initiate the effort meeting with the CBS the moment you have the IDEA.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>BaWIB X BWCB joint meetup! Leveraging Mentorship Through Career Hurdles</title>
