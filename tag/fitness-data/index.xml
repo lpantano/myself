@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fitness data | My bits</title>
+    <link>http://lpantano.github.io/tag/fitness-data/</link>
+      <atom:link href="http://lpantano.github.io/tag/fitness-data/index.xml" rel="self" type="application/rss+xml" />
+    <description>Fitness data</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 10 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_512x512_fill_lanczos_center_3.png</url>
+      <title>Fitness data</title>
+      <link>http://lpantano.github.io/tag/fitness-data/</link>
+    </image>
+    
+    <item>
+      <title>Training Progress</title>
+      <link>http://lpantano.github.io/project/training/</link>
+      <pubDate>Sun, 10 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/project/training/</guid>
+      <description>&lt;p&gt;Visit &lt;a href=&#34;https://lpantano.shinyapps.io/Lopantano-Run-Data/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;App&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This project, developed using RShiny and data from Apple’s Health app, emphasizes the importance of personal data ownership and management. I believe individuals should have control over their own data, rather than it being dictated by app limitations or leveraged by large corporations. They advocate for apps to offer data export options in standardized formats, empowering users to make informed decisions and analyze their data independently. This example demonstrates my own training progress, showing adaptations in speed, distance, time and heart rate, with plans to correlate with broader health insights. For further information, feel free to reach out.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
