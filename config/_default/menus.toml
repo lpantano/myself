@@ -11,21 +11,22 @@
 [[main]]
   name = "Posts"
   url = "#posts"
+  weight = 30
+
+[[main]]
+  name = "DataBoards"
+  url = "#projects"
   weight = 20
 
-#[[main]]
-#  name = "Projects"
-#  url = "#projects"
-#  weight = 30
 [[main]]
   name = "Talks"
   url = "#talks"
-  weight = 30
+  weight = 40
 
 [[main]]
   name = "Publications"
   url = "#featured"
-  weight = 40
+  weight = 50
 
 [[main]]
   name = "Contact"
