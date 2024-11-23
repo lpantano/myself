@@ -5,12 +5,25 @@
     <link>http://lpantano.github.io/post/</link>
       <atom:link href="http://lpantano.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 15 Aug 2024 12:00:00 -0400</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 21 Nov 2024 12:00:00 -0400</lastBuildDate>
     <image>
       <url>http://lpantano.github.io/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
       <link>http://lpantano.github.io/post/</link>
     </image>
+    
+    <item>
+      <title>Showcase: My Quick Dive into Pipeline Automation with Seqera AI</title>
+      <link>http://lpantano.github.io/post/2024/nextflow_seqera_ai_in_30min/</link>
+      <pubDate>Thu, 21 Nov 2024 12:00:00 -0400</pubDate>
+      <guid>http://lpantano.github.io/post/2024/nextflow_seqera_ai_in_30min/</guid>
+      <description>&lt;p&gt;Today, I encountered a familiar dilemma that seems to pop up whenever a simple task comes my way: should I stick to the tried-and-true methods, or should I embrace automation? This time, it was about subsampling raw sequencing data. In my group, we&amp;rsquo;ve been doing this for ages: copy-pasting an SBATCH script, loading the necessary modules, tweaking the code, submitting it to the cluster, and then closely monitoring it. It usually gets the job done.&lt;/p&gt;
+&lt;p&gt;But, we&amp;rsquo;re living in exciting times! With tools like &lt;a href=&#34;https://www.nextflow.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nextflow&lt;/a&gt;, &lt;a href=&#34;https://seqera.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Seqera&lt;/a&gt;, and &lt;a href=&#34;https://seqera.io/ask-ai/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Seqera AI&lt;/a&gt;, I decided to take a leap and harness the power of Seqera AI to create a small Nextflow pipeline for processing fastq files and generating subsampled outputs. Within just 30 minutes, I managed to build a &lt;a href=&#34;https://github.com/bcbio/nextflow-subsample/tree/main&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pipeline&lt;/a&gt; using the seqtk nfcore/module, complete with test data, and config files that enabled Docker compatibility and execution within our Seqera Workspace. Okay, full disclosure, someone else on the team actually ran the pipeline, what makes this even a better example of accesibility.&lt;/p&gt;
+&lt;p&gt;Of course, AI didn&amp;rsquo;t do all the work for me; it simply kick-started the process. As someone who knows a thing or two about development, I was able to troubleshoot and refine what the AI initially provided. The pipeline did run, but we hit a snag with jobs failing due to memory constraints. It turned out our output files were pretty hefty, so I delved into the tool&amp;rsquo;s parameters and quickly adjusted the necessary config settings. Problem solved!&lt;/p&gt;
+&lt;p&gt;This experience is a testament to how we can speed up analyses without sacrificing reproducibility or accessibility. And thanks to Seqera, pinpointing the memory issue was a breeze. I genuinely believe adopting such tools will lower the barriers to creating small or infrequent projects and ultimately improve our research. So, why not give your own small pipeline a shot?&lt;/p&gt;
+&lt;p&gt;And yes, this post got a little help from Harvard Open AI GPT-4 to bring it to you.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Perspective: Note directed to leadership in Biology, Translational, Chemistry and Technology.</title>
