@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Showcase: Nextflow pipeline in 30min with Seqera AI"
+title: "Showcase: My Quick Dive into Pipeline Automation with Seqera AI"
 subtitle: ""
 summary: "Example of automation with miniaml investment but good results"
 authors: []
