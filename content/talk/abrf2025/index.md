@@ -17,7 +17,7 @@ abstract_short = ""
 
 # Name of event and optional event URL.
 event = "ABRF 2025"
-event_url = "https://www.youtube.com/watch?v=Zfd4difzi_U&t=3020"
+event_url = "https://web.cvent.com/event/924ddc5d-0069-463a-b1e4-3a483680f421/summary"
 
 # Location of event.
 # location = "CLS 421 (Cancer Center conference room).4th floor, Center for Life Sciences.3 Blackfan Circle, Boston MA"
@@ -48,7 +48,7 @@ tags = []
 # Links (optional).
 url_pdf = "https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:bca11244-31a3-4ec8-8f9e-de93a855501b?viewer%21megaVerb=group-discover"
 url_slides = ""
-url_video = ""
+url_video = "https://www.youtube.com/watch?v=Zfd4difzi_U&t=3020"
 url_code = ""
 
 # Featured image
