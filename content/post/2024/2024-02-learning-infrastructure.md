@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "My Learning Experience with Computational Infrastructure in Biotech"
+title: "My Learning Experience with Computational Infrastructure in Biotech/Industry"
 subtitle: ""
 summary: "The mistakes and the success of building as fastest as possible the infrastructure"
 authors: []
