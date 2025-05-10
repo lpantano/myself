@@ -2,8 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://lpantano.github.io/authors/</loc>
+    <lastmod>2025-03-25T14:15:00-05:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/author/lorena-pantano/</loc>
+    <lastmod>2025-03-25T14:15:00-05:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/talk/abrf2025/</loc>
+    <lastmod>2025-03-25T14:15:00-05:00</lastmod>
+  </url><url>
     <loc>http://lpantano.github.io/</loc>
-    <lastmod>2024-11-21T12:00:00-04:00</lastmod>
+    <lastmod>2025-03-25T14:15:00-05:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/talk/</loc>
+    <lastmod>2025-03-25T14:15:00-05:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/post/</loc>
     <lastmod>2024-11-21T12:00:00-04:00</lastmod>
@@ -26,9 +38,6 @@
     <loc>http://lpantano.github.io/post/2024/2024-08-perspective1/</loc>
     <lastmod>2024-08-15T12:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://lpantano.github.io/authors/</loc>
-    <lastmod>2024-06-12T18:00:00-05:00</lastmod>
-  </url><url>
     <loc>http://lpantano.github.io/author/bawib/</loc>
     <lastmod>2024-06-12T18:00:00-05:00</lastmod>
   </url><url>
@@ -37,12 +46,6 @@
   </url><url>
     <loc>http://lpantano.github.io/author/bwcb/</loc>
     <lastmod>2024-06-12T18:00:00-05:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/talk/</loc>
-    <lastmod>2024-06-12T18:00:00-05:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/author/lorena-pantano/</loc>
-    <lastmod>2024-05-23T14:15:00-05:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/talk/nextflow2024/</loc>
     <lastmod>2024-05-23T14:15:00-05:00</lastmod>
