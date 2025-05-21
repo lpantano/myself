@@ -5,12 +5,20 @@
     <link>http://lpantano.github.io/author/lorena-pantano/</link>
       <atom:link href="http://lpantano.github.io/author/lorena-pantano/index.xml" rel="self" type="application/rss+xml" />
     <description>Lorena Pantano</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 25 Mar 2025 14:15:00 -0500</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 15 May 2025 14:15:00 -0500</lastBuildDate>
     <image>
       <url>http://lpantano.github.io/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_512x512_fill_lanczos_center_3.png</url>
       <title>Lorena Pantano</title>
       <link>http://lpantano.github.io/author/lorena-pantano/</link>
     </image>
+    
+    <item>
+      <title>Unified, community-developed analysis guidelines and templates for multi-omics data interpretability</title>
+      <link>http://lpantano.github.io/talk/nextflow2025/</link>
+      <pubDate>Thu, 15 May 2025 14:15:00 -0500</pubDate>
+      <guid>http://lpantano.github.io/talk/nextflow2025/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Lorena Pantano: Unified, community-developed analysis guidelines and templates for multi-omics data interpretability</title>
