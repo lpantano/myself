@@ -28,16 +28,18 @@ image:
 projects: []
 ---
 
-Last Friday, I had the chance to join a panel discussion on advancing diversity in challenging times. I was lucky to be joined by two brilliant next-gen scientists, Francisce and Sabaa. Follow them—they’re going to be incredible leaders and influencers in our field and beyond.
+Last Friday, I had the chance to join a panel discussion on advancing diversity in challenging times. I was lucky to be joined by two brilliant next-gen scientists, [Francince Camacho](https://www.linkedin.com/in/francinecamacho/?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BBqo6ti1rRYmn%2BfbiVPaiWA%3D%3D) and [Saba Nafees](https://www.linkedin.com/in/saba-nafees/?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BBqo6ti1rRYmn%2BfbiVPaiWA%3D%3D). Follow them—they’re going to be incredible leaders and influencers in our field and beyond.
+
 The session was private, intentionally, to create a safe space where we could speak openly. That setup mattered. I’ve been advocating for equal opportunities since I started in science 15 years ago, and this discussion hit close to home. It’s a topic I never get tired of thinking about—because each time, I learn something new.
 
-Before diving into my takeaways, I want to give a big shout-out to the Nextflow Summit. It was one of the most welcoming events I’ve attended: committed to diversity, showcasing a wide range of voices (check out the speakers and keynotes!), and even organizing a hackathon with enough women to make me feel right at home—which, believe me, is rare in tech spaces. It’s such a relief to be in a room and not feel like you’re the only one representing a group.
-Here’s something I want to be clear about: we don’t need any kind of special treatment to be in this field. Bioinformatics doesn’t come with a gender requirement. What we do need is equal treatment.
+Before diving into my takeaways, I want to give a **big shout-out to the Nextflow Summit**. It was one of the most welcoming events I’ve attended: committed to diversity, showcasing a wide range of voices (check out the speakers and keynotes!), and even organizing a hackathon with enough women to make me feel right at home—which, believe me, is rare in tech spaces. It’s such a relief to be in a room and not feel like you’re the only one representing a group.
 
-The reasons some of us don’t come back to conferences or workplaces? It's not complicated. Sexual comments (which somehow still happen and are still not funny), being talked over, or hearing one of our ideas repeated back to us—by someone else claiming it as their own. Yep, that still happens.
+Here’s something I want to be clear about: **we don’t need any kind of special treatment to be in this field**. Bioinformatics doesn’t come with a gender requirement. What we do need is equal treatment.
 
-We no longer need to prove that diversity makes science better—there's already plenty of research on that. Honestly, we all just want a fair shot. Equal opportunities to work hard and be recognized. If you don’t see the inequality, that’s okay, but science has shown it’s real.
-Yes, things have improved. But leadership roles are still very male-dominated [see LeanIn.org for stats]. I won’t go into a long rant—but if you think there’s a reason beyond unconscious bias or unequal opportunities to explain this gap, I dare you: send me a scientifically backed explanation. I’m all ears.
+The reasons some of us don’t come back to conferences or workplaces? It's not complicated. **Sexual comments** (which somehow still happen and are still not funny), **being talked over,** or hearing one of **our ideas repeated back to us**—by someone else claiming it as their own. Yep, that still happens.
+
+We no longer need to prove that diversity makes science better—there's already plenty of research on that. Honestly, we all just want a fair shot. **Equal opportunities to work hard and be recognized**. If you don’t see the inequality, that’s okay, but science has shown it’s real.
+Yes, things have improved. But **leadership roles are still very male-dominated** [see LeanIn.org for stats](https://leanin.org/women-in-the-workplace). I won’t go into a long rant—but if you think there’s a reason beyond unconscious bias or unequal opportunities to explain this gap, I dare you: send me a scientifically backed explanation. I’m all ears.
 
 At this point, you might be feeling one of a few things:
 
@@ -50,14 +52,14 @@ So what can we do?
 
 There’s one simple, powerful thing every ally can do—and if even 1 in 5 people with privilege did it, things would improve fast:
 
-At work, be a good colleague to a woman. Then ask her, “How can I support your career?” And then—try to do it.
+At work, be a good colleague to a woman. Then **ask her, “How can I support your career?” And then—try to do it.**
 
 That’s it. You’d be surprised how little it takes to make a big difference. But I’ll be honest—it might not be “comfortable.” You might have to stand up in front of other colleagues. And then two things will happen:
 
 1. Some coworkers will join you.
 2. Others might see you as that person—an annoying advocate—and you may lose a bit of their privileged support.
 
-This is where it gets real. You’ll have to choose: what kind of career, and what kind of world, do you want to help build?
+This is where it gets real. You’ll have to choose: **what kind of career, and what kind of world, do you want to help build?**
 
 But here’s the thing: the more people who speak up, the less risky it becomes for any one person. Quiet support and private “likes” aren’t enough anymore. We need action. Especially from men. Now more than ever.
 
