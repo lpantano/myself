@@ -68,7 +68,7 @@ user_groups:
 - Researchers
 ---
 
-Visionary leader in computational biology, excelling in genomic and data visualization for decision-making processes, with a proven track record in Biotech for enhancing target discovery through innovative bioinformatics methods. Leveraged genomics methods expertise to pioneer research at Harvard. Led cross-functional teams towards groundbreaking insights in fibrosis, oncology and neurodegeneration. Proficient in project coordination and mentoring scientists.
+Experienced leader in computational biology, excelling in genomic and data visualization for decision-making processes, with a proven track record in Biotech for enhancing target discovery through innovative bioinformatics methods. Leveraged genomics methods expertise to pioneer research at Harvard. Led cross-functional teams towards groundbreaking insights in fibrosis, oncology and neurodegeneration. Proficient in project coordination and mentoring scientists.
 
 Listen to our podcast [A Coffee with CompBio](https://smartlink.ausha.co/a-coffee-with-compbio) hosted by me and [Alex Bartlett](https://www.linkedin.com/in/alexandra-bartlett-926b32109/)
 
@@ -100,7 +100,7 @@ Experience in communication cross-teams and with business partners. Managed budg
 
 ### Community
 
-[JOSS](https://joss.readthedocs.io/en/latest/index.html) editor. 
+[JOSS](https://joss.readthedocs.io/en/latest/index.html) Past editor. 
 
-Join our [women in bioinformatics](https://www.meetup.com/boston-area-womens-bioinformatics/) in Boston area.
+Join our [women in bioinformatics](https://boston-wib.org) in Boston area.
 
