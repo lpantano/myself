@@ -19,7 +19,7 @@ links:
 #   url: https://twitter.com/georgecushen
 url_code: ""
 url_pdf: ""
-url_slides: "https://lpantano.shinyapps.io/Lopantano-Run-Data/"
+url_slides: "https://run-training-activities.netlify.app"
 url_app: ""
 
 # Slides (optional).
@@ -30,6 +30,6 @@ url_app: ""
 # slides: example
 ---
 
-Visit [App](https://lpantano.shinyapps.io/Lopantano-Run-Data/).
+Visit [App](https://run-training-activities.netlify.app).
 
-This project, developed using RShiny and data from Apple’s Health app, emphasizes the importance of personal data ownership and management. I believe individuals should have control over their own data, rather than it being dictated by app limitations or leveraged by large corporations. They advocate for apps to offer data export options in standardized formats, empowering users to make informed decisions and analyze their data independently. This example demonstrates my own training progress, showing adaptations in speed, distance, time and heart rate, with plans to correlate with broader health insights. For further information, feel free to reach out.
+This project, developed using react.js and data from Apple’s Health app and Garmin Connect app, emphasizes the importance of personal data ownership and management. I believe individuals should have control over their own data, rather than it being dictated by app limitations or leveraged by large corporations. They advocate for apps to offer data export options in standardized formats, empowering users to make informed decisions and analyze their data independently. This example demonstrates my own training progress, showing adaptations in speed, distance, time and heart rate, with plans to correlate with broader health insights. For further information, feel free to reach out.

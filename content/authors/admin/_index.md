@@ -68,19 +68,19 @@ user_groups:
 - Researchers
 ---
 
-Visionary leader in computational biology, excelling in genomic and data visualization for decision-making processes, with a proven track record in Biotech for enhancing target discovery through innovative bioinformatics methods. Leveraged genomics methods expertise to pioneer research at Harvard. Led cross-functional teams towards groundbreaking insights in fibrosis, oncology and neurodegeneration. Proficient in project coordination and mentoring scientists.
+Experienced leader in computational biology, excelling in genomic and data visualization for decision-making processes, with a proven track record in Biotech for enhancing target discovery through innovative bioinformatics methods. Leveraged genomics methods expertise to pioneer research at Harvard. Led cross-functional teams towards groundbreaking insights in fibrosis, oncology and neurodegeneration. Proficient in project coordination and mentoring scientists.
 
 Listen to our podcast [A Coffee with CompBio](https://smartlink.ausha.co/a-coffee-with-compbio) hosted by me and [Alex Bartlett](https://www.linkedin.com/in/alexandra-bartlett-926b32109/)
 
 **Biotech Consultant/Advisor** (2020 to present): Advise on technology, computational biology and bioinformatics strategy for emerging BioTechs building data lakes and novel methods to accelerate the process of target discovery, gene editing and drug development pipelines
 
-**Founder and Organizer of [Women in Bioinformatics](https://www.meetup.com/boston-area-womens-bioinformatics/) in the Boston Area** (2016 to present): Empowering women in computational biology and bioinformatics in academia and biotech by creating a safe and supportive space for career development alongside like-minded peers.
+**Founder and Organizer of [Women in Bioinformatics](https://boston-wib.org) in the Boston Area** (2016 to present): Empowering women in computational biology and bioinformatics in academia and biotech by creating a safe and supportive space for career development alongside like-minded peers.
 
 **Board Member at [AWIS MASS](https://massawis.org/board-members-2024-2025/) - VP** (2025 to present): Fostering the mentoring effort in the organization.
 
 **Alumni [Ambassador](https://www.nextflow.io/ambassadors.html) Nextflow** (2024 to present): Empowering the use of [Nextflow](https://www.nextflow.io/index.html) and [nf-core](https://nf-co.re) technology in the genomic space.
 
-**Co-chair of [Genomics Bioinformatics](https://abrf.org/research-groups/genomics/genomics-bioinformatics/) ABRF** (2024 to present): Continuing the effort to investigate genomics technologies applied in cores.
+**Co-chair of [Genomics Bioinformatics](https://abrf.org/research-groups/genomics/genomics-bioinformatics/) ABRF** (2024-2025): Continuing the effort to investigate genomics technologies applied in cores.
 
 ### Vision and Mission
 
@@ -96,11 +96,3 @@ Build robust platforms with innovative genomic data analysis and visualization t
 Led cross-functional teams in BigPharma/Academia collaborations and biotech. 
 
 Experience in communication cross-teams and with business partners. Managed budget and timelines. Collaborate with business development team.
-
-
-### Community
-
-[JOSS](https://joss.readthedocs.io/en/latest/index.html) editor. 
-
-Join our [women in bioinformatics](https://www.meetup.com/boston-area-womens-bioinformatics/) in Boston area.
-
