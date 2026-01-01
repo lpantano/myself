@@ -1,7 +1,6 @@
 ---
 title: small RNA abundance [miss-] viz
 date: 2013-10-29 08:05:56.000000000 -04:00
-published: true
 status: publish
 tags:
 - miRNA

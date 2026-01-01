@@ -1,7 +1,6 @@
 ---
 title: Lying factor in figures
 date: 2013-08-07 11:36:25.000000000 -04:00
-published: true
 status: publish
 tags:
 - viz

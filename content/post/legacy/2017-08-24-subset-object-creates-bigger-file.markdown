@@ -1,7 +1,6 @@
 ---
 title: 'Subset of object creates bigger RDA file size than original object'
 tags: [R, develop]
-published: true
 date: 2017-08-23T17:50:01-04:00
 ---
 

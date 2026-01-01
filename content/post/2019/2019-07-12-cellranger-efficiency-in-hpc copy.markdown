@@ -1,7 +1,6 @@
 ---
 title: 'How to set up cellranger to make your hpc admin happy'
 tags: [hpc, singlecell]
-published: true
 date: 2019-07-11
 ---
 

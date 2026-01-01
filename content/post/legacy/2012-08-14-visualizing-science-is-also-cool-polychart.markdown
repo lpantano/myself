@@ -1,7 +1,6 @@
 ---
 title: Visualizing science is also cool @polychart
 date: 2012-08-14 15:28:12.000000000 -04:00
-published: true
 status: publish
 tags:
 - viz

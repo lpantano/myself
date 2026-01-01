@@ -1,7 +1,6 @@
 ---
 title: 'miRNA annotation: complex scenarios'
 date: 2013-05-27 10:13:02.000000000 -04:00
-published: true
 status: publish
 tags:
 - small RNA

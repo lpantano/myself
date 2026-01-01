@@ -1,7 +1,6 @@
 ---
 title: miRNA Annotation Tools Comparison
 tags: [miRNA]
-published: true
 author: lorena_pantano
 date: 2016-03-24T19:49:01-04:00
 ---

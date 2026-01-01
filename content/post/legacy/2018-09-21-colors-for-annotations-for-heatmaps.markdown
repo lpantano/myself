@@ -1,7 +1,6 @@
 ---
 title: 'Get colors for your heatmap annotation'
 tags: [R, Visualization]
-published: true
 date: 2018-09-21 10:13:02.000000000 -04:00
 ---
 

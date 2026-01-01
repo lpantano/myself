@@ -1,7 +1,6 @@
 ---
 title: Bionformatics evolution 2005-2012
 date: 2012-04-13 10:45:07.000000000 -04:00
-published: true
 status: publish
 tags:
 - general
