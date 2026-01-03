@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hpc | My bits</title>
+    <title>Hpc | My bits</title>
     <link>http://lpantano.github.io/tag/hpc/</link>
       <atom:link href="http://lpantano.github.io/tag/hpc/index.xml" rel="self" type="application/rss+xml" />
-    <description>hpc</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 11 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <description>Hpc</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 19 Jul 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://lpantano.github.io/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_512x512_fill_lanczos_center_3.png</url>
-      <title>hpc</title>
+      <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
+      <title>Hpc</title>
       <link>http://lpantano.github.io/tag/hpc/</link>
     </image>
+    
+    <item>
+      <title>kallisto-bustools</title>
+      <link>http://lpantano.github.io/post/2019/2019-07-19-kallisto-bustools/</link>
+      <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/post/2019/2019-07-19-kallisto-bustools/</guid>
+      <description>&lt;pre&gt;&lt;code&gt;       JobID                        JobName      NCPUS     MaxRSS     AveRSS  Elapsed
+------------ ------------------------------ ---------- ---------- ---------- ----------
+
+14150319                             index          2     91.06G          0   01:26:32
+
+14153823                          kallisto          2     67.28G     65.34G   00:59:35
+
+14156768                       bus-correct          4      1.19G      1.19G   00:01:29
+
+14156812                  bus-capture-cdna          4     16.16G     10.22G   00:07:59
+
+14156835                bus-capture-intron          4     16.27G     16.27G   00:06:54
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>How to set up cellranger to make your hpc admin happy</title>

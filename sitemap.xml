@@ -5,10 +5,10 @@
     <loc>http://lpantano.github.io/post/2025/2025-05-diversity-panel/</loc>
     <lastmod>2025-05-20T12:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://lpantano.github.io/</loc>
+    <loc>http://lpantano.github.io/post/</loc>
     <lastmod>2025-05-20T12:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://lpantano.github.io/post/</loc>
+    <loc>http://lpantano.github.io/</loc>
     <lastmod>2025-05-20T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/authors/</loc>
@@ -32,7 +32,16 @@
     <loc>http://lpantano.github.io/post/2024/nextflow_seqera_ai_in_30min/</loc>
     <lastmod>2024-11-21T12:00:00-04:00</lastmod>
   </url><url>
+    <loc>http://lpantano.github.io/categories/</loc>
+    <lastmod>2024-11-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://lpantano.github.io/tag/fitness-data/</loc>
+    <lastmod>2024-11-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/health-data/</loc>
+    <lastmod>2024-11-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/portfolio/</loc>
     <lastmod>2024-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/project/</loc>
@@ -42,6 +51,15 @@
     <lastmod>2024-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/project/training/</loc>
+    <lastmod>2024-11-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/portfolio/training-dashboard/</loc>
+    <lastmod>2024-11-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/category/visualization/</loc>
+    <lastmod>2024-11-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/visualization/</loc>
     <lastmod>2024-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/post/2024/2024-08-perspective1/</loc>
@@ -128,13 +146,16 @@
     <loc>http://lpantano.github.io/publication/hanlon-2019/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lpantano.github.io/post/2019/2019-07-12-cellranger-efficiency-in-hpc-copy/</loc>
-    <lastmod>2019-07-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://lpantano.github.io/tag/hpc/</loc>
-    <lastmod>2019-07-11T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/post/2019/2019-07-19-kallisto-bustools/</loc>
+    <lastmod>2019-07-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/singlecell/</loc>
+    <lastmod>2019-07-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/post/2019/2019-07-12-cellranger-efficiency-in-hpc-copy/</loc>
     <lastmod>2019-07-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/author/david-t-breault/</loc>
@@ -357,9 +378,6 @@
     <lastmod>2018-09-21T10:13:02-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/r/</loc>
-    <lastmod>2018-09-21T10:13:02-04:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/visualization/</loc>
     <lastmod>2018-09-21T10:13:02-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/</loc>
@@ -839,6 +857,9 @@
     <loc>http://lpantano.github.io/author/b-rusev/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://lpantano.github.io/tag/basic-helix-loop-helix-transcription-factors/genet/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://lpantano.github.io/author/c-a-iacobuzio-donahue/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -869,6 +890,9 @@
     <loc>http://lpantano.github.io/tag/cell-line/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://lpantano.github.io/tag/cytoplasmic-and-nuclear/genetics/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://lpantano.github.io/author/d-a-wheeler/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -888,6 +912,12 @@
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/dna-methylation/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/dna-binding-proteins/genetics/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/ductal/classification/genetics/immunology/metaboli/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/author/e-a-musgrove/</loc>
@@ -932,7 +962,22 @@
     <loc>http://lpantano.github.io/publication/bailey-2016/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://lpantano.github.io/tag/hepatocyte-nuclear-factor-3-beta/genetics/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/hepatocyte-nuclear-factor-3-gamma/genetics/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/histone-demethylases/genetics/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/homeodomain-proteins/genetics/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://lpantano.github.io/tag/human/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/human/genetics/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/humans/</loc>
@@ -1043,6 +1088,9 @@
     <loc>http://lpantano.github.io/tag/mice/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://lpantano.github.io/tag/mutation/genetics/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://lpantano.github.io/author/n-b-jamieson/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -1061,7 +1109,13 @@
     <loc>http://lpantano.github.io/author/n-zeps/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://lpantano.github.io/tag/neoplasm/genetics/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://lpantano.github.io/tag/neoplastic/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/nuclear-proteins/genetics/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/author/o-hofmann/</loc>
@@ -1083,6 +1137,9 @@
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/pancreatic/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/pancreatic-neoplasms/classification/genetics/imm/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/prognosis/</loc>
@@ -1142,13 +1199,25 @@
     <loc>http://lpantano.github.io/author/t-j-bruxner/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://lpantano.github.io/tag/trans-activators/genetics/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://lpantano.github.io/tag/transcription/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/transcription-factors/genetics/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/transcriptome/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/tumor/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/tumor-suppressor-protein-p53/genetics/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/tumor-suppressor-proteins/genetics/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/author/u-m-bailey/</loc>
@@ -1169,7 +1238,16 @@
     <loc>http://lpantano.github.io/author/esther-lizano/</loc>
     <lastmod>2015-11-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://lpantano.github.io/author/eulalia-marti/</loc>
+    <lastmod>2015-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/author/georgia-escaramis/</loc>
+    <lastmod>2015-11-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://lpantano.github.io/author/isidre-ferrer/</loc>
+    <lastmod>2015-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/author/joan-pallares-albanell/</loc>
     <lastmod>2015-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/publication/pantano-2015/</loc>
@@ -2318,6 +2396,9 @@
     <loc>http://lpantano.github.io/post/legacy/2013-05-27-mirna-annotation-complex-scenarios/</loc>
     <lastmod>2013-05-27T10:13:02-04:00</lastmod>
   </url><url>
+    <loc>http://lpantano.github.io/author/-eulalia-marti/</loc>
+    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://lpantano.github.io/publication/llorens-2013/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -2393,6 +2474,9 @@
     <loc>http://lpantano.github.io/tag/genetic-genetics/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://lpantano.github.io/tag/genomics/</loc>
+    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://lpantano.github.io/tag/genomics-methods/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -2409,6 +2493,9 @@
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/high-throughput-nucleotide-sequencing-methods/</loc>
+    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/author/jose-antonio-del-rio/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/author/jose-antonio-del-rio/</loc>
@@ -2555,6 +2642,9 @@
     <loc>http://lpantano.github.io/publication/pantano-2011/</loc>
     <lastmod>2011-11-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://lpantano.github.io/author/eulalia-marti/</loc>
+    <lastmod>2011-11-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://lpantano.github.io/tag/micrornas-classification/</loc>
     <lastmod>2011-11-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -2598,6 +2688,9 @@
     <lastmod>2010-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/micrornas-chemistry/</loc>
+    <lastmod>2010-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/micrornas-metabolism/</loc>
     <lastmod>2010-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/publication/pantano-2010/</loc>
@@ -2714,6 +2807,12 @@
     <loc>http://lpantano.github.io/author/raquel-rabionet/</loc>
     <lastmod>2009-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://lpantano.github.io/tag/internet/</loc>
+    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/user-computer-interface/</loc>
+    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://lpantano.github.io/tag/algorithms/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -2723,13 +2822,22 @@
     <loc>http://lpantano.github.io/tag/dna-probes-chemical-synthesis/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://lpantano.github.io/tag/dna-probes/chemical-synthesis/</loc>
+    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://lpantano.github.io/tag/internet/</loc>
+    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/author/lluis-armengol/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/nucleic-acid-amplification-techniques/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/nucleic-acid-amplification-techniques-methods/</loc>
+    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/nucleic-acid-amplification-techniques/methods/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/publication/pantano-2008/</loc>
@@ -2756,6 +2864,12 @@
     <loc>http://lpantano.github.io/author/thomas-abeel/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://lpantano.github.io/tag/genetic-variation/</loc>
+    <lastmod>2006-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/genome/</loc>
+    <lastmod>2006-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://lpantano.github.io/author/ann-m-joseph-george/</loc>
     <lastmod>2006-01-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -2772,6 +2886,9 @@
     <lastmod>2006-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/dna-genetics/</loc>
+    <lastmod>2006-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/dna/genetics/</loc>
     <lastmod>2006-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/fluorescence/</loc>
@@ -2833,46 +2950,6 @@
   </url><url>
     <loc>http://lpantano.github.io/author/</loc>
   </url><url>
-    <loc>http://lpantano.github.io/tag/basic-helix-loop-helix-transcription-factors/genet/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/categories/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/cytoplasmic-and-nuclear/genetics/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/dna-probes/chemical-synthesis/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/dna-binding-proteins/genetics/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/dna/genetics/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/ductal/classification/genetics/immunology/metaboli/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/hepatocyte-nuclear-factor-3-beta/genetics/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/hepatocyte-nuclear-factor-3-gamma/genetics/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/histone-demethylases/genetics/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/homeodomain-proteins/genetics/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/human/genetics/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/mutation/genetics/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/neoplasm/genetics/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/nuclear-proteins/genetics/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/nucleic-acid-amplification-techniques/methods/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/pancreatic-neoplasms/classification/genetics/imm/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/trans-activators/genetics/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/transcription-factors/genetics/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/tumor-suppressor-protein-p53/genetics/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/tumor-suppressor-proteins/genetics/</loc>
+    <loc>http://lpantano.github.io/tutorials/</loc>
   </url>
 </urlset>

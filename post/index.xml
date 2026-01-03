@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts | My bits</title>
+    <title>Blog Posts | My bits</title>
     <link>http://lpantano.github.io/post/</link>
       <atom:link href="http://lpantano.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 20 May 2025 12:00:00 -0400</lastBuildDate>
+    <description>Blog Posts</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 20 May 2025 12:00:00 -0400</lastBuildDate>
     <image>
-      <url>http://lpantano.github.io/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_512x512_fill_lanczos_center_3.png</url>
-      <title>Posts</title>
+      <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
+      <title>Blog Posts</title>
       <link>http://lpantano.github.io/post/</link>
     </image>
     
@@ -103,11 +103,146 @@ Have you ever made a timeline or assured delivery of a project that involves ana
       <pubDate>Sat, 09 Dec 2023 12:00:00 -0400</pubDate>
       <guid>http://lpantano.github.io/post/2023/walle/</guid>
       <description>&lt;p&gt;It was that time that after 6 months of having the TP holder broken, we decided to make a cute update. It took a couple of months to finish it. Thanks to &lt;a href=&#34;https://www.thingiverse.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thingverse&lt;/a&gt; for the &lt;a href=&#34;https://www.thingiverse.com/thing:3709814&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;model&lt;/a&gt; with some tweaks.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;IMG_3353.png&#34; alt=&#34;&#34;&gt;
-&lt;img src=&#34;IMG_4178.png&#34; alt=&#34;&#34;&gt;
-&lt;img src=&#34;IMG_4179.png&#34; alt=&#34;&#34;&gt;
-&lt;img src=&#34;IMG_4193.png&#34; alt=&#34;&#34;&gt;
-&lt;img src=&#34;IMG_4195.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/2023/walle/IMG_3353_hu_a5e4420abf21d8c1.webp 400w,
+               /post/2023/walle/IMG_3353_hu_39ae0226a9476090.webp 760w,
+               /post/2023/walle/IMG_3353_hu_a4185cc5d22dcfe1.webp 1200w&#34;
+               src=&#34;http://lpantano.github.io/post/2023/walle/IMG_3353_hu_a5e4420abf21d8c1.webp&#34;
+               width=&#34;283&#34;
+               height=&#34;378&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/2023/walle/IMG_4178_hu_129591ee036add63.webp 400w,
+               /post/2023/walle/IMG_4178_hu_f15eb403dc00b4c9.webp 760w,
+               /post/2023/walle/IMG_4178_hu_3b6f3044e33f8521.webp 1200w&#34;
+               src=&#34;http://lpantano.github.io/post/2023/walle/IMG_4178_hu_129591ee036add63.webp&#34;
+               width=&#34;283&#34;
+               height=&#34;378&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/2023/walle/IMG_4179_hu_8a4910625f18f70b.webp 400w,
+               /post/2023/walle/IMG_4179_hu_6dbfa487866d725b.webp 760w,
+               /post/2023/walle/IMG_4179_hu_3859564aaf41c6eb.webp 1200w&#34;
+               src=&#34;http://lpantano.github.io/post/2023/walle/IMG_4179_hu_8a4910625f18f70b.webp&#34;
+               width=&#34;283&#34;
+               height=&#34;420&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/2023/walle/IMG_4193_hu_7719dcd74f22fc51.webp 400w,
+               /post/2023/walle/IMG_4193_hu_96e81f4418add0b0.webp 760w,
+               /post/2023/walle/IMG_4193_hu_bba55a48ec6099db.webp 1200w&#34;
+               src=&#34;http://lpantano.github.io/post/2023/walle/IMG_4193_hu_7719dcd74f22fc51.webp&#34;
+               width=&#34;283&#34;
+               height=&#34;257&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/2023/walle/IMG_4195_hu_5432e57cb70ddb03.webp 400w,
+               /post/2023/walle/IMG_4195_hu_d090ddedfc902e77.webp 760w,
+               /post/2023/walle/IMG_4195_hu_dd8656da2c57d012.webp 1200w&#34;
+               src=&#34;http://lpantano.github.io/post/2023/walle/IMG_4195_hu_5432e57cb70ddb03.webp&#34;
+               width=&#34;283&#34;
+               height=&#34;378&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
 </description>
     </item>
     
@@ -153,7 +288,7 @@ Have you ever made a timeline or assured delivery of a project that involves ana
       <link>http://lpantano.github.io/post/2019/2019-10-03-move-to-egenesis/</link>
       <pubDate>Thu, 03 Oct 2019 17:42:40 -0400</pubDate>
       <guid>http://lpantano.github.io/post/2019/2019-10-03-move-to-egenesis/</guid>
-      <description>&lt;p&gt;If you came here it is because the twitter wasn’t enough for you and somehow you are curious about why I moved to industry after so many years in academia. Although I am sure this event has a p-value &amp;gt; 0.05 , then &lt;a href=&#34;https://www.americanscientist.org/article/the-statistical-crisis-in-science&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;~is not significant.~ &lt;/a&gt;(wink wink)&lt;/p&gt;
+      <description>&lt;p&gt;If you came here it is because the twitter wasn’t enough for you and somehow you are curious about why I moved to industry after so many years in academia. Although I am sure this event has a p-value &amp;gt; 0.05 , then &lt;a href=&#34;https://www.americanscientist.org/article/the-statistical-crisis-in-science&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;del&gt;is not significant.&lt;/del&gt; &lt;/a&gt;(wink wink)&lt;/p&gt;
 &lt;p&gt;But if you know me a little bit, you may be surprised about this change in my career. It was a difficult decision for me, indeed. Somehow, I see this as a no turning back point, maybe is not totally true.  I have advocated, so many times, that my reason to stay in academia is that there are more chances to help each other, to create open-source resources, to move forward together… that somehow, moving to industry is the opposite of all that.&lt;/p&gt;
 &lt;p&gt;However, academia couldn’t give me more, and I didn&amp;rsquo;t feel I was giving more. I decided a while ago to give up on a tenured career and dedicated many years to work inside a core facility at HSPH. I met awesome people, I learned from the best, I got to work with really amazing data…but there is a price for that. Being mainly an analyst made me see some parts that weren’t that nice. I realized many researchers will see you as a machine of producing data/figures/tables. They only care about that figure that will show the reviewer they were right. I saw how I couldn’t get into the project more than for a &amp;lsquo;quick&amp;rsquo; analysis of the data, without getting into the biology or the goal of the project.&lt;/p&gt;
 &lt;p&gt;Not only that, but I realized I hadn’t a future, I would be stuck forever in that position, it was a senior position, but I really want to move forward and up. And after my second try at MIT, in another Bioinformatics core, I didn’t see that coming any time soon.&lt;/p&gt;
@@ -163,7 +298,7 @@ Have you ever made a timeline or assured delivery of a project that involves ana
 &lt;ul&gt;
 &lt;li&gt;You need to publish &lt;em&gt;Nature&lt;/em&gt;, you need to be known on twitter, to be invited to conferences… otherwise, you won’t move forward in your career, you won’t have a good job.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;And yes, I don’t have first-author papers in &lt;em&gt;Nature&lt;/em&gt;, I am not ~famous on twitter,~ I am not invited to conferences, and leaving academia means I will never be that, for sure. I felt like a failure. Because I didn’t get any of that, and I will never get it. And somehow, I ended up thinking that was the only way to measure success.&lt;/p&gt;
+&lt;p&gt;And yes, I don’t have first-author papers in &lt;em&gt;Nature&lt;/em&gt;, I am not &lt;del&gt;famous on twitter,&lt;/del&gt; I am not invited to conferences, and leaving academia means I will never be that, for sure. I felt like a failure. Because I didn’t get any of that, and I will never get it. And somehow, I ended up thinking that was the only way to measure success.&lt;/p&gt;
 &lt;p&gt;Luckily me, I read this book I had since months ago: &lt;a href=&#34;https://www.amazon.com/dp/1524762334/ref=cm_sw_em_r_mt_dp_U_hlNLDb98S9NTP&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Brave, Not Perfect: Reshma Saujani&lt;/a&gt;, and helped me to see that feeling, those thoughts, as something external and not something that was part of me. At this point, I really wanted to forget about all the pressure I had on my shoulders and do just my job, my job on something that I consider relevant, and with the people I want to be.&lt;/p&gt;
 &lt;p&gt;So, of course, I decided to move on. If the only reason why you won’t make a change is because of fear to fail/change/future, then you should definitely do it. (&lt;em&gt;read the book, seriously&lt;/em&gt;)&lt;/p&gt;
 &lt;p&gt;In summary, I got to meet myself again, after so many years doing what the system has told me to do to get a good job, and have a future. I remembered what is my passion, I remembered to believe in myself, and let life to reward my decisions differently (this I will know in a year or so).&lt;/p&gt;
@@ -185,6 +320,27 @@ Have you ever made a timeline or assured delivery of a project that involves ana
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>kallisto-bustools</title>
+      <link>http://lpantano.github.io/post/2019/2019-07-19-kallisto-bustools/</link>
+      <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/post/2019/2019-07-19-kallisto-bustools/</guid>
+      <description>&lt;pre&gt;&lt;code&gt;       JobID                        JobName      NCPUS     MaxRSS     AveRSS  Elapsed
+------------ ------------------------------ ---------- ---------- ---------- ----------
+
+14150319                             index          2     91.06G          0   01:26:32
+
+14153823                          kallisto          2     67.28G     65.34G   00:59:35
+
+14156768                       bus-correct          4      1.19G      1.19G   00:01:29
+
+14156812                  bus-capture-cdna          4     16.16G     10.22G   00:07:59
+
+14156835                bus-capture-intron          4     16.27G     16.27G   00:06:54
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -454,7 +610,27 @@ pheatmap(exp[most_variable,], scale = &amp;quot;row&amp;quot;, show_rownames = F
          annotation_col = design,
          annotation_colors = degColors(design))
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/code-blog/degcolor/degcolors_files/figure-markdown_github/unnamed-chunk-4-1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/code-blog/degcolor/degcolors_files/figure-markdown_github/unnamed-chunk-4-1.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
 &lt;p&gt;If you use &lt;code&gt;ComplexHeatmap&lt;/code&gt; you can activate &lt;code&gt;col_fun = TRUE&lt;/code&gt; to get it working.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;R Session&lt;/li&gt;
@@ -747,40 +923,40 @@ object coming from that method was twice as big when saving into an RDA file. Fo
 &lt;p&gt;We should expect that &lt;code&gt;dummySilly&lt;/code&gt; and &lt;code&gt;dummySmart&lt;/code&gt; have a similar size than &lt;code&gt;dummySmall&lt;/code&gt;&amp;hellip;&lt;/p&gt;
 &lt;p&gt;This is the size of RDA files for each of them (size in Kb):&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;object&lt;/th&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;file&lt;/th&gt;
-&lt;th style=&#34;text-align:right&#34;&gt;rdaSize&lt;/th&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;objSize&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;dummyBig&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;big.rda&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;2828.49 Kb&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;1588 Kb&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;dummySmall&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;micro.rda&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;24.19 Kb&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;42.6 Kb&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;dummySilly&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;microSilly.rda&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;4397.49 Kb&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;43.2 Kb&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;dummySmart&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;microSmart.rda&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;22.38 Kb&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;43.2 Kb&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;object&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;file&lt;/th&gt;
+          &lt;th style=&#34;text-align: right&#34;&gt;rdaSize&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;objSize&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;dummyBig&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;big.rda&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;2828.49 Kb&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1588 Kb&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;dummySmall&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;micro.rda&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;24.19 Kb&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;42.6 Kb&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;dummySilly&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;microSilly.rda&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;4397.49 Kb&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;43.2 Kb&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;dummySmart&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;microSmart.rda&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;22.38 Kb&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;43.2 Kb&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;rdaSize is the size of the file using &lt;code&gt;save(obj, file = fileName.rda&lt;/code&gt; function. objSize is the size in memory in R using the function &lt;code&gt;format(object.size(obj))&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;As you can see, &lt;code&gt;microSilly&lt;/code&gt; is almost twice the original data, but &lt;code&gt;microSmart&lt;/code&gt; is the expected size.&lt;/p&gt;
@@ -854,9 +1030,69 @@ loaded via a namespace (and not attached):
 &lt;li&gt;clustering set of genes to find common patterns expression. Most useful for time seria data. You get as well the list of genes that follows that pattern, so you can use it for functional analysis, for instance. Fig3&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;note: maybe some features only available with development version&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-1.png&#34; alt=&#34;fig1&#34;&gt;
-&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-3.png&#34; alt=&#34;fig2&#34;&gt;
-&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-2.png&#34; alt=&#34;fig3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-1.png&#34; alt=&#34;fig1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-3.png&#34; alt=&#34;fig2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-2.png&#34; alt=&#34;fig3&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
 &lt;p&gt;Package available at &lt;a href=&#34;http://bioconductor.org/packages/devel/bioc/html/DEGreport.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BioC page&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The code is available &lt;a href=&#34;https://github.com/lpantano/mypubs/blob/master/DEG_viz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Hope you enjoy!&lt;/p&gt;
@@ -919,7 +1155,6 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-  
 
 
 
@@ -930,19 +1165,10 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/ntabundance11.png&#34; &gt;
-
-
-  &lt;img src=&#34;http://lpantano.github.io/media/images/ntabundance11.png&#34; alt=&#34;&#34; width=&#34;1000px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;images/ntabundance11.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;1000px&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 
 &lt;p&gt;and if you go for the second option:&lt;/p&gt;
 
@@ -953,7 +1179,6 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-  
 
 
 
@@ -964,19 +1189,10 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/ntabundance2.png&#34; &gt;
-
-
-  &lt;img src=&#34;http://lpantano.github.io/media/images/ntabundance2.png&#34; alt=&#34;&#34; width=&#34;1000px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;images/ntabundance2.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;1000px&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 
 &lt;p&gt;Which is the best option? well, although papers in small RNA data still continue showing the first option, I think that this should be validated some way.&lt;/p&gt;
 &lt;p&gt;When using unique sequences (only counting different sequences), you can under-estimated the real signal. In NGS, you can have a lot of noise, that may hide the biological signal using this approach. But, you can get the same, if you use directly the abundance, because if your set contains one sequence that is 90% of the data, you will get always a signal, that may be not important, for instance, ribosomal RNA that is expected to be there.&lt;/p&gt;
@@ -989,7 +1205,6 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-  
 
 
 
@@ -1000,19 +1215,10 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/ntabundance3.png&#34; &gt;
-
-
-  &lt;img src=&#34;http://lpantano.github.io/media/images/ntabundance3.png&#34; alt=&#34;&#34; width=&#34;1000px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;images/ntabundance3.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;1000px&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 
 &lt;p&gt;We can conclude that at position 1, there are few sequences starting with A that are  90 of the data. Also we can see how the 60% of unique sequences have a G at position 10. This helps us to catch any biological signature if it exists, and avoid the misleading information in this kind of figures.&lt;/p&gt;
 </description>
@@ -1034,7 +1240,6 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-  
 
 
 
@@ -1045,19 +1250,10 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/lyingfactor.jpg&#34; &gt;
-
-
-  &lt;img src=&#34;http://lpantano.github.io/media/images/lyingfactor.jpg&#34; alt=&#34;&#34; width=&#34;1000px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;images/lyingfactor.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;1000px&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 
 &lt;p&gt;That figure shows a difference of 4 between the two groups. Since 4 is twice than 2, we have a lying factor of 2.&lt;/p&gt;
 &lt;p&gt;Probably you think that this is not happening anywhere, it is ridiculous. It is, but probably you will find one of these cases in the news every day.&lt;/p&gt;
@@ -1085,7 +1281,6 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-  
 
 
 
@@ -1096,25 +1291,12 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-
-&lt;figure id=&#34;figure-fig-1-mir1246&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/mir1246.png&#34; data-caption=&#34;Fig 1: mir1246&#34;&gt;
-
-
-  &lt;img src=&#34;http://lpantano.github.io/media/images/mir1246.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Fig 1: mir1246
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
+&lt;figure  id=&#34;figure-fig-1-mir1246&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;images/mir1246.png&#34; alt=&#34;Fig 1: mir1246&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Fig 1: mir1246
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;We see that there is a repeat element (ERV, retrovirus) and also it is a pretty conserved region. Until here, everything allright. But, I realized some time ago, annotating some data that I had, that the mature miRNA annotates in other regions:&lt;/p&gt;
 &lt;table border=&#34;1&#34;&gt;
@@ -1156,7 +1338,6 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-  
 
 
 
@@ -1167,25 +1348,12 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-
-&lt;figure id=&#34;figure-fig-2reads-coverage-of-u2&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/u2-3.png&#34; data-caption=&#34;Fig 2:Reads coverage of U2&#34;&gt;
-
-
-  &lt;img src=&#34;http://lpantano.github.io/media/images/u2-3.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Fig 2:Reads coverage of U2
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
+&lt;figure  id=&#34;figure-fig-2reads-coverage-of-u2&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;images/u2-3.png&#34; alt=&#34;Fig 2:Reads coverage of U2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Fig 2:Reads coverage of U2
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;The question that arises now: is this a real miRNA, or a sub-product, or both? with any function? Maybe there is more than one precursor, or maybe it is a miRNA-like snRNA. Moreover, the secondary structure of these U2 is very similar to a miRNA precursor hairpin (fig 3).&lt;/p&gt;
 
@@ -1196,7 +1364,6 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-  
 
 
 
@@ -1207,25 +1374,12 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-
-&lt;figure id=&#34;figure-fig-3u2-secondary-structure&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/u2-ss-strand.png&#34; data-caption=&#34;Fig 3:U2 secondary structure&#34;&gt;
-
-
-  &lt;img src=&#34;http://lpantano.github.io/media/images/u2-ss-strand.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Fig 3:U2 secondary structure
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
+&lt;figure  id=&#34;figure-fig-3u2-secondary-structure&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;images/u2-ss-strand.png&#34; alt=&#34;Fig 3:U2 secondary structure&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Fig 3:U2 secondary structure
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;One cause of this annotation could be that the unique precursor conserved beyond primates is the one mentioned in miRBase, while the other U2 locations are primate-specific. Extra analyses should be done to reveal the real nature of this miRNA. Results suggest that, either the miRNA has more than one precursor, or a sub-product, or both.&lt;/p&gt;
 &lt;p&gt;As an extra-analysis, I took public data, KO Dicer and control, of HELA cells (GSM769512) to study the dependency od these sequences to DICER. You expect a decrease in the number of counts of miRNA sequences, between control and KO dicer. The exact miRNA sequence decrease 1/3 in KO dicer cells, assuming a Dicer dependency, and take this sequence as a real miRNA. But, we have a lot of other sequences in the U2 regions, but not in the annotated precursor, and only differ in one extra nucleotide (Adenosine) at the beginning (miR-1246: AAUGGAUUUUUGGAGCAGG and U2: &lt;strong&gt;A&lt;/strong&gt;AAUGGAUUUUUGGAGCAGG).This sequence can be annotated as miR-1246 if you allow 1 mismatch in the alignment (the A nt). This sequence had the same counts in normal cells and KO cells, suggesting that sequences from U2 are not Dicer-dependent. Summarizing, we have the mature annotated miRNA mapping in all these positions, and in addition, we have other sequences (one nt longer), that only map in the U2 positions. So, how we can differentiate what proportion of sequences comes from the precursors and what comes from the other positions? Well, one possibility is to detect the precursor by PCR in your samples, to assume that at least it is there, or try to see whether the coverage in the different locations makes sense more with one scenario or another&amp;hellip;Or maybe it is not a big deal, you have this small RNA, the question is whether it has any regulatory function or not.&lt;/p&gt;
@@ -1261,7 +1415,6 @@ BMC Biol. 8:58(2010).&lt;/p&gt;
  
  
  
-   
  
  
  
@@ -1272,19 +1425,10 @@ BMC Biol. 8:58(2010).&lt;/p&gt;
  
  
  
- 
- &lt;figure &gt;
- 
- 
-   &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/network.png&#34; &gt;
- 
- 
-   &lt;img src=&#34;http://lpantano.github.io/media/images/network.png&#34; alt=&#34;&#34; width=&#34;500px&#34; &gt;
- &lt;/a&gt;
- 
- 
- 
- &lt;/figure&gt;
+ &lt;figure  &gt;
+   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+     &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;images/network.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;500px&#34; /&gt;&lt;/div&gt;
+   &lt;/div&gt;&lt;/figure&gt;
 
 &lt;p&gt;It is very easy to detect high complexity regions, where locations are connected because some sRNAs map to anywhere else. From here, you can add more information, as the average size of the sRNAs inside each location, or the expression (red: low, yellow:high).   ![]({{ site.baseurl }}/assets/net-exp-3.png &amp;ldquo;network of sRNA complexity&amp;rdquo;) In a quick view you can check the complexity of your small RNA data and the expression associated. The code is published at &lt;a href=&#34;http://rpubs.com/lpantano/1719&#34; title=&#34;sRNA mappability&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rpub repository&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -1305,7 +1449,6 @@ BMC Biol. 8:58(2010).&lt;/p&gt;
 
 
 
-  
 
 
 
@@ -1316,19 +1459,10 @@ BMC Biol. 8:58(2010).&lt;/p&gt;
 
 
 
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/polychart.png&#34; &gt;
-
-
-  &lt;img src=&#34;http://lpantano.github.io/media/images/polychart.png&#34; alt=&#34;&#34; width=&#34;1000px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;images/polychart.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;1000px&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 
 &lt;p&gt;You can make different type of charts, like boxplot, barplot, piechart (although aren&amp;rsquo;t well considered) etc. Also, you can customize titles and transform data. Quick complete for a beta version.&lt;/p&gt;
 &lt;p&gt;Finally but not less important, it is free for academics. :)&lt;/p&gt;
@@ -1350,7 +1484,20 @@ I did a small and quick experiment. I took the abstract of the papers published 
 
 
 
-  
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;images/jan2005bioinformatics.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;500px&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 
 
 
@@ -1362,18 +1509,6 @@ I did a small and quick experiment. I took the abstract of the papers published 
 
 
 
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/jan2005bioinformatics.jpg&#34; &gt;
-
-
-  &lt;img src=&#34;http://lpantano.github.io/media/images/jan2005bioinformatics.jpg&#34; alt=&#34;&#34; width=&#34;500px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
 
 
 
@@ -1382,31 +1517,10 @@ I did a small and quick experiment. I took the abstract of the papers published 
 
 
 
-
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/jan2012bioinformatics.jpg&#34; &gt;
-
-
-  &lt;img src=&#34;http://lpantano.github.io/media/images/jan2012bioinformatics.jpg&#34; alt=&#34;&#34; width=&#34;500px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;images/jan2012bioinformatics.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;500px&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 
 &lt;p&gt;What is main difference? There are new concepts, of course, but the main difference is the size of the word DATA and the word METHOD, as it happens in the real world, data increased a lot, so we put it much more in our work, and we need a lof of new methods, so we highlight this in our work.&lt;/p&gt;
 </description>

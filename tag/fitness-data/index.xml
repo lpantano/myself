@@ -1,24 +1,58 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Fitness data | My bits</title>
+    <title>Fitness Data | My bits</title>
     <link>http://lpantano.github.io/tag/fitness-data/</link>
       <atom:link href="http://lpantano.github.io/tag/fitness-data/index.xml" rel="self" type="application/rss+xml" />
-    <description>Fitness data</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 10 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <description>Fitness Data</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 10 Nov 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://lpantano.github.io/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_512x512_fill_lanczos_center_3.png</url>
-      <title>Fitness data</title>
+      <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
+      <title>Fitness Data</title>
       <link>http://lpantano.github.io/tag/fitness-data/</link>
     </image>
     
     <item>
-      <title>Training Progress</title>
-      <link>http://lpantano.github.io/project/training/</link>
+      <title>Training Progress Dashboard</title>
+      <link>http://lpantano.github.io/portfolio/training-dashboard/</link>
       <pubDate>Sun, 10 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/project/training/</guid>
-      <description>&lt;p&gt;Visit &lt;a href=&#34;https://run-training-activities.netlify.app&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;App&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This project, developed using react.js and data from Apple’s Health app and Garmin Connect app, emphasizes the importance of personal data ownership and management. I believe individuals should have control over their own data, rather than it being dictated by app limitations or leveraged by large corporations. They advocate for apps to offer data export options in standardized formats, empowering users to make informed decisions and analyze their data independently. This example demonstrates my own training progress, showing adaptations in speed, distance, time and heart rate, with plans to correlate with broader health insights. For further information, feel free to reach out.&lt;/p&gt;
+      <guid>http://lpantano.github.io/portfolio/training-dashboard/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;An interactive dashboard built with React.js that visualizes personal training data from Apple Health and Garmin Connect apps. This project demonstrates data visualization best practices and the importance of personal data ownership.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://run-training-activities.netlify.app&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;View Live Dashboard →&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;key-features&#34;&gt;Key Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Multi-source Data Integration&lt;/strong&gt;: Combines data from Apple Health and Garmin Connect&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interactive Visualizations&lt;/strong&gt;: Track adaptations in speed, distance, time, and heart rate over time&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Responsive Design&lt;/strong&gt;: Built with React.js for a smooth user experience&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data Ownership Focus&lt;/strong&gt;: Demonstrates how individuals can take control of their health data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;technical-approach&#34;&gt;Technical Approach&lt;/h2&gt;
+&lt;p&gt;This dashboard emphasizes the importance of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Personal data ownership and management&lt;/li&gt;
+&lt;li&gt;Standardized data export formats&lt;/li&gt;
+&lt;li&gt;Independent data analysis capabilities&lt;/li&gt;
+&lt;li&gt;User empowerment over corporate data silos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-it-shows&#34;&gt;What It Shows&lt;/h2&gt;
+&lt;p&gt;The dashboard tracks my personal training progress, revealing patterns in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Speed improvements over time&lt;/li&gt;
+&lt;li&gt;Distance progression&lt;/li&gt;
+&lt;li&gt;Heart rate adaptation&lt;/li&gt;
+&lt;li&gt;Training consistency&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Future enhancements will correlate this data with broader health insights to provide a more comprehensive view of fitness and well-being.&lt;/p&gt;
+&lt;h2 id=&#34;why-this-matters&#34;&gt;Why This Matters&lt;/h2&gt;
+&lt;p&gt;Too often, our personal health data is locked in proprietary apps or leveraged by large corporations. This project advocates for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Apps offering data export in standardized formats&lt;/li&gt;
+&lt;li&gt;Individual control over personal data&lt;/li&gt;
+&lt;li&gt;Informed decision-making through accessible analytics&lt;/li&gt;
+&lt;li&gt;Independence from vendor lock-in&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information or to discuss similar visualization projects, feel free to reach out.&lt;/p&gt;
 </description>
     </item>
     

@@ -1,106 +1,102 @@
-<!DOCTYPE html><html lang="en-us" >
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: January 3, 2026 --><html lang="en-us" >
+
 
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
   
   
-  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
-  
-
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
   
 
   
   
 
+
+
+
+
+
+
+
+
+
+
+
   
   
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
+
   
   
   
     
     
+
     
-  
-  
-
-  
-
-  
-  
-  
-    
-  
-  <meta name="description" content="In summary: I will show which is the best miRNA mapping tool. I used several options for this benchmarking:
-miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie novoalign from novocraft suit GEM srnabench microrazer STAR miRExpress I think that these are the most used, and other not used but good to try them.">
-
-  
-  <link rel="alternate" hreflang="en-us" href="http://lpantano.github.io/post/legacy/2016-03-24-mirna-annotation-tools-comparison/">
-
-  
-
-
-
-
-
-
-
-  
-
-
-
-
-  
-  
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-
-  
-  
-  
-  <meta name="theme-color" content="#2962ff">
-  
-
-  
-  
-
-  
-  
-  
-  
-    
-    
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
-
     
     
     
       
+      
     
     
-      
-      
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
-        
-      
     
 
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
     
 
     
 
     
     
+      
       
 
       
@@ -109,12 +105,6 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -123,12 +113,6 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -137,12 +121,6 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -151,12 +129,6 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -165,12 +137,6 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -179,14 +145,6 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
       
     
       
-
-      
-      
-
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
-      
-    
       
 
       
@@ -195,12 +153,30 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
       
     
       
+      
 
       
       
 
       
     
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
       
 
       
@@ -211,12 +187,6 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -224,16 +194,13 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
 
       
     
-
-  
-
-  
-  
-  
-    
       
       
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+
+      
+      
+
+      
     
   
 
@@ -241,28 +208,13 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.min.f51aa7b8e7cf2863ae003a3e92431343.css">
-
   
-
-
-
-
   
-
-  
-
+  <link rel="stylesheet" href="/css/wowchemy.a4f08a4cebd120219b49ff4997f487df.css" />
 
   
   
-
   
-
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_192x192_fill_lanczos_center_3.png">
-
-  <link rel="canonical" href="http://lpantano.github.io/post/legacy/2016-03-24-mirna-annotation-tools-comparison/">
 
   
   
@@ -273,27 +225,134 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
   
     
     
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" disabled>
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" >
+  
+
   
   
-  <meta property="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  <meta property="twitter:site" content="@lopantano">
-  <meta property="twitter:creator" content="@lopantano">
   
-  <meta property="og:site_name" content="My bits">
-  <meta property="og:url" content="http://lpantano.github.io/post/legacy/2016-03-24-mirna-annotation-tools-comparison/">
-  <meta property="og:title" content="miRNA Annotation Tools Comparison | My bits">
-  <meta property="og:description" content="In summary: I will show which is the best miRNA mapping tool. I used several options for this benchmarking:
-miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie novoalign from novocraft suit GEM srnabench microrazer STAR miRExpress I think that these are the most used, and other not used but good to try them."><meta property="og:image" content="http://lpantano.github.io/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_512x512_fill_lanczos_center_3.png">
-  <meta property="twitter:image" content="http://lpantano.github.io/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
-    
-      <meta property="article:published_time" content="2016-03-24T19:49:01-04:00">
-    
+
+
+
+
+
+
+
+
+
+
+  
+
+<meta name="description" content="In summary: I will show which is the best miRNA mapping tool. I used several options for this benchmarking:
+
+miraligner from SeqBuster suit (I am one of the authors)
+bowtie2 and bowtie
+novoalign from novocraft suit
+GEM
+srnabench
+microrazer
+STAR
+miRExpress
+
+I think that these are the most used, and other not used but good to try them. They were clearly developed for other purposes, but as well, they generate the input of many miRNA pipelines. I just wanted to know how well my tool was doing. The first aim to develop miraligner was to get annotated additions of nucleotides at the end of miRNA sequences, something that is very common in mirna biogenesis: isomirs and often they are missed by short read and fast mappers. I have a repository for this kind of things, so anybody can reproduce my results, and check if I did something wrong, or comment on it. In this post I just want to know which tool detects more miRNA, for that I did two main steps:" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="http://lpantano.github.io/post/legacy/2016-03-24-mirna-annotation-tools-comparison/" />
+<link rel="canonical" href="http://lpantano.github.io/post/legacy/2016-03-24-mirna-annotation-tools-comparison/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu_6ba9f341fba7588.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu_f016f6a28e4542.png" />
+
+<meta name="theme-color" content="#bbdefb" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:image" content="http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="My bits" />
+<meta property="og:url" content="http://lpantano.github.io/post/legacy/2016-03-24-mirna-annotation-tools-comparison/" />
+<meta property="og:title" content="miRNA Annotation Tools Comparison | My bits" />
+<meta property="og:description" content="In summary: I will show which is the best miRNA mapping tool. I used several options for this benchmarking:
+
+miraligner from SeqBuster suit (I am one of the authors)
+bowtie2 and bowtie
+novoalign from novocraft suit
+GEM
+srnabench
+microrazer
+STAR
+miRExpress
+
+I think that these are the most used, and other not used but good to try them. They were clearly developed for other purposes, but as well, they generate the input of many miRNA pipelines. I just wanted to know how well my tool was doing. The first aim to develop miraligner was to get annotated additions of nucleotides at the end of miRNA sequences, something that is very common in mirna biogenesis: isomirs and often they are missed by short read and fast mappers. I have a repository for this kind of things, so anybody can reproduce my results, and check if I did something wrong, or comment on it. In this post I just want to know which tool detects more miRNA, for that I did two main steps:" /><meta property="og:image" content="http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2016-03-24T19:49:01-04:00"
+    />
+  
+  
     <meta property="article:modified_time" content="2016-03-24T19:49:01-04:00">
   
 
-  
+
+
+
 
 
     
@@ -326,10 +385,10 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
     "name": "My bits",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://lpantano.github.io/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_192x192_fill_lanczos_center_3.png"
+      "url": "http://lpantano.github.io/media/icon_hu_de15e77181fecba7.png"
     }
   },
-  "description": "In summary: I will show which is the best miRNA mapping tool. I used several options for this benchmarking:\nmiraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie novoalign from novocraft suit GEM srnabench microrazer STAR miRExpress I think that these are the most used, and other not used but good to try them."
+  "description": "\u003cp\u003eIn summary: I will show which is the best miRNA mapping tool. I used several options for this benchmarking:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003emiraligner from \u003ca href=\"http://github.com/lpantano/seqbuster\" target=\"_blank\" rel=\"noopener\"\u003eSeqBuster\u003c/a\u003e suit (I am one of the authors)\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"http://bowtie-bio.sourceforge.net/bowtie2/index.shtml\" target=\"_blank\" rel=\"noopener\"\u003ebowtie2\u003c/a\u003e and \u003ca href=\"http://bowtie-bio.sourceforge.net/index.shtml\" target=\"_blank\" rel=\"noopener\"\u003ebowtie\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"http://www.novocraft.com/main/index.php\" target=\"_blank\" rel=\"noopener\"\u003enovoalign\u003c/a\u003e from novocraft suit\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"http://algorithms.cnag.cat/wiki/The_GEM_library\" target=\"_blank\" rel=\"noopener\"\u003eGEM\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"http://arn.ugr.es/srnabench/\" target=\"_blank\" rel=\"noopener\"\u003esrnabench\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"http://www.seqan.de/projects/MicroRazerS.html.\" target=\"_blank\" rel=\"noopener\"\u003emicrorazer\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://github.com/alexdobin/STAR\" target=\"_blank\" rel=\"noopener\"\u003eSTAR\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"http://mirexpress.mbc.nctu.edu.tw/\" target=\"_blank\" rel=\"noopener\"\u003emiRExpress\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eI think that these are the most used, and other not used but good to try them. They were clearly developed for other purposes, but as well, they generate the input of many miRNA pipelines. I just wanted to know how well my tool was doing. The first aim to develop miraligner was to get annotated additions of nucleotides at the end of miRNA sequences, something that is very common in mirna biogenesis: \u003ca href=\"http://en.wikipedia.org/wiki/IsomiR\" target=\"_blank\" rel=\"noopener\"\u003eisomirs\u003c/a\u003e and often they are missed by short read and fast mappers. I have a \u003ca href=\"https://github.com/lpantano/mypubs/tree/master/mirna/mirannotation\" target=\"_blank\" rel=\"noopener\"\u003erepository\u003c/a\u003e for this kind of things, so anybody can reproduce my results, and check if I did something wrong, or comment on it. In this post I just want to know which tool detects more miRNA, for that I did two main steps:\u003c/p\u003e"
 }
 </script>
 
@@ -338,63 +397,63 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
   
 
 
+
+
+  
+  
+  
+
+  
+  
+
   
 
 
   
-
-
-
-
-
   <title>miRNA Annotation Tools Comparison | My bits</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
 
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  dark " data-wc-page-id="668958435b87a09c9705e59cf5eaabc9" >
 
   
   
   
   
   
-  <script src="/js/wowchemy-init.js"></script>
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.db21e13b9b5c4f4b947717750ec8b3cc.js"></script>
 
-  <aside class="search-results" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
-        
-      </div>
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
+  
 
 
-  <div class="page-header">
-    
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
 
 
 
@@ -407,336 +466,273 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
 
 
 
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-  <div class="container">
-
-    
-    <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">My bits</a>
-    </div>
-    
-
-    
-    <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-    <span><i class="fas fa-bars"></i></span>
-    </button>
-    
-
-    
-    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">My bits</a>
-    </div>
-    
-
-    
-    
-    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
 
       
-      <ul class="navbar-nav d-md-inline-flex">
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#about"><span>Home</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#projects"><span>DataBoards</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#posts"><span>Posts</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#talks"><span>Talks</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#featured"><span>Publications</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#contact"><span>Contact</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/media/LorenaPantano-2024-03.pdf"><span>CV</span></a>
-        </li>
-
-        
-        
-
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">My bits</a>
+      </div>
       
 
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">My bits</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
         
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Portfolio</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/tutorials/"><span>Tutorials (Coming Soon)</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/post/"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/talk/"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication/"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+
       </ul>
+
     </div>
-
-    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-      
-      
-      <li class="nav-item">
-        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
-      </li>
-      
-
-      
-      
-      <li class="nav-item dropdown theme-dropdown">
-        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
-          <i class="fas fa-moon" aria-hidden="true"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item js-set-theme-light">
-            <span>Light</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>Dark</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>Automatic</span>
-          </a>
-        </div>
-      </li>
-      
-
-      
-
-    </ul>
-
-  </div>
-</nav>
+  </nav>
+</header>
 
 
   </div>
 
   <div class="page-body">
+    
+    
+    
+
     <article class="article">
 
   
+
 
 
 
@@ -791,7 +787,6 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
   
   
   
-  
 
   
   
@@ -799,15 +794,6 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
 </div>
 
     
-
-
-
-
-
-
-
-
-
 
 
 
@@ -856,16 +842,15 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
 
 
 
-
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tag/mirna/">miRNA</a>
+  <a class="badge badge-light" href="/tag/mirna/">MiRNA</a>
   
 </div>
 
 
 
-<div class="share-box" aria-hidden="true">
+<div class="share-box">
   <ul class="share">
     
       
@@ -875,8 +860,12 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
       
       
       
+      
+      
+      
+      
       <li>
-        <a href="https://twitter.com/intent/tweet?url=http://lpantano.github.io/post/legacy/2016-03-24-mirna-annotation-tools-comparison/&amp;text=miRNA%20Annotation%20Tools%20Comparison" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flpantano.github.io%2Fpost%2Flegacy%2F2016-03-24-mirna-annotation-tools-comparison%2F&amp;text=miRNA&#43;Annotation&#43;Tools&#43;Comparison" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -888,8 +877,12 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
       
       
       
+      
+      
+      
+      
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=http://lpantano.github.io/post/legacy/2016-03-24-mirna-annotation-tools-comparison/&amp;t=miRNA%20Annotation%20Tools%20Comparison" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flpantano.github.io%2Fpost%2Flegacy%2F2016-03-24-mirna-annotation-tools-comparison%2F&amp;t=miRNA&#43;Annotation&#43;Tools&#43;Comparison" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -901,8 +894,14 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
       
       
       
+      
+      
+      
+      
+        
+      
       <li>
-        <a href="mailto:?subject=miRNA%20Annotation%20Tools%20Comparison&amp;body=http://lpantano.github.io/post/legacy/2016-03-24-mirna-annotation-tools-comparison/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=miRNA%20Annotation%20Tools%20Comparison&amp;body=http%3A%2F%2Flpantano.github.io%2Fpost%2Flegacy%2F2016-03-24-mirna-annotation-tools-comparison%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -914,8 +913,12 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
       
       
       
+      
+      
+      
+      
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=http://lpantano.github.io/post/legacy/2016-03-24-mirna-annotation-tools-comparison/&amp;title=miRNA%20Annotation%20Tools%20Comparison" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flpantano.github.io%2Fpost%2Flegacy%2F2016-03-24-mirna-annotation-tools-comparison%2F&amp;title=miRNA&#43;Annotation&#43;Tools&#43;Comparison" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -927,8 +930,12 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
       
       
       
+      
+      
+      
+      
       <li>
-        <a href="whatsapp://send?text=miRNA%20Annotation%20Tools%20Comparison%20http://lpantano.github.io/post/legacy/2016-03-24-mirna-annotation-tools-comparison/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=miRNA&#43;Annotation&#43;Tools&#43;Comparison%20http%3A%2F%2Flpantano.github.io%2Fpost%2Flegacy%2F2016-03-24-mirna-annotation-tools-comparison%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -940,8 +947,12 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
       
       
       
+      
+      
+      
+      
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=http://lpantano.github.io/post/legacy/2016-03-24-mirna-annotation-tools-comparison/&amp;title=miRNA%20Annotation%20Tools%20Comparison" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flpantano.github.io%2Fpost%2Flegacy%2F2016-03-24-mirna-annotation-tools-comparison%2F&amp;title=miRNA&#43;Annotation&#43;Tools&#43;Comparison" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -974,48 +985,14 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
   <div class="media author-card content-widget-hr">
     
       
-      <a href="http://lpantano.github.io/"><img class="avatar mr-3 avatar-circle" src="/author/avatar_hu25d333fcded103db2f52f7476cb1420a_299455_270x270_fill_q75_lanczos_center.jpg" alt=""></a>
+      <a href="http://lpantano.github.io/"><img class="avatar mr-3 avatar-circle" src="/author/avatar_hu_44c7b90fe395a2f7.jpg" alt=""></a>
     
 
     <div class="media-body">
       <h5 class="card-title"><a href="http://lpantano.github.io/"></a></h5>
       <h6 class="card-subtitle">Director of Bioinformatics Platform</h6>
-      <p class="card-text">My research interests include genomics, visualizationa and modelling.</p>
+      <p class="card-text">Building tools, visualizations, and platforms that transform genomic data into actionable insights for drug discovery and target identification.</p>
       <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="/#contact" >
-        <i class="fas fa-envelope"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://twitter.com/lopantano" target="_blank" rel="noopener">
-        <i class="fab fa-twitter"></i>
-      </a>
-    </li>
   
     
     
@@ -1069,24 +1046,6 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
 
 
 
-  
-  
-  <div class="article-widget content-widget-hr">
-    <h3>Related</h3>
-    <ul>
-      
-      <li><a href="/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/">How to plot miRNA, gene expression and functional analysis together</a></li>
-      
-      <li><a href="/talk/bosc2018/">miRTOP: An open source community project for the development of a unified format file for miRNA data</a></li>
-      
-      <li><a href="/post/legacy/2013-10-29-small-rna-abundance-miss-viz/">small RNA abundance [miss-] viz</a></li>
-      
-    </ul>
-  </div>
-  
-
-
-
 
 
   </div>
@@ -1098,28 +1057,55 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
     
     <div class="container">
       <footer class="site-footer">
+
   
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
 
   <p class="powered-by">
     
-  </p>
-
-  
-  
-
-
-
-
-
-
-  <p class="powered-by">
     
     
-    
-    Published with
-    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy</a>  —
-    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
-    open source</a> website builder that empowers creators.
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
     
   </p>
 </footer>
@@ -1127,6 +1113,82 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
     </div>
     
   </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.6782e3f6a4f06ea4766df038c45ecf40.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.b95a7e109243f29d04930ae8cb49a756.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+<script src="/en/js/wowchemy.min.ed487406ecbb80985462ba7a97b6f2d2.js"></script>
+
+
+
+
+
+
 
   
 <div id="modal" class="modal fade" role="dialog">
@@ -1139,7 +1201,8 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
         </button>
       </div>
       <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
+        
+        <pre><code></code></pre>
       </div>
       <div class="modal-footer">
         <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
@@ -1154,117 +1217,20 @@ miraligner from SeqBuster suit (I am one of the authors) bowtie2 and bowtie no
   </div>
 </div>
 
-      
 
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
 
-      
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
 
-      
 
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
-        
-      
 
-    
 
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
-    
 
-    
-    
-    <script>const code_highlighting = true;</script>
-    
 
-    
-    
-    
-    
-    
-    
-    <script>
-      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
-      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
-      const content_type = {
-        'post': "Posts",
-        'project': "Projects",
-        'publication' : "Publications",
-        'talk' : "Talks",
-        'slides' : "Slides"
-        };
-    </script>
-    
 
-    
-    
 
-    
-    
-    <script id="search-hit-fuse-template" type="text/x-template">
-      <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
-        </div>
-      </div>
-      </div>
-    </script>
-    
 
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    
 
-    
-    
-
-    
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    <script src="/js/wowchemy.min.b642eae82ad9f09fa801bfdde4bce6b2.js"></script>
-
-    
 
 
 

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>miRNA | My bits</title>
+    <title>MiRNA | My bits</title>
     <link>http://lpantano.github.io/tag/mirna/</link>
       <atom:link href="http://lpantano.github.io/tag/mirna/index.xml" rel="self" type="application/rss+xml" />
-    <description>miRNA</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 12 Aug 2018 09:00:00 -0400</lastBuildDate>
+    <description>MiRNA</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 12 Aug 2018 09:00:00 -0400</lastBuildDate>
     <image>
-      <url>http://lpantano.github.io/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_512x512_fill_lanczos_center_3.png</url>
-      <title>miRNA</title>
+      <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
+      <title>MiRNA</title>
       <link>http://lpantano.github.io/tag/mirna/</link>
     </image>
     
@@ -189,7 +189,6 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-  
 
 
 
@@ -200,19 +199,10 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/ntabundance11.png&#34; &gt;
-
-
-  &lt;img src=&#34;http://lpantano.github.io/media/images/ntabundance11.png&#34; alt=&#34;&#34; width=&#34;1000px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;images/ntabundance11.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;1000px&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 
 &lt;p&gt;and if you go for the second option:&lt;/p&gt;
 
@@ -223,7 +213,6 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-  
 
 
 
@@ -234,19 +223,10 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/ntabundance2.png&#34; &gt;
-
-
-  &lt;img src=&#34;http://lpantano.github.io/media/images/ntabundance2.png&#34; alt=&#34;&#34; width=&#34;1000px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;images/ntabundance2.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;1000px&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 
 &lt;p&gt;Which is the best option? well, although papers in small RNA data still continue showing the first option, I think that this should be validated some way.&lt;/p&gt;
 &lt;p&gt;When using unique sequences (only counting different sequences), you can under-estimated the real signal. In NGS, you can have a lot of noise, that may hide the biological signal using this approach. But, you can get the same, if you use directly the abundance, because if your set contains one sequence that is 90% of the data, you will get always a signal, that may be not important, for instance, ribosomal RNA that is expected to be there.&lt;/p&gt;
@@ -259,7 +239,6 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-  
 
 
 
@@ -270,19 +249,10 @@ seq3: 2 times&lt;/p&gt;
 
 
 
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/ntabundance3.png&#34; &gt;
-
-
-  &lt;img src=&#34;http://lpantano.github.io/media/images/ntabundance3.png&#34; alt=&#34;&#34; width=&#34;1000px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;images/ntabundance3.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;1000px&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 
 &lt;p&gt;We can conclude that at position 1, there are few sequences starting with A that are  90 of the data. Also we can see how the 60% of unique sequences have a G at position 10. This helps us to catch any biological signature if it exists, and avoid the misleading information in this kind of figures.&lt;/p&gt;
 </description>

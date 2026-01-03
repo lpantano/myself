@@ -5,9 +5,9 @@
     <link>http://lpantano.github.io/author/eulalia-marti/</link>
       <atom:link href="http://lpantano.github.io/author/eulalia-marti/index.xml" rel="self" type="application/rss+xml" />
     <description>Eulàlia Martí</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://lpantano.github.io/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_512x512_fill_lanczos_center_3.png</url>
+      <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
       <title>Eulàlia Martí</title>
       <link>http://lpantano.github.io/author/eulalia-marti/</link>
     </image>
@@ -17,22 +17,6 @@
       <link>http://lpantano.github.io/publication/pallarsalbanell-2019/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       <guid>http://lpantano.github.io/publication/pallarsalbanell-2019/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Specific small-RNA signatures in the amygdala at premotor and motor stages of Parkinson&#39;s disease revealed by deep sequencing analysis.</title>
-      <link>http://lpantano.github.io/publication/pantano-2015/</link>
-      <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/pantano-2015/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A highly expressed miR-101 isomiR is a functional silencing small RNA.</title>
-      <link>http://lpantano.github.io/publication/llorens-2013/</link>
-      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/llorens-2013/</guid>
       <description></description>
     </item>
     
@@ -49,14 +33,6 @@
       <link>http://lpantano.github.io/publication/banez-coronel-2012/</link>
       <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
       <guid>http://lpantano.github.io/publication/banez-coronel-2012/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A non-biased framework for the annotation and classification of the non-miRNA small RNA transcriptome.</title>
-      <link>http://lpantano.github.io/publication/pantano-2011/</link>
-      <pubDate>Tue, 01 Nov 2011 00:00:00 +0000</pubDate>
-      <guid>http://lpantano.github.io/publication/pantano-2011/</guid>
       <description></description>
     </item>
     

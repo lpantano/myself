@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>human | My bits</title>
+    <title>Human | My bits</title>
     <link>http://lpantano.github.io/tag/human/</link>
       <atom:link href="http://lpantano.github.io/tag/human/index.xml" rel="self" type="application/rss+xml" />
-    <description>human</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <description>Human</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://lpantano.github.io/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_512x512_fill_lanczos_center_3.png</url>
-      <title>human</title>
+      <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
+      <title>Human</title>
       <link>http://lpantano.github.io/tag/human/</link>
     </image>
+    
+    <item>
+      <title>Genomic analyses identify molecular subtypes of pancreatic cancer</title>
+      <link>http://lpantano.github.io/publication/bailey-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/publication/bailey-2016/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Genome assembly comparison identifies structural variants in the human genome.</title>

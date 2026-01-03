@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>viz | My bits</title>
+    <title>Viz | My bits</title>
     <link>http://lpantano.github.io/tag/viz/</link>
       <atom:link href="http://lpantano.github.io/tag/viz/index.xml" rel="self" type="application/rss+xml" />
-    <description>viz</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Mar 2017 17:50:01 -0400</lastBuildDate>
+    <description>Viz</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Mar 2017 17:50:01 -0400</lastBuildDate>
     <image>
-      <url>http://lpantano.github.io/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_512x512_fill_lanczos_center_3.png</url>
-      <title>viz</title>
+      <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
+      <title>Viz</title>
       <link>http://lpantano.github.io/tag/viz/</link>
     </image>
     
@@ -26,9 +26,69 @@
 &lt;li&gt;clustering set of genes to find common patterns expression. Most useful for time seria data. You get as well the list of genes that follows that pattern, so you can use it for functional analysis, for instance. Fig3&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;note: maybe some features only available with development version&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-1.png&#34; alt=&#34;fig1&#34;&gt;
-&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-3.png&#34; alt=&#34;fig2&#34;&gt;
-&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-2.png&#34; alt=&#34;fig3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-1.png&#34; alt=&#34;fig1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-3.png&#34; alt=&#34;fig2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-2.png&#34; alt=&#34;fig3&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
 &lt;p&gt;Package available at &lt;a href=&#34;http://bioconductor.org/packages/devel/bioc/html/DEGreport.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BioC page&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The code is available &lt;a href=&#34;https://github.com/lpantano/mypubs/blob/master/DEG_viz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Hope you enjoy!&lt;/p&gt;
@@ -55,7 +115,6 @@
 
 
 
-  
 
 
 
@@ -66,19 +125,10 @@
 
 
 
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/lyingfactor.jpg&#34; &gt;
-
-
-  &lt;img src=&#34;http://lpantano.github.io/media/images/lyingfactor.jpg&#34; alt=&#34;&#34; width=&#34;1000px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;images/lyingfactor.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;1000px&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 
 &lt;p&gt;That figure shows a difference of 4 between the two groups. Since 4 is twice than 2, we have a lying factor of 2.&lt;/p&gt;
 &lt;p&gt;Probably you think that this is not happening anywhere, it is ridiculous. It is, but probably you will find one of these cases in the news every day.&lt;/p&gt;
@@ -106,7 +156,6 @@
 
 
 
-  
 
 
 
@@ -117,19 +166,10 @@
 
 
 
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://lpantano.github.io/media/images/polychart.png&#34; &gt;
-
-
-  &lt;img src=&#34;http://lpantano.github.io/media/images/polychart.png&#34; alt=&#34;&#34; width=&#34;1000px&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;images/polychart.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;1000px&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 
 &lt;p&gt;You can make different type of charts, like boxplot, barplot, piechart (although aren&amp;rsquo;t well considered) etc. Also, you can customize titles and transform data. Quick complete for a beta version.&lt;/p&gt;
 &lt;p&gt;Finally but not less important, it is free for academics. :)&lt;/p&gt;

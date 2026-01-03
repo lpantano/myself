@@ -5,9 +5,9 @@
     <link>http://lpantano.github.io/tag/rnaseq/</link>
       <atom:link href="http://lpantano.github.io/tag/rnaseq/index.xml" rel="self" type="application/rss+xml" />
     <description>RNAseq</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Mar 2017 17:50:01 -0400</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Mar 2017 17:50:01 -0400</lastBuildDate>
     <image>
-      <url>http://lpantano.github.io/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_512x512_fill_lanczos_center_3.png</url>
+      <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
       <title>RNAseq</title>
       <link>http://lpantano.github.io/tag/rnaseq/</link>
     </image>
@@ -26,9 +26,69 @@
 &lt;li&gt;clustering set of genes to find common patterns expression. Most useful for time seria data. You get as well the list of genes that follows that pattern, so you can use it for functional analysis, for instance. Fig3&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;note: maybe some features only available with development version&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-1.png&#34; alt=&#34;fig1&#34;&gt;
-&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-3.png&#34; alt=&#34;fig2&#34;&gt;
-&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-2.png&#34; alt=&#34;fig3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-1.png&#34; alt=&#34;fig1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-3.png&#34; alt=&#34;fig2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/DEG_viz/figure/plots-2.png&#34; alt=&#34;fig3&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
 &lt;p&gt;Package available at &lt;a href=&#34;http://bioconductor.org/packages/devel/bioc/html/DEGreport.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BioC page&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The code is available &lt;a href=&#34;https://github.com/lpantano/mypubs/blob/master/DEG_viz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Hope you enjoy!&lt;/p&gt;

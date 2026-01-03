@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>develop | My bits</title>
+    <title>Develop | My bits</title>
     <link>http://lpantano.github.io/tag/develop/</link>
       <atom:link href="http://lpantano.github.io/tag/develop/index.xml" rel="self" type="application/rss+xml" />
-    <description>develop</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 23 Aug 2017 17:50:01 -0400</lastBuildDate>
+    <description>Develop</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 23 Aug 2017 17:50:01 -0400</lastBuildDate>
     <image>
-      <url>http://lpantano.github.io/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_512x512_fill_lanczos_center_3.png</url>
-      <title>develop</title>
+      <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
+      <title>Develop</title>
       <link>http://lpantano.github.io/tag/develop/</link>
     </image>
     
@@ -40,40 +40,40 @@ object coming from that method was twice as big when saving into an RDA file. Fo
 &lt;p&gt;We should expect that &lt;code&gt;dummySilly&lt;/code&gt; and &lt;code&gt;dummySmart&lt;/code&gt; have a similar size than &lt;code&gt;dummySmall&lt;/code&gt;&amp;hellip;&lt;/p&gt;
 &lt;p&gt;This is the size of RDA files for each of them (size in Kb):&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;object&lt;/th&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;file&lt;/th&gt;
-&lt;th style=&#34;text-align:right&#34;&gt;rdaSize&lt;/th&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;objSize&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;dummyBig&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;big.rda&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;2828.49 Kb&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;1588 Kb&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;dummySmall&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;micro.rda&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;24.19 Kb&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;42.6 Kb&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;dummySilly&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;microSilly.rda&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;4397.49 Kb&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;43.2 Kb&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;dummySmart&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;microSmart.rda&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;22.38 Kb&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;43.2 Kb&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;object&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;file&lt;/th&gt;
+          &lt;th style=&#34;text-align: right&#34;&gt;rdaSize&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;objSize&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;dummyBig&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;big.rda&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;2828.49 Kb&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1588 Kb&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;dummySmall&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;micro.rda&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;24.19 Kb&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;42.6 Kb&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;dummySilly&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;microSilly.rda&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;4397.49 Kb&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;43.2 Kb&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;dummySmart&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;microSmart.rda&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;22.38 Kb&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;43.2 Kb&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;rdaSize is the size of the file using &lt;code&gt;save(obj, file = fileName.rda&lt;/code&gt; function. objSize is the size in memory in R using the function &lt;code&gt;format(object.size(obj))&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;As you can see, &lt;code&gt;microSilly&lt;/code&gt; is almost twice the original data, but &lt;code&gt;microSmart&lt;/code&gt; is the expected size.&lt;/p&gt;

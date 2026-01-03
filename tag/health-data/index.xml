@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Health Data | My bits</title>
+    <link>http://lpantano.github.io/tag/health-data/</link>
+      <atom:link href="http://lpantano.github.io/tag/health-data/index.xml" rel="self" type="application/rss+xml" />
+    <description>Health Data</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 10 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
+      <title>Health Data</title>
+      <link>http://lpantano.github.io/tag/health-data/</link>
+    </image>
+    
+    <item>
+      <title>Training Progress</title>
+      <link>http://lpantano.github.io/project/training/</link>
+      <pubDate>Sun, 10 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/project/training/</guid>
+      <description>&lt;p&gt;Visit &lt;a href=&#34;https://run-training-activities.netlify.app&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;App&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This project, developed using react.js and data from Apple’s Health app and Garmin Connect app, emphasizes the importance of personal data ownership and management. I believe individuals should have control over their own data, rather than it being dictated by app limitations or leveraged by large corporations. They advocate for apps to offer data export options in standardized formats, empowering users to make informed decisions and analyze their data independently. This example demonstrates my own training progress, showing adaptations in speed, distance, time and heart rate, with plans to correlate with broader health insights. For further information, feel free to reach out.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

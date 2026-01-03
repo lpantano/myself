@@ -5,9 +5,9 @@
     <link>http://lpantano.github.io/tag/r/</link>
       <atom:link href="http://lpantano.github.io/tag/r/index.xml" rel="self" type="application/rss+xml" />
     <description>R</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 21 Sep 2018 10:13:02 -0400</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 21 Sep 2018 10:13:02 -0400</lastBuildDate>
     <image>
-      <url>http://lpantano.github.io/images/icon_hu3316b6f29cbe65a5cfb874b6eed8dd30_19902_512x512_fill_lanczos_center_3.png</url>
+      <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
       <title>R</title>
       <link>http://lpantano.github.io/tag/r/</link>
     </image>
@@ -47,7 +47,27 @@ pheatmap(exp[most_variable,], scale = &amp;quot;row&amp;quot;, show_rownames = F
          annotation_col = design,
          annotation_colors = degColors(design))
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/code-blog/degcolor/degcolors_files/figure-markdown_github/unnamed-chunk-4-1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/lpantano/mypubs/raw/master/code-blog/degcolor/degcolors_files/figure-markdown_github/unnamed-chunk-4-1.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
 &lt;p&gt;If you use &lt;code&gt;ComplexHeatmap&lt;/code&gt; you can activate &lt;code&gt;col_fun = TRUE&lt;/code&gt; to get it working.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;R Session&lt;/li&gt;
@@ -340,40 +360,40 @@ object coming from that method was twice as big when saving into an RDA file. Fo
 &lt;p&gt;We should expect that &lt;code&gt;dummySilly&lt;/code&gt; and &lt;code&gt;dummySmart&lt;/code&gt; have a similar size than &lt;code&gt;dummySmall&lt;/code&gt;&amp;hellip;&lt;/p&gt;
 &lt;p&gt;This is the size of RDA files for each of them (size in Kb):&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;object&lt;/th&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;file&lt;/th&gt;
-&lt;th style=&#34;text-align:right&#34;&gt;rdaSize&lt;/th&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;objSize&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;dummyBig&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;big.rda&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;2828.49 Kb&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;1588 Kb&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;dummySmall&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;micro.rda&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;24.19 Kb&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;42.6 Kb&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;dummySilly&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;microSilly.rda&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;4397.49 Kb&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;43.2 Kb&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;dummySmart&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;microSmart.rda&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;22.38 Kb&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;43.2 Kb&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;object&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;file&lt;/th&gt;
+          &lt;th style=&#34;text-align: right&#34;&gt;rdaSize&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;objSize&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;dummyBig&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;big.rda&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;2828.49 Kb&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1588 Kb&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;dummySmall&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;micro.rda&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;24.19 Kb&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;42.6 Kb&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;dummySilly&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;microSilly.rda&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;4397.49 Kb&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;43.2 Kb&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;dummySmart&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;microSmart.rda&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;22.38 Kb&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;43.2 Kb&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;rdaSize is the size of the file using &lt;code&gt;save(obj, file = fileName.rda&lt;/code&gt; function. objSize is the size in memory in R using the function &lt;code&gt;format(object.size(obj))&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;As you can see, &lt;code&gt;microSilly&lt;/code&gt; is almost twice the original data, but &lt;code&gt;microSmart&lt;/code&gt; is the expected size.&lt;/p&gt;
