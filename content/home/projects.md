@@ -6,7 +6,7 @@ active: true
 weight: 30
 
 title: Portfolio
-subtitle: "What I've built"
+subtitle: "What I've built — more projects coming soon!"
 
 content:
   # Page type to display. E.g. project.
@@ -19,12 +19,14 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: Tools & Code
+    - name: Pipelines
       tag: Tools
     - name: Visualizations
       tag: Visualization
     - name: Case Studies
       tag: 'Case Study'
+    - name: Health & Wellness
+      tag: 'Health Data'
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
