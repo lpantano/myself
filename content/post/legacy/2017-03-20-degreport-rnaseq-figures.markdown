@@ -1,7 +1,6 @@
 ---
 title: 'DEGreport to plot nice RNA-seq figures'
 tags: [viz, RNAseq, small RNAseq]
-published: true
 date: 2017-03-20T17:50:01-04:00
 ---
 

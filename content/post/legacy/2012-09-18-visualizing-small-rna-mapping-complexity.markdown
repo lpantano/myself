@@ -1,7 +1,6 @@
 ---
 title: visualizing small RNA mapping complexity
 date: 2012-09-18 12:10:24.000000000 -04:00
-published: true
 status: publish
 tags:
 - annotation

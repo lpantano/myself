@@ -18,11 +18,13 @@ organizations:
   url: "https://bioinformatics.sph.harvard.edu"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include genomics, visualizationa and modelling.
+bio: Building tools, visualizations, and platforms that transform genomic data into actionable insights for drug discovery and target identification.
 
 interests:
-- Target Discovery and Patient Stratification in Oncology and Neurodegeneration
-- Sequencing-based Platforms, Multi-Omic Modelling and Genomic Visualization
+- Bioinformatics Pipeline Development and Workflow Automation
+- Interactive Data Visualization and Multi-Omics Integration
+- AI/ML for Target Discovery in Oncology and Neurodegeneration
+- Scalable Cloud Infrastructure for Genomic Analysis
 
 education:
   courses:
@@ -41,12 +43,6 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-- icon: envelope
-  icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/lopantano
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.co.uk/citations?user=MeQGlRwAAAAJ&hl
@@ -68,31 +64,28 @@ user_groups:
 - Researchers
 ---
 
-Experienced leader in computational biology, excelling in genomic and data visualization for decision-making processes, with a proven track record in Biotech for enhancing target discovery through innovative bioinformatics methods. Leveraged genomics methods expertise to pioneer research at Harvard. Led cross-functional teams towards groundbreaking insights in fibrosis, oncology and neurodegeneration. Proficient in project coordination and mentoring scientists.
+I build tools and platforms that turn complex genomic data into clear insights. My work spans from developing bioinformatics pipelines and interactive visualizations to building AI models for target discovery and mechanism of action understanding.
 
-Listen to our podcast [A Coffee with CompBio](https://smartlink.ausha.co/a-coffee-with-compbio) hosted by me and [Alex Bartlett](https://www.linkedin.com/in/alexandra-bartlett-926b32109/)
+**What I Do:**
 
-**Biotech Consultant/Advisor** (2020 to present): Advise on technology, computational biology and bioinformatics strategy for emerging BioTechs building data lakes and novel methods to accelerate the process of target discovery, gene editing and drug development pipelines
+I have been implementing AI LLM models to increase productivity and increase accesibility of platforms to multiple departments.
 
-**Founder and Organizer of [Women in Bioinformatics](https://boston-wib.org) in the Boston Area** (2016 to present): Empowering women in computational biology and bioinformatics in academia and biotech by creating a safe and supportive space for career development alongside like-minded peers.
+- **Create Interactive Dashboards**: Design visualization platforms that make multi-omics data accessible for research teams and decision-makers
+- **Develop AI Models**: Built RNA structure and RNA-protein interaction prediction engines from SHAPE-Seq and eCLIP-Seq data
+- **Build Bioinformatics Tools**: tools for small RNA analysis, and developer of Nextflow pipelines for genomic data processing
+- **Architect Cloud Infrastructure**: Design scalable, reproducible computational environments on AWS for genomics workflows
 
-**Board Member at [AWIS MASS](https://massawis.org/board-members-2024-2025/) - VP** (2025 to present): Fostering the mentoring effort in the organization.
+**Current Work:**
+As Director of the Bioinformatics Platform at Harvard Chan School, I manage the core's bioinformatics pipelines and lead development of interactive visualization tools for multiple research programs.
 
-**Alumni [Ambassador](https://www.nextflow.io/ambassadors.html) Nextflow** (2024 to present): Empowering the use of [Nextflow](https://www.nextflow.io/index.html) and [nf-core](https://nf-co.re) technology in the genomic space.
+**Consulting:**
+Advisor to emerging biotech companies on computational biology strategy, data infrastructure, and bioinformatics platforms for target discovery and drug development.
 
-**Co-chair of [Genomics Bioinformatics](https://abrf.org/research-groups/genomics/genomics-bioinformatics/) ABRF** (2024-2025): Continuing the effort to investigate genomics technologies applied in cores.
+**Background:**
+13 years leading computational biology teams in biotech and academia, with experience spanning fibrosis research, oncology, neurodegeneration, and xenotransplantation. Track record of building teams, managing cross-functional collaborations, and delivering genomic insights that drive drug discovery decisions.
 
-### Vision and Mission
-
-Accelerate decision-making process in biomedicine to impact people suffering from any conditions
-
-Build robust platforms with innovative genomic data analysis and visualization to communicate system biology
-
-
-### Leadership
-
-13 years of experience mentoring scientists and leading teams in Academia and Biotech environments. 
-
-Led cross-functional teams in BigPharma/Academia collaborations and biotech. 
-
-Experience in communication cross-teams and with business partners. Managed budget and timelines. Collaborate with business development team.
+**Community Leadership:**
+- Host of [A Coffee with CompBio](https://smartlink.ausha.co/a-coffee-with-compbio) podcast with [Alex Bartlett](https://www.linkedin.com/in/alexandra-bartlett-926b32109/)
+- Founder of [Women in Bioinformatics](https://boston-wib.org) Boston (2016-present)
+- VP Board Member at [AWIS MASS](https://massawis.org/board-members-2024-2025/)
+- [Nextflow Maintainer](https://www.nextflow.io/)

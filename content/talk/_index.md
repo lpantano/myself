@@ -1,5 +1,7 @@
 ---
-title: Recent & Upcoming Talks
+title: Talks
+summary: Conference presentations, panels, and invited talks on bioinformatics, genomics, and data science
+type: page
 
 # View.
 #   1 = List
@@ -12,3 +14,5 @@ header:
   caption: ""
   image: ""
 ---
+
+Recent and upcoming talks covering topics in bioinformatics, workflow management, RNA-seq analysis, and community building in computational biology.

@@ -1,0 +1,58 @@
+{{/* Showcase View for Hugo Blox */}}
+{{- $item := .item -}}
+{{- $index := .index -}}
+{{- $page := .page -}}
+
+{{- $link := $item.RelPermalink -}}
+{{- $target := "" -}}
+{{- with $item.Params.external_link }}{{ $link = . | safeURL }}{{ $target = "target=\"_blank\" rel=\"noopener\"" }}{{ end -}}
+
+<div class="col-12 {{if gt $index 0}}mt-3 mt-md-0{{end}}">
+  <div class="row align-items-center">
+    {{- $resource := ($item.Resources.ByType "image").GetMatch "*featured*" -}}
+    {{- with $resource -}}
+    {{ $image := .Resize "540x" }}
+    {{- if eq (mod $index 2) 0}}
+    <div class="col-12 col-md-6 order-md-2 mb-3 mb-md-0">
+    {{- else}}
+    <div class="col-12 col-md-6 mb-3 mb-md-0">
+    {{- end}}
+      <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
+        <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" loading="lazy" class="img-fluid rounded">
+      </a>
+    </div>
+    {{- end}}
+
+    {{- if eq (mod $index 2) 0}}
+    <div class="col-12 col-md-6 order-md-1">
+    {{- else}}
+    <div class="col-12 col-md-6">
+    {{- end}}
+      {{ with $item.Params.tags }}
+      <div class="mb-3">
+        {{ range . }}
+        <a href="{{ (site.GetPage "tags" (. | urlize)).RelPermalink }}" class="badge badge-light">{{ . }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      <h3 class="mb-3">
+        <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
+      </h3>
+
+      {{ with $item.Summary }}
+      <div class="article-style">
+        {{ . }}
+      </div>
+      {{ end }}
+
+      {{ if $link }}
+      <div class="mt-3">
+        <a href="{{$link}}" {{ $target | safeHTMLAttr }} class="btn btn-sm btn-primary">
+          {{ i18n "more" | default "More" }}
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

@@ -1,7 +1,6 @@
 ---
 title: 'How to plot miRNA, gene expression and functional analysis together'
 tags: [R, miRNA, networks]
-published: true
 date: 2018-08-12T9:00:00-04:00
 ---
 

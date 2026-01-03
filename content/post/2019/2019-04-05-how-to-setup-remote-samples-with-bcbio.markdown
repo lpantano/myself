@@ -1,7 +1,6 @@
 ---
 title: 'How to set up public dataset analysis with bcbio-nextgen'
 tags: [bcbio, public-data]
-published: true
 date: 2019-04-05 10:13:02.000000000 -04:00
 ---
 

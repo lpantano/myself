@@ -1,5 +1,6 @@
 ---
 title: Publications
+summary: Peer-reviewed research in genomics, computational biology, and bioinformatics
 
 # View.
 #   1 = List
@@ -13,3 +14,5 @@ header:
   caption: ""
   image: ""
 ---
+
+Peer-reviewed publications covering genomics, small RNA analysis, multi-omics integration, and computational biology methods.

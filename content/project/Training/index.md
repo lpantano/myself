@@ -2,7 +2,7 @@
 title: Training Progress
 summary: An example of using tracked data on your running trainings
 tags:
-- Fitness data
+- Health Data
 date: "2024-11-10T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

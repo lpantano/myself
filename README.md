@@ -1,32 +1,115 @@
-<p align="center"><a href="https://wowchemy.com" target="_blank" rel="noopener"><img src="https://wowchemy.com/img/logo_200px.png" alt="Wowchemy Website Builder"></a></p>
+# Personal Website
 
-# Academic Template for [Hugo](https://github.com/gohugoio/hugo)
+A Hugo-based personal website built with Hugo Blox (formerly Wowchemy).
 
-The Hugo **Academic Resumé Template** empowers you to create your job-winning online resumé and showcase your academic publications.
+## Prerequisites
 
-[Check out the latest demo](https://academic-demo.netlify.app) of what you'll get in less than 10 minutes, or [view the showcase](https://wowchemy.com/user-stories/).
+- **Hugo Extended** v0.154.0 or later
+- **Go** 1.21 or later
 
-[**Wowchemy**](https://wowchemy.com) makes it easy to create a beautiful website for free. Edit your site in Markdown, Jupyter, or RStudio (via Blogdown), generate it with Hugo, and deploy with GitHub or Netlify. Customize anything on your site with widgets, themes, and language packs.
+## Testing Locally
 
-- 👉 [**Get Started**](https://wowchemy.com/docs/install/)
-- 📚 [View the **documentation**](https://wowchemy.com/docs/)
-- 💬 [Chat with the **Wowchemy community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@wowchemy](https://twitter.com/wowchemy) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=(%23MadeWithWowchemy%20OR%20%23MadeWithAcademic)&src=typed_query)
-- 💡 [Request a **feature** or report a **bug** for _Wowchemy_](https://github.com/wowchemy/wowchemy-hugo-modules/issues)
-- ⬆️ **Updating Wowchemy?** View the [Update Guide](https://wowchemy.com/docs/update/) and [Release Notes](https://wowchemy.com/updates/)
+### 1. Install Hugo Extended
 
-## Crowd-funded open-source software
+**macOS:**
+```bash
+brew install hugo
+```
 
-To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.
+**Linux:**
+Download from [Hugo Releases](https://github.com/gohugoio/hugo/releases)
 
-### [❤️ Click here to unlock rewards with sponsorship](https://wowchemy.com/plans/)
+**Verify installation:**
+```bash
+hugo version
+```
 
-## Ecosystem
+### 2. Clone and Setup
 
-* **[Wowchemy Admin](https://github.com/wowchemy/wowchemy-admin/):** An admin tool to import publications from BibTeX
+```bash
+git clone <your-repo-url>
+cd myself
+```
 
-[![Screenshot](https://raw.githubusercontent.com/wowchemy/wowchemy-hugo-modules/master/academic.png)](https://wowchemy.com)
+### 3. Install Dependencies
 
-<!--
-[![Analytics](https://ga-beacon.appspot.com/UA-78646709-2/academic-kickstart/readme?pixel)](https://github.com/igrigorik/ga-beacon)
--->
+Update Hugo modules:
+```bash
+hugo mod get -u
+hugo mod tidy
+```
+
+### 4. Run Local Development Server
+
+```bash
+hugo server
+```
+
+Or with drafts and future posts:
+```bash
+hugo server -D -F
+```
+
+The site will be available at: `http://localhost:1313`
+
+### 5. Build for Production
+
+```bash
+hugo
+```
+
+The site will be generated in the `./public` directory.
+
+## Configuration
+
+- **Main config:** `config/_default/config.toml`
+- **Menus:** `config/_default/menus.toml`
+- **Content:** `content/` directory
+- **Author profile:** `content/authors/admin/_index.md`
+
+## Deployment
+
+The site automatically deploys via GitHub Actions when pushing to the `master` branch:
+
+- **Testing workflow** (`.github/workflows/ci.yml`): Runs on `master` and `devel` branches
+- **Production workflow** (`.github/workflows/ci-publish.yml`): Deploys to GitHub Pages and publishes to `lpantano.github.io`
+
+## Hugo Modules
+
+This site uses the following Hugo Blox modules:
+
+- `blox-bootstrap/v5` v5.9.7
+- `blox-plugin-netlify` v1.2.0
+- `blox-core` v0.3.1
+- `blox-seo` v0.2.2
+
+To update modules:
+```bash
+hugo mod get -u
+hugo mod tidy
+```
+
+## Troubleshooting
+
+### Clear Hugo cache
+```bash
+hugo mod clean
+```
+
+### Rebuild modules
+```bash
+hugo mod clean
+hugo mod get -u
+hugo mod tidy
+```
+
+### Check module versions
+```bash
+hugo mod graph
+```
+
+## Documentation
+
+- [Hugo Documentation](https://gohugo.io/documentation/)
+- [Hugo Blox Documentation](https://docs.hugoblox.com/)
+- [Hugo Blox GitHub](https://github.com/HugoBlox/hugo-blox-builder)
