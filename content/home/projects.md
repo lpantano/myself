@@ -36,7 +36,8 @@ design:
   #   2 = Compact
   #   3 = Card
   #   5 = Showcase
-  view: 5
+  #   Named values (list, compact, card, showcase) avoid type warnings on newer Hugo.
+  view: showcase
   # For Showcase view, flip alternate rows?
   flip_alt_rows: true
 ---
