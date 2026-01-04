@@ -7,7 +7,8 @@ summary: Peer-reviewed research in genomics, computational biology, and bioinfor
 #   2 = Compact
 #   3 = Card
 #   4 = Citation
-view: 4
+#   Named values (list, compact, card, citation) silence Hugo warnings.
+view: citation
 
 # Optional header image (relative to `static/img/` folder).
 header:

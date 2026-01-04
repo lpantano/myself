@@ -1,0 +1,34 @@
+# Snow Theme - Clean winter white color palette
+name = "Snow"
+
+[light]
+  # Primary color - Cool icy blue
+  primary = "#457B9D"
+
+  # Menu
+  menu_primary = "#FFFFFF"
+  menu_text = "#457B9D"
+  menu_text_active = "#1D3557"
+  menu_title = "#1D3557"
+
+  # Backgrounds
+  background = "#FFFFFF"
+  home_section_odd = "#F8FDFF"
+  home_section_even = "#FFFFFF"
+
+  # Link colors
+  link = "#457B9D"
+  link_hover = "#1D3557"
+
+[dark]
+  # Primary accents and menu styling for night mode
+  primary = "#A8DADC"
+  link = "#A8DADC"
+  link_hover = "#F1FAEE"
+  background = "rgb(29, 53, 87)"
+  home_section_odd = "rgb(29, 53, 87)"
+  home_section_even = "rgb(38, 70, 83)"
+  menu_primary = "rgb(29, 53, 87)"
+  menu_text = "#A8DADC"
+  menu_text_active = "#F1FAEE"
+  menu_title = "#F1FAEE"

@@ -6,7 +6,8 @@ summary: Insights, tutorials, and updates on bioinformatics and computational bi
 #   1 = List
 #   2 = Compact
 #   3 = Card
-view: 3
+#   Named values (list, compact, card) are preferred on new Hugo.
+view: card
 
 # Optional header image (relative to `static/img/` folder).
 header:

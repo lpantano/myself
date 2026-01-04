@@ -22,7 +22,7 @@ content:
     - name: Pipelines
       tag: Tools
     - name: Visualizations
-      tag: Visualization
+      tag: Visualizations
     - name: Case Studies
       tag: 'Case Study'
     - name: Health & Wellness
@@ -30,13 +30,14 @@ content:
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
-  columns: '2'
+  columns: '1'
   # Toggle between the various page layout types.
   #   1 = List
   #   2 = Compact
   #   3 = Card
   #   5 = Showcase
-  view: 5
+  #   Named values (list, compact, card, showcase) avoid type warnings on newer Hugo.
+  view: showcase
   # For Showcase view, flip alternate rows?
   flip_alt_rows: true
 ---

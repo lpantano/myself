@@ -7,7 +7,8 @@ type: page
 #   1 = List
 #   2 = Compact
 #   3 = Card
-view: 2
+#   Named values (list, compact, card) prevent Hugo warnings.
+view: compact
 
 # Optional header image (relative to `static/img/` folder).
 header:

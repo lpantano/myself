@@ -1,8 +1,9 @@
 ---
-title: Training Progress
-summary: An example of using tracked data on your running trainings
+title: Training Progress Dashboard
+summary: Interactive dashboard for personal fitness data visualization and analysis
 tags:
 - Health Data
+- Visualizations
 date: "2024-11-10T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
@@ -19,8 +20,8 @@ links:
 #   url: https://twitter.com/georgecushen
 url_code: ""
 url_pdf: ""
-url_slides: "https://run-training-activities.netlify.app"
-url_app: ""
+url_slides: ""
+url_app: "https://run-training-activities.netlify.app"
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
@@ -30,6 +31,41 @@ url_app: ""
 # slides: example
 ---
 
-Visit [App](https://run-training-activities.netlify.app).
+An interactive dashboard built with React.js that visualizes personal training data from Apple Health and Garmin Connect apps. This project demonstrates data visualization best practices and the importance of personal data ownership.
 
-This project, developed using react.js and data from Apple’s Health app and Garmin Connect app, emphasizes the importance of personal data ownership and management. I believe individuals should have control over their own data, rather than it being dictated by app limitations or leveraged by large corporations. They advocate for apps to offer data export options in standardized formats, empowering users to make informed decisions and analyze their data independently. This example demonstrates my own training progress, showing adaptations in speed, distance, time and heart rate, with plans to correlate with broader health insights. For further information, feel free to reach out.
+[**View Live Dashboard →**](https://run-training-activities.netlify.app)
+
+## Key Features
+
+- **Multi-source Data Integration**: Combines data from Apple Health and Garmin Connect
+- **Interactive Visualizations**: Track adaptations in speed, distance, time, and heart rate over time
+- **Responsive Design**: Built with React.js for a smooth user experience
+- **Data Ownership Focus**: Demonstrates how individuals can take control of their health data
+
+## Technical Approach
+
+This dashboard emphasizes the importance of:
+- Personal data ownership and management
+- Standardized data export formats
+- Independent data analysis capabilities
+- User empowerment over corporate data silos
+
+## What It Shows
+
+The dashboard tracks my personal training progress, revealing patterns in:
+- Speed improvements over time
+- Distance progression
+- Heart rate adaptation
+- Training consistency
+
+Future enhancements will correlate this data with broader health insights to provide a more comprehensive view of fitness and well-being.
+
+## Why This Matters
+
+Too often, our personal health data is locked in proprietary apps or leveraged by large corporations. This project advocates for:
+- Apps offering data export in standardized formats
+- Individual control over personal data
+- Informed decision-making through accessible analytics
+- Independence from vendor lock-in
+
+For more information or to discuss similar visualization projects, feel free to reach out.
