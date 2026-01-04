@@ -13,20 +13,19 @@
 #   Guide to color themes: https://wowchemy.com/docs/customization/#color-themes
 #   Browse the latest built-in font sets at https://github.com/wowchemy/wowchemy-hugo-modules/tree/master/wowchemy/themes/
 #   Browse user installed themes in `data/themes/`
-theme = "minimal"
+theme = "snow"
 
 # Enable users to switch between day and night mode?
 day_night = true
 
-# Override the theme's font set (optional).
-#   Guide to font sets: https://wowchemy.com/docs/customization/#fonts
-#   Browse the latest built-in font sets at https://github.com/wowchemy/wowchemy-hugo-modules/tree/master/wowchemy/data/fonts
-#   Browse user installed font sets in `data/fonts/`
-font = ""
-
-# Choose a font size.
-# Sizes: XS (extra small), S (small), M (medium), L (large - DEFAULT), XL (extra large)
-font_size = "M"
+[appearance]
+  # Configure light/dark palettes and typography.
+  theme_day = "Snow"
+  theme_night = "Snow"
+  theme_auto = true
+  font = ""
+  # Sizes: XS (extra small), S (small), M (medium), L (large - DEFAULT), XL (extra large)
+  font_size = "M"
 
 ############################
 ## Basic Info
@@ -147,7 +146,15 @@ address_format = "en-us"
 ############################
 
 # Main menu alignment (l = left, c = center, r = right) and logo options.
-main_menu = {align = "l", show_logo = true, highlight_active_link = true, show_language = false, show_day_night = true, show_search = true}
+[header]
+  [header.navbar]
+    enable = true
+    align = "l"
+    show_logo = true
+    highlight_active_link = true
+    show_language = false
+    show_day_night = true
+    show_search = true
 
 # Show estimated reading time for posts? (true/false)
 reading_time = true
@@ -229,20 +236,15 @@ plugins_js  = []
 ############################
 ## Search
 ############################
-[search]
-  # Search provider:
-  #   0: No search engine
-  #   1: Academic (built-in)
-  #   2: Algolia (https://www.algolia.com)
-  engine = 1
+[features]
+  [features.search]
+    provider = "wowchemy"
 
-  # Configuration of Algolia search engine.
-  # Paste the values from your Algolia dashboard.
-  [search.algolia]
-    app_id = ""
-    api_key = ""
-    index_name = ""
-    show_logo = false
+[features.search.algolia]
+  app_id = ""
+  api_key = ""
+  index_name = ""
+  show_logo = false
 
 ############################
 ## Maps

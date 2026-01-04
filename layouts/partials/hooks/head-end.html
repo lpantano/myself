@@ -1,0 +1,24 @@
+<style>
+/* Custom styles for portfolio section tag menu */
+/* Make the filter buttons expand to full width to match the posts below */
+
+.portfolio .project-toolbar .btn-toolbar {
+  /* Override Bootstrap's default flex-start alignment */
+  justify-content: space-between !important;
+  width: 100%;
+}
+
+.portfolio .project-toolbar .btn-toolbar .btn-group {
+  /* Make button group expand to full width */
+  width: 100%;
+  /* Distribute buttons evenly across the width */
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.portfolio .project-toolbar .btn-toolbar .btn-group .btn {
+  /* Make each button grow to fill available space */
+  flex: 1;
+}
+</style>
