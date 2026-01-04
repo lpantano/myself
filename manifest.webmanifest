@@ -2,8 +2,8 @@
   "name": "My bits",
   "short_name": "My bits",
   "lang": "en-us",
-  "theme_color": "#bbdefb",
-  "background_color": "#bbdefb",
+  "theme_color": "#457B9D",
+  "background_color": "#457B9D",
   "icons": [{
     "src": "/media/icon_hu_de15e77181fecba7.png",
     "sizes": "192x192",

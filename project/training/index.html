@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: January 3, 2026 --><html lang="en-us" >
+<!-- Last Published: January 4, 2026 --><html lang="en-us" >
 
 
 <head>
@@ -210,7 +210,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.a4f08a4cebd120219b49ff4997f487df.css" />
+  <link rel="stylesheet" href="/css/wowchemy.17ed658cdb0bf2fb0768cb75334dcc1c.css" />
 
   
   
@@ -225,8 +225,8 @@
   
     
     
-    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" disabled>
-    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
   
 
   
@@ -270,7 +270,7 @@
 
   
 
-<meta name="description" content="An example of using tracked data on your running trainings" />
+<meta name="description" content="Interactive dashboard for personal fitness data visualization and analysis" />
 
 
 
@@ -286,7 +286,7 @@
 <link rel="icon" type="image/png" href="/media/icon_hu_6ba9f341fba7588.png" />
 <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu_f016f6a28e4542.png" />
 
-<meta name="theme-color" content="#bbdefb" />
+<meta name="theme-color" content="#457B9D" />
 
 
 
@@ -314,8 +314,8 @@
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="My bits" />
 <meta property="og:url" content="http://lpantano.github.io/project/training/" />
-<meta property="og:title" content="Training Progress | My bits" />
-<meta property="og:description" content="An example of using tracked data on your running trainings" /><meta property="og:image" content="http://lpantano.github.io/project/training/featured.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:title" content="Training Progress Dashboard | My bits" />
+<meta property="og:description" content="Interactive dashboard for personal fitness data visualization and analysis" /><meta property="og:image" content="http://lpantano.github.io/project/training/featured.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
@@ -350,7 +350,7 @@
     "@type": "WebPage",
     "@id": "http://lpantano.github.io/project/training/"
   },
-  "headline": "Training Progress",
+  "headline": "Training Progress Dashboard",
   
   "image": [
     "http://lpantano.github.io/project/training/featured.png"
@@ -367,7 +367,7 @@
       "url": "http://lpantano.github.io/media/icon_hu_de15e77181fecba7.png"
     }
   },
-  "description": "An example of using tracked data on your running trainings"
+  "description": "Interactive dashboard for personal fitness data visualization and analysis"
 }
 </script>
 
@@ -389,7 +389,7 @@
 
 
   
-  <title>Training Progress | My bits</title>
+  <title>Training Progress Dashboard | My bits</title>
 
   
   
@@ -409,7 +409,7 @@
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  dark " data-wc-page-id="8d50874cc3ad402bfe04051c37862af7" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="8d50874cc3ad402bfe04051c37862af7" >
 
   
   
@@ -420,10 +420,47 @@
   
   
   
-  <script src="/js/wowchemy-init.min.db21e13b9b5c4f4b947717750ec8b3cc.js"></script>
+  <script src="/js/wowchemy-init.min.9efdeed80f3d37db59da84ebeead9552.js"></script>
 
   
 
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
 
 
 
@@ -686,9 +723,30 @@
         
         
         
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
 
         
         
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
         
 
         
@@ -739,7 +797,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>Training Progress</h1>
+  <h1>Training Progress Dashboard</h1>
 
   
 
@@ -780,47 +838,6 @@
 
 
 
-<div class="btn-links mb-3">
-  
-  
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header" href="https://run-training-activities.netlify.app" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-
-
-
-
-</div>
-
 
 </div>
 
@@ -837,8 +854,41 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>Visit <a href="https://run-training-activities.netlify.app" target="_blank" rel="noopener">App</a>.</p>
-<p>This project, developed using react.js and data from Apple’s Health app and Garmin Connect app, emphasizes the importance of personal data ownership and management. I believe individuals should have control over their own data, rather than it being dictated by app limitations or leveraged by large corporations. They advocate for apps to offer data export options in standardized formats, empowering users to make informed decisions and analyze their data independently. This example demonstrates my own training progress, showing adaptations in speed, distance, time and heart rate, with plans to correlate with broader health insights. For further information, feel free to reach out.</p>
+      <p>An interactive dashboard built with React.js that visualizes personal training data from Apple Health and Garmin Connect apps. This project demonstrates data visualization best practices and the importance of personal data ownership.</p>
+<p><a href="https://run-training-activities.netlify.app" target="_blank" rel="noopener"><strong>View Live Dashboard →</strong></a></p>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li><strong>Multi-source Data Integration</strong>: Combines data from Apple Health and Garmin Connect</li>
+<li><strong>Interactive Visualizations</strong>: Track adaptations in speed, distance, time, and heart rate over time</li>
+<li><strong>Responsive Design</strong>: Built with React.js for a smooth user experience</li>
+<li><strong>Data Ownership Focus</strong>: Demonstrates how individuals can take control of their health data</li>
+</ul>
+<h2 id="technical-approach">Technical Approach</h2>
+<p>This dashboard emphasizes the importance of:</p>
+<ul>
+<li>Personal data ownership and management</li>
+<li>Standardized data export formats</li>
+<li>Independent data analysis capabilities</li>
+<li>User empowerment over corporate data silos</li>
+</ul>
+<h2 id="what-it-shows">What It Shows</h2>
+<p>The dashboard tracks my personal training progress, revealing patterns in:</p>
+<ul>
+<li>Speed improvements over time</li>
+<li>Distance progression</li>
+<li>Heart rate adaptation</li>
+<li>Training consistency</li>
+</ul>
+<p>Future enhancements will correlate this data with broader health insights to provide a more comprehensive view of fitness and well-being.</p>
+<h2 id="why-this-matters">Why This Matters</h2>
+<p>Too often, our personal health data is locked in proprietary apps or leveraged by large corporations. This project advocates for:</p>
+<ul>
+<li>Apps offering data export in standardized formats</li>
+<li>Individual control over personal data</li>
+<li>Informed decision-making through accessible analytics</li>
+<li>Independence from vendor lock-in</li>
+</ul>
+<p>For more information or to discuss similar visualization projects, feel free to reach out.</p>
 
     </div>
 
@@ -851,6 +901,8 @@
 <div class="article-tags">
   
   <a class="badge badge-light" href="/tag/health-data/">Health Data</a>
+  
+  <a class="badge badge-light" href="/tag/visualizations/">Visualizations</a>
   
 </div>
 
@@ -871,7 +923,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flpantano.github.io%2Fproject%2Ftraining%2F&amp;text=Training&#43;Progress" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flpantano.github.io%2Fproject%2Ftraining%2F&amp;text=Training&#43;Progress&#43;Dashboard" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -888,7 +940,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flpantano.github.io%2Fproject%2Ftraining%2F&amp;t=Training&#43;Progress" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flpantano.github.io%2Fproject%2Ftraining%2F&amp;t=Training&#43;Progress&#43;Dashboard" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -907,7 +959,7 @@
         
       
       <li>
-        <a href="mailto:?subject=Training%20Progress&amp;body=http%3A%2F%2Flpantano.github.io%2Fproject%2Ftraining%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=Training%20Progress%20Dashboard&amp;body=http%3A%2F%2Flpantano.github.io%2Fproject%2Ftraining%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -924,7 +976,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flpantano.github.io%2Fproject%2Ftraining%2F&amp;title=Training&#43;Progress" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flpantano.github.io%2Fproject%2Ftraining%2F&amp;title=Training&#43;Progress&#43;Dashboard" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -941,7 +993,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Training&#43;Progress%20http%3A%2F%2Flpantano.github.io%2Fproject%2Ftraining%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=Training&#43;Progress&#43;Dashboard%20http%3A%2F%2Flpantano.github.io%2Fproject%2Ftraining%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -958,7 +1010,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flpantano.github.io%2Fproject%2Ftraining%2F&amp;title=Training&#43;Progress" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flpantano.github.io%2Fproject%2Ftraining%2F&amp;title=Training&#43;Progress&#43;Dashboard" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -999,6 +1051,23 @@
       <h6 class="card-subtitle">Director of Bioinformatics Platform</h6>
       <p class="card-text">Building tools, visualizations, and platforms that transform genomic data into actionable insights for drug discovery and target identification.</p>
       <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/lpantano/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
   
     
     
@@ -1163,6 +1232,22 @@
 
 
 
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
 
 
 
@@ -1173,6 +1258,15 @@
 
 
 
+
+
+  
+  
+  
+  
+  
+  
+  
 
 
 
@@ -1203,8 +1297,11 @@
 
 
 
+  
+  
 
-<script src="/en/js/wowchemy.min.ed487406ecbb80985462ba7a97b6f2d2.js"></script>
+
+<script src="/en/js/wowchemy.min.69fc52a6dc16aaf1a452cfbb36466dac.js"></script>
 
 
 

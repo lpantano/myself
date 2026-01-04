@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: January 3, 2026 --><html lang="en-us" >
+<!-- Last Published: January 4, 2026 --><html lang="en-us" >
 
 
 <head>
@@ -210,7 +210,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.a4f08a4cebd120219b49ff4997f487df.css" />
+  <link rel="stylesheet" href="/css/wowchemy.17ed658cdb0bf2fb0768cb75334dcc1c.css" />
 
   
   
@@ -225,8 +225,8 @@
   
     
     
-    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" disabled>
-    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
   
 
   
@@ -286,7 +286,7 @@
 <link rel="icon" type="image/png" href="/media/icon_hu_6ba9f341fba7588.png" />
 <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu_f016f6a28e4542.png" />
 
-<meta name="theme-color" content="#bbdefb" />
+<meta name="theme-color" content="#457B9D" />
 
 
 
@@ -364,7 +364,7 @@
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  dark " data-wc-page-id="6370009740e1eb2ee0b7974f10ecc91f" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="6370009740e1eb2ee0b7974f10ecc91f" >
 
   
   
@@ -375,10 +375,47 @@
   
   
   
-  <script src="/js/wowchemy-init.min.db21e13b9b5c4f4b947717750ec8b3cc.js"></script>
+  <script src="/js/wowchemy-init.min.9efdeed80f3d37db59da84ebeead9552.js"></script>
 
   
 
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
 
 
 
@@ -641,9 +678,30 @@
         
         
         
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
 
         
         
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
         
 
         
@@ -715,33 +773,13 @@
 
 
 
-
-
   
 
 
-<div class="media stream-item view-compact">
-  <div class="media-body">
+<div class="card-simple view-card">
 
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/" >Get colors for your heatmap annotation</a>
-    </div>
-
+  
     
-    <a href="/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/"  class="summary-link">
-      <div class="article-style">
-        <p>This post will show how to configure quickly the colors for the annotation of rows/columns that go on top or on the side of a heatmap.</p>
-<p>I normally use <code>pheatmap</code> a lot. Recently I discovered <code>ComplexHeatmap</code>. In both cases I spend always sometime changing the colors of the annotations. I ended up coding a function inside my package <code>DEGreport</code> to do that.</p>
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
@@ -778,16 +816,27 @@
 
 </div>
 
-      
+  
+
+  
+  
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/" >Get colors for your heatmap annotation</a>
+  </div>
+
+  
+  <a href="/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/"  class="summary-link">
+    <div class="article-style">
+      <p><p>This post will show how to configure quickly the colors for the annotation of rows/columns that go on top or on the side of a heatmap.</p>
+<p>I normally use <code>pheatmap</code> a lot. Recently I discovered <code>ComplexHeatmap</code>. In both cases I spend always sometime changing the colors of the annotations. I ended up coding a function inside my package <code>DEGreport</code> to do that.</p></p>
     </div>
+  </a>
+  
 
-    
+  
 
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
 </div>
 
   
@@ -803,42 +852,13 @@
 
 
 
-
-
   
 
 
-<div class="media stream-item view-compact">
-  <div class="media-body">
+<div class="card-simple view-card">
 
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/" >How to plot miRNA, gene expression and functional analysis together</a>
-    </div>
-
+  
     
-    <a href="/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/"  class="summary-link">
-      <div class="article-style">
-        <p>This post should show you an easy way to get the following data type
-integrated into a figure:</p>
-<ul>
-<li>functional enrichment analysis</li>
-<li>gene expression data from any technology</li>
-<li>miRNA expression data from any technology</li>
-</ul>
-<p>I am using the function <code>isoNetwork</code> from the package <code>isomiRs</code>, that of
-course is developed by me :) My ego is not that big, it is just I wanted
-a figure showing that information, and I couldn&rsquo;t find any at a time,
-but if you know any, tweet me about it to @lopantano.</p>
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
@@ -875,16 +895,36 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 </div>
 
-      
+  
+
+  
+  
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/" >How to plot miRNA, gene expression and functional analysis together</a>
+  </div>
+
+  
+  <a href="/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/"  class="summary-link">
+    <div class="article-style">
+      <p><p>This post should show you an easy way to get the following data type
+integrated into a figure:</p>
+<ul>
+<li>functional enrichment analysis</li>
+<li>gene expression data from any technology</li>
+<li>miRNA expression data from any technology</li>
+</ul>
+<p>I am using the function <code>isoNetwork</code> from the package <code>isomiRs</code>, that of
+course is developed by me :) My ego is not that big, it is just I wanted
+a figure showing that information, and I couldn&rsquo;t find any at a time,
+but if you know any, tweet me about it to @lopantano.</p></p>
     </div>
+  </a>
+  
 
-    
+  
 
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
 </div>
 
   
@@ -900,34 +940,13 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 
 
-
-
   
 
 
-<div class="media stream-item view-compact">
-  <div class="media-body">
+<div class="card-simple view-card">
 
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/post/legacy/2017-08-24-subset-object-creates-bigger-file/" >Subset of object creates bigger RDA file size than original object</a>
-    </div>
-
+  
     
-    <a href="/post/legacy/2017-08-24-subset-object-creates-bigger-file/"  class="summary-link">
-      <div class="article-style">
-        <p>This is a funny story, and I will try to tell you how I realized I don&rsquo;t know anything about R in 400 words.</p>
-<p>I work at the Bioinformatic Core at Harvard TH School. People who know us, or collaborate with us, knows that we mainly use
-<a href="https://github.com/chapmanb/bcbio-nextgen" target="_blank" rel="noopener">bcbio</a> to analyze sequencing data (check it out, super cool tool).</p>
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
@@ -964,16 +983,28 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 </div>
 
-      
+  
+
+  
+  
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/post/legacy/2017-08-24-subset-object-creates-bigger-file/" >Subset of object creates bigger RDA file size than original object</a>
+  </div>
+
+  
+  <a href="/post/legacy/2017-08-24-subset-object-creates-bigger-file/"  class="summary-link">
+    <div class="article-style">
+      <p><p>This is a funny story, and I will try to tell you how I realized I don&rsquo;t know anything about R in 400 words.</p>
+<p>I work at the Bioinformatic Core at Harvard TH School. People who know us, or collaborate with us, knows that we mainly use
+<a href="https://github.com/chapmanb/bcbio-nextgen" target="_blank" rel="noopener">bcbio</a> to analyze sequencing data (check it out, super cool tool).</p></p>
     </div>
+  </a>
+  
 
-    
+  
 
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
 </div>
 
   
@@ -989,33 +1020,13 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 
 
-
-
   
 
 
-<div class="media stream-item view-compact">
-  <div class="media-body">
+<div class="card-simple view-card">
 
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/post/legacy/2017-03-20-degreport-rnaseq-figures/" >DEGreport to plot nice RNA-seq figures</a>
-    </div>
-
+  
     
-    <a href="/post/legacy/2017-03-20-degreport-rnaseq-figures/"  class="summary-link">
-      <div class="article-style">
-        <p>Differentially gene expression analysis with <a href="https://en.wikipedia.org/wiki/RNA-Seq" target="_blank" rel="noopener">RNA-seq</a> data is quite common nowadays, and there are pretty good <a href="http://bioconductor.org" target="_blank" rel="noopener">Bioconductor</a> packages for that: <a href="http://bioconductor.org/packages/release/bioc/html/limma.html" target="_blank" rel="noopener">limma::voom</a>, <a href="http://bioconductor.org/packages/release/bioc/html/DESeq2.html" target="_blank" rel="noopener">DESeq2</a> &hellip;</p>
-<p>The code for that part is quite simple, being super quick to get a list of de-regulated genes. However, downstream analyses vary a lot depending on the project itself. But I found myself doing the same plots and analyses many times for different project, so I put together a bunch of plots and analyses using code from my colleagues at work (<a href="http://bioinformatics.sph.harvard.edu" target="_blank" rel="noopener">@HSPH bioinformatics core</a>) and myself.</p>
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
@@ -1052,16 +1063,27 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 </div>
 
-      
+  
+
+  
+  
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/post/legacy/2017-03-20-degreport-rnaseq-figures/" >DEGreport to plot nice RNA-seq figures</a>
+  </div>
+
+  
+  <a href="/post/legacy/2017-03-20-degreport-rnaseq-figures/"  class="summary-link">
+    <div class="article-style">
+      <p><p>Differentially gene expression analysis with <a href="https://en.wikipedia.org/wiki/RNA-Seq" target="_blank" rel="noopener">RNA-seq</a> data is quite common nowadays, and there are pretty good <a href="http://bioconductor.org" target="_blank" rel="noopener">Bioconductor</a> packages for that: <a href="http://bioconductor.org/packages/release/bioc/html/limma.html" target="_blank" rel="noopener">limma::voom</a>, <a href="http://bioconductor.org/packages/release/bioc/html/DESeq2.html" target="_blank" rel="noopener">DESeq2</a> &hellip;</p>
+<p>The code for that part is quite simple, being super quick to get a list of de-regulated genes. However, downstream analyses vary a lot depending on the project itself. But I found myself doing the same plots and analyses many times for different project, so I put together a bunch of plots and analyses using code from my colleagues at work (<a href="http://bioinformatics.sph.harvard.edu" target="_blank" rel="noopener">@HSPH bioinformatics core</a>) and myself.</p></p>
     </div>
+  </a>
+  
 
-    
+  
 
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
 </div>
 
   
@@ -1077,43 +1099,13 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 
 
-
-
   
 
 
-<div class="media stream-item view-compact">
-  <div class="media-body">
+<div class="card-simple view-card">
 
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/post/legacy/2016-03-24-mirna-annotation-tools-comparison/" >miRNA Annotation Tools Comparison</a>
-    </div>
-
+  
     
-    <a href="/post/legacy/2016-03-24-mirna-annotation-tools-comparison/"  class="summary-link">
-      <div class="article-style">
-        <p>In summary: I will show which is the best miRNA mapping tool. I used several options for this benchmarking:</p>
-<ul>
-<li>miraligner from <a href="http://github.com/lpantano/seqbuster" target="_blank" rel="noopener">SeqBuster</a> suit (I am one of the authors)</li>
-<li><a href="http://bowtie-bio.sourceforge.net/bowtie2/index.shtml" target="_blank" rel="noopener">bowtie2</a> and <a href="http://bowtie-bio.sourceforge.net/index.shtml" target="_blank" rel="noopener">bowtie</a></li>
-<li><a href="http://www.novocraft.com/main/index.php" target="_blank" rel="noopener">novoalign</a> from novocraft suit</li>
-<li><a href="http://algorithms.cnag.cat/wiki/The_GEM_library" target="_blank" rel="noopener">GEM</a></li>
-<li><a href="http://arn.ugr.es/srnabench/" target="_blank" rel="noopener">srnabench</a></li>
-<li><a href="http://www.seqan.de/projects/MicroRazerS.html." target="_blank" rel="noopener">microrazer</a></li>
-<li><a href="https://github.com/alexdobin/STAR" target="_blank" rel="noopener">STAR</a></li>
-<li><a href="http://mirexpress.mbc.nctu.edu.tw/" target="_blank" rel="noopener">miRExpress</a></li>
-</ul>
-<p>I think that these are the most used, and other not used but good to try them. They were clearly developed for other purposes, but as well, they generate the input of many miRNA pipelines. I just wanted to know how well my tool was doing. The first aim to develop miraligner was to get annotated additions of nucleotides at the end of miRNA sequences, something that is very common in mirna biogenesis: <a href="http://en.wikipedia.org/wiki/IsomiR" target="_blank" rel="noopener">isomirs</a> and often they are missed by short read and fast mappers. I have a <a href="https://github.com/lpantano/mypubs/tree/master/mirna/mirannotation" target="_blank" rel="noopener">repository</a> for this kind of things, so anybody can reproduce my results, and check if I did something wrong, or comment on it. In this post I just want to know which tool detects more miRNA, for that I did two main steps:</p>
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
@@ -1150,16 +1142,37 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 </div>
 
-      
+  
+
+  
+  
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/post/legacy/2016-03-24-mirna-annotation-tools-comparison/" >miRNA Annotation Tools Comparison</a>
+  </div>
+
+  
+  <a href="/post/legacy/2016-03-24-mirna-annotation-tools-comparison/"  class="summary-link">
+    <div class="article-style">
+      <p><p>In summary: I will show which is the best miRNA mapping tool. I used several options for this benchmarking:</p>
+<ul>
+<li>miraligner from <a href="http://github.com/lpantano/seqbuster" target="_blank" rel="noopener">SeqBuster</a> suit (I am one of the authors)</li>
+<li><a href="http://bowtie-bio.sourceforge.net/bowtie2/index.shtml" target="_blank" rel="noopener">bowtie2</a> and <a href="http://bowtie-bio.sourceforge.net/index.shtml" target="_blank" rel="noopener">bowtie</a></li>
+<li><a href="http://www.novocraft.com/main/index.php" target="_blank" rel="noopener">novoalign</a> from novocraft suit</li>
+<li><a href="http://algorithms.cnag.cat/wiki/The_GEM_library" target="_blank" rel="noopener">GEM</a></li>
+<li><a href="http://arn.ugr.es/srnabench/" target="_blank" rel="noopener">srnabench</a></li>
+<li><a href="http://www.seqan.de/projects/MicroRazerS.html." target="_blank" rel="noopener">microrazer</a></li>
+<li><a href="https://github.com/alexdobin/STAR" target="_blank" rel="noopener">STAR</a></li>
+<li><a href="http://mirexpress.mbc.nctu.edu.tw/" target="_blank" rel="noopener">miRExpress</a></li>
+</ul>
+<p>I think that these are the most used, and other not used but good to try them. They were clearly developed for other purposes, but as well, they generate the input of many miRNA pipelines. I just wanted to know how well my tool was doing. The first aim to develop miraligner was to get annotated additions of nucleotides at the end of miRNA sequences, something that is very common in mirna biogenesis: <a href="http://en.wikipedia.org/wiki/IsomiR" target="_blank" rel="noopener">isomirs</a> and often they are missed by short read and fast mappers. I have a <a href="https://github.com/lpantano/mypubs/tree/master/mirna/mirannotation" target="_blank" rel="noopener">repository</a> for this kind of things, so anybody can reproduce my results, and check if I did something wrong, or comment on it. In this post I just want to know which tool detects more miRNA, for that I did two main steps:</p></p>
     </div>
+  </a>
+  
 
-    
+  
 
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
 </div>
 
   
@@ -1175,32 +1188,13 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 
 
-
-
   
 
 
-<div class="media stream-item view-compact">
-  <div class="media-body">
+<div class="card-simple view-card">
 
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/post/legacy/2013-10-29-small-rna-abundance-miss-viz/" >small RNA abundance [miss-] viz</a>
-    </div>
-
+  
     
-    <a href="/post/legacy/2013-10-29-small-rna-abundance-miss-viz/"  class="summary-link">
-      <div class="article-style">
-        <p>My PhD was focused on small RNA sequencing data. I had a problem when I wanted to visualized the amount of small RNAs from the beginning. Here the problem, assume that you have a certain distribution of small RNA sequences abundance:</p>
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
@@ -1237,16 +1231,26 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 </div>
 
-      
+  
+
+  
+  
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/post/legacy/2013-10-29-small-rna-abundance-miss-viz/" >small RNA abundance [miss-] viz</a>
+  </div>
+
+  
+  <a href="/post/legacy/2013-10-29-small-rna-abundance-miss-viz/"  class="summary-link">
+    <div class="article-style">
+      <p><p>My PhD was focused on small RNA sequencing data. I had a problem when I wanted to visualized the amount of small RNAs from the beginning. Here the problem, assume that you have a certain distribution of small RNA sequences abundance:</p></p>
     </div>
+  </a>
+  
 
-    
+  
 
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
 </div>
 
   
@@ -1262,34 +1266,13 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 
 
-
-
   
 
 
-<div class="media stream-item view-compact">
-  <div class="media-body">
+<div class="card-simple view-card">
 
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/post/legacy/2013-08-07-lying-factor-in-figures/" >Lying factor in figures</a>
-    </div>
-
+  
     
-    <a href="/post/legacy/2013-08-07-lying-factor-in-figures/"  class="summary-link">
-      <div class="article-style">
-        <p>What is the lying factor in figures?</p>
-<p>It is the ratio between the difference of two numbers and the difference of the visualization of those two numbers. For instance:</p>
-<p>You have two groups, each group is represented by 4 and 2. The difference between 4 and 2 is 2. Since &ldquo;a picture is worth a thousand words&rdquo;, someone decides to represents those groups in a figure (yes, in excel to make it worst):</p>
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
@@ -1326,16 +1309,28 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 </div>
 
-      
+  
+
+  
+  
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/post/legacy/2013-08-07-lying-factor-in-figures/" >Lying factor in figures</a>
+  </div>
+
+  
+  <a href="/post/legacy/2013-08-07-lying-factor-in-figures/"  class="summary-link">
+    <div class="article-style">
+      <p><p>What is the lying factor in figures?</p>
+<p>It is the ratio between the difference of two numbers and the difference of the visualization of those two numbers. For instance:</p>
+<p>You have two groups, each group is represented by 4 and 2. The difference between 4 and 2 is 2. Since &ldquo;a picture is worth a thousand words&rdquo;, someone decides to represents those groups in a figure (yes, in excel to make it worst):</p></p>
     </div>
+  </a>
+  
 
-    
+  
 
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
 </div>
 
   
@@ -1351,32 +1346,13 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 
 
-
-
   
 
 
-<div class="media stream-item view-compact">
-  <div class="media-body">
+<div class="card-simple view-card">
 
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/post/legacy/2013-05-27-mirna-annotation-complex-scenarios/" >miRNA annotation: complex scenarios</a>
-    </div>
-
+  
     
-    <a href="/post/legacy/2013-05-27-mirna-annotation-complex-scenarios/"  class="summary-link">
-      <div class="article-style">
-        <p>Everybody who is working with microRNA knows about miRBase, it was the first miRNA catalogue. Everybody is using it to annotate small RNA sequences as miRNA or not. And it is great, and very helpfully&hellip;but there are some cases that we should investigate our results.</p>
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
@@ -1413,16 +1389,26 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 </div>
 
-      
+  
+
+  
+  
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/post/legacy/2013-05-27-mirna-annotation-complex-scenarios/" >miRNA annotation: complex scenarios</a>
+  </div>
+
+  
+  <a href="/post/legacy/2013-05-27-mirna-annotation-complex-scenarios/"  class="summary-link">
+    <div class="article-style">
+      <p><p>Everybody who is working with microRNA knows about miRBase, it was the first miRNA catalogue. Everybody is using it to annotate small RNA sequences as miRNA or not. And it is great, and very helpfully&hellip;but there are some cases that we should investigate our results.</p></p>
     </div>
+  </a>
+  
 
-    
+  
 
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
 </div>
 
   
@@ -1438,32 +1424,13 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 
 
-
-
   
 
 
-<div class="media stream-item view-compact">
-  <div class="media-body">
+<div class="card-simple view-card">
 
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/post/legacy/2012-09-18-visualizing-small-rna-mapping-complexity/" >visualizing small RNA mapping complexity</a>
-    </div>
-
+  
     
-    <a href="/post/legacy/2012-09-18-visualizing-small-rna-mapping-complexity/"  class="summary-link">
-      <div class="article-style">
-        <p>I spent all my PhD working with small RNA sequences data. The main problem was, always those sequences that map in multiple locations, also denominated ambiguous sequences. From the very beginning, this made that pipelines remove this kind of sequences from the analysis, because you cannot assign them a unique location in the genome. But these sequences are interesting to study, since many of them change in size, for instance. This complexity is due to repeats in the genome and the scenario I am talking about here it is shown in the following figure: ![]({{ site.url }}/assets/example1.png)</p>
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
@@ -1500,16 +1467,26 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 </div>
 
-      
+  
+
+  
+  
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/post/legacy/2012-09-18-visualizing-small-rna-mapping-complexity/" >visualizing small RNA mapping complexity</a>
+  </div>
+
+  
+  <a href="/post/legacy/2012-09-18-visualizing-small-rna-mapping-complexity/"  class="summary-link">
+    <div class="article-style">
+      <p><p>I spent all my PhD working with small RNA sequences data. The main problem was, always those sequences that map in multiple locations, also denominated ambiguous sequences. From the very beginning, this made that pipelines remove this kind of sequences from the analysis, because you cannot assign them a unique location in the genome. But these sequences are interesting to study, since many of them change in size, for instance. This complexity is due to repeats in the genome and the scenario I am talking about here it is shown in the following figure: ![]({{ site.url }}/assets/example1.png)</p></p>
     </div>
+  </a>
+  
 
-    
+  
 
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
 </div>
 
   
@@ -1525,32 +1502,13 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 
 
-
-
   
 
 
-<div class="media stream-item view-compact">
-  <div class="media-body">
+<div class="card-simple view-card">
 
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/post/legacy/2012-08-14-visualizing-science-is-also-cool-polychart/" >Visualizing science is also cool @polychart</a>
-    </div>
-
+  
     
-    <a href="/post/legacy/2012-08-14-visualizing-science-is-also-cool-polychart/"  class="summary-link">
-      <div class="article-style">
-        <p>One of my interest in science is finding new ways to visualize Big Data. Scientist are used to work with static visualization, that of course, is wonderful in the majority of the case. But it wouldn&rsquo;t be better dynamic visualization for exploration? Play with your data, explore, and finally when you get that great figure that tell you everything you was looking for, you can export it to an image portable format.</p>
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
@@ -1587,16 +1545,26 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 </div>
 
-      
+  
+
+  
+  
+  
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="/post/legacy/2012-08-14-visualizing-science-is-also-cool-polychart/" >Visualizing science is also cool @polychart</a>
+  </div>
+
+  
+  <a href="/post/legacy/2012-08-14-visualizing-science-is-also-cool-polychart/"  class="summary-link">
+    <div class="article-style">
+      <p><p>One of my interest in science is finding new ways to visualize Big Data. Scientist are used to work with static visualization, that of course, is wonderful in the majority of the case. But it wouldn&rsquo;t be better dynamic visualization for exploration? Play with your data, explore, and finally when you get that great figure that tell you everything you was looking for, you can export it to an image portable format.</p></p>
     </div>
+  </a>
+  
 
-    
+  
 
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
 </div>
 
   
@@ -1707,6 +1675,22 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 
 
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
 
 
 
@@ -1717,6 +1701,15 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 
 
+
+
+  
+  
+  
+  
+  
+  
+  
 
 
 
@@ -1747,8 +1740,11 @@ but if you know any, tweet me about it to @lopantano.</p>
 
 
 
+  
+  
 
-<script src="/en/js/wowchemy.min.ed487406ecbb80985462ba7a97b6f2d2.js"></script>
+
+<script src="/en/js/wowchemy.min.69fc52a6dc16aaf1a452cfbb36466dac.js"></script>
 
 
 
