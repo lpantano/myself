@@ -22,7 +22,7 @@ content:
     - name: Pipelines
       tag: Tools
     - name: Visualizations
-      tag: Visualization
+      tag: Visualizations
     - name: Case Studies
       tag: 'Case Study'
     - name: Health & Wellness
