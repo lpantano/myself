@@ -12,7 +12,7 @@ Boston, MA — [bioinformatics.sph.harvard.edu](https://bioinformatics.sph.harva
 - Oversee quality assurance and documentation to ensure analysis accuracy and reproducibility across pipelines and workflows.
 
 ## Director, Head of Computational Biology — NextRNA Therapeutics (May 2021–Feb 2024)
-Cambridge, MA — [nextrna.com](https://nextrna.com/)
+Cambridge, MA 
 
 - Shaped company strategy for genomics data and sequencing assays as a member of the executive leadership team.
 - Acted as the key interface across Biology, Technology, and Drug Discovery teams.
@@ -22,7 +22,7 @@ Cambridge, MA — [nextrna.com](https://nextrna.com/)
 - Managed cloud infrastructure to ensure reproducibility and scalability.
 
 ## Principal Scientist, Computational Biology — Axcella Health (Sep 2020–Apr 2021)
-Cambridge, MA — [axcellahealth.com](https://axcellahealth.com/)
+Cambridge, MA
 
 - Led R&D pipelines and visualization platforms for multi-omics data.
 - Applied machine learning to understand population stratification in pre-clinical studies.
