@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Experience | My bits</title>
+    <link>http://lpantano.github.io/experience/</link>
+      <atom:link href="http://lpantano.github.io/experience/index.xml" rel="self" type="application/rss+xml" />
+    <description>Experience</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
+    <image>
+      <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
+      <title>Experience</title>
+      <link>http://lpantano.github.io/experience/</link>
+    </image>
+    
+  </channel>
+</rss>
