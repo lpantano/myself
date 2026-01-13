@@ -1,4 +1,4 @@
-{{/* Showcase View for Hugo Blox */}}
+{{/* Showcase View for Hugo Blox - Horizontal Scrolling Cards */}}
 {{- $item := .item -}}
 {{- $index := .index -}}
 {{- $page := .page -}}
@@ -7,52 +7,141 @@
 {{- $target := "" -}}
 {{- with $item.Params.external_link }}{{ $link = . | safeURL }}{{ $target = "target=\"_blank\" rel=\"noopener\"" }}{{ end -}}
 
-<div class="col-12 {{if gt $index 0}}mt-3 mt-md-0{{end}}">
-  <div class="row align-items-center">
-    {{- $resource := ($item.Resources.ByType "image").GetMatch "*featured*" -}}
-    {{- with $resource -}}
-    {{ $image := .Resize "540x" }}
-    {{- if eq (mod $index 2) 0}}
-    <div class="col-12 col-md-6 order-md-2 mb-3 mb-md-0">
-    {{- else}}
-    <div class="col-12 col-md-6 mb-3 mb-md-0">
-    {{- end}}
-      <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
-        <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" loading="lazy" class="img-fluid rounded">
+{{- if eq $index 0 -}}
+<style>
+.showcase-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.showcase-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.showcase-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.showcase-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.showcase-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.showcase-card {
+  flex: 0 0 400px;
+  max-width: 400px;
+  scroll-snap-align: start;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.showcase-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.showcase-card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.showcase-card-body {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.showcase-card-tags {
+  margin-bottom: 1rem;
+}
+
+.showcase-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.showcase-card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.showcase-card-title a:hover {
+  color: #0056b3;
+}
+
+.showcase-card-summary {
+  flex: 1;
+  margin-bottom: 1rem;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.showcase-card-footer {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .showcase-card {
+    flex: 0 0 300px;
+    max-width: 300px;
+  }
+}
+</style>
+<div class="showcase-container">
+{{- end -}}
+
+<div class="showcase-card">
+  {{- $resource := ($item.Resources.ByType "image").GetMatch "*featured*" -}}
+  {{- with $resource -}}
+  {{ $image := .Resize "800x" }}
+  <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
+    <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" loading="lazy" class="showcase-card-image">
+  </a>
+  {{- end }}
+
+  <div class="showcase-card-body">
+    {{ with $item.Params.tags }}
+    <div class="showcase-card-tags">
+      {{ range . }}
+      <span class="badge badge-light">{{ . }}</span>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    <h3 class="showcase-card-title">
+      <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
+    </h3>
+
+    {{ with $item.Summary }}
+    <div class="showcase-card-summary">
+      {{ . }}
+    </div>
+    {{ end }}
+
+    {{ if $link }}
+    <div class="showcase-card-footer">
+      <a href="{{$link}}" {{ $target | safeHTMLAttr }} class="btn btn-sm btn-primary">
+        {{ i18n "more" | default "More" }}
       </a>
     </div>
-    {{- end}}
-
-    {{- if eq (mod $index 2) 0}}
-    <div class="col-12 col-md-6 order-md-1">
-    {{- else}}
-    <div class="col-12 col-md-6">
-    {{- end}}
-      {{ with $item.Params.tags }}
-      <div class="mb-3">
-        {{ range . }}
-        <a href="{{ (site.GetPage "tags" (. | urlize)).RelPermalink }}" class="badge badge-light">{{ . }}</a>
-        {{ end }}
-      </div>
-      {{ end }}
-
-      <h3 class="mb-3">
-        <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
-      </h3>
-
-      {{ with $item.Summary }}
-      <div class="article-style">
-        {{ . }}
-      </div>
-      {{ end }}
-
-      {{ if $link }}
-      <div class="mt-3">
-        <a href="{{$link}}" {{ $target | safeHTMLAttr }} class="btn btn-sm btn-primary">
-          {{ i18n "more" | default "More" }}
-        </a>
-      </div>
-      {{ end }}
-    </div>
+    {{ end }}
   </div>
 </div>

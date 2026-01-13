@@ -1,0 +1,312 @@
+{{/* Hugo Blox: Portfolio */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $columns := $block.Params.design.columns | default "2" }}
+{{ $view := $block.Params.design.view | default "masonry" }}
+
+{{/* Require Isotope */}}
+{{ $page.Page.Store.Set "has_isotope" true }}
+
+<div class="col-12 {{if eq $columns "2"}}col-lg-8{{end}}">
+
+  {{ with $block.Content }}{{ . }}{{ end }}
+
+  {{ if $block.Params.content.filter_button }}
+
+    {{ $filter_default := default (int $block.Params.content.filter_default) 0 }}
+
+    {{/* Parse default filter tag from front matter in the form of either tag name or CSS class name. */}}
+    {{ $default_filter_item := (index $block.Params.content.filter_button ($filter_default)) }}
+    {{ $default_data_filter := "" }}
+    {{ with $default_filter_item.filter }}
+      {{ $default_data_filter = . }}
+    {{ else }}
+      {{ $default_filter_tag := $default_filter_item.tag }}
+      {{ if or (eq (substr $default_filter_tag 0 1) "*") (eq (substr $default_filter_tag 0 1) ".") }}
+        {{ $default_data_filter = $default_filter_tag }}
+      {{ else }}
+        {{ $default_data_filter = printf ".js-id-%s" (lower (replace $default_filter_tag " " "-")) }}
+      {{ end }}
+    {{end}}
+
+    <span class="d-none default-project-filter">{{ $default_data_filter }}</span>
+
+    {{/* Only show filter buttons if there are multiple filters. */}}
+    {{ if gt (len $block.Params.content.filter_button) 1 }}
+    <div class="project-toolbar">
+      <div class="project-filters">
+        <div class="btn-toolbar {{if eq $columns "1"}}d-flex justify-content-center{{end}}">
+          <div class="btn-group flex-wrap">
+            {{ range $idx, $item := $block.Params.content.filter_button }}
+              {{/* Parse filter tag from front matter in the form of either tag name or CSS class name. */}}
+              {{ $data_filter := "" }}
+              {{ with .filter }}
+                {{ $data_filter = . }}
+              {{ else }}
+                {{ if or (eq (substr .tag 0 1) "*") (eq (substr .tag 0 1) ".") }}
+                  {{ $data_filter = .tag }}
+                {{ else }}
+                  {{ $data_filter = printf ".js-id-%s" (lower (replace .tag " " "-")) }}
+                {{ end }}
+              {{ end }}
+              <a href="#" data-filter="{{ $data_filter | safeHTMLAttr }}" class="btn btn-primary btn-lg{{ if eq $idx $filter_default }} active{{ end }}">{{ .name }}</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  {{ end }}
+
+  {{/* Query */}}
+  {{ $query := site.Pages }}
+
+  {{/* Filters */}}
+  {{ with $block.Params.content.page_type }}
+    {{/* Legacy filter, superseded by `filters.folders` */}}
+    {{ $query = where $query "Type" . }}
+  {{ end }}
+  {{ with $block.Params.content.filters.folders }}
+    {{ $query = where $query "Section" "in" . }}
+  {{ end }}
+  {{ with $block.Params.content.filters.tags }}
+    {{ $query = where $query "Params.tags" "intersect" . }}
+  {{ end }}
+  {{ with $block.Params.content.filters.exclude_tags }}
+    {{ $query = $query | symdiff (where site.Pages "Params.tags" "intersect" .) }}
+  {{ end }}
+  {{ with ($block.Params.content.filters.kinds | default (slice "page")) }}
+    {{ $query = where $query "Kind" "in" . }}
+  {{ end }}
+
+  {{/* Sort */}}
+  {{ $sort_by := $block.Params.content.sort_by | default "Date" }}
+  {{ $sort_ascending := $block.Params.content.sort_ascending | default (eq $block.Params.content.order "asc") | default false }}
+  {{ $sort_order := cond $sort_ascending "asc" "desc" }}
+  {{ $query = sort $query $sort_by $sort_order }}
+
+  {{ if eq $view "showcase" }}
+    {{/* Showcase view with horizontal scrolling */}}
+    <style>
+    .showcase-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 2rem;
+      padding: 2rem 0;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      justify-content: flex-start;
+    }
+
+    .showcase-container::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    .showcase-container::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 5px;
+    }
+
+    .showcase-container::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 5px;
+    }
+
+    .showcase-container::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    .showcase-card {
+      flex: 0 0 380px;
+      max-width: 380px;
+      height: 580px;
+      scroll-snap-align: start;
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s, opacity 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .showcase-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .showcase-card.isotope-hidden {
+      display: none;
+    }
+
+    .showcase-card-image {
+      width: 100%;
+      height: 250px;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+
+    .showcase-card-body {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .showcase-card-tags {
+      margin-bottom: 1rem;
+      flex-shrink: 0;
+    }
+
+    .showcase-card-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      flex-shrink: 0;
+      line-height: 1.3;
+    }
+
+    .showcase-card-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .showcase-card-title a:hover {
+      color: #0056b3;
+    }
+
+    .showcase-card-summary {
+      flex: 1;
+      margin-bottom: 1rem;
+      color: #666;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
+
+    .showcase-card-footer {
+      margin-top: auto;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 768px) {
+      .showcase-card {
+        flex: 0 0 300px;
+        max-width: 300px;
+        height: 580px;
+      }
+    }
+    </style>
+    <div class="showcase-container isotope projects-container">
+      {{ range $index, $item := $query }}
+        {{ $js_tag_classes := delimit (apply (apply (apply $item.Params.tags "replace" "." " " "-") "printf" "js-id-%s" ".") "lower" ".") " " }}
+        <div class="showcase-card isotope-item {{ $js_tag_classes | safeHTMLAttr }}">
+          {{- $link := $item.RelPermalink -}}
+          {{- $target := "" -}}
+          {{- with $item.Params.external_link }}{{ $link = . | safeURL }}{{ $target = "target=\"_blank\" rel=\"noopener\"" }}{{ end -}}
+
+          {{- $resource := ($item.Resources.ByType "image").GetMatch "*featured*" -}}
+          {{- with $resource -}}
+          {{ $image := .Resize "800x" }}
+          <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
+            <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" loading="lazy" class="showcase-card-image">
+          </a>
+          {{- end }}
+
+          <div class="showcase-card-body">
+            {{ with $item.Params.tags }}
+            <div class="showcase-card-tags">
+              {{ range . }}
+              <span class="badge badge-light">{{ . }}</span>
+              {{ end }}
+            </div>
+            {{ end }}
+
+            <h3 class="showcase-card-title">
+              <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
+            </h3>
+
+            {{ with $item.Summary }}
+            <div class="showcase-card-summary">
+              {{ . }}
+            </div>
+            {{ end }}
+
+            {{ if $link }}
+            <div class="showcase-card-footer">
+              <a href="{{$link}}" {{ $target | safeHTMLAttr }} class="btn btn-sm btn-primary">
+                {{ i18n "more" | default "More" }}
+              </a>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      {{end}}
+    </div>
+    <script>
+    // Custom filtering for showcase horizontal layout
+    (function() {
+      const showcaseContainer = document.querySelector('.showcase-container');
+      if (!showcaseContainer) return;
+
+      // Override Isotope for showcase view - use simple show/hide
+      const filterButtons = document.querySelectorAll('.project-filters a[data-filter]');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+          e.preventDefault();
+
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          // Add active class to clicked button
+          this.classList.add('active');
+
+          const filterValue = this.getAttribute('data-filter');
+          const items = showcaseContainer.querySelectorAll('.showcase-card');
+
+          items.forEach(item => {
+            if (filterValue === '*') {
+              // Show all
+              item.classList.remove('isotope-hidden');
+            } else {
+              // Check if item has the filter class
+              if (item.classList.contains(filterValue.replace('.', ''))) {
+                item.classList.remove('isotope-hidden');
+              } else {
+                item.classList.add('isotope-hidden');
+              }
+            }
+          });
+
+          // Scroll to portfolio section
+          const portfolioSection = showcaseContainer.closest('.widget_page, section, .home-section');
+          if (portfolioSection) {
+            portfolioSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+    })();
+    </script>
+  {{ else }}
+    <div class="{{ if or $block.Params.content.filter_button (in (slice "masonry" 3) $view) }}isotope projects-container{{end}} {{if in (slice "masonry" 3) $view}}js-layout-masonry{{else}}row js-layout-row{{end}}">
+      {{ range $index, $item := $query }}
+        {{ $js_tag_classes := delimit (apply (apply (apply $item.Params.tags "replace" "." " " "-") "printf" "js-id-%s" ".") "lower" ".") " " }}
+          {{ if in (slice "masonry" 3) $view }}
+            <div class="project-card project-item isotope-item {{ $js_tag_classes | safeHTMLAttr }}">
+          {{else}}
+            <div class="col-12 isotope-item {{ $js_tag_classes | safeHTMLAttr }}">
+          {{end}}
+          {{ partial "functions/render_view" (dict "page" $block "item" . "view" $view "index" $index) }}
+        </div>
+      {{end}}
+    </div>
+  {{ end }}
+</div>
