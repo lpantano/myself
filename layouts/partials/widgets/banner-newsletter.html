@@ -1,0 +1,8 @@
+{{/* Custom newsletter banner widget */}}
+{{ $text := .text | default "Subscribe" }}
+{{ $label := .button_label | default "Subscribe" }}
+{{ $url := .url | default "#" }}
+<div class="newsletter-banner" style="margin:0;padding:0.15rem 0;display:flex;align-items:center;gap:0.35rem;flex-wrap:wrap;font-size:0.95rem;line-height:1.1;">
+  <span style="margin:0;padding:0;">{{ $text }}</span>
+  <a class="btn btn-outline-primary btn-sm" style="margin:0;padding:0.25rem 0.6rem;line-height:1;" href="{{ $url }}" target="_blank" rel="noopener">{{ $label }}</a>
+</div>
