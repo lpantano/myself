@@ -1,0 +1,15 @@
+Dug into Garmin's cadence zone documentation. Found something revealing.
+
+Those color zones? Percentile rankings comparing you to all Garmin users. Fixed thresholds: orange = 5th-29th percentile, green = 30th-69th.
+
+The problem: Garmin's manual acknowledges "taller runners typically have slightly slower cadences." Yet the algorithm doesn't adjust for height, pace, or individual biomechanics.
+
+Research shows 50% of cadence variation is unmeasurable individual factors. Every inch of height = ~3 fewer steps per minute. Elite runners vary from 155-203 spm and perform equally.
+
+This is how data gets misinterpreted: not from wrong numbers, but from misunderstanding what the numbers measure.
+
+Percentile rankings ≠ personal optimization. Context always matters.
+
+Full analysis: [link]
+
+#DataScience #SportScience #WearableTech #ResearchInsights #DataLiteracy
