@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spatial Transcriptomics | My bits</title>
+    <link>http://lpantano.github.io/tag/spatial-transcriptomics/</link>
+      <atom:link href="http://lpantano.github.io/tag/spatial-transcriptomics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Spatial Transcriptomics</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
+      <title>Spatial Transcriptomics</title>
+      <link>http://lpantano.github.io/tag/spatial-transcriptomics/</link>
+    </image>
+    
+    <item>
+      <title>Spatial Transcriptomics Analysis Reports</title>
+      <link>http://lpantano.github.io/portfolio/spatial-reports/</link>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/portfolio/spatial-reports/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;A template repository providing analysis workflows for spatial single-cell transcriptomics data across multiple experimental platforms and analytical packages. This project offers researchers standardized pipelines for quality control, clustering, and cell-type annotation.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/bcbio/spatial-reports&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;View on GitHub →&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;key-features&#34;&gt;Key Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Multi-Platform Support&lt;/strong&gt;: Templates for COSMX and Visium[HD] spatial transcriptomics platforms&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Quality Control Pipelines&lt;/strong&gt;: Comprehensive QC assessment workflows for data validation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Clustering Workflows&lt;/strong&gt;: Spatial clustering using Banksy and other established tools&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cell-Type Annotation&lt;/strong&gt;: Integration with spacexr for cell-type identification and differential expression&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reproducible Environment&lt;/strong&gt;: RStudio Projects with renv package management for dependency control&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;technical-stack&#34;&gt;Technical Stack&lt;/h2&gt;
+&lt;p&gt;Built entirely in R with integration of leading bioinformatics tools:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Seurat for Visium object handling&lt;/li&gt;
+&lt;li&gt;Banksy for spatial clustering analysis&lt;/li&gt;
+&lt;li&gt;spacexr for cell-type identification&lt;/li&gt;
+&lt;li&gt;Quarto and R Markdown for report generation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-it-provides&#34;&gt;What It Provides&lt;/h2&gt;
+&lt;p&gt;The repository includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ready-to-use analysis templates&lt;/li&gt;
+&lt;li&gt;Downloadable test data for learning and validation&lt;/li&gt;
+&lt;li&gt;Dependency installation scripts&lt;/li&gt;
+&lt;li&gt;Quick-start documentation for RStudio users&lt;/li&gt;
+&lt;li&gt;Standardized workflows across different spatial platforms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;development-status&#34;&gt;Development Status&lt;/h2&gt;
+&lt;p&gt;Projects are labeled with revision tiers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Stable&lt;/strong&gt;: Fully tested and production-ready&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Alpha&lt;/strong&gt;: Functional but requires additional testing&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Draft&lt;/strong&gt;: Under active development, may need manual parameter tuning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;why-this-matters&#34;&gt;Why This Matters&lt;/h2&gt;
+&lt;p&gt;Spatial transcriptomics generates complex data requiring specialized analysis approaches. This project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reduces setup time for new spatial transcriptomics projects&lt;/li&gt;
+&lt;li&gt;Provides validated workflows following best practices&lt;/li&gt;
+&lt;li&gt;Enables reproducible research through standardized templates&lt;/li&gt;
+&lt;li&gt;Lowers the barrier to entry for spatial data analysis&lt;/li&gt;
+&lt;li&gt;Maintains consistency across different experimental platforms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information or to contribute, visit the &lt;a href=&#34;https://github.com/bcbio/spatial-reports&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spatial Transcriptomics Analysis Reports</title>
+      <link>http://lpantano.github.io/project/spatial-reports/</link>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/project/spatial-reports/</guid>
+      <description>&lt;p&gt;A template repository providing analysis workflows for spatial single-cell transcriptomics data across multiple experimental platforms and analytical packages. This project offers researchers standardized pipelines for quality control, clustering, and cell-type annotation.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/bcbio/spatial-reports&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;View on GitHub →&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;key-features&#34;&gt;Key Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Multi-Platform Support&lt;/strong&gt;: Templates for COSMX and Visium[HD] spatial transcriptomics platforms&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Quality Control Pipelines&lt;/strong&gt;: Comprehensive QC assessment workflows for data validation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Clustering Workflows&lt;/strong&gt;: Spatial clustering using Banksy and other established tools&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cell-Type Annotation&lt;/strong&gt;: Integration with spacexr for cell-type identification and differential expression&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reproducible Environment&lt;/strong&gt;: RStudio Projects with renv package management for dependency control&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;technical-stack&#34;&gt;Technical Stack&lt;/h2&gt;
+&lt;p&gt;Built entirely in R with integration of leading bioinformatics tools:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Seurat for Visium object handling&lt;/li&gt;
+&lt;li&gt;Banksy for spatial clustering analysis&lt;/li&gt;
+&lt;li&gt;spacexr for cell-type identification&lt;/li&gt;
+&lt;li&gt;Quarto and R Markdown for report generation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-it-provides&#34;&gt;What It Provides&lt;/h2&gt;
+&lt;p&gt;The repository includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ready-to-use analysis templates&lt;/li&gt;
+&lt;li&gt;Downloadable test data for learning and validation&lt;/li&gt;
+&lt;li&gt;Dependency installation scripts&lt;/li&gt;
+&lt;li&gt;Quick-start documentation for RStudio users&lt;/li&gt;
+&lt;li&gt;Standardized workflows across different spatial platforms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;development-status&#34;&gt;Development Status&lt;/h2&gt;
+&lt;p&gt;Projects are labeled with revision tiers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Stable&lt;/strong&gt;: Fully tested and production-ready&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Alpha&lt;/strong&gt;: Functional but requires additional testing&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Draft&lt;/strong&gt;: Under active development, may need manual parameter tuning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;why-this-matters&#34;&gt;Why This Matters&lt;/h2&gt;
+&lt;p&gt;Spatial transcriptomics generates complex data requiring specialized analysis approaches. This project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reduces setup time for new spatial transcriptomics projects&lt;/li&gt;
+&lt;li&gt;Provides validated workflows following best practices&lt;/li&gt;
+&lt;li&gt;Enables reproducible research through standardized templates&lt;/li&gt;
+&lt;li&gt;Lowers the barrier to entry for spatial data analysis&lt;/li&gt;
+&lt;li&gt;Maintains consistency across different experimental platforms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information or to contribute, visit the &lt;a href=&#34;https://github.com/bcbio/spatial-reports&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
