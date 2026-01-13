@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fitness Tracking | My bits</title>
+    <link>http://lpantano.github.io/tag/fitness-tracking/</link>
+      <atom:link href="http://lpantano.github.io/tag/fitness-tracking/index.xml" rel="self" type="application/rss+xml" />
+    <description>Fitness Tracking</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 13 Jan 2026 12:00:00 -0400</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
+      <title>Fitness Tracking</title>
+      <link>http://lpantano.github.io/tag/fitness-tracking/</link>
+    </image>
+    
+    <item>
+      <title>What Your Running Watch Isn&#39;t Telling You About Cadence</title>
+      <link>http://lpantano.github.io/post/2026/2026-01-running-cadence-myth/</link>
+      <pubDate>Tue, 13 Jan 2026 12:00:00 -0400</pubDate>
+      <guid>http://lpantano.github.io/post/2026/2026-01-running-cadence-myth/</guid>
+      <description>&lt;p&gt;I finished another easy run and checked my Garmin. Orange zone. Again.&lt;/p&gt;
+&lt;p&gt;My cadence sat around 157 steps per minute. The color warned me something was off. Too slow. Below average. Less experienced.&lt;/p&gt;
+&lt;p&gt;But I felt fine. No pain. Sustainable pace with moderate effort. So what was the problem?&lt;/p&gt;
+&lt;p&gt;I dug into Garmin&amp;rsquo;s manual to find out. I discovered that, again, I was missing a lot of context to understand this metric.&lt;/p&gt;
+&lt;h2 id=&#34;the-colors-are-percentile-rankings&#34;&gt;The Colors Are Percentile Rankings&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s what Garmin&amp;rsquo;s cadence zones actually mean:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Purple (&amp;gt;183 spm):&lt;/strong&gt; Top 5% of all Garmin users&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Blue (174-183 spm):&lt;/strong&gt; 70th-95th percentile&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Green (164-173 spm):&lt;/strong&gt; 30th-69th percentile (&amp;ldquo;average&amp;rdquo;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Orange (153-163 spm):&lt;/strong&gt; 5th-29th percentile (&amp;ldquo;less experienced or slower&amp;rdquo;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Red (&amp;lt;153 spm):&lt;/strong&gt; Bottom 5%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;My orange zone meant I ranked in the 5th-29th percentile compared to other Garmin users.&lt;/p&gt;
+&lt;p&gt;Not that my cadence was wrong for my body. Not that I was injured or inefficient. Just that most other Garmin users run with higher cadence.&lt;/p&gt;
+&lt;p&gt;These aren&amp;rsquo;t personalized to your body. They&amp;rsquo;re fixed thresholds based on population data. The same thresholds apply whether you&amp;rsquo;re 5&#39;4&amp;quot; or 6&#39;4&amp;quot;, running easy or racing, experienced or brand new.&lt;/p&gt;
+&lt;p&gt;The zones compare you to everyone else. They don&amp;rsquo;t tell you what&amp;rsquo;s optimal for you.&lt;/p&gt;
+&lt;h2 id=&#34;what-research-actually-shows&#34;&gt;What Research Actually Shows&lt;/h2&gt;
+&lt;p&gt;I kept digging. Here&amp;rsquo;s what the research says about cadence:&lt;/p&gt;
+&lt;h3 id=&#34;half-of-cadence-is-just-you&#34;&gt;Half of Cadence Is Just You&lt;/h3&gt;
+&lt;p&gt;Researchers modeled cadence using leg length, running speed, weight, age, and running experience in 138 youth long-distance runners. These factors explained only 48-55% of the variation between runners (&lt;a href=&#34;https://doi.org/10.1016/j.gaitpost.2022.09.085&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Taylor-Haas et al., 2022, &lt;em&gt;Gait &amp;amp; Posture&lt;/em&gt;&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;The other ~50%? Unmeasurable individual factors unique to each person—likely including tendon stiffness, muscle fiber length, and muscle group strength patterns that can&amp;rsquo;t be easily measured.&lt;/p&gt;
+&lt;p&gt;Elite ultramarathon runners show this clearly. A 2019 study of the top finishers at a 100-km World Championship found cadences ranging from &lt;strong&gt;155 to 203 steps per minute&lt;/strong&gt;—an average of 182 spm (&lt;a href=&#34;https://doi.org/10.1152/japplphysiol.00374.2018&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Burns et al., 2019, &lt;em&gt;Journal of Applied Physiology&lt;/em&gt;&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Same performance level. 48-step difference in cadence.&lt;/p&gt;
+&lt;h3 id=&#34;height-and-leg-length-matter&#34;&gt;Height and Leg Length Matter&lt;/h3&gt;
+&lt;p&gt;The same study found that leg length and running speed together explained approximately 50% of cadence variance (&lt;a href=&#34;https://doi.org/10.1016/j.gaitpost.2022.09.085&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Taylor-Haas et al., 2022&lt;/a&gt;). Shorter leg lengths and faster running speeds were both associated with higher cadence.&lt;/p&gt;
+&lt;p&gt;The numbers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Every inch of height = ~3 fewer steps per minute&lt;/li&gt;
+&lt;li&gt;A 6-foot runner naturally takes ~18 fewer steps per minute than a 5&#39;6&amp;quot; runner&lt;/li&gt;
+&lt;li&gt;Longer legs = lower leg stiffness = naturally lower cadence&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Researchers even created a formula: &lt;code&gt;Cadence = -1.251 × Leg Length (cm) + 3.665 × Speed (m/s) + 254.858&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Calculate your expected cadence:&lt;/strong&gt;&lt;/p&gt;
+&lt;div style=&#34;background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;&#34;&gt;
+  &lt;div style=&#34;margin-bottom: 15px;&#34;&gt;
+    &lt;label for=&#34;legLength&#34; style=&#34;display: block; margin-bottom: 5px; font-weight: bold;&#34;&gt;Leg Length (cm):&lt;/label&gt;
+    &lt;input type=&#34;number&#34; id=&#34;legLength&#34; placeholder=&#34;e.g., 85&#34; style=&#34;width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;&#34; /&gt;
+    &lt;small style=&#34;color: #666; display: block; margin-top: 3px;&#34;&gt;Measure from hip joint to floor while standing&lt;/small&gt;
+  &lt;/div&gt;
+  &lt;div style=&#34;margin-bottom: 15px;&#34;&gt;
+    &lt;label for=&#34;speed&#34; style=&#34;display: block; margin-bottom: 5px; font-weight: bold;&#34;&gt;Running Speed (m/s):&lt;/label&gt;
+    &lt;input type=&#34;number&#34; id=&#34;speed&#34; step=&#34;0.1&#34; placeholder=&#34;e.g., 2.5&#34; style=&#34;width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;&#34; /&gt;
+    &lt;small style=&#34;color: #666; display: block; margin-top: 3px;&#34;&gt;Easy pace: 2.0-2.5 m/s | Tempo: 3.0-3.5 m/s | Race: 3.5+ m/s&lt;/small&gt;
+  &lt;/div&gt;
+&lt;p&gt;&lt;button onclick=&#34;calculateCadence()&#34; style=&#34;background: #007acc; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;&#34;&gt;Calculate&lt;/button&gt;&lt;/p&gt;
+  &lt;div id=&#34;result&#34; style=&#34;margin-top: 15px; padding: 15px; background: white; border-radius: 4px; display: none;&#34;&gt;
+    &lt;strong&gt;Your Expected Cadence:&lt;/strong&gt; &lt;span id=&#34;cadenceResult&#34; style=&#34;font-size: 1.2em; color: #007acc;&#34;&gt;&lt;/span&gt;
+    &lt;p id=&#34;zoneInfo&#34; style=&#34;margin-top: 10px; color: #666;&#34;&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+function calculateCadence() {
+  const legLength = parseFloat(document.getElementById(&#39;legLength&#39;).value);
+  const speed = parseFloat(document.getElementById(&#39;speed&#39;).value);
+
+  if (isNaN(legLength) || isNaN(speed)) {
+    alert(&#39;Please enter valid numbers for both fields&#39;);
+    return;
+  }
+
+  const cadence = -1.251 * legLength + 3.665 * speed + 254.858;
+  const roundedCadence = Math.round(cadence);
+
+  document.getElementById(&#39;cadenceResult&#39;).textContent = roundedCadence + &#39; spm&#39;;
+
+  let zoneInfo = &#39;&#39;;
+  let zoneColor = &#39;&#39;;
+  if (roundedCadence &gt; 183) {
+    zoneInfo = &#39;Purple zone (&gt;95th percentile) - &#34;Elite performance&#34;&#39;;
+    zoneColor = &#39;#9370DB&#39;;
+  } else if (roundedCadence &gt;= 174) {
+    zoneInfo = &#39;Blue zone (70-95th percentile) - &#34;Experienced runners&#34;&#39;;
+    zoneColor = &#39;#4169E1&#39;;
+  } else if (roundedCadence &gt;= 164) {
+    zoneInfo = &#39;Green zone (30-69th percentile) - &#34;Average range&#34;&#39;;
+    zoneColor = &#39;#32CD32&#39;;
+  } else if (roundedCadence &gt;= 153) {
+    zoneInfo = &#39;Orange zone (5-29th percentile) - &#34;Below average&#34;&#39;;
+    zoneColor = &#39;#FF8C00&#39;;
+  } else {
+    zoneInfo = &#39;Red zone (&lt;5th percentile) - May warrant investigation&#39;;
+    zoneColor = &#39;#DC143C&#39;;
+  }
+
+  document.getElementById(&#39;zoneInfo&#39;).innerHTML =
+    &#39;&lt;span style=&#34;color: &#39; + zoneColor + &#39;; font-weight: bold;&#34;&gt;Garmin would show: &#39; + zoneInfo + &#39;&lt;/span&gt;&lt;br&gt;&#39; +
+    &#39;&lt;em&gt;Remember: This is a population comparison, not a personal assessment.&lt;/em&gt;&#39;;
+
+  document.getElementById(&#39;result&#39;).style.display = &#39;block&#39;;
+}
+&lt;/script&gt;
+&lt;p&gt;Remember, about 50% of cadence variance comes from leg length and running speed. The rest is individual. And this formula comes from one paper and is a guide to help you understand how different factors can affect cadence.&lt;/p&gt;
+&lt;h3 id=&#34;speed-changes-your-cadence&#34;&gt;Speed Changes Your Cadence&lt;/h3&gt;
+&lt;p&gt;Your cadence at easy pace differs from your cadence at tempo pace. Obviously.&lt;/p&gt;
+&lt;p&gt;A 2025 study of 30 experienced recreational runners (running 24+ km/week) examined how cadence changed with running speed. The study confirmed that increasing speed directly increases cadence (&lt;a href=&#34;https://doi.org/10.26603/001c.140544&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Leacox et al., 2025, &lt;em&gt;International Journal of Sports Physical Therapy&lt;/em&gt;&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Same runners. Different paces. Different cadences. But there were some exceptions where runners did not increase cadence after a certain point, even as speed increased.&lt;/p&gt;
+&lt;p&gt;Garmin&amp;rsquo;s zones don&amp;rsquo;t distinguish between easy runs and hard efforts. An orange zone on an easy day doesn&amp;rsquo;t mean the same thing as orange on a tempo run.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s my association between cadence and speed. The correlation is clear, though there&amp;rsquo;s still variability at the same cadence. I ran in different terrains, different shoes, while sick, and while feeling fine.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;pace_cadence_correlation.png&#34; alt=&#34;Pace and cadence correlation&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;the-180-myth-lives-on&#34;&gt;The 180 Myth Lives On&lt;/h2&gt;
+&lt;p&gt;You&amp;rsquo;ve probably heard it: 180 steps per minute is the &amp;ldquo;ideal&amp;rdquo; cadence.&lt;/p&gt;
+&lt;p&gt;Garmin&amp;rsquo;s purple zone starts at 183 spm, and mentions it in the explanatory text of the graph as an ideal target.&lt;/p&gt;
+&lt;p&gt;I won&amp;rsquo;t dive into the full story of where 180 came from—that would take us down a rabbit hole of observations, elite athletes, and how one number became running gospel. But here&amp;rsquo;s what matters: research shows it doesn&amp;rsquo;t apply to everyone.&lt;/p&gt;
+&lt;p&gt;Elite ultramarathoners performing at the same level run with cadences ranging from 155 to 203 steps per minute (&lt;a href=&#34;https://doi.org/10.1152/japplphysiol.00374.2018&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Burns et al., 2019&lt;/a&gt;). That&amp;rsquo;s a 48-step difference. Same performance. Wildly different cadences.&lt;/p&gt;
+&lt;p&gt;The 180 rule came from watching elite runners at race pace. Not recreational runners. Not easy pace. Not different body types.&lt;/p&gt;
+&lt;p&gt;Yet somehow it became the standard everyone chases.&lt;/p&gt;
+&lt;h2 id=&#34;what-this-means-for-you&#34;&gt;What This Means for You&lt;/h2&gt;
+&lt;p&gt;Ignore the colors.&lt;/p&gt;
+&lt;p&gt;Orange doesn&amp;rsquo;t mean you&amp;rsquo;re doing something wrong. Especially if you&amp;rsquo;re tall, running easy pace, or simply built differently from the average Garmin user.&lt;/p&gt;
+&lt;p&gt;The colors rank you against a population. They don&amp;rsquo;t assess your optimal cadence.&lt;/p&gt;
+&lt;p&gt;For me, here&amp;rsquo;s a simple decision rule: &lt;strong&gt;If I am in orange or green and feel good, I am fine.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Focus on what actually matters:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Accept that pace changes cadence:&lt;/strong&gt; Your easy runs will have different cadence than your hard efforts. That&amp;rsquo;s normal, not a problem.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Understand the limitations:&lt;/strong&gt; Percentile rankings tell you where you fall in a distribution. They don&amp;rsquo;t tell you what&amp;rsquo;s right for you.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;the-data-literacy-lesson&#34;&gt;The Data Literacy Lesson&lt;/h2&gt;
+&lt;p&gt;Your running watch gives you data. Lots of it. But understanding what that data actually measures—versus what you think it measures—makes the difference between useful information and unnecessary anxiety.&lt;/p&gt;
+&lt;p&gt;Color zones are percentile rankings. They compare you to other runners. They don&amp;rsquo;t optimize for your body.&lt;/p&gt;
+&lt;p&gt;This is how bad data interpretation happens. Not from wrong numbers, but from misunderstanding what the numbers mean.&lt;/p&gt;
+&lt;p&gt;An easy solution would be to use better color theme. The problem is they&amp;rsquo;re choosing colors that trigger warning/danger emotions when the messaging isn&amp;rsquo;t about that. That, and adding a better explanation on the info page. It&amp;rsquo;s misleading as it stands.&lt;/p&gt;
+&lt;p&gt;Next time you see orange, remember: that color tells you where you rank compared to other Garmin users. It doesn&amp;rsquo;t tell you your cadence is wrong.&lt;/p&gt;
+&lt;p&gt;Your body&amp;rsquo;s data matters more than population averages. Trust how you feel. Watch for actual problems (pain, injury, very low cadence). And don&amp;rsquo;t let a percentile comparison convince you that your body is wrong.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;scientific-references&#34;&gt;Scientific References&lt;/h2&gt;
+&lt;h3 id=&#34;primary-research-papers&#34;&gt;Primary Research Papers&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Taylor-Haas, J. A., Garcia, M. C., Rauh, M. J., Peel, S., Paterno, M. V., Bazett-Jones, D. M., Ford, K. R., &amp;amp; Long, J. T. (2022).&lt;/strong&gt; Cadence in youth long-distance runners is predicted by leg length and running speed. &lt;em&gt;Gait &amp;amp; Posture&lt;/em&gt;, 98, 266-270. DOI: &lt;a href=&#34;https://doi.org/10.1016/j.gaitpost.2022.09.085&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10.1016/j.gaitpost.2022.09.085&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Burns, G. T., Zendler, J. D., &amp;amp; Zernicke, R. F. (2019).&lt;/strong&gt; Step frequency patterns of elite ultramarathon runners during a 100-km road race. &lt;em&gt;Journal of Applied Physiology&lt;/em&gt;, 126(2), 462-468. DOI: &lt;a href=&#34;https://doi.org/10.1152/japplphysiol.00374.2018&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10.1152/japplphysiol.00374.2018&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Leacox, A., Fashingbauer, L., Ferguson, T., Zajakowski, A., Baum, B., &amp;amp; Reinking, M. (2025).&lt;/strong&gt; The Effect of Running Speed on Cadence and Running Kinetics. &lt;em&gt;International Journal of Sports Physical Therapy&lt;/em&gt;, 20(7), 957-963. DOI: &lt;a href=&#34;https://doi.org/10.26603/001c.140544&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10.26603/001c.140544&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;technical-documentation&#34;&gt;Technical Documentation&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Garmin Ltd.&lt;/strong&gt; Forerunner 245/245 Music Owner&amp;rsquo;s Manual - Color Gauges and Running Dynamics Data. Retrieved from &lt;a href=&#34;https://www8.garmin.com/manuals/webhelp/forerunner245/EN-US/GUID-EE9E7F6F-49BE-4452-82E6-B40371D0AEC1.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www8.garmin.com/manuals/webhelp/forerunner245/EN-US/GUID-EE9E7F6F-49BE-4452-82E6-B40371D0AEC1.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Garmin Ltd.&lt;/strong&gt; fēnix 7 Series Owner&amp;rsquo;s Manual - Color Gauges and Running Dynamics Data. Retrieved from &lt;a href=&#34;https://www8.garmin.com/manuals/webhelp/GUID-C001C335-A8EC-4A41-AB0E-BAC434259F92/EN-US/GUID-EE9E7F6F-49BE-4452-82E6-B40371D0AEC1.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www8.garmin.com/manuals/webhelp/GUID-C001C335-A8EC-4A41-AB0E-BAC434259F92/EN-US/GUID-EE9E7F6F-49BE-4452-82E6-B40371D0AEC1.html&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
