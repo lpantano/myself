@@ -1,0 +1,3 @@
+Stop downloading 50GB BAM files just to check alignment quality. Visualization can come to your cloud data instead. Link in bio.
+
+#genomics #bioinformatics #cloudcomputing #datascience #IGV

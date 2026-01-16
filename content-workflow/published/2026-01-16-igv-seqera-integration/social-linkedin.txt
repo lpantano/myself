@@ -1,0 +1,5 @@
+Running genomic pipelines in the cloud but still downloading BAM files to visualize them locally? I built an IGV integration that eliminates this friction—automatic track discovery in your cloud workspace, zero downloads needed. Open source implementation available.
+
+Read the full technical breakdown: [LINK]
+
+#genomics #bioinformatics #cloudcomputing #dataengineering #workflows
