@@ -2,11 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://lpantano.github.io/tag/bioinformatics/</loc>
+    <lastmod>2026-01-16T12:00:00-04:00</lastmod>
+  </url><url>
     <loc>http://lpantano.github.io/post/</loc>
-    <lastmod>2026-01-13T12:00:00-04:00</lastmod>
+    <lastmod>2026-01-16T12:00:00-04:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/post/2026/2026-01-16-igv-cloud-visualization/</loc>
+    <lastmod>2026-01-16T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/categories/</loc>
-    <lastmod>2026-01-13T12:00:00-04:00</lastmod>
+    <lastmod>2026-01-16T12:00:00-04:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/cloud-computing/</loc>
+    <lastmod>2026-01-16T12:00:00-04:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/category/data-at-scale/</loc>
+    <lastmod>2026-01-16T12:00:00-04:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/data-pipelines/</loc>
+    <lastmod>2026-01-16T12:00:00-04:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/genomics/</loc>
+    <lastmod>2026-01-16T12:00:00-04:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/</loc>
+    <lastmod>2026-01-16T12:00:00-04:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tags/</loc>
+    <lastmod>2026-01-16T12:00:00-04:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/visualization/</loc>
+    <lastmod>2026-01-16T12:00:00-04:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/workflow-optimization/</loc>
+    <lastmod>2026-01-16T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/category/data-in-your-life/</loc>
     <lastmod>2026-01-13T12:00:00-04:00</lastmod>
@@ -17,16 +47,10 @@
     <loc>http://lpantano.github.io/tag/fitness-tracking/</loc>
     <lastmod>2026-01-13T12:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://lpantano.github.io/</loc>
-    <lastmod>2026-01-13T12:00:00-04:00</lastmod>
-  </url><url>
     <loc>http://lpantano.github.io/tag/running/</loc>
     <lastmod>2026-01-13T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/sports-science/</loc>
-    <lastmod>2026-01-13T12:00:00-04:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/tags/</loc>
     <lastmod>2026-01-13T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/wearable-technology/</loc>
@@ -36,9 +60,6 @@
     <lastmod>2026-01-13T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/category/bioinformatics/</loc>
-    <lastmod>2026-01-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/bioinformatics/</loc>
     <lastmod>2026-01-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/portfolio/</loc>
@@ -63,9 +84,6 @@
     <lastmod>2026-01-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/project/spatial-reports/</loc>
-    <lastmod>2026-01-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/visualization/</loc>
     <lastmod>2026-01-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/visualizations/</loc>
@@ -2520,9 +2538,6 @@
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/genetic-genetics/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/genomics/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/genomics-methods/</loc>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workflow-Optimization | My bits</title>
+    <link>http://lpantano.github.io/tag/workflow-optimization/</link>
+      <atom:link href="http://lpantano.github.io/tag/workflow-optimization/index.xml" rel="self" type="application/rss+xml" />
+    <description>Workflow-Optimization</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 16 Jan 2026 12:00:00 -0400</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
+      <title>Workflow-Optimization</title>
+      <link>http://lpantano.github.io/tag/workflow-optimization/</link>
+    </image>
+    
+    <item>
+      <title>Bringing IGV webapp to Your Cloud Workspace in Seqera</title>
+      <link>http://lpantano.github.io/post/2026/2026-01-16-igv-cloud-visualization/</link>
+      <pubDate>Fri, 16 Jan 2026 12:00:00 -0400</pubDate>
+      <guid>http://lpantano.github.io/post/2026/2026-01-16-igv-cloud-visualization/</guid>
+      <description>&lt;p&gt;You just ran a genomic pipeline that generated 50GB of BAM files in the cloud. Now you need to check alignment quality. Do you really have to download everything to run IGV locally?&lt;/p&gt;
+&lt;h2 id=&#34;the-workflow-gap&#34;&gt;The Workflow Gap&lt;/h2&gt;
+&lt;p&gt;Analysis happens in the cloud. Fast compute, scalable storage, pipelines that finish overnight.&lt;/p&gt;
+&lt;p&gt;Visualization happens locally. Manual downloads, disk space constraints, waiting for transfers to complete.&lt;/p&gt;
+&lt;p&gt;This gap slows iteration. It wastes time. And it&amp;rsquo;s fixable.&lt;/p&gt;
+&lt;h2 id=&#34;what-cloud-native-visualization-looks-like&#34;&gt;What Cloud-Native Visualization Looks Like&lt;/h2&gt;
+&lt;p&gt;I built an integration that runs IGV as a web app directly in Seqera workspaces. It connects to the same cloud storage your pipelines write to. It automatically discovers all genomic files. Zero download, zero manual file loading.&lt;/p&gt;
+&lt;p&gt;If your entire workflow is local and your BAM files are small, this might be more complexity than you need. But if you&amp;rsquo;re running pipelines in the cloud and tired of downloading results just to QC them, this eliminates real friction.&lt;/p&gt;
+&lt;h2 id=&#34;how-it-works&#34;&gt;How It Works&lt;/h2&gt;
+&lt;p&gt;The container combines IGV web app with Seqera&amp;rsquo;s connect-client. The connect-client uses FUSE to mount cloud storage, making remote files appear local to IGV.&lt;/p&gt;
+&lt;p&gt;A startup script scans mounted directories for genomic files—BAM, CRAM, VCF, BED, BigWig, anything IGV can read. It detects file formats, checks for index files, and generates a track catalog. IGV reads this catalog and populates a custom &amp;ldquo;Auto-discovered Tracks&amp;rdquo; menu.&lt;/p&gt;
+&lt;p&gt;The visualization tool comes to where data already lives.&lt;/p&gt;
+&lt;h2 id=&#34;what-this-looks-like-in-practice&#34;&gt;What This Looks Like in Practice&lt;/h2&gt;
+&lt;p&gt;Launch the IGV Studio from your Seqera interface. Your browser opens with the IGV web app.&lt;/p&gt;
+&lt;p&gt;Click Tracks → Auto-discovered Tracks. See a table of all your BAM files, VCF variants, coverage tracks—everything in your mounted storage.&lt;/p&gt;
+&lt;p&gt;Click to load. Instant visualization.&lt;/p&gt;
+&lt;h2 id=&#34;why-this-matters&#34;&gt;Why This Matters&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Skip the download wait.&lt;/strong&gt; Checking alignments after a pipeline run no longer means waiting hours for transfers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Stop duplicating storage.&lt;/strong&gt; No local copies means hundreds of GB saved per researcher.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Share results faster.&lt;/strong&gt; Send a browser URL instead of transferring massive files.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Onboard easier.&lt;/strong&gt; New team members don&amp;rsquo;t need complex local setups. They click a link and start viewing data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Improve reproducibility.&lt;/strong&gt; Everyone views the same authoritative data source in cloud storage, not their own potentially outdated local copies.&lt;/p&gt;
+&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Important context:&lt;/strong&gt; This solution is specifically for Seqera Platform users. If you&amp;rsquo;re using other platforms like Terra, AnVIL, Galaxy, or DNAnexus, they have their own approaches to interactive visualization. This implementation leverages Seqera&amp;rsquo;s Studios feature and connect-client architecture.&lt;/p&gt;
+&lt;p&gt;The full implementation is open source in the &lt;a href=&#34;https://github.com/seqeralabs/custom-studios-examples/tree/main/igv&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Seqera custom studios examples repository&lt;/a&gt;. You&amp;rsquo;ll find:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Complete Dockerfile with multi-stage build&lt;/li&gt;
+&lt;li&gt;Automatic track discovery script&lt;/li&gt;
+&lt;li&gt;Deployment documentation&lt;/li&gt;
+&lt;li&gt;Configuration examples&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Maturity note:&lt;/strong&gt; This is a proof of concept tested on several datasets. It demonstrates the pattern and should help you get started, but expect to adapt it for production use. Test thoroughly with your own data and file structures.&lt;/p&gt;
+&lt;p&gt;The code is customizable. Adapt the track discovery logic for your file naming conventions. Change the reference genome. Add authentication if needed.&lt;/p&gt;
+&lt;h2 id=&#34;the-broader-pattern&#34;&gt;The Broader Pattern&lt;/h2&gt;
+&lt;p&gt;Cloud-native analysis means rethinking entire workflows, not just moving compute. Bringing visualization to cloud data is part of that shift.&lt;/p&gt;
+&lt;p&gt;Other platforms (Terra, AnVIL) mount cloud storage for interactive apps too. What makes this useful is the automatic track discovery—most solutions require manual file paths.&lt;/p&gt;
+&lt;p&gt;The less time you spend moving data around, the more time you spend understanding it.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;References:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Robinson JT, et al. (2011). Integrative genomics viewer. Nature Biotechnology 29(1):24-26. &lt;a href=&#34;https://www.nature.com/articles/nbt.1754&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DOI: 10.1038/nbt.1754&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://igv.org/doc/webapp/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IGV Web App Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.seqera.io/platform-cloud/studios/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Seqera Studios Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/seqeralabs/custom-studios-examples/tree/main/igv&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Implementation Repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
