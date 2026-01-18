@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: January 16, 2026 --><html lang="en-us" >
+<!-- Last Published: January 18, 2026 --><html lang="en-us" >
 
 
 <head>
@@ -901,24 +901,25 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>You just ran a genomic pipeline that generated 50GB of BAM files in the cloud. Now you need to check alignment quality. Do you really have to download everything to run IGV locally?</p>
+      <p>You just ran a genomic pipeline that generated 50GB of BAM files in the cloud. Now you need to check alignment quality. Do you really have to download everything to run IGV locally? Switch virtual machines to load the files? Write code to generate static visuals?</p>
+<p>This integration brings IGV directly to your cloud workspace with <strong>automatic track discovery</strong>. It scans your storage, finds all genomic files, and presents them in a ready-to-load menu. No downloads, no file paths, no manual configuration.</p>
 <h2 id="the-workflow-gap">The Workflow Gap</h2>
 <p>Analysis happens in the cloud. Fast compute, scalable storage, pipelines that finish overnight.</p>
-<p>Visualization happens locally. Manual downloads, disk space constraints, waiting for transfers to complete.</p>
+<p>Visualization happens separately or requires coding. Manual downloads or transfers, disk space constraints, waiting for transfers to complete, changing environments.</p>
 <p>This gap slows iteration. It wastes time. And it&rsquo;s fixable.</p>
 <h2 id="what-cloud-native-visualization-looks-like">What Cloud-Native Visualization Looks Like</h2>
-<p>I built an integration that runs IGV as a web app directly in Seqera workspaces. It connects to the same cloud storage your pipelines write to. It automatically discovers all genomic files. Zero download, zero manual file loading.</p>
-<p>If your entire workflow is local and your BAM files are small, this might be more complexity than you need. But if you&rsquo;re running pipelines in the cloud and tired of downloading results just to QC them, this eliminates real friction.</p>
+<p>I built an integration that runs IGV as a web app directly in Seqera workspaces. It connects to the same cloud storage your pipelines write to. It automatically discovers all genomic files. Zero downloads, zero manual file loading.</p>
+<p>Other solutions exist—desktop IGV in Studios or Python notebooks for programmatic visualization. These work, but they&rsquo;re not seamless. Desktop IGV still requires manual file path configuration. Notebooks require coding for every view. This approach eliminates both friction points.</p>
 <h2 id="how-it-works">How It Works</h2>
 <p>The container combines IGV web app with Seqera&rsquo;s connect-client. The connect-client uses FUSE to mount cloud storage, making remote files appear local to IGV.</p>
-<p>A startup script scans mounted directories for genomic files—BAM, CRAM, VCF, BED, BigWig, anything IGV can read. It detects file formats, checks for index files, and generates a track catalog. IGV reads this catalog and populates a custom &ldquo;Auto-discovered Tracks&rdquo; menu.</p>
+<p>A startup script <strong>scans</strong> mounted directories for genomic files—BAM, CRAM, VCF, BED, BigWig, anything IGV can read. It detects file formats, checks for index files, and generates a track catalog. IGV reads this catalog and populates a custom &ldquo;Auto-discovered Tracks&rdquo; menu.</p>
 <p>The visualization tool comes to where data already lives.</p>
 <h2 id="what-this-looks-like-in-practice">What This Looks Like in Practice</h2>
 <p>Launch the IGV Studio from your Seqera interface. Your browser opens with the IGV web app.</p>
 <p>Click Tracks → Auto-discovered Tracks. See a table of all your BAM files, VCF variants, coverage tracks—everything in your mounted storage.</p>
 <p>Click to load. Instant visualization.</p>
 <h2 id="why-this-matters">Why This Matters</h2>
-<p><strong>Skip the download wait.</strong> Checking alignments after a pipeline run no longer means waiting hours for transfers.</p>
+<p><strong>Skip the download/coding wait.</strong> Checking alignments after a pipeline run no longer means waiting to transfer data or coding.</p>
 <p><strong>Stop duplicating storage.</strong> No local copies means hundreds of GB saved per researcher.</p>
 <p><strong>Share results faster.</strong> Send a browser URL instead of transferring massive files.</p>
 <p><strong>Onboard easier.</strong> New team members don&rsquo;t need complex local setups. They click a link and start viewing data.</p>
@@ -936,7 +937,7 @@
 <p>The code is customizable. Adapt the track discovery logic for your file naming conventions. Change the reference genome. Add authentication if needed.</p>
 <h2 id="the-broader-pattern">The Broader Pattern</h2>
 <p>Cloud-native analysis means rethinking entire workflows, not just moving compute. Bringing visualization to cloud data is part of that shift.</p>
-<p>Other platforms (Terra, AnVIL) mount cloud storage for interactive apps too. What makes this useful is the automatic track discovery—most solutions require manual file paths.</p>
+<p>Other platforms (Terra, AnVIL) mount cloud storage for interactive apps too. What makes this useful is the <strong>automatic track discovery</strong>—most solutions require manual file paths.</p>
 <p>The less time you spend moving data around, the more time you spend understanding it.</p>
 <hr>
 <p><strong>References:</strong></p>
