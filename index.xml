@@ -42,7 +42,7 @@
 &lt;p&gt;&lt;strong&gt;Improve reproducibility.&lt;/strong&gt; Everyone views the same authoritative data source in cloud storage, not their own potentially outdated local copies.&lt;/p&gt;
 &lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Important context:&lt;/strong&gt; This solution is specifically for Seqera Platform users. If you&amp;rsquo;re using other platforms like Terra, AnVIL, Galaxy, or DNAnexus, they have their own approaches to interactive visualization. This implementation leverages Seqera&amp;rsquo;s Studios feature and connect-client architecture.&lt;/p&gt;
-&lt;p&gt;The full implementation is open source in the &lt;a href=&#34;https://github.com/seqeralabs/custom-studios-examples/tree/main/igv&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Seqera custom studios examples repository&lt;/a&gt;. You&amp;rsquo;ll find:&lt;/p&gt;
+&lt;p&gt;The full implementation is open source in the &lt;a href=&#34;https://github.com/lpantano/custom-studios-examples/tree/master/igv&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Seqera custom studios examples repository&lt;/a&gt;. You&amp;rsquo;ll find:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Complete Dockerfile with multi-stage build&lt;/li&gt;
 &lt;li&gt;Automatic track discovery script&lt;/li&gt;
