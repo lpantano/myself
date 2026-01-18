@@ -78,7 +78,7 @@ Click to load. Instant visualization.
 
 **Important context:** This solution is specifically for Seqera Platform users. If you're using other platforms like Terra, AnVIL, Galaxy, or DNAnexus, they have their own approaches to interactive visualization. This implementation leverages Seqera's Studios feature and connect-client architecture.
 
-The full implementation is open source in the [Seqera custom studios examples repository](https://github.com/seqeralabs/custom-studios-examples/tree/main/igv). You'll find:
+The full implementation is open source in the [Seqera custom studios examples repository](https://github.com/lpantano/custom-studios-examples/tree/master/igv). You'll find:
 
 - Complete Dockerfile with multi-stage build
 - Automatic track discovery script
