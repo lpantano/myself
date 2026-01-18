@@ -28,27 +28,29 @@ image:
 projects: []
 ---
 
-You just ran a genomic pipeline that generated 50GB of BAM files in the cloud. Now you need to check alignment quality. Do you really have to download everything to run IGV locally?
+You just ran a genomic pipeline that generated 50GB of BAM files in the cloud. Now you need to check alignment quality. Do you really have to download everything to run IGV locally? Switch virtual machines to load the files? Write code to generate static visuals?
+
+This integration brings IGV directly to your cloud workspace with **automatic track discovery**. It scans your storage, finds all genomic files, and presents them in a ready-to-load menu. No downloads, no file paths, no manual configuration.
 
 ## The Workflow Gap
 
 Analysis happens in the cloud. Fast compute, scalable storage, pipelines that finish overnight.
 
-Visualization happens locally. Manual downloads, disk space constraints, waiting for transfers to complete.
+Visualization happens separately or requires coding. Manual downloads or transfers, disk space constraints, waiting for transfers to complete, changing environments.
 
 This gap slows iteration. It wastes time. And it's fixable.
 
 ## What Cloud-Native Visualization Looks Like
 
-I built an integration that runs IGV as a web app directly in Seqera workspaces. It connects to the same cloud storage your pipelines write to. It automatically discovers all genomic files. Zero download, zero manual file loading.
+I built an integration that runs IGV as a web app directly in Seqera workspaces. It connects to the same cloud storage your pipelines write to. It automatically discovers all genomic files. Zero downloads, zero manual file loading.
 
-If your entire workflow is local and your BAM files are small, this might be more complexity than you need. But if you're running pipelines in the cloud and tired of downloading results just to QC them, this eliminates real friction.
+Other solutions exist—desktop IGV in Studios or Python notebooks for programmatic visualization. These work, but they're not seamless. Desktop IGV still requires manual file path configuration. Notebooks require coding for every view. This approach eliminates both friction points.
 
 ## How It Works
 
 The container combines IGV web app with Seqera's connect-client. The connect-client uses FUSE to mount cloud storage, making remote files appear local to IGV.
 
-A startup script scans mounted directories for genomic files—BAM, CRAM, VCF, BED, BigWig, anything IGV can read. It detects file formats, checks for index files, and generates a track catalog. IGV reads this catalog and populates a custom "Auto-discovered Tracks" menu.
+A startup script **scans** mounted directories for genomic files—BAM, CRAM, VCF, BED, BigWig, anything IGV can read. It detects file formats, checks for index files, and generates a track catalog. IGV reads this catalog and populates a custom "Auto-discovered Tracks" menu.
 
 The visualization tool comes to where data already lives.
 
@@ -62,7 +64,7 @@ Click to load. Instant visualization.
 
 ## Why This Matters
 
-**Skip the download wait.** Checking alignments after a pipeline run no longer means waiting hours for transfers.
+**Skip the download/coding wait.** Checking alignments after a pipeline run no longer means waiting to transfer data or coding.
 
 **Stop duplicating storage.** No local copies means hundreds of GB saved per researcher.
 
@@ -91,7 +93,7 @@ The code is customizable. Adapt the track discovery logic for your file naming c
 
 Cloud-native analysis means rethinking entire workflows, not just moving compute. Bringing visualization to cloud data is part of that shift.
 
-Other platforms (Terra, AnVIL) mount cloud storage for interactive apps too. What makes this useful is the automatic track discovery—most solutions require manual file paths.
+Other platforms (Terra, AnVIL) mount cloud storage for interactive apps too. What makes this useful is the **automatic track discovery**—most solutions require manual file paths.
 
 The less time you spend moving data around, the more time you spend understanding it.
 
