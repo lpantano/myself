@@ -104,4 +104,4 @@ The less time you spend moving data around, the more time you spend understandin
 - Robinson JT, et al. (2011). Integrative genomics viewer. Nature Biotechnology 29(1):24-26. [DOI: 10.1038/nbt.1754](https://www.nature.com/articles/nbt.1754)
 - [IGV Web App Documentation](https://igv.org/doc/webapp/)
 - [Seqera Studios Documentation](https://docs.seqera.io/platform-cloud/studios/)
-- [Implementation Repository](https://github.com/seqeralabs/custom-studios-examples/tree/main/igv)
+- [Implementation Repository](https://github.com/lpantano/custom-studios-examples/tree/master/igv)
