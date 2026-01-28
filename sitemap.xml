@@ -2,34 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://lpantano.github.io/tag/ai-automation/</loc>
+    <lastmod>2026-01-28T12:00:00-04:00</lastmod>
+  </url><url>
     <loc>http://lpantano.github.io/tag/bioinformatics/</loc>
-    <lastmod>2026-01-16T12:00:00-04:00</lastmod>
+    <lastmod>2026-01-28T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/post/</loc>
-    <lastmod>2026-01-16T12:00:00-04:00</lastmod>
+    <lastmod>2026-01-28T12:00:00-04:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/categories/</loc>
+    <lastmod>2026-01-28T12:00:00-04:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/category/data-at-scale/</loc>
+    <lastmod>2026-01-28T12:00:00-04:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/</loc>
+    <lastmod>2026-01-28T12:00:00-04:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/paper-review/</loc>
+    <lastmod>2026-01-28T12:00:00-04:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/reproducibility/</loc>
+    <lastmod>2026-01-28T12:00:00-04:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/research-workflows/</loc>
+    <lastmod>2026-01-28T12:00:00-04:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/scientific-computing/</loc>
+    <lastmod>2026-01-28T12:00:00-04:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/post/2026/2026-01-28-claude-custom-commands-paper-review/</loc>
+    <lastmod>2026-01-28T12:00:00-04:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tags/</loc>
+    <lastmod>2026-01-28T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/post/2026/2026-01-16-igv-cloud-visualization/</loc>
     <lastmod>2026-01-16T12:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://lpantano.github.io/categories/</loc>
-    <lastmod>2026-01-16T12:00:00-04:00</lastmod>
-  </url><url>
     <loc>http://lpantano.github.io/tag/cloud-computing/</loc>
-    <lastmod>2026-01-16T12:00:00-04:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/category/data-at-scale/</loc>
     <lastmod>2026-01-16T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/data-pipelines/</loc>
     <lastmod>2026-01-16T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/genomics/</loc>
-    <lastmod>2026-01-16T12:00:00-04:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/</loc>
-    <lastmod>2026-01-16T12:00:00-04:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/tags/</loc>
     <lastmod>2026-01-16T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/visualization/</loc>
