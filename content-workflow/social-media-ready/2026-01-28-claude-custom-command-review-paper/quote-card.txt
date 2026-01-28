@@ -1,0 +1,35 @@
+# Quote Card Content
+
+## Primary Quote (Recommended)
+
+"This inconsistency doesn't just waste time—it undermines scientific validity. If evaluation criteria change between papers, the entire project loses credibility."
+
+**Context**: The core problem that custom commands solve
+**Visual**: Bold, centered text with minimal background
+
+---
+
+## Alternative Quote 1
+
+"The custom command doesn't replace my judgment—it retrieves information and ensures I evaluate every paper the same way."
+
+**Context**: Clarifies human-AI partnership
+**Visual**: Two-color split design (human/AI collaboration theme)
+
+---
+
+## Alternative Quote 2
+
+"I never miss conflict of interest checks again. I never forget to assess control groups. The baseline evaluation happens consistently."
+
+**Context**: Concrete benefits
+**Visual**: Checklist visual with checkmarks
+
+---
+
+## Design Notes
+
+- Use brand colors
+- Include attribution: "— Lorena Pantano, Data at Scale"
+- Add small logo or website URL at bottom
+- Keep typography clean and readable (minimum 24pt for body text)
