@@ -1,5 +1,9 @@
-Running genomic pipelines in the cloud but still downloading BAM files to visualize them locally? I built an IGV integration that eliminates this friction—automatic track discovery in your cloud workspace, zero downloads needed. Open source implementation available.
+I built an IGV integration for Seqera Studios with automatic track discovery. Spin up a Studio, point it to your Nextflow or nf-core pipeline output, and IGV launches with all compatible files already loaded. Open source implementation available.
 
-Read the full technical breakdown: [LINK]
+📺 Watch it in action: https://www.youtube.com/watch?v=eWHCsjd30_A
+📖 Read the full story: https://decodingdata.substack.com/p/bringing-igv-webapp-to-your-cloud
+🔗 Also on my site: https://lpantano.github.io/post/2026/2026-01-16-igv-cloud-visualization/
+
+Thanks @Rob Newman for the inspiration.
 
 #genomics #bioinformatics #cloudcomputing #dataengineering #workflows

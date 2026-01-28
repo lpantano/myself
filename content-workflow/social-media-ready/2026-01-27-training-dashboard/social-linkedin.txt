@@ -1,0 +1,11 @@
+I built a dashboard to track my running data because fitness apps showed weekly summaries, but real training adaptations happen over months.
+
+Key insight: Structured periodized training showed measurable changes in my data—distance trends shifted, heart rate dropped at consistent paces. Research confirms what the patterns revealed.
+
+Unexpected benefit: Seeing accumulated effort over months provides motivation that daily notifications can't match.
+
+Shared the project on GitHub for others with Garmin data who want to see their training in context. Read the full analysis.
+
+[Link to post]
+
+#DataAnalysis #TrainingScience #PerformanceTracking #EnduranceTraining #OpenSource

@@ -1,0 +1,7 @@
+Reviewing 100+ papers for Health Integrity Project taught me: consistency beats speed. Custom AI commands now run identical evaluations every time—same conflict checks, same quality criteria, same workflow.
+
+Result: 30min reviews, zero missed steps, reproducible standards. Works for any systematic workflow you repeat.
+
+Read the full breakdown 🔗
+
+#ScientificComputing #ResearchAutomation #Bioinformatics #DataPipelines #AIinScience
