@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: January 29, 2026 --><html lang="en-us" >
+<!-- Last Published: February 3, 2026 --><html lang="en-us" >
 
 
 <head>
@@ -566,7 +566,7 @@
           
 
           <li class="nav-item">
-            <a class="nav-link " href="/tutorials/"><span>Tutorials (Coming Soon)</span></a>
+            <a class="nav-link " href="/tutorials/"><span>Videos</span></a>
           </li>
 
           
@@ -828,6 +828,59 @@
   
 
 
+
+
+<style>
+  .video-card-container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+
+  .video-card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .video-card-video {
+    flex: 0 0 40%;
+    min-width: 300px;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;  
+    height: 0;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #000;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  @media (max-width: 768px) {
+    .video-card-container {
+      flex-direction: column;
+    }
+
+    .video-card-video {
+      flex: 0 0 auto;
+      min-width: auto;
+    }
+  }
+</style>
+
+
 <div class="card-simple view-card">
 
   
@@ -872,16 +925,19 @@
 
   
   
-  
+    
+    
+    
+    
 
-  <div class="section-subheading article-title mb-1 mt-3">
-    <a href="/post/2019/2019-07-19-kallisto-bustools/" >kallisto-bustools</a>
-  </div>
+    <div class="section-subheading article-title mb-1 mt-3">
+      <a href="/post/2019/2019-07-19-kallisto-bustools/" >kallisto-bustools</a>
+    </div>
 
-  
-  <a href="/post/2019/2019-07-19-kallisto-bustools/"  class="summary-link">
-    <div class="article-style">
-      <p><pre><code>       JobID                        JobName      NCPUS     MaxRSS     AveRSS  Elapsed
+    
+    <a href="/post/2019/2019-07-19-kallisto-bustools/"  class="summary-link">
+      <div class="article-style">
+        <p><pre><code>       JobID                        JobName      NCPUS     MaxRSS     AveRSS  Elapsed
 ------------ ------------------------------ ---------- ---------- ---------- ----------
 
 14150319                             index          2     91.06G          0   01:26:32
@@ -894,10 +950,11 @@
 
 14156835                bus-capture-intron          4     16.27G     16.27G   00:06:54
 </code></pre></p>
-    </div>
-  </a>
-  
+      </div>
+    </a>
+    
 
+    
   
 
 </div>
@@ -916,6 +973,9 @@
 
 
   
+
+
+
 
 
 <div class="card-simple view-card">
@@ -962,22 +1022,26 @@
 
   
   
-  
+    
+    
+    
+    
 
-  <div class="section-subheading article-title mb-1 mt-3">
-    <a href="/post/2019/2019-07-12-cellranger-efficiency-in-hpc-copy/" >How to set up cellranger to make your hpc admin happy</a>
-  </div>
+    <div class="section-subheading article-title mb-1 mt-3">
+      <a href="/post/2019/2019-07-12-cellranger-efficiency-in-hpc-copy/" >How to set up cellranger to make your hpc admin happy</a>
+    </div>
 
-  
-  <a href="/post/2019/2019-07-12-cellranger-efficiency-in-hpc-copy/"  class="summary-link">
-    <div class="article-style">
-      <p><p>I found myself to force to use <a href="https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/cluster-mode" target="_blank" rel="noopener">cellranger</a>. Meanwhile it helps a lot to
+    
+    <a href="/post/2019/2019-07-12-cellranger-efficiency-in-hpc-copy/"  class="summary-link">
+      <div class="article-style">
+        <p><p>I found myself to force to use <a href="https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/cluster-mode" target="_blank" rel="noopener">cellranger</a>. Meanwhile it helps a lot to
 run from <a href="https://www.illumina.com/informatics/sequencing-data-analysis/sequence-file-formats.html" target="_blank" rel="noopener">bcl</a> files to single cell counts matrixes, I discovered that is
 quite difficult to control many options related to optimization.</p></p>
-    </div>
-  </a>
-  
+      </div>
+    </a>
+    
 
+    
   
 
 </div>
@@ -996,6 +1060,9 @@ quite difficult to control many options related to optimization.</p></p>
 
 
   
+
+
+
 
 
 <div class="card-simple view-card">
@@ -1042,16 +1109,19 @@ quite difficult to control many options related to optimization.</p></p>
 
   
   
-  
+    
+    
+    
+    
 
-  <div class="section-subheading article-title mb-1 mt-3">
-    <a href="/post/2019/2019-04-05-how-to-setup-remote-samples-with-bcbio/" >How to set up public dataset analysis with bcbio-nextgen</a>
-  </div>
+    <div class="section-subheading article-title mb-1 mt-3">
+      <a href="/post/2019/2019-04-05-how-to-setup-remote-samples-with-bcbio/" >How to set up public dataset analysis with bcbio-nextgen</a>
+    </div>
 
-  
-  <a href="/post/2019/2019-04-05-how-to-setup-remote-samples-with-bcbio/"  class="summary-link">
-    <div class="article-style">
-      <p><p>We use <a href="https://github.com/bcbio/bcbio-nextgen" target="_blank" rel="noopener">bcbio-nextgen</a> for the analysis of sequencing data, mainly, (sc)RNAseq,
+    
+    <a href="/post/2019/2019-04-05-how-to-setup-remote-samples-with-bcbio/"  class="summary-link">
+      <div class="article-style">
+        <p><p>We use <a href="https://github.com/bcbio/bcbio-nextgen" target="_blank" rel="noopener">bcbio-nextgen</a> for the analysis of sequencing data, mainly, (sc)RNAseq,
 smallRNAseq, DNASeq and ChIPSeq. It is not rare that we get collaborators who
 wants to re-analyze public data-set.</p>
 <p>Inside <code>bcbio</code>, we have <a href="https://bcbio-nextgen.readthedocs.io/en/latest/contents/configuration.html#multiple-files-per-sample" target="_blank" rel="noopener"><code>bcbio_prepare_samples.py</code></a>
@@ -1059,10 +1129,11 @@ to help to merge multiple
 files that belong to the same sample into one file to make easier the configuration
 of <strong>bcbio</strong>. We extended this script to pull down data from <a href="https://www.ncbi.nlm.nih.gov/geo/" target="_blank" rel="noopener">GEO</a> and
 <a href="https://www.ncbi.nlm.nih.gov/sra" target="_blank" rel="noopener">SRA</a> repository.</p></p>
-    </div>
-  </a>
-  
+      </div>
+    </a>
+    
 
+    
   
 
 </div>
@@ -1081,6 +1152,9 @@ of <strong>bcbio</strong>. We extended this script to pull down data from <a hre
 
 
   
+
+
+
 
 
 <div class="card-simple view-card">
@@ -1127,21 +1201,25 @@ of <strong>bcbio</strong>. We extended this script to pull down data from <a hre
 
   
   
-  
+    
+    
+    
+    
 
-  <div class="section-subheading article-title mb-1 mt-3">
-    <a href="/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/" >Get colors for your heatmap annotation</a>
-  </div>
-
-  
-  <a href="/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/"  class="summary-link">
-    <div class="article-style">
-      <p><p>This post will show how to configure quickly the colors for the annotation of rows/columns that go on top or on the side of a heatmap.</p>
-<p>I normally use <code>pheatmap</code> a lot. Recently I discovered <code>ComplexHeatmap</code>. In both cases I spend always sometime changing the colors of the annotations. I ended up coding a function inside my package <code>DEGreport</code> to do that.</p></p>
+    <div class="section-subheading article-title mb-1 mt-3">
+      <a href="/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/" >Get colors for your heatmap annotation</a>
     </div>
-  </a>
-  
 
+    
+    <a href="/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/"  class="summary-link">
+      <div class="article-style">
+        <p><p>This post will show how to configure quickly the colors for the annotation of rows/columns that go on top or on the side of a heatmap.</p>
+<p>I normally use <code>pheatmap</code> a lot. Recently I discovered <code>ComplexHeatmap</code>. In both cases I spend always sometime changing the colors of the annotations. I ended up coding a function inside my package <code>DEGreport</code> to do that.</p></p>
+      </div>
+    </a>
+    
+
+    
   
 
 </div>
@@ -1160,6 +1238,9 @@ of <strong>bcbio</strong>. We extended this script to pull down data from <a hre
 
 
   
+
+
+
 
 
 <div class="card-simple view-card">
@@ -1206,16 +1287,19 @@ of <strong>bcbio</strong>. We extended this script to pull down data from <a hre
 
   
   
-  
+    
+    
+    
+    
 
-  <div class="section-subheading article-title mb-1 mt-3">
-    <a href="/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/" >How to plot miRNA, gene expression and functional analysis together</a>
-  </div>
+    <div class="section-subheading article-title mb-1 mt-3">
+      <a href="/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/" >How to plot miRNA, gene expression and functional analysis together</a>
+    </div>
 
-  
-  <a href="/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/"  class="summary-link">
-    <div class="article-style">
-      <p><p>This post should show you an easy way to get the following data type
+    
+    <a href="/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/"  class="summary-link">
+      <div class="article-style">
+        <p><p>This post should show you an easy way to get the following data type
 integrated into a figure:</p>
 <ul>
 <li>functional enrichment analysis</li>
@@ -1226,10 +1310,11 @@ integrated into a figure:</p>
 course is developed by me :) My ego is not that big, it is just I wanted
 a figure showing that information, and I couldn&rsquo;t find any at a time,
 but if you know any, tweet me about it to @lopantano.</p></p>
-    </div>
-  </a>
-  
+      </div>
+    </a>
+    
 
+    
   
 
 </div>
@@ -1248,6 +1333,9 @@ but if you know any, tweet me about it to @lopantano.</p></p>
 
 
   
+
+
+
 
 
 <div class="card-simple view-card">
@@ -1294,22 +1382,26 @@ but if you know any, tweet me about it to @lopantano.</p></p>
 
   
   
-  
+    
+    
+    
+    
 
-  <div class="section-subheading article-title mb-1 mt-3">
-    <a href="/post/legacy/2017-08-24-subset-object-creates-bigger-file/" >Subset of object creates bigger RDA file size than original object</a>
-  </div>
+    <div class="section-subheading article-title mb-1 mt-3">
+      <a href="/post/legacy/2017-08-24-subset-object-creates-bigger-file/" >Subset of object creates bigger RDA file size than original object</a>
+    </div>
 
-  
-  <a href="/post/legacy/2017-08-24-subset-object-creates-bigger-file/"  class="summary-link">
-    <div class="article-style">
-      <p><p>This is a funny story, and I will try to tell you how I realized I don&rsquo;t know anything about R in 400 words.</p>
+    
+    <a href="/post/legacy/2017-08-24-subset-object-creates-bigger-file/"  class="summary-link">
+      <div class="article-style">
+        <p><p>This is a funny story, and I will try to tell you how I realized I don&rsquo;t know anything about R in 400 words.</p>
 <p>I work at the Bioinformatic Core at Harvard TH School. People who know us, or collaborate with us, knows that we mainly use
 <a href="https://github.com/chapmanb/bcbio-nextgen" target="_blank" rel="noopener">bcbio</a> to analyze sequencing data (check it out, super cool tool).</p></p>
-    </div>
-  </a>
-  
+      </div>
+    </a>
+    
 
+    
   
 
 </div>
@@ -1328,6 +1420,9 @@ but if you know any, tweet me about it to @lopantano.</p></p>
 
 
   
+
+
+
 
 
 <div class="card-simple view-card">
@@ -1374,21 +1469,25 @@ but if you know any, tweet me about it to @lopantano.</p></p>
 
   
   
-  
+    
+    
+    
+    
 
-  <div class="section-subheading article-title mb-1 mt-3">
-    <a href="/post/legacy/2017-03-20-degreport-rnaseq-figures/" >DEGreport to plot nice RNA-seq figures</a>
-  </div>
-
-  
-  <a href="/post/legacy/2017-03-20-degreport-rnaseq-figures/"  class="summary-link">
-    <div class="article-style">
-      <p><p>Differentially gene expression analysis with <a href="https://en.wikipedia.org/wiki/RNA-Seq" target="_blank" rel="noopener">RNA-seq</a> data is quite common nowadays, and there are pretty good <a href="http://bioconductor.org" target="_blank" rel="noopener">Bioconductor</a> packages for that: <a href="http://bioconductor.org/packages/release/bioc/html/limma.html" target="_blank" rel="noopener">limma::voom</a>, <a href="http://bioconductor.org/packages/release/bioc/html/DESeq2.html" target="_blank" rel="noopener">DESeq2</a> &hellip;</p>
-<p>The code for that part is quite simple, being super quick to get a list of de-regulated genes. However, downstream analyses vary a lot depending on the project itself. But I found myself doing the same plots and analyses many times for different project, so I put together a bunch of plots and analyses using code from my colleagues at work (<a href="http://bioinformatics.sph.harvard.edu" target="_blank" rel="noopener">@HSPH bioinformatics core</a>) and myself.</p></p>
+    <div class="section-subheading article-title mb-1 mt-3">
+      <a href="/post/legacy/2017-03-20-degreport-rnaseq-figures/" >DEGreport to plot nice RNA-seq figures</a>
     </div>
-  </a>
-  
 
+    
+    <a href="/post/legacy/2017-03-20-degreport-rnaseq-figures/"  class="summary-link">
+      <div class="article-style">
+        <p><p>Differentially gene expression analysis with <a href="https://en.wikipedia.org/wiki/RNA-Seq" target="_blank" rel="noopener">RNA-seq</a> data is quite common nowadays, and there are pretty good <a href="http://bioconductor.org" target="_blank" rel="noopener">Bioconductor</a> packages for that: <a href="http://bioconductor.org/packages/release/bioc/html/limma.html" target="_blank" rel="noopener">limma::voom</a>, <a href="http://bioconductor.org/packages/release/bioc/html/DESeq2.html" target="_blank" rel="noopener">DESeq2</a> &hellip;</p>
+<p>The code for that part is quite simple, being super quick to get a list of de-regulated genes. However, downstream analyses vary a lot depending on the project itself. But I found myself doing the same plots and analyses many times for different project, so I put together a bunch of plots and analyses using code from my colleagues at work (<a href="http://bioinformatics.sph.harvard.edu" target="_blank" rel="noopener">@HSPH bioinformatics core</a>) and myself.</p></p>
+      </div>
+    </a>
+    
+
+    
   
 
 </div>
@@ -1407,6 +1506,9 @@ but if you know any, tweet me about it to @lopantano.</p></p>
 
 
   
+
+
+
 
 
 <div class="card-simple view-card">
@@ -1453,16 +1555,19 @@ but if you know any, tweet me about it to @lopantano.</p></p>
 
   
   
-  
+    
+    
+    
+    
 
-  <div class="section-subheading article-title mb-1 mt-3">
-    <a href="/post/legacy/2016-03-24-mirna-annotation-tools-comparison/" >miRNA Annotation Tools Comparison</a>
-  </div>
+    <div class="section-subheading article-title mb-1 mt-3">
+      <a href="/post/legacy/2016-03-24-mirna-annotation-tools-comparison/" >miRNA Annotation Tools Comparison</a>
+    </div>
 
-  
-  <a href="/post/legacy/2016-03-24-mirna-annotation-tools-comparison/"  class="summary-link">
-    <div class="article-style">
-      <p><p>In summary: I will show which is the best miRNA mapping tool. I used several options for this benchmarking:</p>
+    
+    <a href="/post/legacy/2016-03-24-mirna-annotation-tools-comparison/"  class="summary-link">
+      <div class="article-style">
+        <p><p>In summary: I will show which is the best miRNA mapping tool. I used several options for this benchmarking:</p>
 <ul>
 <li>miraligner from <a href="http://github.com/lpantano/seqbuster" target="_blank" rel="noopener">SeqBuster</a> suit (I am one of the authors)</li>
 <li><a href="http://bowtie-bio.sourceforge.net/bowtie2/index.shtml" target="_blank" rel="noopener">bowtie2</a> and <a href="http://bowtie-bio.sourceforge.net/index.shtml" target="_blank" rel="noopener">bowtie</a></li>
@@ -1474,10 +1579,11 @@ but if you know any, tweet me about it to @lopantano.</p></p>
 <li><a href="http://mirexpress.mbc.nctu.edu.tw/" target="_blank" rel="noopener">miRExpress</a></li>
 </ul>
 <p>I think that these are the most used, and other not used but good to try them. They were clearly developed for other purposes, but as well, they generate the input of many miRNA pipelines. I just wanted to know how well my tool was doing. The first aim to develop miraligner was to get annotated additions of nucleotides at the end of miRNA sequences, something that is very common in mirna biogenesis: <a href="http://en.wikipedia.org/wiki/IsomiR" target="_blank" rel="noopener">isomirs</a> and often they are missed by short read and fast mappers. I have a <a href="https://github.com/lpantano/mypubs/tree/master/mirna/mirannotation" target="_blank" rel="noopener">repository</a> for this kind of things, so anybody can reproduce my results, and check if I did something wrong, or comment on it. In this post I just want to know which tool detects more miRNA, for that I did two main steps:</p></p>
-    </div>
-  </a>
-  
+      </div>
+    </a>
+    
 
+    
   
 
 </div>
@@ -1496,6 +1602,9 @@ but if you know any, tweet me about it to @lopantano.</p></p>
 
 
   
+
+
+
 
 
 <div class="card-simple view-card">
@@ -1542,20 +1651,24 @@ but if you know any, tweet me about it to @lopantano.</p></p>
 
   
   
-  
+    
+    
+    
+    
 
-  <div class="section-subheading article-title mb-1 mt-3">
-    <a href="/post/legacy/2013-10-29-small-rna-abundance-miss-viz/" >small RNA abundance [miss-] viz</a>
-  </div>
-
-  
-  <a href="/post/legacy/2013-10-29-small-rna-abundance-miss-viz/"  class="summary-link">
-    <div class="article-style">
-      <p><p>My PhD was focused on small RNA sequencing data. I had a problem when I wanted to visualized the amount of small RNAs from the beginning. Here the problem, assume that you have a certain distribution of small RNA sequences abundance:</p></p>
+    <div class="section-subheading article-title mb-1 mt-3">
+      <a href="/post/legacy/2013-10-29-small-rna-abundance-miss-viz/" >small RNA abundance [miss-] viz</a>
     </div>
-  </a>
-  
 
+    
+    <a href="/post/legacy/2013-10-29-small-rna-abundance-miss-viz/"  class="summary-link">
+      <div class="article-style">
+        <p><p>My PhD was focused on small RNA sequencing data. I had a problem when I wanted to visualized the amount of small RNAs from the beginning. Here the problem, assume that you have a certain distribution of small RNA sequences abundance:</p></p>
+      </div>
+    </a>
+    
+
+    
   
 
 </div>
@@ -1574,6 +1687,9 @@ but if you know any, tweet me about it to @lopantano.</p></p>
 
 
   
+
+
+
 
 
 <div class="card-simple view-card">
@@ -1620,22 +1736,26 @@ but if you know any, tweet me about it to @lopantano.</p></p>
 
   
   
-  
+    
+    
+    
+    
 
-  <div class="section-subheading article-title mb-1 mt-3">
-    <a href="/post/legacy/2013-08-07-lying-factor-in-figures/" >Lying factor in figures</a>
-  </div>
+    <div class="section-subheading article-title mb-1 mt-3">
+      <a href="/post/legacy/2013-08-07-lying-factor-in-figures/" >Lying factor in figures</a>
+    </div>
 
-  
-  <a href="/post/legacy/2013-08-07-lying-factor-in-figures/"  class="summary-link">
-    <div class="article-style">
-      <p><p>What is the lying factor in figures?</p>
+    
+    <a href="/post/legacy/2013-08-07-lying-factor-in-figures/"  class="summary-link">
+      <div class="article-style">
+        <p><p>What is the lying factor in figures?</p>
 <p>It is the ratio between the difference of two numbers and the difference of the visualization of those two numbers. For instance:</p>
 <p>You have two groups, each group is represented by 4 and 2. The difference between 4 and 2 is 2. Since &ldquo;a picture is worth a thousand words&rdquo;, someone decides to represents those groups in a figure (yes, in excel to make it worst):</p></p>
-    </div>
-  </a>
-  
+      </div>
+    </a>
+    
 
+    
   
 
 </div>

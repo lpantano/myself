@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://lpantano.github.io/categories/</loc>
+    <lastmod>2026-01-28T22:20:16+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/</loc>
+    <lastmod>2026-01-28T22:20:16+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tutorials/2026-01-28-systematic-paper-reviews-with-claude-custom-commandsskills/</loc>
+    <lastmod>2026-01-28T22:20:16+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tags/</loc>
+    <lastmod>2026-01-28T22:20:16+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/tutorial/</loc>
+    <lastmod>2026-01-28T22:20:16+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/category/tutorials/</loc>
+    <lastmod>2026-01-28T22:20:16+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tutorials/</loc>
+    <lastmod>2026-01-28T22:20:16+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/video/</loc>
+    <lastmod>2026-01-28T22:20:16+00:00</lastmod>
+  </url><url>
     <loc>http://lpantano.github.io/tag/ai-automation/</loc>
     <lastmod>2026-01-28T12:00:00-04:00</lastmod>
   </url><url>
@@ -11,13 +35,7 @@
     <loc>http://lpantano.github.io/post/</loc>
     <lastmod>2026-01-28T12:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://lpantano.github.io/categories/</loc>
-    <lastmod>2026-01-28T12:00:00-04:00</lastmod>
-  </url><url>
     <loc>http://lpantano.github.io/category/data-at-scale/</loc>
-    <lastmod>2026-01-28T12:00:00-04:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/</loc>
     <lastmod>2026-01-28T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/paper-review/</loc>
@@ -35,8 +53,8 @@
     <loc>http://lpantano.github.io/post/2026/2026-01-28-claude-custom-commands-paper-review/</loc>
     <lastmod>2026-01-28T12:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://lpantano.github.io/tags/</loc>
-    <lastmod>2026-01-28T12:00:00-04:00</lastmod>
+    <loc>http://lpantano.github.io/tutorials/2026-01-21-bringing-igv-webapp-to-your-cloud-workspace-in-seqera/</loc>
+    <lastmod>2026-01-21T21:42:07+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/post/2026/2026-01-16-igv-cloud-visualization/</loc>
     <lastmod>2026-01-16T12:00:00-04:00</lastmod>
@@ -106,6 +124,24 @@
   </url><url>
     <loc>http://lpantano.github.io/tag/visualizations/</loc>
     <lastmod>2026-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tutorials/2026-01-10-wld-e6-ai-for-interviews/</loc>
+    <lastmod>2026-01-10T20:24:14+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tutorials/2026-01-10-wld-e5-bioinformatics-interviews-decoded/</loc>
+    <lastmod>2026-01-10T20:23:43+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tutorials/2026-01-10-wld-e4-amplifying-minorities/</loc>
+    <lastmod>2026-01-10T20:22:52+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tutorials/2026-01-10-wld-3-understanding-your-managers-world/</loc>
+    <lastmod>2026-01-10T20:21:45+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tutorials/2026-01-10-wld-2-workplace-negativity/</loc>
+    <lastmod>2026-01-10T20:19:25+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tutorials/2026-01-10-wld-1-weekly-log/</loc>
+    <lastmod>2026-01-10T20:17:57+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/post/2025/2025-05-diversity-panel/</loc>
     <lastmod>2025-05-20T12:00:00-04:00</lastmod>
@@ -619,6 +655,9 @@
   </url><url>
     <loc>http://lpantano.github.io/author/shannan-ho-sui/</loc>
     <lastmod>2017-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tutorials/2017-09-13-degreport-intro-a-tolkit-for-de-analysis/</loc>
+    <lastmod>2017-09-13T13:50:51+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/develop/</loc>
     <lastmod>2017-08-23T17:50:01-04:00</lastmod>
@@ -3032,7 +3071,5 @@
     <loc>http://lpantano.github.io/author/</loc>
   </url><url>
     <loc>http://lpantano.github.io/experience/</loc>
-  </url><url>
-    <loc>http://lpantano.github.io/tutorials/</loc>
   </url>
 </urlset>

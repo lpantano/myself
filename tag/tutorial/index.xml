@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial | My bits</title>
+    <link>http://lpantano.github.io/tag/tutorial/</link>
+      <atom:link href="http://lpantano.github.io/tag/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tutorial</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 28 Jan 2026 22:20:16 +0000</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
+      <title>Tutorial</title>
+      <link>http://lpantano.github.io/tag/tutorial/</link>
+    </image>
+    
+    <item>
+      <title>Systematic Paper Reviews with Claude Custom Commands/Skills</title>
+      <link>http://lpantano.github.io/tutorials/2026-01-28-systematic-paper-reviews-with-claude-custom-commandsskills/</link>
+      <pubDate>Wed, 28 Jan 2026 22:20:16 +0000</pubDate>
+      <guid>http://lpantano.github.io/tutorials/2026-01-28-systematic-paper-reviews-with-claude-custom-commandsskills/</guid>
+      <description>&lt;h2 id=&#34;video-tutorial&#34;&gt;Video Tutorial&lt;/h2&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/YZry3CwDwAw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;Reviewing 100+ papers for Health Integrity Project taught me: consistency beats speed. Custom AI commands now run identical evaluations every time—same conflict checks, same quality criteria, same workflow.&lt;/p&gt;
+&lt;p&gt;Result: 30min reviews, zero missed steps, reproducible standards. Works for any systematic workflow you repeat.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://decodingdata.substack.com/p/systematic-paper-reviews-with-claude&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://decodingdata.substack.com/p/systematic-paper-reviews-with-claude&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;watch-on-youtube&#34;&gt;Watch on YouTube&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=YZry3CwDwAw&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View on YouTube&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bringing IGV webapp to Your Cloud Workspace in Seqera</title>
+      <link>http://lpantano.github.io/tutorials/2026-01-21-bringing-igv-webapp-to-your-cloud-workspace-in-seqera/</link>
+      <pubDate>Wed, 21 Jan 2026 21:42:07 +0000</pubDate>
+      <guid>http://lpantano.github.io/tutorials/2026-01-21-bringing-igv-webapp-to-your-cloud-workspace-in-seqera/</guid>
+      <description>&lt;h2 id=&#34;video-tutorial&#34;&gt;Video Tutorial&lt;/h2&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/eWHCsjd30_A?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;Read Post: &lt;a href=&#34;https://lpantano.github.io/post/2026/2026-01-16-igv-cloud-visualization/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://lpantano.github.io/post/2026/2026-01-16-igv-cloud-visualization/&lt;/a&gt;
+Subscribe: &lt;a href=&#34;https://decodingdata.substack.com/s/data-at-scale&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://decodingdata.substack.com/s/data-at-scale&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You just ran a genomic pipeline that generated 50GB of BAM files in the cloud. Now you need to check alignment quality. Do you really have to download everything to run IGV locally? Switch virtual machines to load the files? Write code to generate static visuals?&lt;/p&gt;
+&lt;p&gt;This integration brings IGV directly to your cloud workspace with automatic track discovery. It scans your storage, finds all genomic files, and presents them in a ready-to-load menu. No downloads, no file paths, no manual configuration.&lt;/p&gt;
+&lt;h2 id=&#34;watch-on-youtube&#34;&gt;Watch on YouTube&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=eWHCsjd30_A&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View on YouTube&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>WLD E6 AI for Interviews</title>
+      <link>http://lpantano.github.io/tutorials/2026-01-10-wld-e6-ai-for-interviews/</link>
+      <pubDate>Sat, 10 Jan 2026 20:24:14 +0000</pubDate>
+      <guid>http://lpantano.github.io/tutorials/2026-01-10-wld-e6-ai-for-interviews/</guid>
+      <description>&lt;h2 id=&#34;video-tutorial&#34;&gt;Video Tutorial&lt;/h2&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/4L1Ypc-KkYc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;Job searching is already exhausting enough without spending hours customizing every application, researching every company, and second-guessing every follow-up email.&lt;/p&gt;
+&lt;p&gt;So in this video, we&amp;rsquo;re diving into something really practical: how to use AI as your personal interview prep assistant.&lt;/p&gt;
+&lt;p&gt;Lorena interviews Lina about her AI-powered process—from the moment she sees a job posting to after the interview is over. This isn&amp;rsquo;t theoretical advice. These are the actual strategies Lina is using right now during her active job search to:&lt;/p&gt;
+&lt;p&gt;✅ Cut application prep time from an hour to 20 minutes
+✅ Show up to interviews with strategic questions tailored to each specific interviewer
+✅ Research companies and roles more thoroughly than anyone could manually
+✅ Process interview feedback and build professional networks systematically&lt;/p&gt;
+&lt;h2 id=&#34;watch-on-youtube&#34;&gt;Watch on YouTube&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=4L1Ypc-KkYc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View on YouTube&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>WLD E5 Bioinformatics Interviews Decoded</title>
+      <link>http://lpantano.github.io/tutorials/2026-01-10-wld-e5-bioinformatics-interviews-decoded/</link>
+      <pubDate>Sat, 10 Jan 2026 20:23:43 +0000</pubDate>
+      <guid>http://lpantano.github.io/tutorials/2026-01-10-wld-e5-bioinformatics-interviews-decoded/</guid>
+      <description>&lt;h2 id=&#34;video-tutorial&#34;&gt;Video Tutorial&lt;/h2&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/sjw0bceAHB0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;Hey everyone!&lt;/p&gt;
+&lt;p&gt;Lorena and I just finished recording something we WISH we&amp;rsquo;d had when we were starting out: a comprehensive guide to nailing bioinformatics interviews for junior to intermediate roles.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the thing: bioinformatics interviews are uniquely challenging because you&amp;rsquo;re expected to demonstrate expertise across multiple domains—biology, computer science, AND statistics—while also proving you can communicate clearly across all of them. It&amp;rsquo;s a lot. And most people prepare by trying to memorize every tool and algorithm, which honestly isn&amp;rsquo;t what interviewers are looking for.&lt;/p&gt;
+&lt;h2 id=&#34;watch-on-youtube&#34;&gt;Watch on YouTube&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=sjw0bceAHB0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View on YouTube&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>WLD E4 Amplifying Minorities</title>
+      <link>http://lpantano.github.io/tutorials/2026-01-10-wld-e4-amplifying-minorities/</link>
+      <pubDate>Sat, 10 Jan 2026 20:22:52 +0000</pubDate>
+      <guid>http://lpantano.github.io/tutorials/2026-01-10-wld-e4-amplifying-minorities/</guid>
+      <description>&lt;h2 id=&#34;video-tutorial&#34;&gt;Video Tutorial&lt;/h2&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/ACNYplq3o_A?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;Allyship isn&amp;rsquo;t passive—it requires specific, intentional actions in the moments that matter.&lt;/p&gt;
+&lt;p&gt;In this video, Lorena and I break down the practical strategies for amplifying underrepresented voices in professional settings. We&amp;rsquo;re talking about real, in-the-moment tactics you can use:&lt;/p&gt;
+&lt;p&gt;✅ How to redirect attention when good ideas get talked over
+✅ Strategic ways to prep colleagues before high-stakes meetings
+✅ What to say (exactly) when you need to create space for others
+✅ How to use your social capital without being performative&lt;/p&gt;
+&lt;p&gt;This isn&amp;rsquo;t about grand gestures—it&amp;rsquo;s about the small, consistent actions that actually move the needle. Whether you&amp;rsquo;re in a position of privilege or you&amp;rsquo;re figuring out how to advocate for yourself, these strategies work.&lt;/p&gt;
+&lt;p&gt;As always, your support makes this content possible. Thanks for being here.&lt;/p&gt;
+&lt;p&gt;Lina &amp;amp; Lorena&lt;/p&gt;
+&lt;h2 id=&#34;watch-on-youtube&#34;&gt;Watch on YouTube&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=ACNYplq3o_A&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View on YouTube&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>WLD 3 Understanding Your Managers World</title>
+      <link>http://lpantano.github.io/tutorials/2026-01-10-wld-3-understanding-your-managers-world/</link>
+      <pubDate>Sat, 10 Jan 2026 20:21:45 +0000</pubDate>
+      <guid>http://lpantano.github.io/tutorials/2026-01-10-wld-3-understanding-your-managers-world/</guid>
+      <description>&lt;h2 id=&#34;video-tutorial&#34;&gt;Video Tutorial&lt;/h2&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/TEd7Ri5PNXk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;Most of us learned how to do our jobs, but nobody taught us how to actually work with our managers. And here&amp;rsquo;s the thing: your relationship with your manager can be the difference between feeling stuck and advancing your career – but only if you understand what&amp;rsquo;s really going on in their world.&lt;/p&gt;
+&lt;p&gt;This video flips the script on how you think about your manager. Instead of seeing them as someone who just assigns tasks or approves time off, we&amp;rsquo;re showing you how to think of them as your business partner. Because when you understand their pressures, priorities, and what success looks like for them, you can position yourself as someone who makes their life easier – and that&amp;rsquo;s when doors start opening for you.&lt;/p&gt;
+&lt;p&gt;Lina &amp;amp; Lorena&lt;/p&gt;
+&lt;h2 id=&#34;watch-on-youtube&#34;&gt;Watch on YouTube&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=TEd7Ri5PNXk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View on YouTube&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>WLD 2 Workplace Negativity</title>
+      <link>http://lpantano.github.io/tutorials/2026-01-10-wld-2-workplace-negativity/</link>
+      <pubDate>Sat, 10 Jan 2026 20:19:25 +0000</pubDate>
+      <guid>http://lpantano.github.io/tutorials/2026-01-10-wld-2-workplace-negativity/</guid>
+      <description>&lt;h2 id=&#34;video-tutorial&#34;&gt;Video Tutorial&lt;/h2&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/ZHP3i7Zvmnc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;You know that colleague who turns every conversation into a complaint session? Or the team meeting that devolves into gossip and finger-pointing?&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve all been there. And here&amp;rsquo;s what nobody tells you: you don&amp;rsquo;t have to fix it, but you do need a strategy to handle it.&lt;/p&gt;
+&lt;p&gt;In this video, we break down:&lt;/p&gt;
+&lt;p&gt;Why you&amp;rsquo;re not responsible for being everyone&amp;rsquo;s emotional dumping ground&lt;/p&gt;
+&lt;p&gt;The 3-step framework for handling chronic complainers (without being dismissive)&lt;/p&gt;
+&lt;p&gt;How to redirect gossip and drama toward actual solutions&lt;/p&gt;
+&lt;p&gt;The language that transforms negative energy in real-time&lt;/p&gt;
+&lt;p&gt;How to set boundaries that protect your own mental space&lt;/p&gt;
+&lt;p&gt;The reality? Negativity spreads like wildfire in workplaces. But the good news is that positivity is just as contagious—when you know how to lead it.&lt;/p&gt;
+&lt;p&gt;This isn&amp;rsquo;t about toxic positivity or pretending problems don&amp;rsquo;t exist. It&amp;rsquo;s about separating legitimate work issues from drama, and knowing exactly what to say when someone starts spiraling.&lt;/p&gt;
+&lt;p&gt;—Lina &amp;amp; Lorena&lt;/p&gt;
+&lt;h2 id=&#34;watch-on-youtube&#34;&gt;Watch on YouTube&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=ZHP3i7Zvmnc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View on YouTube&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>WLD 1   Weekly Log</title>
+      <link>http://lpantano.github.io/tutorials/2026-01-10-wld-1-weekly-log/</link>
+      <pubDate>Sat, 10 Jan 2026 20:17:57 +0000</pubDate>
+      <guid>http://lpantano.github.io/tutorials/2026-01-10-wld-1-weekly-log/</guid>
+      <description>&lt;h2 id=&#34;video-tutorial&#34;&gt;Video Tutorial&lt;/h2&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/98FNU1ul_Iw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;Welcome to our first episode! Today we&amp;rsquo;re diving into something that sounds deceptively simple but is genuinely career-changing: keeping a weekly log of your wins and quantifying your achievements. This isn&amp;rsquo;t just for performance review season (though it&amp;rsquo;s a lifesaver then) – it&amp;rsquo;s your secret weapon for fighting imposter syndrome, building an impressive resume, and having concrete evidence ready when it&amp;rsquo;s time to negotiate that raise. Five minutes every Friday. That&amp;rsquo;s all it takes.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve created a one-page Quick Reference Guide (download below!) that you can print and keep at your desk. It covers why this matters, what to log, how to quantify your impact with real before/after examples, and practical setup tips. No more scrambling to remember what you accomplished six months ago. No more underselling yourself because you forgot the numbers. Just a simple habit that pays dividends for years to come.&lt;/p&gt;
+&lt;p&gt;Watch the video, grab your guide, and start your first weekly win log this Friday. Seriously – set that 5-minute calendar reminder right now. Your future self (especially the one negotiating salary or updating their resume) will thank you. Drop a comment and let us know what system you&amp;rsquo;re using – Notion? Google Doc? Notes app? We&amp;rsquo;d love to hear what works for you!&lt;/p&gt;
+&lt;p&gt;Happy logging! 📊 – Lorena &amp;amp; Lina&lt;/p&gt;
+&lt;h2 id=&#34;watch-on-youtube&#34;&gt;Watch on YouTube&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=98FNU1ul_Iw&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View on YouTube&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DEGreport intro: a tolkit for DE analysis</title>
+      <link>http://lpantano.github.io/tutorials/2017-09-13-degreport-intro-a-tolkit-for-de-analysis/</link>
+      <pubDate>Wed, 13 Sep 2017 13:50:51 +0000</pubDate>
+      <guid>http://lpantano.github.io/tutorials/2017-09-13-degreport-intro-a-tolkit-for-de-analysis/</guid>
+      <description>&lt;h2 id=&#34;video-tutorial&#34;&gt;Video Tutorial&lt;/h2&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/95_kMyzxiVU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.meetup.com/Cambridge-woman-developers-in-bioinformatics/events/242964863/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.meetup.com/Cambridge-woman-developers-in-bioinformatics/events/242964863/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;watch-on-youtube&#34;&gt;Watch on YouTube&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=95_kMyzxiVU&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View on YouTube&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
