@@ -1,0 +1,170 @@
+{{ $item := .item }}
+
+{{/* Dynamic view adjusts to content type. */}}
+{{ $has_attachments := partial "functions/has_attachments" $item }}
+
+{{ $link := $item.RelPermalink }}
+{{ $target := "" }}
+{{ if $item.Params.external_link }}
+  {{ $link = $item.Params.external_link }}
+  {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+{{ end }}
+
+{{/* Get summary. */}}
+{{ $summary := "" }}
+{{ if $item.Params.summary }}
+  {{ $summary = $item.Params.summary | markdownify | emojify }}
+{{ else if $item.Params.abstract }}
+  {{ $summary = $item.Params.abstract | markdownify | emojify }}
+{{ else if $item.Summary }}
+  {{ $summary = $item.Summary }}
+{{ end }}
+
+{{/* Add styles once per page */}}
+{{ if eq .index 0 }}
+<style>
+  .video-card-container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+
+  .video-card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .video-card-video {
+    flex: 0 0 40%;
+    min-width: 300px;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #000;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  @media (max-width: 768px) {
+    .video-card-container {
+      flex-direction: column;
+    }
+
+    .video-card-video {
+      flex: 0 0 auto;
+      min-width: auto;
+    }
+  }
+</style>
+{{ end }}
+
+<div class="card-simple view-card">
+
+  {{ if eq $item.Type "event" }}
+  <div class="article-metadata">
+    {{ if $item.Params.authors }}
+    <div>
+      {{ partial "page_metadata_authors" $item }}
+    </div>
+    {{ end }}
+    <span>
+      {{ partial "functions/get_event_dates" $item }}
+    </span>
+    {{ with $item.Params.location }}
+    <span class="middot-divider"></span>
+    <span>{{ . }}</span>
+    {{ end }}
+  </div>
+  {{ else }}
+    {{ partial "page_metadata" (dict "page" $item "is_list" 1) }}
+  {{ end }}
+
+  {{/* Display two-column layout for tutorials with video metadata */}}
+  {{ if and (eq $item.Type "tutorial") $item.Params.video.youtube }}
+    <div class="video-card-container">
+      <div class="video-card-content">
+        <div>
+          <div class="section-subheading article-title mb-1">
+            <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
+          </div>
+
+          {{ with $summary }}
+          <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="summary-link">
+            <div class="article-style">
+              <p>{{.}}</p>
+            </div>
+          </a>
+          {{ end }}
+        </div>
+
+        {{ if $has_attachments }}
+        <div class="btn-links mt-3">
+          {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+        </div>
+        {{ end }}
+      </div>
+
+      <div class="video-card-video">
+        <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/{{ $item.Params.video.youtube }}"
+              title="{{ $item.Title }}"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+        </a>
+      </div>
+    </div>
+  {{ else }}
+    {{/* Display featured image for non-video content */}}
+    {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
+    {{ $anchor := $item.Params.image.focal_point | default "Smart" }}
+    {{ with $resource }}
+      {{ $image := .Fill (printf "808x455 %s" $anchor) }}
+      {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+      <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>
+        <div class="img-hover-zoom">
+          <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
+              class="article-banner" alt="{{ $item.Title }}" loading="lazy">
+        </div>
+      </a>
+    {{end}}
+
+    <div class="section-subheading article-title mb-1 mt-3">
+      <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
+    </div>
+
+    {{ with $summary }}
+    <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="summary-link">
+      <div class="article-style">
+        <p>{{.}}</p>
+      </div>
+    </a>
+    {{ end }}
+
+    {{ if $has_attachments }}
+    <div class="btn-links">
+      {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+    </div>
+    {{ end }}
+  {{ end }}
+
+</div>

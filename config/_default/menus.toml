@@ -14,7 +14,7 @@
   weight = 20
 
 [[main]]
-  name = "Tutorials (Coming Soon)"
+  name = "Videos"
   url = "/tutorials/"
   weight = 30
 
