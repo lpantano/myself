@@ -1,0 +1,92 @@
+[
+  {
+    "id": "YZry3CwDwAw",
+    "title": "Systematic Paper Reviews with Claude Custom Commands/Skills",
+    "description": "Reviewing 100+ papers for Health Integrity Project taught me: consistency beats speed. Custom AI commands now run identical evaluations every time—same conflict checks, same quality criteria, same workflow.\n\nResult: 30min reviews, zero missed steps, reproducible standards. Works for any systematic workflow you repeat.\n\nhttps://decodingdata.substack.com/p/systematic-paper-reviews-with-claude",
+    "published_at": "2026-01-28T22:20:16Z",
+    "thumbnail": "https://i.ytimg.com/vi/YZry3CwDwAw/hqdefault.jpg",
+    "duration": "PT9M44S",
+    "view_count": "20",
+    "like_count": "0"
+  },
+  {
+    "id": "eWHCsjd30_A",
+    "title": "Bringing IGV webapp to Your Cloud Workspace in Seqera",
+    "description": "Read Post: https://lpantano.github.io/post/2026/2026-01-16-igv-cloud-visualization/\nSubscribe: https://decodingdata.substack.com/s/data-at-scale\n\nYou just ran a genomic pipeline that generated 50GB of BAM files in the cloud. Now you need to check alignment quality. Do you really have to download everything to run IGV locally? Switch virtual machines to load the files? Write code to generate static visuals?\n\nThis integration brings IGV directly to your cloud workspace with automatic track discovery. It scans your storage, finds all genomic files, and presents them in a ready-to-load menu. No downloads, no file paths, no manual configuration.",
+    "published_at": "2026-01-21T21:42:07Z",
+    "thumbnail": "https://i.ytimg.com/vi/eWHCsjd30_A/hqdefault.jpg",
+    "duration": "PT3M27S",
+    "view_count": "43",
+    "like_count": "1"
+  },
+  {
+    "id": "4L1Ypc-KkYc",
+    "title": "WLD E6 AI for Interviews",
+    "description": "Job searching is already exhausting enough without spending hours customizing every application, researching every company, and second-guessing every follow-up email.\n\nSo in this video, we're diving into something really practical: how to use AI as your personal interview prep assistant.\n\nLorena interviews Lina about her AI-powered process—from the moment she sees a job posting to after the interview is over. This isn't theoretical advice. These are the actual strategies Lina is using right now during her active job search to:\n\n✅ Cut application prep time from an hour to 20 minutes\n✅ Show up to interviews with strategic questions tailored to each specific interviewer\n✅ Research companies and roles more thoroughly than anyone could manually\n✅ Process interview feedback and build professional networks systematically",
+    "published_at": "2026-01-10T20:24:14Z",
+    "thumbnail": "https://i.ytimg.com/vi/4L1Ypc-KkYc/hqdefault.jpg",
+    "duration": "PT9M5S",
+    "view_count": "0",
+    "like_count": "0"
+  },
+  {
+    "id": "sjw0bceAHB0",
+    "title": "WLD E5 Bioinformatics Interviews Decoded",
+    "description": "Hey everyone!\n\nLorena and I just finished recording something we WISH we'd had when we were starting out: a comprehensive guide to nailing bioinformatics interviews for junior to intermediate roles.\n\nHere's the thing: bioinformatics interviews are uniquely challenging because you're expected to demonstrate expertise across multiple domains—biology, computer science, AND statistics—while also proving you can communicate clearly across all of them. It's a lot. And most people prepare by trying to memorize every tool and algorithm, which honestly isn't what interviewers are looking for.",
+    "published_at": "2026-01-10T20:23:43Z",
+    "thumbnail": "https://i.ytimg.com/vi/sjw0bceAHB0/hqdefault.jpg",
+    "duration": "PT14M11S",
+    "view_count": "3",
+    "like_count": "0"
+  },
+  {
+    "id": "ACNYplq3o_A",
+    "title": "WLD E4 Amplifying Minorities",
+    "description": "Allyship isn't passive—it requires specific, intentional actions in the moments that matter.\n\nIn this video, Lorena and I break down the practical strategies for amplifying underrepresented voices in professional settings. We're talking about real, in-the-moment tactics you can use:\n\n✅ How to redirect attention when good ideas get talked over\n✅ Strategic ways to prep colleagues before high-stakes meetings\n✅ What to say (exactly) when you need to create space for others\n✅ How to use your social capital without being performative\n\nThis isn't about grand gestures—it's about the small, consistent actions that actually move the needle. Whether you're in a position of privilege or you're figuring out how to advocate for yourself, these strategies work.\n\nAs always, your support makes this content possible. Thanks for being here.\n\nLina & Lorena",
+    "published_at": "2026-01-10T20:22:52Z",
+    "thumbnail": "https://i.ytimg.com/vi/ACNYplq3o_A/hqdefault.jpg",
+    "duration": "PT3M17S",
+    "view_count": "0",
+    "like_count": "0"
+  },
+  {
+    "id": "TEd7Ri5PNXk",
+    "title": "WLD 3 Understanding Your Managers World",
+    "description": "Most of us learned how to do our jobs, but nobody taught us how to actually work with our managers. And here's the thing: your relationship with your manager can be the difference between feeling stuck and advancing your career – but only if you understand what's really going on in their world.\n\nThis video flips the script on how you think about your manager. Instead of seeing them as someone who just assigns tasks or approves time off, we're showing you how to think of them as your business partner. Because when you understand their pressures, priorities, and what success looks like for them, you can position yourself as someone who makes their life easier – and that's when doors start opening for you.\n\nLina & Lorena",
+    "published_at": "2026-01-10T20:21:45Z",
+    "thumbnail": "https://i.ytimg.com/vi/TEd7Ri5PNXk/hqdefault.jpg",
+    "duration": "PT3M40S",
+    "view_count": "0",
+    "like_count": "0"
+  },
+  {
+    "id": "ZHP3i7Zvmnc",
+    "title": "WLD 2 Workplace Negativity",
+    "description": "You know that colleague who turns every conversation into a complaint session? Or the team meeting that devolves into gossip and finger-pointing?\n\nWe've all been there. And here's what nobody tells you: you don't have to fix it, but you do need a strategy to handle it.\n\nIn this video, we break down:\n\nWhy you're not responsible for being everyone's emotional dumping ground\n\nThe 3-step framework for handling chronic complainers (without being dismissive)\n\nHow to redirect gossip and drama toward actual solutions\n\nThe language that transforms negative energy in real-time\n\nHow to set boundaries that protect your own mental space\n\nThe reality? Negativity spreads like wildfire in workplaces. But the good news is that positivity is just as contagious—when you know how to lead it.\n\nThis isn't about toxic positivity or pretending problems don't exist. It's about separating legitimate work issues from drama, and knowing exactly what to say when someone starts spiraling.\n\n—Lina & Lorena",
+    "published_at": "2026-01-10T20:19:25Z",
+    "thumbnail": "https://i.ytimg.com/vi/ZHP3i7Zvmnc/hqdefault.jpg",
+    "duration": "PT3M4S",
+    "view_count": "0",
+    "like_count": "0"
+  },
+  {
+    "id": "98FNU1ul_Iw",
+    "title": "WLD 1   Weekly Log",
+    "description": "Welcome to our first episode! Today we're diving into something that sounds deceptively simple but is genuinely career-changing: keeping a weekly log of your wins and quantifying your achievements. This isn't just for performance review season (though it's a lifesaver then) – it's your secret weapon for fighting imposter syndrome, building an impressive resume, and having concrete evidence ready when it's time to negotiate that raise. Five minutes every Friday. That's all it takes.\n\nWe've created a one-page Quick Reference Guide (download below!) that you can print and keep at your desk. It covers why this matters, what to log, how to quantify your impact with real before/after examples, and practical setup tips. No more scrambling to remember what you accomplished six months ago. No more underselling yourself because you forgot the numbers. Just a simple habit that pays dividends for years to come.\n\nWatch the video, grab your guide, and start your first weekly win log this Friday. Seriously – set that 5-minute calendar reminder right now. Your future self (especially the one negotiating salary or updating their resume) will thank you. Drop a comment and let us know what system you're using – Notion? Google Doc? Notes app? We'd love to hear what works for you!\n\nHappy logging! 📊 – Lorena & Lina",
+    "published_at": "2026-01-10T20:17:57Z",
+    "thumbnail": "https://i.ytimg.com/vi/98FNU1ul_Iw/hqdefault.jpg",
+    "duration": "PT3M3S",
+    "view_count": "0",
+    "like_count": "0"
+  },
+  {
+    "id": "95_kMyzxiVU",
+    "title": "DEGreport intro: a tolkit for DE analysis",
+    "description": "https://www.meetup.com/Cambridge-woman-developers-in-bioinformatics/events/242964863/",
+    "published_at": "2017-09-13T13:50:51Z",
+    "thumbnail": "https://i.ytimg.com/vi/95_kMyzxiVU/hqdefault.jpg",
+    "duration": "PT1H4M50S",
+    "view_count": "161",
+    "like_count": "3"
+  }
+]
