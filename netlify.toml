@@ -1,5 +1,5 @@
 [build]
-  command = "hugo --gc --minify -b $URL"
+  command = "hugo mod get -u && hugo --gc --minify -b $URL"
   publish = "public"
   image = "ubuntu22"
 
@@ -13,10 +13,10 @@
   HUGO_ENV = "production"
 
 [context.deploy-preview]
-  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+  command = "hugo mod get -u && hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+  command = "hugo mod get -u && hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [[headers]]
   for = "*.webmanifest"
