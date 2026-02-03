@@ -5,3 +5,6 @@
 /resources/
 public/
 tmp/
+
+
+.env
