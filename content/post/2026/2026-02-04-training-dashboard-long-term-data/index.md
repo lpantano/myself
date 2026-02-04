@@ -1,4 +1,32 @@
-# Why I Built My Own Running Dashboard
+---
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
+title: "Why I Built My Own Running Dashboard"
+subtitle: "Fitness apps show weekly summaries but miss the real story"
+summary: "Fitness apps show weekly summaries but miss the real story. I built a dashboard to track months of running data and discovered what actually drives progress."
+authors: []
+tags: ["data-visualization", "fitness-tracking", "python", "react", "open-source", "training-analytics"]
+categories: ["Data in Your Life"]
+date: 2026-02-04T12:00:00-04:00
+lastmod: 2026-02-04T12:00:00-04:00
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
+---
 
 Your watch buzzes. "Congratulations on your fastest 5K this month!"
 
@@ -106,7 +134,7 @@ The difference matters when you need a push to get out the door.
 
 Apps want you to check daily.
 
-Real fitness happens slowly. 
+Real fitness happens slowly.
 
 The monthly view shows what daily anxiety misses: whether your training is actually working.
 
