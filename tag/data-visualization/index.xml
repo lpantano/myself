@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data-Visualization | My bits</title>
+    <link>http://lpantano.github.io/tag/data-visualization/</link>
+      <atom:link href="http://lpantano.github.io/tag/data-visualization/index.xml" rel="self" type="application/rss+xml" />
+    <description>Data-Visualization</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 04 Feb 2026 12:00:00 -0400</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
+      <title>Data-Visualization</title>
+      <link>http://lpantano.github.io/tag/data-visualization/</link>
+    </image>
+    
+    <item>
+      <title>Why I Built My Own Running Dashboard</title>
+      <link>http://lpantano.github.io/post/2026/2026-02-04-training-dashboard-long-term-data/</link>
+      <pubDate>Wed, 04 Feb 2026 12:00:00 -0400</pubDate>
+      <guid>http://lpantano.github.io/post/2026/2026-02-04-training-dashboard-long-term-data/</guid>
+      <description>&lt;p&gt;Your watch buzzes. &amp;ldquo;Congratulations on your fastest 5K this month!&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;But you don&amp;rsquo;t feel faster. And last month, you had three &amp;ldquo;fastest&amp;rdquo; runs that contradicted each other.&lt;/p&gt;
+&lt;p&gt;I kept getting these notifications. Weekly summaries told me I was improving. Or declining. Or both, depending on which metric the app decided mattered that week.&lt;/p&gt;
+&lt;p&gt;The numbers existed. But they meant nothing without context.&lt;/p&gt;
+&lt;p&gt;So I built my own dashboard to see what was actually happening.&lt;/p&gt;
+&lt;p&gt;Take a &lt;a href=&#34;https://run-training-activities.netlify.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;look&lt;/a&gt; ➡️.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/2026/2026-02-04-training-dashboard-long-term-data/webapp_hu_3a375238f7aa5c96.webp 400w,
+               /post/2026/2026-02-04-training-dashboard-long-term-data/webapp_hu_2c890dc1d0215c52.webp 760w,
+               /post/2026/2026-02-04-training-dashboard-long-term-data/webapp_hu_de8eff785ab2dcbf.webp 1200w&#34;
+               src=&#34;http://lpantano.github.io/post/2026/2026-02-04-training-dashboard-long-term-data/webapp_hu_3a375238f7aa5c96.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;543&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;the-problem-with-fitness-apps&#34;&gt;The Problem With Fitness Apps&lt;/h2&gt;
+&lt;p&gt;Fitness apps celebrate individual achievements. A personal record. A streak maintained. A badge earned.&lt;/p&gt;
+&lt;p&gt;They show weekly summaries that create false urgency. Up 10% from last week feels like progress. Down 5% feels like failure.&lt;/p&gt;
+&lt;p&gt;But fitness doesn&amp;rsquo;t work on weekly cycles. Your body adapts over months, not days, or even years.&lt;/p&gt;
+&lt;p&gt;Individual run metrics mean nothing without seeing the bigger picture over time. Context matters more than numbers.&lt;/p&gt;
+&lt;h2 id=&#34;what-i-wanted&#34;&gt;What I Wanted&lt;/h2&gt;
+&lt;p&gt;I started following a structured training program (&lt;a href=&#34;https://tacticmethod.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tactic Method&lt;/a&gt; with coach Alex Parker). Run-walk intervals. Progressive distance. Specific pace targets.&lt;/p&gt;
+&lt;p&gt;I wanted to answer one question: Is this structured approach actually working?&lt;/p&gt;
+&lt;p&gt;Not based on how I felt after one run. Not based on weekly summaries that changed with the weather.&lt;/p&gt;
+&lt;p&gt;Based on months of data showing whether the effort was producing results.&lt;/p&gt;
+&lt;p&gt;And I wanted to own my data. Not pay for premium features to see insights about my own body—insights I can&amp;rsquo;t even fully control.&lt;/p&gt;
+&lt;h2 id=&#34;what-i-built&#34;&gt;What I Built&lt;/h2&gt;
+&lt;p&gt;I created a dashboard that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Downloads my Garmin FIT files automatically&lt;/li&gt;
+&lt;li&gt;Tracks time, distance, pace, and heart rate across all runs&lt;/li&gt;
+&lt;li&gt;Visualizes trends over months with run/walk intervals separated&lt;/li&gt;
+&lt;li&gt;Shows training events and phases marked on the timeline&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The technical stack: Python for data extraction, React with Plotly for visualization. I&amp;rsquo;m a scientist who codes for data analysis, so I adapted familiar tools to a new domain.&lt;/p&gt;
+&lt;p&gt;Not a polished product. A working tool to see patterns.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/2026/2026-02-04-training-dashboard-long-term-data/metrics_hu_632b96230d8a9ed6.webp 400w,
+               /post/2026/2026-02-04-training-dashboard-long-term-data/metrics_hu_586167745dfa751.webp 760w,
+               /post/2026/2026-02-04-training-dashboard-long-term-data/metrics_hu_71b63463b86c6d31.webp 1200w&#34;
+               src=&#34;http://lpantano.github.io/post/2026/2026-02-04-training-dashboard-long-term-data/metrics_hu_632b96230d8a9ed6.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;193&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/2026/2026-02-04-training-dashboard-long-term-data/distance_hu_9442ee62987aafe9.webp 400w,
+               /post/2026/2026-02-04-training-dashboard-long-term-data/distance_hu_a36f3d558ee0d40b.webp 760w,
+               /post/2026/2026-02-04-training-dashboard-long-term-data/distance_hu_b1fd87df8d09bd7a.webp 1200w&#34;
+               src=&#34;http://lpantano.github.io/post/2026/2026-02-04-training-dashboard-long-term-data/distance_hu_9442ee62987aafe9.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;421&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;what-i-learned&#34;&gt;What I Learned&lt;/h2&gt;
+&lt;h3 id=&#34;1-numbers-without-context-are-noise&#34;&gt;1. Numbers Without Context Are Noise&lt;/h3&gt;
+&lt;p&gt;That &amp;ldquo;slow&amp;rdquo; run last Tuesday? Probably faster than any run you did six months ago.&lt;/p&gt;
+&lt;p&gt;Your watch tells you about one data point. The dashboard shows whether that point is part of an upward trend, a plateau, or normal variation.&lt;/p&gt;
+&lt;p&gt;Single metrics mean nothing. Patterns over time mean everything.&lt;/p&gt;
+&lt;h3 id=&#34;2-week-to-week-progress-is-a-myth&#34;&gt;2. Week-to-Week Progress Is a Myth&lt;/h3&gt;
+&lt;p&gt;My data revealed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Big improvements at first&lt;/li&gt;
+&lt;li&gt;Some plateauing for a while&lt;/li&gt;
+&lt;li&gt;A hard time after an injury&lt;/li&gt;
+&lt;li&gt;Overall, still improving&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Apps want you to believe weekly progress is linear. The data shows it&amp;rsquo;s messy, inconsistent, and happens in waves.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pmc.ncbi.nlm.nih.gov/articles/PMC6492765/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Research shows&lt;/a&gt; that structured training produces measurable improvements at 12-week intervals. Not weekly. Not even monthly in most cases.&lt;/p&gt;
+&lt;p&gt;Week-to-week numbers are all over the place. That&amp;rsquo;s normal. That&amp;rsquo;s adaptation.&lt;/p&gt;
+&lt;h3 id=&#34;3-structured-training-shows-up-in-data&#34;&gt;3. Structured Training Shows Up in Data&lt;/h3&gt;
+&lt;p&gt;When I started following the Tactic Method program, I could see the changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Distance trend line slope increased&lt;/li&gt;
+&lt;li&gt;Run and walk interval paces became more consistent&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Not after one week. After months.&lt;/p&gt;
+&lt;p&gt;It is said that structured, periodized training programs are more effective than unstructured running.&lt;/p&gt;
+&lt;p&gt;My data matched this.&lt;/p&gt;
+&lt;h3 id=&#34;4-seeing-accumulation-keeps-you-going&#34;&gt;4. Seeing Accumulation Keeps You Going&lt;/h3&gt;
+&lt;p&gt;This was the unexpected benefit.&lt;/p&gt;
+&lt;p&gt;The most powerful insight wasn&amp;rsquo;t about trends or training effectiveness. It was seeing the pile of work already done.&lt;/p&gt;
+&lt;p&gt;When energy is low and motivation fades, the dashboard doesn&amp;rsquo;t show a streak to maintain or a goal to chase. It shows months of accumulated effort. I&amp;rsquo;m at 210.6 kWh—I could power approximately 80–100 homes (maybe not at -20 °C; if you know what I&amp;rsquo;m talking about, I&amp;rsquo;m sorry; if not, you&amp;rsquo;re lucky).&lt;/p&gt;
+&lt;p&gt;Evidence: you&amp;rsquo;ve already done this much. You can keep going.&lt;/p&gt;
+&lt;p&gt;Apps celebrate streaks because they want daily engagement. This celebrates accumulation because it shows long-term commitment.&lt;/p&gt;
+&lt;p&gt;The difference matters when you need a push to get out the door.&lt;/p&gt;
+&lt;h3 id=&#34;5-you-can-trust-the-long-game&#34;&gt;5. You Can Trust the Long Game&lt;/h3&gt;
+&lt;p&gt;Apps want you to check daily.&lt;/p&gt;
+&lt;p&gt;Real fitness happens slowly.&lt;/p&gt;
+&lt;p&gt;The monthly view shows what daily anxiety misses: whether your training is actually working.&lt;/p&gt;
+&lt;h2 id=&#34;how-you-can-do-this&#34;&gt;How You Can Do This&lt;/h2&gt;
+&lt;p&gt;Not a full tutorial, but guidance:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Want help?&lt;/strong&gt; If you have Garmin data and want something similar, reach out. I&amp;rsquo;m offering to help set this up for others who want to see their training in context.&lt;/p&gt;
+&lt;p&gt;Yes, there&amp;rsquo;s technical setup. But between AI tools and my offer to help, you have support to figure it out.&lt;/p&gt;
+&lt;h3 id=&#34;get-your-data&#34;&gt;Get Your Data&lt;/h3&gt;
+&lt;p&gt;Garmin lets you download FIT files from your activities. These contain all the metrics your watch records during runs.&lt;/p&gt;
+&lt;h3 id=&#34;choose-your-tools&#34;&gt;Choose Your Tools&lt;/h3&gt;
+&lt;p&gt;I used Python and React because I&amp;rsquo;m comfortable with data analysis. But tools don&amp;rsquo;t matter as much as seeing patterns.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re not comfortable with code, AI tools like Claude or GitHub Copilot can bridge the gap. They can explain code, suggest modifications, and help you troubleshoot errors.&lt;/p&gt;
+&lt;p&gt;The goal is visualization, not perfection.&lt;/p&gt;
+&lt;h3 id=&#34;start-simple&#34;&gt;Start Simple&lt;/h3&gt;
+&lt;p&gt;Pick one metric that matters to you. Distance. Pace. Heart rate. Track it over time.&lt;/p&gt;
+&lt;p&gt;Don&amp;rsquo;t try to build everything at once.&lt;/p&gt;
+&lt;h3 id=&#34;be-patient&#34;&gt;Be Patient&lt;/h3&gt;
+&lt;p&gt;You need months of data to see meaningful trends. Three months minimum. Six months better.&lt;/p&gt;
+&lt;p&gt;This isn&amp;rsquo;t an instant gratification project.&lt;/p&gt;
+&lt;h3 id=&#34;use-my-code-as-a-starting-point&#34;&gt;Use My Code as a Starting Point&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;ve shared the project on &lt;a href=&#34;https://github.com/lpantano/run-training-dashboard&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;. It&amp;rsquo;s not a finished product. It&amp;rsquo;s a foundation you can customize.&lt;/p&gt;
+&lt;h3 id=&#34;ai-tools-can-help&#34;&gt;AI Tools Can Help&lt;/h3&gt;
+&lt;p&gt;Don&amp;rsquo;t let the code intimidate you. Tools like Claude or GitHub Copilot can help you understand and modify the code.&lt;/p&gt;
+&lt;p&gt;Ask them: &amp;ldquo;Explain what this function does.&amp;rdquo; Or: &amp;ldquo;How do I change this to track weekly averages instead of daily runs?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;These AI assistants make working with code more accessible. You don&amp;rsquo;t need to be a programmer to adapt this dashboard to your needs.&lt;/p&gt;
+&lt;h2 id=&#34;the-real-insight&#34;&gt;The Real Insight&lt;/h2&gt;
+&lt;p&gt;Fitness apps are designed to keep you engaged daily. Your body improves monthly.&lt;/p&gt;
+&lt;p&gt;The best training insight isn&amp;rsquo;t from one run. It&amp;rsquo;s from seeing six months of context that reveals whether your effort is actually working.&lt;/p&gt;
+&lt;p&gt;And when motivation dips, it&amp;rsquo;s not another badge you need. It&amp;rsquo;s seeing the work you&amp;rsquo;ve already accumulated.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s what keeps you going.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;try-it-yourself&#34;&gt;Try It Yourself&lt;/h2&gt;
+&lt;p&gt;Start by exporting your own data and looking at it. Not through an app&amp;rsquo;s filtered view. Just the raw patterns over time.&lt;/p&gt;
+&lt;p&gt;What might you discover in your own training?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Project Repository&lt;/strong&gt;: &lt;a href=&#34;https://github.com/lpantano/run-training-dashboard&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;run-training-dashboard&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Want help setting this up?&lt;/strong&gt; Contact me through &lt;a href=&#34;https://www.instagram.com/lorena.pantano/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Instagram&lt;/a&gt; or my &lt;a href=&#34;https://www.linkedin.com/in/lpantano/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

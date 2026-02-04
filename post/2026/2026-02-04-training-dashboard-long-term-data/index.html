@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: February 4, 2026 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.17ed658cdb0bf2fb0768cb75334dcc1c.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+<meta name="description" content="Fitness apps show weekly summaries but miss the real story. I built a dashboard to track months of running data and discovered what actually drives progress." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="http://lpantano.github.io/post/2026/2026-02-04-training-dashboard-long-term-data/" />
+<link rel="canonical" href="http://lpantano.github.io/post/2026/2026-02-04-training-dashboard-long-term-data/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu_6ba9f341fba7588.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu_f016f6a28e4542.png" />
+
+<meta name="theme-color" content="#457B9D" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:image" content="http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="My bits" />
+<meta property="og:url" content="http://lpantano.github.io/post/2026/2026-02-04-training-dashboard-long-term-data/" />
+<meta property="og:title" content="Why I Built My Own Running Dashboard | My bits" />
+<meta property="og:description" content="Fitness apps show weekly summaries but miss the real story. I built a dashboard to track months of running data and discovered what actually drives progress." /><meta property="og:image" content="http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2026-02-04T12:00:00-04:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2026-02-04T12:00:00-04:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://lpantano.github.io/post/2026/2026-02-04-training-dashboard-long-term-data/"
+  },
+  "headline": "Why I Built My Own Running Dashboard",
+  
+  "datePublished": "2026-02-04T12:00:00-04:00",
+  "dateModified": "2026-02-04T12:00:00-04:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "My bits",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://lpantano.github.io/media/icon_hu_de15e77181fecba7.png"
+    }
+  },
+  "description": "Fitness apps show weekly summaries but miss the real story. I built a dashboard to track months of running data and discovered what actually drives progress."
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Why I Built My Own Running Dashboard | My bits</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="320d3fde7ae69e3433644a3871883779" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.9efdeed80f3d37db59da84ebeead9552.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">My bits</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">My bits</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Portfolio</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/tutorials/"><span>Videos</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/experience/"><span>Experience</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/post/"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/talk/"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication/"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  
+  
+<div class="newsletter-banner-container" style="background: #ffa640; border-bottom: 2px solid rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 999;">
+  <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0.75rem 1rem;">
+    <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap; text-align: center;">
+      <span style="color: #333; font-weight: 500; font-size: 0.95rem; margin: 0;">
+        📬 Stay updated—subscribe to <strong>Decoding Data</strong>
+      </span>
+      <a class="btn btn-light btn-sm" 
+         style="padding: 0.4rem 1rem; font-weight: 600; border-radius: 20px; border: none; box-shadow: 0 2px 4px rgba(0,0,0,0.2); transition: all 0.2s ease;" 
+         href="https://decodingdata.substack.com/?utm_campaign=pub&utm_medium=web" 
+         target="_blank" 
+         rel="noopener"
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.3)';"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.2)';">
+        Subscribe Now
+      </a>
+    </div>
+  </div>
+</div>
+
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Why I Built My Own Running Dashboard</h1>
+
+  
+  <p class="page-subtitle">Fitness apps show weekly summaries but miss the real story</p>
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Feb 4, 2026
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    5 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/data-in-your-life/">Data in Your Life</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>Your watch buzzes. &ldquo;Congratulations on your fastest 5K this month!&rdquo;</p>
+<p>But you don&rsquo;t feel faster. And last month, you had three &ldquo;fastest&rdquo; runs that contradicted each other.</p>
+<p>I kept getting these notifications. Weekly summaries told me I was improving. Or declining. Or both, depending on which metric the app decided mattered that week.</p>
+<p>The numbers existed. But they meant nothing without context.</p>
+<p>So I built my own dashboard to see what was actually happening.</p>
+<p>Take a <a href="https://run-training-activities.netlify.app/" target="_blank" rel="noopener">look</a> ➡️.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /post/2026/2026-02-04-training-dashboard-long-term-data/webapp_hu_3a375238f7aa5c96.webp 400w,
+               /post/2026/2026-02-04-training-dashboard-long-term-data/webapp_hu_2c890dc1d0215c52.webp 760w,
+               /post/2026/2026-02-04-training-dashboard-long-term-data/webapp_hu_de8eff785ab2dcbf.webp 1200w"
+               src="/post/2026/2026-02-04-training-dashboard-long-term-data/webapp_hu_3a375238f7aa5c96.webp"
+               width="760"
+               height="543"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="the-problem-with-fitness-apps">The Problem With Fitness Apps</h2>
+<p>Fitness apps celebrate individual achievements. A personal record. A streak maintained. A badge earned.</p>
+<p>They show weekly summaries that create false urgency. Up 10% from last week feels like progress. Down 5% feels like failure.</p>
+<p>But fitness doesn&rsquo;t work on weekly cycles. Your body adapts over months, not days, or even years.</p>
+<p>Individual run metrics mean nothing without seeing the bigger picture over time. Context matters more than numbers.</p>
+<h2 id="what-i-wanted">What I Wanted</h2>
+<p>I started following a structured training program (<a href="https://tacticmethod.com" target="_blank" rel="noopener">Tactic Method</a> with coach Alex Parker). Run-walk intervals. Progressive distance. Specific pace targets.</p>
+<p>I wanted to answer one question: Is this structured approach actually working?</p>
+<p>Not based on how I felt after one run. Not based on weekly summaries that changed with the weather.</p>
+<p>Based on months of data showing whether the effort was producing results.</p>
+<p>And I wanted to own my data. Not pay for premium features to see insights about my own body—insights I can&rsquo;t even fully control.</p>
+<h2 id="what-i-built">What I Built</h2>
+<p>I created a dashboard that:</p>
+<ul>
+<li>Downloads my Garmin FIT files automatically</li>
+<li>Tracks time, distance, pace, and heart rate across all runs</li>
+<li>Visualizes trends over months with run/walk intervals separated</li>
+<li>Shows training events and phases marked on the timeline</li>
+</ul>
+<p>The technical stack: Python for data extraction, React with Plotly for visualization. I&rsquo;m a scientist who codes for data analysis, so I adapted familiar tools to a new domain.</p>
+<p>Not a polished product. A working tool to see patterns.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /post/2026/2026-02-04-training-dashboard-long-term-data/metrics_hu_632b96230d8a9ed6.webp 400w,
+               /post/2026/2026-02-04-training-dashboard-long-term-data/metrics_hu_586167745dfa751.webp 760w,
+               /post/2026/2026-02-04-training-dashboard-long-term-data/metrics_hu_71b63463b86c6d31.webp 1200w"
+               src="/post/2026/2026-02-04-training-dashboard-long-term-data/metrics_hu_632b96230d8a9ed6.webp"
+               width="760"
+               height="193"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /post/2026/2026-02-04-training-dashboard-long-term-data/distance_hu_9442ee62987aafe9.webp 400w,
+               /post/2026/2026-02-04-training-dashboard-long-term-data/distance_hu_a36f3d558ee0d40b.webp 760w,
+               /post/2026/2026-02-04-training-dashboard-long-term-data/distance_hu_b1fd87df8d09bd7a.webp 1200w"
+               src="/post/2026/2026-02-04-training-dashboard-long-term-data/distance_hu_9442ee62987aafe9.webp"
+               width="760"
+               height="421"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="what-i-learned">What I Learned</h2>
+<h3 id="1-numbers-without-context-are-noise">1. Numbers Without Context Are Noise</h3>
+<p>That &ldquo;slow&rdquo; run last Tuesday? Probably faster than any run you did six months ago.</p>
+<p>Your watch tells you about one data point. The dashboard shows whether that point is part of an upward trend, a plateau, or normal variation.</p>
+<p>Single metrics mean nothing. Patterns over time mean everything.</p>
+<h3 id="2-week-to-week-progress-is-a-myth">2. Week-to-Week Progress Is a Myth</h3>
+<p>My data revealed:</p>
+<ul>
+<li>Big improvements at first</li>
+<li>Some plateauing for a while</li>
+<li>A hard time after an injury</li>
+<li>Overall, still improving</li>
+</ul>
+<p>Apps want you to believe weekly progress is linear. The data shows it&rsquo;s messy, inconsistent, and happens in waves.</p>
+<p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6492765/" target="_blank" rel="noopener">Research shows</a> that structured training produces measurable improvements at 12-week intervals. Not weekly. Not even monthly in most cases.</p>
+<p>Week-to-week numbers are all over the place. That&rsquo;s normal. That&rsquo;s adaptation.</p>
+<h3 id="3-structured-training-shows-up-in-data">3. Structured Training Shows Up in Data</h3>
+<p>When I started following the Tactic Method program, I could see the changes:</p>
+<ul>
+<li>Distance trend line slope increased</li>
+<li>Run and walk interval paces became more consistent</li>
+</ul>
+<p>Not after one week. After months.</p>
+<p>It is said that structured, periodized training programs are more effective than unstructured running.</p>
+<p>My data matched this.</p>
+<h3 id="4-seeing-accumulation-keeps-you-going">4. Seeing Accumulation Keeps You Going</h3>
+<p>This was the unexpected benefit.</p>
+<p>The most powerful insight wasn&rsquo;t about trends or training effectiveness. It was seeing the pile of work already done.</p>
+<p>When energy is low and motivation fades, the dashboard doesn&rsquo;t show a streak to maintain or a goal to chase. It shows months of accumulated effort. I&rsquo;m at 210.6 kWh—I could power approximately 80–100 homes (maybe not at -20 °C; if you know what I&rsquo;m talking about, I&rsquo;m sorry; if not, you&rsquo;re lucky).</p>
+<p>Evidence: you&rsquo;ve already done this much. You can keep going.</p>
+<p>Apps celebrate streaks because they want daily engagement. This celebrates accumulation because it shows long-term commitment.</p>
+<p>The difference matters when you need a push to get out the door.</p>
+<h3 id="5-you-can-trust-the-long-game">5. You Can Trust the Long Game</h3>
+<p>Apps want you to check daily.</p>
+<p>Real fitness happens slowly.</p>
+<p>The monthly view shows what daily anxiety misses: whether your training is actually working.</p>
+<h2 id="how-you-can-do-this">How You Can Do This</h2>
+<p>Not a full tutorial, but guidance:</p>
+<p><strong>Want help?</strong> If you have Garmin data and want something similar, reach out. I&rsquo;m offering to help set this up for others who want to see their training in context.</p>
+<p>Yes, there&rsquo;s technical setup. But between AI tools and my offer to help, you have support to figure it out.</p>
+<h3 id="get-your-data">Get Your Data</h3>
+<p>Garmin lets you download FIT files from your activities. These contain all the metrics your watch records during runs.</p>
+<h3 id="choose-your-tools">Choose Your Tools</h3>
+<p>I used Python and React because I&rsquo;m comfortable with data analysis. But tools don&rsquo;t matter as much as seeing patterns.</p>
+<p>If you&rsquo;re not comfortable with code, AI tools like Claude or GitHub Copilot can bridge the gap. They can explain code, suggest modifications, and help you troubleshoot errors.</p>
+<p>The goal is visualization, not perfection.</p>
+<h3 id="start-simple">Start Simple</h3>
+<p>Pick one metric that matters to you. Distance. Pace. Heart rate. Track it over time.</p>
+<p>Don&rsquo;t try to build everything at once.</p>
+<h3 id="be-patient">Be Patient</h3>
+<p>You need months of data to see meaningful trends. Three months minimum. Six months better.</p>
+<p>This isn&rsquo;t an instant gratification project.</p>
+<h3 id="use-my-code-as-a-starting-point">Use My Code as a Starting Point</h3>
+<p>I&rsquo;ve shared the project on <a href="https://github.com/lpantano/run-training-dashboard" target="_blank" rel="noopener">GitHub</a>. It&rsquo;s not a finished product. It&rsquo;s a foundation you can customize.</p>
+<h3 id="ai-tools-can-help">AI Tools Can Help</h3>
+<p>Don&rsquo;t let the code intimidate you. Tools like Claude or GitHub Copilot can help you understand and modify the code.</p>
+<p>Ask them: &ldquo;Explain what this function does.&rdquo; Or: &ldquo;How do I change this to track weekly averages instead of daily runs?&rdquo;</p>
+<p>These AI assistants make working with code more accessible. You don&rsquo;t need to be a programmer to adapt this dashboard to your needs.</p>
+<h2 id="the-real-insight">The Real Insight</h2>
+<p>Fitness apps are designed to keep you engaged daily. Your body improves monthly.</p>
+<p>The best training insight isn&rsquo;t from one run. It&rsquo;s from seeing six months of context that reveals whether your effort is actually working.</p>
+<p>And when motivation dips, it&rsquo;s not another badge you need. It&rsquo;s seeing the work you&rsquo;ve already accumulated.</p>
+<p>That&rsquo;s what keeps you going.</p>
+<hr>
+<h2 id="try-it-yourself">Try It Yourself</h2>
+<p>Start by exporting your own data and looking at it. Not through an app&rsquo;s filtered view. Just the raw patterns over time.</p>
+<p>What might you discover in your own training?</p>
+<p><strong>Project Repository</strong>: <a href="https://github.com/lpantano/run-training-dashboard" target="_blank" rel="noopener">run-training-dashboard</a></p>
+<p><strong>Want help setting this up?</strong> Contact me through <a href="https://www.instagram.com/lorena.pantano/" target="_blank" rel="noopener">Instagram</a> or my <a href="https://www.linkedin.com/in/lpantano/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/data-visualization/">Data-Visualization</a>
+  
+  <a class="badge badge-light" href="/tag/fitness-tracking/">Fitness-Tracking</a>
+  
+  <a class="badge badge-light" href="/tag/python/">Python</a>
+  
+  <a class="badge badge-light" href="/tag/react/">React</a>
+  
+  <a class="badge badge-light" href="/tag/open-source/">Open-Source</a>
+  
+  <a class="badge badge-light" href="/tag/training-analytics/">Training-Analytics</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flpantano.github.io%2Fpost%2F2026%2F2026-02-04-training-dashboard-long-term-data%2F&amp;text=Why&#43;I&#43;Built&#43;My&#43;Own&#43;Running&#43;Dashboard" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flpantano.github.io%2Fpost%2F2026%2F2026-02-04-training-dashboard-long-term-data%2F&amp;t=Why&#43;I&#43;Built&#43;My&#43;Own&#43;Running&#43;Dashboard" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Why%20I%20Built%20My%20Own%20Running%20Dashboard&amp;body=http%3A%2F%2Flpantano.github.io%2Fpost%2F2026%2F2026-02-04-training-dashboard-long-term-data%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flpantano.github.io%2Fpost%2F2026%2F2026-02-04-training-dashboard-long-term-data%2F&amp;title=Why&#43;I&#43;Built&#43;My&#43;Own&#43;Running&#43;Dashboard" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Why&#43;I&#43;Built&#43;My&#43;Own&#43;Running&#43;Dashboard%20http%3A%2F%2Flpantano.github.io%2Fpost%2F2026%2F2026-02-04-training-dashboard-long-term-data%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flpantano.github.io%2Fpost%2F2026%2F2026-02-04-training-dashboard-long-term-data%2F&amp;title=Why&#43;I&#43;Built&#43;My&#43;Own&#43;Running&#43;Dashboard" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="http://lpantano.github.io/"><img class="avatar mr-3 avatar-circle" src="/author/avatar_hu_44c7b90fe395a2f7.jpg" alt=""></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="http://lpantano.github.io/"></a></h5>
+      <h6 class="card-subtitle">Director, Bioinformatics Platform</h6>
+      <p class="card-text">I build tools, visualizations, and platforms that turn genomic data into actionable insights for drug discovery and target identification.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/lpantano/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.co.uk/citations?user=MeQGlRwAAAAJ&amp;hl" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/lpantano" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.6782e3f6a4f06ea4766df038c45ecf40.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.b95a7e109243f29d04930ae8cb49a756.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.69fc52a6dc16aaf1a452cfbb36466dac.js"></script>
+
+
+
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
