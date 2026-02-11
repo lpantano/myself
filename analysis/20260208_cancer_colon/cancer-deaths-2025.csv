@@ -1,0 +1,9 @@
+cancer_type,sex,all_ages,age_15_to_39,age_0_to_49,age_50_to_64,age_65_and_older
+All sites,Male,323900,4710,13270,62310,248320
+All sites,Female,294220,4670,14790,57960,221470
+Colon & rectum,Male,28900,580,2170,8150,18580
+Colon & rectum,Female,24000,430,1640,5280,17080
+Lung & bronchus,Male,64190,160,1080,12510,50600
+Lung & bronchus,Female,60540,120,790,11710,48040
+Breast,Female,42170,1130,3600,9520,29050
+Prostate,Male,35770,NA,90,2930,32750
