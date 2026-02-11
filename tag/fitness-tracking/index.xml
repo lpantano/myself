@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Fitness-Tracking | My bits</title>
+    <title>Fitness Tracking | My bits</title>
     <link>http://lpantano.github.io/tag/fitness-tracking/</link>
       <atom:link href="http://lpantano.github.io/tag/fitness-tracking/index.xml" rel="self" type="application/rss+xml" />
-    <description>Fitness-Tracking</description>
+    <description>Fitness Tracking</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 04 Feb 2026 12:00:00 -0400</lastBuildDate>
     <image>
       <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
-      <title>Fitness-Tracking</title>
+      <title>Fitness Tracking</title>
       <link>http://lpantano.github.io/tag/fitness-tracking/</link>
     </image>
     

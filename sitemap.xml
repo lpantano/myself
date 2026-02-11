@@ -3,21 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://lpantano.github.io/post/</loc>
-    <lastmod>2026-02-04T12:00:00-04:00</lastmod>
+    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/categories/</loc>
-    <lastmod>2026-02-04T12:00:00-04:00</lastmod>
+    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/critical-thinking/</loc>
+    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/category/data-in-your-life/</loc>
-    <lastmod>2026-02-04T12:00:00-04:00</lastmod>
+    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/data-visualization/</loc>
-    <lastmod>2026-02-04T12:00:00-04:00</lastmod>
+    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lpantano.github.io/tag/fitness-tracking/</loc>
-    <lastmod>2026-02-04T12:00:00-04:00</lastmod>
+    <loc>http://lpantano.github.io/tag/health-data/</loc>
+    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/</loc>
+    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tags/</loc>
+    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/post/2026/2026-02-11-colon-cancer-data-hidden/</loc>
+    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/fitness-tracking/</loc>
     <lastmod>2026-02-04T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/open-source/</loc>
@@ -27,9 +39,6 @@
     <lastmod>2026-02-04T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/react/</loc>
-    <lastmod>2026-02-04T12:00:00-04:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/tags/</loc>
     <lastmod>2026-02-04T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/training-analytics/</loc>
@@ -186,9 +195,6 @@
     <lastmod>2024-11-21T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/fitness-data/</loc>
-    <lastmod>2024-11-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/health-data/</loc>
     <lastmod>2024-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/portfolio/training-dashboard/</loc>

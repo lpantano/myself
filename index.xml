@@ -5,12 +5,113 @@
     <link>http://lpantano.github.io/</link>
       <atom:link href="http://lpantano.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>My bits</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 04 Feb 2026 12:00:00 -0400</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
       <title>My bits</title>
       <link>http://lpantano.github.io/</link>
     </image>
+    
+    <item>
+      <title>What the Cancer Data Isn&#39;t Telling You</title>
+      <link>http://lpantano.github.io/post/2026/2026-02-11-colon-cancer-data-hidden/</link>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/post/2026/2026-02-11-colon-cancer-data-hidden/</guid>
+      <description>&lt;p&gt;You&amp;rsquo;ve probably seen the headline: colorectal cancer is now the leading cause of cancer death in younger adults.&lt;/p&gt;
+&lt;p&gt;The charts are straightforward. Bars lined up. Colon cancer on top, breast cancer close behind. Same gray bars, similar heights.&lt;/p&gt;
+&lt;p&gt;But here&amp;rsquo;s what those charts don&amp;rsquo;t show: &lt;strong&gt;who&lt;/strong&gt; is dying.&lt;/p&gt;
+&lt;h2 id=&#34;the-data-hidden-in-plain-sight&#34;&gt;The Data Hidden in Plain Sight&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s the original chart from the &lt;a href=&#34;https://www.cancer.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;American Cancer Society&lt;/a&gt; data, as reported by the &lt;a href=&#34;https://www.wsj.com/articles&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WSJ&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Colorectal Cancer Is Now the Top Cause of Cancer Death in Younger People - WSJ chart showing cancer deaths without demographic breakdown&#34; srcset=&#34;
+               /post/2026/2026-02-11-colon-cancer-data-hidden/wsj-cancer-chart_hu_9dbf66762727114e.webp 400w,
+               /post/2026/2026-02-11-colon-cancer-data-hidden/wsj-cancer-chart_hu_66e19e3552eeb548.webp 760w,
+               /post/2026/2026-02-11-colon-cancer-data-hidden/wsj-cancer-chart_hu_24bf6e4115255f5a.webp 1200w&#34;
+               src=&#34;http://lpantano.github.io/post/2026/2026-02-11-colon-cancer-data-hidden/wsj-cancer-chart_hu_9dbf66762727114e.webp&#34;
+               width=&#34;351&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;When I broke down that same data by sex, the story shifted completely.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Colon and rectal cancer&lt;/strong&gt;: ~2,200 deaths in people under 50&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Males: ~1,200&lt;/li&gt;
+&lt;li&gt;Females: ~1,000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Breast cancer&lt;/strong&gt;: ~3,600 deaths in people under 50&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Females: ~3,600&lt;/li&gt;
+&lt;li&gt;Males: negligible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Same total number. Completely different story.&lt;/p&gt;
+&lt;h2 id=&#34;the-revelation&#34;&gt;The Revelation&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s what the data looks like when you ask one more question:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Estimated Cancer Deaths in People Under 50 (2025) - Stratified by sex showing breast cancer deaths are almost entirely female while colon cancer affects both sexes equally&#34; srcset=&#34;
+               /post/2026/2026-02-11-colon-cancer-data-hidden/cancer-deaths-by-sex_hu_cf73b22b032973f.webp 400w,
+               /post/2026/2026-02-11-colon-cancer-data-hidden/cancer-deaths-by-sex_hu_e7bd2e106b00da7d.webp 760w,
+               /post/2026/2026-02-11-colon-cancer-data-hidden/cancer-deaths-by-sex_hu_15b8bd18ad7df6c7.webp 1200w&#34;
+               src=&#34;http://lpantano.github.io/post/2026/2026-02-11-colon-cancer-data-hidden/cancer-deaths-by-sex_hu_cf73b22b032973f.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;See the difference? Breast cancer (yellow bars) is almost entirely female. Colon cancer (purple and yellow combined) affects both sexes.&lt;/p&gt;
+&lt;h2 id=&#34;what-this-actually-means&#34;&gt;What This Actually Means&lt;/h2&gt;
+&lt;p&gt;Women represent 50% of the population.&lt;/p&gt;
+&lt;p&gt;But we account for nearly 100% of breast cancer deaths—numbers that rival a cancer affecting everyone equally.&lt;/p&gt;
+&lt;p&gt;Colon cancer? It&amp;rsquo;s distributed across sexes. Different disease, different pattern, same raw total.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s not just a statistic. That&amp;rsquo;s a demographic reality that raw numbers completely obscure.&lt;/p&gt;
+&lt;h2 id=&#34;the-lesson&#34;&gt;The Lesson&lt;/h2&gt;
+&lt;p&gt;Data always has more layers. The question is whether you&amp;rsquo;re asking for them.&lt;/p&gt;
+&lt;p&gt;That gray bar chart wasn&amp;rsquo;t wrong. It just wasn&amp;rsquo;t complete. It answered one question: &lt;em&gt;How many people are dying?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;But it didn&amp;rsquo;t answer the one that matters: &lt;em&gt;Who is dying, and why?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Next time you see a health statistic, ask yourself: What would this look like if I broke it down further? Who&amp;rsquo;s in this number? Who&amp;rsquo;s missing?&lt;/p&gt;
+&lt;p&gt;Data is only as honest as the questions you ask it.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cancer.org/research/cancer-statistics.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;American Cancer Society - Cancer Statistics Center&lt;/a&gt; (2025 estimates)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.wsj.com/articles&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WSJ - &amp;ldquo;Colorectal Cancer Is Now the Top Cause of Cancer Death in Younger People&amp;rdquo;&lt;/a&gt; (January 2025)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Why I Built My Own Running Dashboard</title>
