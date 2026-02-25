@@ -1,8 +1,43 @@
-# Multi-Lab Genomics Data Sharing with IGV, S3, and GitHub Actions
+---
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
+title: "Multi-Lab Genomics Data Sharing with IGV, S3, and GitHub Actions"
+subtitle: "Composing existing tools to solve collaborative research infrastructure without a dev team"
+summary: "How to build collaborative research infrastructure using IGV, format conversion, and GitHub Actions automation—without a dedicated development team."
+authors: []
+tags: ["genomics", "igv", "aws", "github-actions", "bioinformatics", "research-infrastructure", "automation"]
+categories: ["Data at Scale"]
+date: 2026-02-04T12:00:00-04:00
+lastmod: 2026-02-04T12:00:00-04:00
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
+---
 
 Most collaborative genomics projects fail not because the science is hard, but because managing and sharing heterogeneous data across collaborators is hard.
 
 We solved this problem by composing existing tools instead of building custom code. Here's how.
+
+TLDR: 
+
+- [GitHub available](https://github.com/lpantano/igv-web-genomics-platform/tree/main)
+- [YouTube](https://youtu.be/_qPsqCyFsgg)
+
+Thanks to [Ruitong Li](https://www.linkedin.com/in/ruitong-li-6a83a0149/) for contributing to the project.
 
 ## The Problem
 
@@ -119,19 +154,3 @@ The full code is available on [GitHub](https://github.com/hbc/app-igv-skinpo1). 
 - **User management**: Today uses a shared password. For multiple independent users, consider Amazon Cognito or similar.
 
 These aren't blockers for most research groups, but they're worth noting if you're adapting this approach.
-
----
-
-## Metadata
-
-**Title:** Sharing Genomics Data Across Collaborators Without a Dev Team
-
-**Meta description:** How to build collaborative research infrastructure using IGV, format conversion, and GitHub Actions automation—without a dedicated development team.
-
-**Primary keyword:** collaborative genomics data sharing
-
-**Secondary keywords:** genome browser automation, research infrastructure, continuous deployment
-
-**Target audience:** Data at Scale (researchers and bioinformaticians)
-
-**Tone:** Technical but accessible, focused on resourcefulness and pragmatism

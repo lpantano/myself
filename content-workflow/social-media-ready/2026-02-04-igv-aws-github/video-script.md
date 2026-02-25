@@ -193,12 +193,7 @@
 
 ## CLOSING (5:30-6:30)
 
-[Visual: Show the final working system - IGV with data loaded]
-
 **Narrator:**
-"The result? Your collaborators get a single interface where they can explore any gene across all experiments. In seconds. Across species. Without manual work. Without hiring a developer."
-
-[Pause]
 
 "The full code is open source on GitHub. Link in the description."
 

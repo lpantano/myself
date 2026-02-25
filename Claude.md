@@ -2,11 +2,19 @@ This is your constitution for the project. Here you should follow the rules to c
 
 # For content creation
 
+Sometimes we do analysis, for that follow these rules:
+
+- work on analysis folder, one folder for analysis
+- help find data source
+- use R to make plots
+- use ggprism and grafify for colors
+
 We have two types of content distribution: video tutorials and regular posts.
 
 We have two types of content material:
 
 ## FOR GENERAL PUBLIC:
+
 Title: "The Data in Your Life"
 Description:
 You're already living in a world shaped by data—health apps tracking your sleep, news headlines citing studies, companies predicting your behavior. But can you tell when the numbers are telling the truth? This newsletter breaks down real-world data you encounter daily, teaching you to spot manipulation, question conclusions, and make decisions based on what the evidence actually shows. No statistics degree required—just curiosity and a refusal to be misled.
@@ -19,11 +27,52 @@ You know how to analyze data. But are you analyzing it efficiently? This newslet
 
 ## Tone
 
-The tone to create text and scripts SHOULD be amicable and encouraging. As well as concise. Use the minimum number of words needed to explain a concept. USE short sentences and simple vocabulary. USE short paragraphs. 
+### For General Public ("The Data in Your Life")
+- **Curious and investigative**: Take a "let's figure this out together" approach
+- Lead with questions that create intrigue
+- Reveal insights gradually, making it feel like discovery
+- Use real-world examples readers encounter daily
+- Keep vocabulary simple but not condescending
+- Avoid jargon; when technical terms are needed, explain them immediately
+- Short sentences and paragraphs (2-3 sentences maximum)
 
-Don't use shame or blame to attract readers. I don't want to pick up fights with anybody. I want to help people to have power to understand data.
+### For Scientists ("Data at Scale")
+- **Peer-to-peer practical**: Share solutions that actually work
+- Technical but accessible—assume knowledge but don't assume familiarity with every tool
+- Acknowledge trade-offs and limitations openly
+- Focus on implementation details that matter
+- Include command examples, code snippets, and real workflows
+- Time savings and efficiency are valuable—mention them when relevant
+- Don't oversell—be honest about what works and what doesn't
 
-Always REFER to sources used: URLs or scientific publication IDs.
+### Universal Tone Guidelines
+- **Concise**: Use the minimum words needed to explain a concept
+- **Amicable and encouraging**: Help people feel empowered, not inadequate
+- **Direct**: No marketing buzzwords or hype language
+- **Non-confrontational**: Don't pick fights or shame readers
+- **Evidence-focused**: Always back claims with sources
+
+## Core Values
+
+Every piece of content must embody these values:
+
+### 1. Transparency and Honesty
+- Always cite sources (URLs or DOIs)
+- Show limitations of data, methods, or conclusions
+- If something is uncertain or speculative, say so explicitly
+- Never hide complexity that matters to understanding
+
+### 2. Evidence-Based
+- Claims require scientific paper backing—no social media sources
+- Link directly to DOIs or authoritative sources
+- If scientific evidence doesn't exist for a claim, we cannot use it
+- Distinguish between established findings and emerging research
+
+### 3. Accessibility
+- Break down barriers to understanding
+- Remove gatekeeping language
+- Meet readers where they are
+- Complex topics should be learnable by anyone with curiosity
 
 ## Title
 
@@ -32,10 +81,15 @@ Should be short and create curiosity. Avoid words commonly used in marketing. Be
 
 ## Content Creation Process
 
-1. Create initial content draft
+**ALWAYS use the full workflow for every post:**
+
+1. Create initial content draft in `content-workflow/brainstorming/YYYY-MM-DD-slug/`
 2. Generate 3 validation questions about the content
 3. Answer each question independently
 4. Use these answers to refine and create the final content
+5. Move to `content-workflow/social-media-ready/YYYY-MM-DD-slug/`
+6. Create social media posts and describe needed visual assets
+7. Copy final post to `content/post/` only when ready to publish
 
 (Note: The validation questions are for internal use only and should not appear in the published content.)
 
@@ -69,10 +123,13 @@ Create for each content piece:
 3. Call-to-action with link
 
 ### Visual Elements
-- Include a quote card for every post
-- Feature the most compelling insight or takeaway
-- Use consistent branding
-- Keep text on image minimal and readable
+- **Describe images needed** for every post:
+  - Quote cards featuring the most compelling insight
+  - Specify exact text for the quote card
+  - Note any charts, diagrams, or photos needed
+  - Include design guidance (colors, style, layout)
+- Keep text on images minimal and readable
+- Maintain consistent branding
 
 ### Engagement Elements
 - **Hashtags**: 3-5 highly relevant tags only
@@ -120,11 +177,17 @@ All sources that are claiming something from me should be a scientific paper, no
 - Format citations as: [Source Name](URL) or DOI: [publication ID]
 
 ### Images and Media
-- Include alt text for all images
+- Describe needed images with specifications
+- Include alt text descriptions for accessibility
 - Keep file names descriptive and lowercase with hyphens
 - Add captions when context is needed
 
 ## SEO Guidelines
+
+When editing or reviewing posts, prioritize:
+
+1. **SEO and discoverability**
+2. **Readability and flow**
 
 ### Meta Information
 - Title: 50-60 characters, include primary keyword
@@ -253,36 +316,55 @@ Topics should:
 - Provide actionable insights
 - Avoid duplication with published content
 
-### Workflow Integration
+### Workflow Integration with GitHub Issues
+
+**Claude should actively manage GitHub issues throughout the content workflow:**
 
 #### Moving Issues Through Stages
 
 1. **Backlog → Brainstorming**
-   - Assign issue to yourself
-   - Change label to `stage:brainstorming`
+   - Update issue labels: remove `stage:backlog`, add `stage:brainstorming`
    - Create folder in `content-workflow/brainstorming/YYYY-MM-DD-slug/`
-   - Link folder location in issue comment
+   - Add comment to issue with folder location
+   - Use: `gh issue edit <number> --remove-label "stage:backlog" --add-label "stage:brainstorming" --repo lpantano/myself`
 
 2. **Brainstorming → Social Media Ready**
-   - Change label to `stage:social-media-ready`
+   - Update labels: remove `stage:brainstorming`, add `stage:social-media-ready`
    - Move folder to `content-workflow/social-media-ready/YYYY-MM-DD-slug/`
-   - Complete all social media assets
-   - Update issue with completion checklist
+   - Add comment confirming completion of social media assets
+   - Use: `gh issue edit <number> --remove-label "stage:brainstorming" --add-label "stage:social-media-ready" --repo lpantano/myself`
 
 3. **Social Media Ready → Published**
-   - Copy post to `content/post/`
-   - Publish to website and social platforms
-   - Change label to `stage:published`
-   - Archive in `content-workflow/published/YYYY-MM-DD-slug/`
-   - Add publication URL to issue
+   - Update labels: remove `stage:social-media-ready`, add `stage:published`
+   - Move folder to `content-workflow/published/YYYY-MM-DD-slug/`
+   - Copy final post to `content/post/`
+   - Add comment with publication URL
    - Close issue
+   - Use: `gh issue edit <number> --remove-label "stage:social-media-ready" --add-label "stage:published" --repo lpantano/myself && gh issue close <number> --repo lpantano/myself`
 
 #### Issue Comments
 Use comments to:
-- Track progress and decisions made
+- Track progress and decisions made during creation
 - Link to related issues or content
 - Note performance metrics after publication
 - Document lessons learned
+
+#### Quick Commands Reference
+
+```bash
+# Create a new content topic issue
+gh issue create --repo lpantano/myself --template content-topic.md
+
+# List all backlog items
+gh issue list --label "stage:backlog" --repo lpantano/myself
+
+# List items by audience
+gh issue list --label "audience:general-public" --repo lpantano/myself
+gh issue list --label "audience:scientists" --repo lpantano/myself
+
+# View project in browser
+gh project view 5 --owner lpantano --web
+```
 
 # Content Workflow and Organization
 
@@ -324,7 +406,7 @@ brainstorming/
 #### social-media-ready/
 - Final draft of post (markdown)
 - Social media posts for all platforms
-- Quote card assets
+- Image specifications and requirements
 - Metadata and keywords
 
 Structure: `YYYY-MM-DD-post-slug/`
@@ -335,9 +417,8 @@ social-media-ready/
 └── 2026-01-09-data-manipulation-spotting/
     ├── post.md              # Final post content
     ├── social-instagram.txt
-    ├── social-linkedin.txt  # Same content for all scientist platforms
-    ├── assets/
-    │   └── quote-card.png
+    ├── social-linkedin.txt  # Same content for LinkedIn/Bluesky/Mastodon
+    ├── image-specs.md       # Descriptions of needed images (quote cards, charts)
     └── metadata.md          # SEO keywords, tags, description
 ```
 
@@ -368,21 +449,73 @@ Copy the final post from `content-workflow/social-media-ready/[date-slug]/post.m
 1. **Brainstorming** → Create folder in `content-workflow/brainstorming/YYYY-MM-DD-post-slug/`
    - Write idea.md, research.md, outline.md
    - Complete validation questions in validation.md
+   - Update GitHub issue to `stage:brainstorming`
 
 2. **Social Media Ready** → Move to `content-workflow/social-media-ready/YYYY-MM-DD-post-slug/`
    - Write final post.md
-   - Create social media posts (Instagram + LinkedIn)
-   - Generate quote card
+   - Create social media posts (Instagram + LinkedIn/Bluesky/Mastodon)
+   - Document image specifications in image-specs.md
    - Document metadata (keywords, description)
+   - Update GitHub issue to `stage:social-media-ready`
 
 3. **Publish** → Copy final post to `content/post/`
    - Add Hugo frontmatter to post
    - Archive copy to `content-workflow/published/YYYY-MM-DD-post-slug/`
    - Post social media content
+   - Update GitHub issue to `stage:published` and close
 
 ## File Naming Conventions
 
 - **Date format**: YYYY-MM-DD (e.g., 2026-01-09)
 - **Slug format**: lowercase-with-hyphens (e.g., data-manipulation-spotting)
 - **Folder names**: `YYYY-MM-DD-post-slug/`
-- **File names**: descriptive, lowercase (e.g., post.md, social-instagram.txt, quote-card.png)
+- **File names**: descriptive, lowercase (e.g., post.md, social-instagram.txt, image-specs.md)
+
+# Tools and Commands
+
+## When to Use Different Tools
+
+### For Content Creation
+- **Read tool**: Review existing posts for style reference
+- **Write tool**: Create new files in content-workflow folders
+- **Edit tool**: Refine existing drafts
+- **Grep/Glob tools**: Search for similar topics or patterns across posts
+
+### For GitHub Issues Management
+- **Bash with gh CLI**: Create, update, and close issues
+- Always use `--repo lpantano/myself` with gh commands
+- Update labels as content moves through workflow stages
+- Add comments to track progress
+
+### For File Organization
+- **Bash**: Create folders, move files between workflow stages
+- Verify folder structure with `ls` before moving files
+- Use date format YYYY-MM-DD consistently
+
+### For Research and Validation
+- **WebSearch tool**: Find recent scientific papers and authoritative sources
+- **WebFetch tool**: Retrieve content from specific URLs for fact-checking
+- Always verify sources are scientific papers, not social media
+
+### For SEO and Optimization
+- **Read existing posts**: Check keyword usage patterns
+- **Edit tool**: Optimize headings, meta descriptions, internal links
+- Focus on readability first, keywords second
+
+## Hugo Frontmatter Template
+
+When copying to `content/post/`, use this frontmatter structure:
+
+```yaml
+---
+title: "Post Title Here"
+date: YYYY-MM-DD
+draft: false
+description: "150-160 character meta description with keyword"
+categories: ["Data in Your Life"]  # or ["Data at Scale"]
+tags: ["tag1", "tag2", "tag3"]
+---
+```
+
+# currentDate
+Today's date is 2026-02-15.
