@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github-Actions | My bits</title>
+    <link>http://lpantano.github.io/tag/github-actions/</link>
+      <atom:link href="http://lpantano.github.io/tag/github-actions/index.xml" rel="self" type="application/rss+xml" />
+    <description>Github-Actions</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 04 Feb 2026 12:00:00 -0400</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
+      <title>Github-Actions</title>
+      <link>http://lpantano.github.io/tag/github-actions/</link>
+    </image>
+    
+    <item>
+      <title>Multi-Lab Genomics Data Sharing with IGV, S3, and GitHub Actions</title>
+      <link>http://lpantano.github.io/post/2026/2026-02-04-igv-aws-github/</link>
+      <pubDate>Wed, 04 Feb 2026 12:00:00 -0400</pubDate>
+      <guid>http://lpantano.github.io/post/2026/2026-02-04-igv-aws-github/</guid>
+      <description>&lt;p&gt;Most collaborative genomics projects fail not because the science is hard, but because managing and sharing heterogeneous data across collaborators is hard.&lt;/p&gt;
+&lt;p&gt;We solved this problem by composing existing tools instead of building custom code. Here&amp;rsquo;s how.&lt;/p&gt;
+&lt;p&gt;TLDR:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/lpantano/igv-web-genomics-platform/tree/main&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub available&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/_qPsqCyFsgg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks to &lt;a href=&#34;https://www.linkedin.com/in/ruitong-li-6a83a0149/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ruitong Li&lt;/a&gt; for contributing to the project.&lt;/p&gt;
+&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;Your collaborators send differential expression results from their single-cell RNA and ATAC-seq experiments. Some work is in mouse, some in human. Your task: find the genes they identified as significant, check the signal in all other experiments, and compare across species—all from a single interface.&lt;/p&gt;
+&lt;p&gt;Without infrastructure, this means emailing files, manually looking up gene coordinates, translating between genome builds (mouse to human), and checking signal experiment by experiment. It doesn&amp;rsquo;t scale. Collaborators wait. Nobody wins.&lt;/p&gt;
+&lt;h2 id=&#34;the-solution-composition-over-complexity&#34;&gt;The Solution: Composition Over Complexity&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Architecture diagram showing data flow from collaborators through AWS S3, GitHub Actions, CloudFront, Lambda authentication, and into the IGV Web App&#34; srcset=&#34;
+               /post/2026/2026-02-04-igv-aws-github/architecture-diagram_hu_7ba5888c32fe0497.webp 400w,
+               /post/2026/2026-02-04-igv-aws-github/architecture-diagram_hu_94c5bb3785ab1a65.webp 760w,
+               /post/2026/2026-02-04-igv-aws-github/architecture-diagram_hu_520328a28afa5f33.webp 1200w&#34;
+               src=&#34;http://lpantano.github.io/post/2026/2026-02-04-igv-aws-github/architecture-diagram_hu_7ba5888c32fe0497.webp&#34;
+               width=&#34;615&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We focused on three decisions:&lt;/p&gt;
+&lt;h3 id=&#34;1-choose-tools-that-do-80-of-the-work&#34;&gt;1. Choose Tools That Do 80% of the Work&lt;/h3&gt;
+&lt;p&gt;We selected &lt;a href=&#34;https://igv.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IGV (Integrative Genomics Viewer)&lt;/a&gt;—the web app version. It&amp;rsquo;s a professional genome browser designed for exactly what we needed: jumping between genes, loading multiple data types, fast interactive navigation. We didn&amp;rsquo;t build visualization code; IGV handles that elegantly.&lt;/p&gt;
+&lt;h3 id=&#34;2-standardize-everything-into-compatible-formats&#34;&gt;2. Standardize Everything Into Compatible Formats&lt;/h3&gt;
+&lt;p&gt;IGV natively understands a few core formats: BED files (genomic regions with annotations), BigWig files (signal tracks), and narrowPeak files (ATAC-seq peaks). Our collaborators send data in CSV format from DESeq2.&lt;/p&gt;
+&lt;p&gt;We built an automated pipeline that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Detects file types&lt;/strong&gt;: ATAC-seq BigWig/BED files, RNA-seq CSV files&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Converts DESeq2 results&lt;/strong&gt; → color-coded BED files with four-tier significance coloring:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Red&lt;/strong&gt;: Up-regulated (p &amp;lt; 0.05 &amp;amp; log2FC &amp;gt; 1.5)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Blue&lt;/strong&gt;: Down-regulated (p &amp;lt; 0.05 &amp;amp; log2FC &amp;lt; -1.5)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Orange&lt;/strong&gt;: Significant but low fold change (p &amp;lt; 0.05 &amp;amp; |log2FC| &amp;lt; 1.5)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gray&lt;/strong&gt;: Not significant&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Translates cross-species data&lt;/strong&gt;: If the DESeq2 results are from mouse, the pipeline maps mouse genes to human orthologs and converts coordinates to hg38—automatically&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Leaves compatible formats as-is&lt;/strong&gt;: ATAC-seq peaks and BigWig files pass through unchanged&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The script scans project folders, identifies each file type, applies the appropriate transformation, and generates a track registry describing everything for IGV.&lt;/p&gt;
+&lt;h3 id=&#34;3-automate-everything-including-deployment&#34;&gt;3. Automate Everything, Including Deployment&lt;/h3&gt;
+&lt;p&gt;We organized data hierarchically: three main research projects, with experiments nested inside. When you open IGV, you see a project modal. Click a project, and you get a searchable table of all its experiments—grouped by experiment ID or data type.&lt;/p&gt;
+&lt;p&gt;Everything lives on AWS S3. Lambda@Edge functions enforce password authentication at the CloudFront edge—only authorized collaborators can access the data. Passwords are shared securely with the team.&lt;/p&gt;
+&lt;p&gt;For continuous updates, we use GitHub Actions. Set it to run daily or trigger manually. When new data arrives in the S3 data folder, the action:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Scans all projects for new CSV files&lt;/li&gt;
+&lt;li&gt;Runs the conversion script on anything new (skips already-converted files)&lt;/li&gt;
+&lt;li&gt;Updates the track registry (CSV and JSON files)&lt;/li&gt;
+&lt;li&gt;Syncs metadata back to S3&lt;/li&gt;
+&lt;li&gt;Fixes MIME types for BigWig files&lt;/li&gt;
+&lt;li&gt;Invalidates the CloudFront cache&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Within seconds, new data is live in IGV. No manual deployment. No command-line expertise required. The whole team benefits from new data immediately.&lt;/p&gt;
+&lt;h2 id=&#34;technical-implementation&#34;&gt;Technical Implementation&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s what makes this work technically:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Data Organization:&lt;/strong&gt;
+Three projects (&lt;code&gt;project1&lt;/code&gt;, &lt;code&gt;project2&lt;/code&gt;, &lt;code&gt;project3&lt;/code&gt;), each containing experiment subfolders with BED, BigWig, or CSV files.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Automation Script&lt;/strong&gt; (&lt;a href=&#34;https://github.com/hbc/app-igv-skinpo1/blob/main/scripts/automate_igv_tracks.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;automate_igv_tracks.py&lt;/a&gt;):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Auto-scans the entire data directory recursively&lt;/li&gt;
+&lt;li&gt;Identifies ATAC-seq files (.bed, .narrowPeak, .bw) and RNA-seq CSV files&lt;/li&gt;
+&lt;li&gt;Converts new CSV files to BED using the &lt;code&gt;create_igv_bed.py&lt;/code&gt; converter (skips if BED already exists)&lt;/li&gt;
+&lt;li&gt;Generates &lt;code&gt;project_name.csv&lt;/code&gt; with track metadata (type, URL, display options)&lt;/li&gt;
+&lt;li&gt;Generates &lt;code&gt;project_name.json&lt;/code&gt; with IGV configuration&lt;/li&gt;
+&lt;li&gt;Updates the central &lt;code&gt;trackRegistry.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Optional: &lt;code&gt;--dry-run&lt;/code&gt; flag to preview changes before applying&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Format Conversion&lt;/strong&gt; (&lt;a href=&#34;https://github.com/hbc/app-igv-skinpo1/blob/main/scripts/create_igv_bed.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;create_igv_bed.py&lt;/a&gt;):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reads DESeq2 output (gene_id, log2FoldChange, p-value columns)&lt;/li&gt;
+&lt;li&gt;Species detection: Automatically recognizes mouse or human (looks for MGI gene symbols or Ensembl IDs)&lt;/li&gt;
+&lt;li&gt;Species translation: Maps mouse genes to human orthologs and converts coordinates&lt;/li&gt;
+&lt;li&gt;Creates color-coded BED files with biological meaning (red=up, blue=down, orange=borderline)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Deployment to Production:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;S3 bucket stores all data and configuration files&lt;/li&gt;
+&lt;li&gt;CloudFront CDN sits in front for fast global access&lt;/li&gt;
+&lt;li&gt;Lambda@Edge enforces authentication at edge nodes globally&lt;/li&gt;
+&lt;li&gt;GitHub Actions runs daily: mounts S3 folder, runs automation, syncs results back, invalidates CloudFront cache&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Access Control:&lt;/strong&gt;
+Basic HTTP authentication (username/password) enforced at CloudFront. No backend needed. Users authenticate once in their browser, then browse the genome naturally.&lt;/p&gt;
+&lt;h2 id=&#34;why-this-approach-works&#34;&gt;Why This Approach Works&lt;/h2&gt;
+&lt;p&gt;We didn&amp;rsquo;t have a development team or a large budget. So we focused on composition: choosing tools that solve 80% of the problem, automating the 20% they don&amp;rsquo;t handle.&lt;/p&gt;
+&lt;p&gt;This approach has three advantages:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It scales.&lt;/strong&gt; As new collaborators join and new data arrives, the same automation handles it. No new code needed. The GitHub Action handles everything.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It&amp;rsquo;s maintainable.&lt;/strong&gt; The GitHub Action runs on a schedule you set. The conversion script is pure Python—transparent and understandable. Version control means you can roll back if something breaks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It&amp;rsquo;s focused on the science.&lt;/strong&gt; Researchers spend time analyzing genes, not wrestling with deployment pipelines. They add a CSV file to a folder. Within minutes, it&amp;rsquo;s browsable alongside all their collaborators&amp;rsquo; data.&lt;/p&gt;
+&lt;h2 id=&#34;the-lesson&#34;&gt;The Lesson&lt;/h2&gt;
+&lt;p&gt;You don&amp;rsquo;t need a development team to build research infrastructure. You need:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Clear problem definition (one gene, all experiments)&lt;/li&gt;
+&lt;li&gt;Existing tools that solve most of it (IGV for browsing)&lt;/li&gt;
+&lt;li&gt;Automation to handle the gaps (Python script + GitHub Actions)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you have a similar challenge—multiple collaborators, heterogeneous data, limited resources—this approach works. Look for the existing tool that&amp;rsquo;s 80% of your solution. Build automation for the 20% it doesn&amp;rsquo;t cover. Deploy it once, then let it run.&lt;/p&gt;
+&lt;p&gt;The full code is available on &lt;a href=&#34;https://github.com/hbc/app-igv-skinpo1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;. It includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Python automation pipeline&lt;/li&gt;
+&lt;li&gt;AWS deployment scripts&lt;/li&gt;
+&lt;li&gt;GitHub Actions workflow&lt;/li&gt;
+&lt;li&gt;Complete documentation for adding new datasets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;limitations-and-future-work&#34;&gt;Limitations and Future Work&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Cross-species support&lt;/strong&gt;: Currently handles mouse→human translation for RNA-seq only. Other species would need custom ortholog mappings. Other data types need additional code.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;User management&lt;/strong&gt;: Today uses a shared password. For multiple independent users, consider Amazon Cognito or similar.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These aren&amp;rsquo;t blockers for most research groups, but they&amp;rsquo;re worth noting if you&amp;rsquo;re adapting this approach.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
