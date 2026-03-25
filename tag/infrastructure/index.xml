@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Infrastructure | My bits</title>
+    <link>http://lpantano.github.io/tag/infrastructure/</link>
+      <atom:link href="http://lpantano.github.io/tag/infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    <description>Infrastructure</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 25 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://lpantano.github.io/media/icon_hu_518ecd45d9711c5b.png</url>
+      <title>Infrastructure</title>
+      <link>http://lpantano.github.io/tag/infrastructure/</link>
+    </image>
+    
+    <item>
+      <title>From R Shiny to Production: How We Built a Clinical Calculator for a Nature Medicine Paper</title>
+      <link>http://lpantano.github.io/post/2026/2026-03-25-pangea-webapp-infrastructure/</link>
+      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/post/2026/2026-03-25-pangea-webapp-infrastructure/</guid>
+      <description>&lt;p&gt;I work at the &lt;a href=&#34;https://ghobriallab.dana-farber.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ghobrial Lab at Dana-Farber Cancer Institute&lt;/a&gt;, where I&amp;rsquo;m building their bioinformatics platform. Part of that work is making research tools accessible — which is how I got the opportunity to build the web app for their latest publication.&lt;/p&gt;
+&lt;p&gt;A new Nature Medicine paper (&lt;a href=&#34;https://doi.org/10.1038/s41591-026-04304-x&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10.1038/s41591-026-04304-x&lt;/a&gt;) introduces PANGEA-SMM — a dynamic risk calculator for smoldering multiple myeloma (SMM) that tracks longitudinal biomarkers to predict progression without requiring a bone marrow biopsy.&lt;/p&gt;
+&lt;p&gt;The model is free and live at &lt;a href=&#34;https://pangeamodels.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pangeamodels.org&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: PANGEA-SMM is a research tool intended to support clinical decision-making. It is not FDA-approved and should not replace physician judgment or established clinical guidelines.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here&amp;rsquo;s how we built the infrastructure behind it, and why we moved away from R Shiny.&lt;/p&gt;
+&lt;h2 id=&#34;the-starting-point-r-shiny&#34;&gt;The Starting Point: R Shiny&lt;/h2&gt;
+&lt;p&gt;The first version was an &lt;a href=&#34;https://shiny.posit.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R Shiny&lt;/a&gt; app. It worked for demos and internal use — but Shiny has real limits when you need something available 24/7 to clinicians worldwide:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shiny server concurrency is limited without significant infrastructure&lt;/li&gt;
+&lt;li&gt;Session state makes horizontal scaling harder&lt;/li&gt;
+&lt;li&gt;Cold starts on free-tier hosting are slow and unreliable&lt;/li&gt;
+&lt;li&gt;Bundle deployment and versioning are clunky&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We needed something that felt fast, was easy to maintain, and could serve real clinical users reliably.&lt;/p&gt;
+&lt;h2 id=&#34;the-architecture&#34;&gt;The Architecture&lt;/h2&gt;
+&lt;p&gt;The redesign splits the app into two services with clear responsibilities:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Frontend: React + TypeScript on Netlify&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The UI is a &lt;a href=&#34;https://react.dev/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;React 19&lt;/a&gt; SPA built with &lt;a href=&#34;https://vite.dev/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vite&lt;/a&gt; and &lt;a href=&#34;https://tailwindcss.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tailwind CSS&lt;/a&gt;. &lt;a href=&#34;https://www.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Netlify&lt;/a&gt; handles CI/CD automatically — every push to main deploys. The static site is served via CDN globally, so load times are fast regardless of where the clinician is.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://recharts.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Recharts&lt;/a&gt; powers the 5-year progression curves with confidence intervals. Validation happens client-side (TypeScript hooks) before any API call is made.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Backend: R Plumber on GCP&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The statistical heavy lifting stays in R — where the Cox proportional hazards models live. &lt;a href=&#34;https://www.rplumber.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R Plumber&lt;/a&gt; exposes two REST endpoints:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;POST /calculate-score/static&lt;/code&gt; — standard risk calculation&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;POST /calculate-score/dynamic&lt;/code&gt; — incorporates patient history for trajectory-aware prediction&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The R service runs in &lt;a href=&#34;https://www.docker.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Docker&lt;/a&gt; on a &lt;a href=&#34;https://cloud.google.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GCP&lt;/a&gt; e2-medium VM (2 vCPU, 4 GB RAM). &lt;a href=&#34;https://nginx.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nginx&lt;/a&gt; sits in front, handling SSL termination, rate limiting (2 req/s for API endpoints), CORS, and security headers.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://letsencrypt.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt; manages the certificate automatically.&lt;/p&gt;
+&lt;h2 id=&#34;infrastructure-diagram&#34;&gt;Infrastructure Diagram&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;PANGEA-SMM architecture: React frontend on Netlify, Nginx &amp;#43; R Plumber API on GCP&#34; srcset=&#34;
+               /post/2026/2026-03-25-pangea-webapp-infrastructure/architecture-diagram_hu_49ff29a8df842e7c.webp 400w,
+               /post/2026/2026-03-25-pangea-webapp-infrastructure/architecture-diagram_hu_19c7c741e0feaf7b.webp 760w,
+               /post/2026/2026-03-25-pangea-webapp-infrastructure/architecture-diagram_hu_9c6f91190b582ef4.webp 1200w&#34;
+               src=&#34;http://lpantano.github.io/post/2026/2026-03-25-pangea-webapp-infrastructure/architecture-diagram_hu_49ff29a8df842e7c.webp&#34;
+               width=&#34;560&#34;
+               height=&#34;680&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;why-this-split-works&#34;&gt;Why This Split Works&lt;/h2&gt;
+&lt;p&gt;Keeping R in the backend was the right call. The models are trained and validated in R — reimplementing them in Python or JavaScript would introduce risk and require revalidation. &lt;a href=&#34;https://www.rplumber.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R Plumber&lt;/a&gt; makes it straightforward to wrap R functions as REST endpoints.&lt;/p&gt;
+&lt;p&gt;Moving the UI to React decouples the presentation from the computation. The frontend team doesn&amp;rsquo;t need to touch R, and the R code doesn&amp;rsquo;t need to worry about rendering.&lt;/p&gt;
+&lt;p&gt;The stateless API design also means there&amp;rsquo;s no database. Patient data is passed in the request body and never stored — important both for privacy and for keeping the system simple.&lt;/p&gt;
+&lt;h2 id=&#34;what-wed-do-differently&#34;&gt;What We&amp;rsquo;d Do Differently&lt;/h2&gt;
+&lt;p&gt;A few things to note if you&amp;rsquo;re building something similar:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Cold start&lt;/strong&gt;: R Plumber takes ~10 seconds to start, so the Nginx timeout is set to 30 seconds. This is fine for a VM that&amp;rsquo;s always running, but would be a problem on a serverless setup.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rate limiting&lt;/strong&gt;: 2 requests/second is intentionally conservative. Cox model prediction is fast (~100ms), but we wanted to protect against accidental hammering.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;No auth&lt;/strong&gt;: This is a public health tool — no login required. That&amp;rsquo;s a deliberate choice, not an oversight.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;video-demo&#34;&gt;Video Demo&lt;/h2&gt;
+&lt;p&gt;Below is a short clip comparing the original R Shiny prototype to the current production app.&lt;/p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/SkTZXcAadiY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;The model, the logic, the clinical interpretation — all the same. What changed is reliability, speed, and the ability to reach clinicians anywhere.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Paper&lt;/strong&gt;: &lt;a href=&#34;https://doi.org/10.1038/s41591-026-04304-x&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Enhanced dynamic risk stratification of smoldering multiple myeloma&lt;/a&gt; — Nature Medicine, March 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Calculator&lt;/strong&gt;: &lt;a href=&#34;https://pangeamodels.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pangeamodels.org&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

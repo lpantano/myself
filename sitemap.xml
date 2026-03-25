@@ -3,10 +3,40 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://lpantano.github.io/post/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/categories/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/clinical-tools/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/category/data-at-scale/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/deployment/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/post/2026/2026-03-25-pangea-webapp-infrastructure/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/infrastructure/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/r/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/react/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tags/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lpantano.github.io/tag/web-app/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/critical-thinking/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
@@ -20,12 +50,6 @@
     <loc>http://lpantano.github.io/tag/health-data/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lpantano.github.io/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/tags/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://lpantano.github.io/post/2026/2026-02-11-colon-cancer-data-hidden/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -36,9 +60,6 @@
     <lastmod>2026-02-04T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/bioinformatics/</loc>
-    <lastmod>2026-02-04T12:00:00-04:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/category/data-at-scale/</loc>
     <lastmod>2026-02-04T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/fitness-tracking/</loc>
@@ -60,9 +81,6 @@
     <lastmod>2026-02-04T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/python/</loc>
-    <lastmod>2026-02-04T12:00:00-04:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/react/</loc>
     <lastmod>2026-02-04T12:00:00-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/tag/research-infrastructure/</loc>
@@ -537,9 +555,6 @@
     <lastmod>2018-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/post/legacy/2018-09-21-colors-for-annotations-for-heatmaps/</loc>
-    <lastmod>2018-09-21T10:13:02-04:00</lastmod>
-  </url><url>
-    <loc>http://lpantano.github.io/tag/r/</loc>
     <lastmod>2018-09-21T10:13:02-04:00</lastmod>
   </url><url>
     <loc>http://lpantano.github.io/post/legacy/2018-08-13-omic-figure-for-mirna-gene-functional-data/</loc>
