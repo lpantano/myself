@@ -1,0 +1,9 @@
+R Shiny is great for prototyping. But for a clinical tool used by physicians worldwide, we needed more.
+
+For the PANGEA-SMM paper (Nature Medicine, 2026), we rebuilt the Shiny prototype into a React + R Plumber stack: static frontend on Netlify, Cox PH models served via Docker on GCP, Nginx handling SSL and rate limiting.
+
+Same model. Better infrastructure. Free at pangeamodels.org.
+
+Full write-up on the architecture decisions: [link]
+
+#Rstats #WebDev #ClinicalTools #Bioinformatics #OpenScience
