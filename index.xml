@@ -100,6 +100,29 @@
     </item>
     
     <item>
+      <title>S&amp;P 500 Historical Dashboard</title>
+      <link>http://lpantano.github.io/project/stock-dashboard/</link>
+      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://lpantano.github.io/project/stock-dashboard/</guid>
+      <description>&lt;p&gt;An interactive dashboard built with Astro that visualizes historical S&amp;amp;P 500 index data, displaying daily closing prices from 2021 through the present, updated weekly from Yahoo Finance.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://quick-stock-dashboard.netlify.app&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;View Live Dashboard →&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;key-features&#34;&gt;Key Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Year-by-year breakdown&lt;/strong&gt;: Opening/closing prices and annual returns for each year&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Historical charts&lt;/strong&gt;: Visual representations of daily price movements&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Performance metrics&lt;/strong&gt;: Year-to-date returns and percentage gains/losses&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Weekly updates&lt;/strong&gt;: Data refreshed automatically from Yahoo Finance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;technical-approach&#34;&gt;Technical Approach&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Built with &lt;a href=&#34;https://astro.build/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Astro&lt;/a&gt; for fast, static-first rendering&lt;/li&gt;
+&lt;li&gt;Data sourced from Yahoo Finance API&lt;/li&gt;
+&lt;li&gt;Clean, responsive layout with custom CSS theming&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>What the Cancer Data Isn&#39;t Telling You</title>
       <link>http://lpantano.github.io/post/2026/2026-02-11-colon-cancer-data-hidden/</link>
       <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
