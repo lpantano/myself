@@ -1,40 +1,37 @@
-name: check and publish 
+name: check and publish
 
 on:
   push:
     branches:
-      - master  # Set a branch to deploy
+      - master
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          hugo-version: '0.154.0'
-          extended: true
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: astro/package-lock.json
+
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+        working-directory: astro
 
       - name: Build
-        run: hugo
-    
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.API_TOKEN_GITHUB }}
-          publish_dir: ./public
-     
+        run: npm run build
+        working-directory: astro
+
       - name: Publish
         uses: cpina/github-action-push-to-another-repository@master
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-directory: 'public'
+          source-directory: 'astro/dist'
           destination-github-username: 'lpantano'
           destination-repository-name: 'lpantano.github.io'
           user-email: lorena.pantano@gmail.com

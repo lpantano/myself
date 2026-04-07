@@ -3,27 +3,29 @@ name: testing
 on:
   push:
     branches:
-      - master  # Set a branch to deploy
-      - devel  # Set a branch to deploy
+      - master
+      - devel
   pull_request:
     branches:
-      - master  # Run tests on PRs to master
+      - master
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          hugo-version: '0.154.0'
-          extended: true
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: astro/package-lock.json
+
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+        working-directory: astro
 
       - name: Build
-        run: hugo
-
+        run: npm run build
+        working-directory: astro

@@ -1,0 +1,20 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Nav from '../../components/Nav.astro';
+import PortfolioSection from '../../components/PortfolioSection.astro';
+import Footer from '../../components/Footer.astro';
+import '../../styles/global.css';
+
+const portfolioItems = (await getCollection('portfolio')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<BaseLayout title="Portfolio" description="Open-source tools, platforms, and dashboards built for research and personal use.">
+  <Nav />
+  <main>
+    <PortfolioSection items={portfolioItems} showViewAll={false} />
+  </main>
+  <Footer />
+</BaseLayout>

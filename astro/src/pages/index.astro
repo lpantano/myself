@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import PortfolioSection from '../components/PortfolioSection.astro';
+import ExperienceSection from '../components/ExperienceSection.astro';
+import WritingSection from '../components/WritingSection.astro';
+import PublicationsSection from '../components/PublicationsSection.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+import { getCollection } from 'astro:content';
+
+const portfolioItems = (await getCollection('portfolio')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+const blogPosts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+const talks = (await getCollection('talks', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+---
+
+<BaseLayout>
+  <Nav />
+  <main>
+    <Hero />
+    <PortfolioSection items={portfolioItems.slice(0, 3)} showViewAll={true} />
+    <ExperienceSection />
+    <WritingSection posts={blogPosts} talks={talks} />
+    <PublicationsSection />
+  </main>
+  <Footer />
+</BaseLayout>

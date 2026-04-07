@@ -1,0 +1,139 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+  date?: Date;
+  tags?: string[];
+  categories?: string[];
+}
+
+const { title, description, date, tags = [], categories = [] } = Astro.props;
+
+const dateStr = date
+  ? date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+  : '';
+---
+
+<BaseLayout title={`${title} — Lorena Pantano`} description={description}>
+  <Nav />
+  <main class="article-main">
+    <div class="article-container container">
+      <header class="article-header">
+        <div class="article-meta">
+          {dateStr && <time class="article-date">{dateStr}</time>}
+          {categories.length > 0 && (
+            <span class="tag-category">{categories[0]}</span>
+          )}
+        </div>
+
+        <h1 class="article-title">{title}</h1>
+
+        {description && (
+          <p class="article-description">{description}</p>
+        )}
+
+        {tags.length > 0 && (
+          <div class="article-tags">
+            {tags.map(tag => <span class="tag">{tag}</span>)}
+          </div>
+        )}
+      </header>
+
+      <div class="article-content prose">
+        <slot />
+      </div>
+
+      <footer class="article-footer">
+        <a href="/" class="back-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
+          </svg>
+          Back to home
+        </a>
+      </footer>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .article-main {
+    padding-top: calc(var(--nav-height) + var(--space-12));
+    padding-bottom: var(--space-24);
+    min-height: 100vh;
+  }
+
+  .article-container {
+    max-width: 760px;
+  }
+
+  .article-header {
+    margin-bottom: var(--space-12);
+    padding-bottom: var(--space-8);
+    border-bottom: 1px solid var(--color-card-border);
+  }
+
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-5);
+  }
+
+  .article-date {
+    font-size: var(--text-sm);
+    color: var(--color-text-tertiary);
+    font-weight: 500;
+  }
+
+  .article-title {
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    margin-bottom: var(--space-5);
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+  }
+
+  .article-description {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--space-6);
+    font-weight: 400;
+  }
+
+  .article-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .article-content {
+    margin-bottom: var(--space-12);
+  }
+
+  .article-footer {
+    padding-top: var(--space-8);
+    border-top: 1px solid var(--color-card-border);
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-base);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: color var(--transition-fast), gap var(--transition-fast);
+  }
+
+  .back-link:hover {
+    color: var(--color-primary);
+    gap: var(--space-3);
+  }
+</style>

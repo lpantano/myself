@@ -1,0 +1,322 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  items: CollectionEntry<'portfolio'>[];
+  showViewAll?: boolean;
+}
+const { items, showViewAll = false } = Astro.props;
+---
+
+<section class="section portfolio-section" id="portfolio">
+  <div class="container">
+    <span class="section-label">Portfolio</span>
+    <div class="portfolio-header">
+      <h2 class="portfolio-title">Featured Work</h2>
+      <p class="portfolio-subtitle">
+        Open-source tools, platforms, and dashboards built for research and personal use.
+      </p>
+    </div>
+
+    <div class="portfolio-grid">
+      {items.map((item) => {
+        const { title, summary, tags, links, url_demo, url_code } = item.data;
+        const primaryLink = url_demo || url_code || links?.[0]?.url || '#';
+        const slug = item.id;
+
+        return (
+          <article class="portfolio-card">
+            <a href={`/portfolio/${slug}/`} class="card-image-link" tabindex="-1" aria-hidden="true">
+              <div class="card-image-wrap">
+                <img
+                  src={`/portfolio/${slug}/featured.png`}
+                  alt={title}
+                  class="card-image"
+                  loading="lazy"
+                  onerror="this.parentElement.style.background='var(--color-primary-light)'; this.style.display='none';"
+                />
+                <div class="card-image-overlay">
+                  <div class="card-overlay-tags">
+                    {(tags || []).slice(0, 3).map(tag => (
+                      <span class="overlay-tag">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <div class="card-body">
+              <div class="card-tags">
+                {(tags || []).slice(0, 4).map(tag => (
+                  <span class="tag">{tag}</span>
+                ))}
+              </div>
+
+              <h3 class="card-title">
+                <a href={`/portfolio/${slug}/`}>{title}</a>
+              </h3>
+
+              <p class="card-summary">{summary}</p>
+
+              <div class="card-links">
+                <a href={`/portfolio/${slug}/`} class="card-link-primary">
+                  Learn more
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                  </svg>
+                </a>
+
+                {url_code && (
+                  <a href={url_code} target="_blank" rel="noopener" class="card-link-secondary" aria-label={`${title} on GitHub`}>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    Code
+                  </a>
+                )}
+
+                {url_demo && (
+                  <a href={url_demo} target="_blank" rel="noopener" class="card-link-secondary" aria-label={`${title} live demo`}>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                    Demo
+                  </a>
+                )}
+              </div>
+            </div>
+          </article>
+        );
+      })}
+    </div>
+
+    {showViewAll && (
+      <div class="portfolio-footer">
+        <a href="/portfolio/" class="view-all-link">
+          View all projects
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </a>
+      </div>
+    )}
+  </div>
+</section>
+
+<style>
+  .portfolio-section {
+    background: var(--color-surface);
+  }
+
+  .portfolio-header {
+    margin-bottom: var(--space-12);
+  }
+
+  .portfolio-title {
+    margin-bottom: var(--space-3);
+  }
+
+  .portfolio-subtitle {
+    color: var(--color-text-secondary);
+    font-size: var(--text-md);
+    max-width: 56ch;
+  }
+
+  /* Grid */
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-8);
+  }
+
+  @media (max-width: 1024px) {
+    .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 640px) {
+    .portfolio-grid { grid-template-columns: 1fr; }
+  }
+
+  /* Card */
+  .portfolio-card {
+    background: var(--color-card);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-card-border);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+  }
+
+  .portfolio-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  /* Card image */
+  .card-image-link {
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .card-image-wrap {
+    position: relative;
+    aspect-ratio: 4 / 1;
+    background: var(--color-primary-light);
+    overflow: hidden;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    display: block;
+  }
+
+  .portfolio-card:hover .card-image {
+    transform: scale(1.04);
+  }
+
+  /* Image overlay (shows on hover) */
+  .card-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+    display: flex;
+    align-items: flex-end;
+    padding: var(--space-4);
+  }
+
+  .portfolio-card:hover .card-image-overlay {
+    opacity: 1;
+  }
+
+  .card-overlay-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    transform: translateY(8px);
+    transition: transform var(--transition-base);
+  }
+
+  .portfolio-card:hover .card-overlay-tags {
+    transform: translateY(0);
+  }
+
+  .overlay-tag {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 3px 8px;
+    border-radius: 4px;
+    backdrop-filter: blur(4px);
+  }
+
+  /* Card body */
+  .card-body {
+    padding: var(--space-4);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+  }
+
+  .card-title {
+    font-size: var(--text-md);
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+    line-height: 1.25;
+  }
+
+  .card-title a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+  }
+
+  .card-title a:hover {
+    color: var(--color-primary);
+  }
+
+  .card-summary {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    flex: 1;
+    margin-bottom: var(--space-4);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .card-links {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+  }
+
+  .card-link-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: var(--text-base);
+    font-weight: 500;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: gap var(--transition-fast);
+  }
+
+  .card-link-primary:hover {
+    gap: var(--space-2);
+    color: var(--color-primary-dark);
+  }
+
+  .card-link-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+  }
+
+  .card-link-secondary:hover {
+    color: var(--color-text-primary);
+  }
+
+  .portfolio-footer {
+    margin-top: var(--space-10);
+    text-align: center;
+  }
+
+  .view-all-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: var(--text-base);
+    font-weight: 500;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: gap var(--transition-fast);
+  }
+
+  .view-all-link:hover {
+    gap: var(--space-2);
+    color: var(--color-primary-dark);
+  }
+</style>
