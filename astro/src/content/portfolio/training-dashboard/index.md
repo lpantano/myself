@@ -8,7 +8,7 @@ tags:
   - Data
 categories:
   - Visualization
-date: "2024-11-10"
+date: "2025-11-10"
 featured: true
 url_demo: "https://run-training-activities.netlify.app"
 links:

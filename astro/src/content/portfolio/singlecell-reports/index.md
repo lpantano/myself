@@ -9,7 +9,7 @@ tags:
   - Seurat
 categories:
   - Bioinformatics
-date: "2026-01-13"
+date: "2025-01-13"
 featured: true
 url_code: "https://github.com/bcbio/singlecell-reports"
 url_demo: "https://bcbio.github.io/singlecell-reports/"
