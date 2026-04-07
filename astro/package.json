@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@astrojs/internal-helpers": "^0.8.0",
-    "@astrojs/mdx": "^4.0.3",
     "@astrojs/sitemap": "^3.2.1",
     "astro": "^6.1.4"
   }
