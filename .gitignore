@@ -11,3 +11,4 @@ tmp/
 
 .env
 content/post/2026/.DS_Store
+/package-lock.json
