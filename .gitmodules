@@ -1,4 +1,0 @@
-[submodule "public"]
-	path = public
-	url = https://github.com/lpantano/lpantano.github.io.git
-	branch = master

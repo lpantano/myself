@@ -41,6 +41,9 @@ const blog = defineCollection({
     }).optional(),
     authors: z.array(z.string()).optional().default([]),
     projects: z.array(z.string()).optional().default([]),
+    // Legacy post fields
+    status: z.string().optional(),
+    author: z.string().optional(),
   }),
 });
 
