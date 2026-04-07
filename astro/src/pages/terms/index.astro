@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import '../../styles/global.css';
+---
+<BaseLayout title="Terms — Lorena Pantano">
+  <Nav />
+  <main style="padding-top: calc(var(--nav-height) + 3rem); padding-bottom: 6rem; min-height: 100vh;">
+    <div class="container" style="max-width: 760px;">
+      <h1>Terms</h1>
+      <p style="color: var(--color-text-secondary); margin-top: 1rem;">All content on this site is the original work of Lorena Pantano unless otherwise noted.</p>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>

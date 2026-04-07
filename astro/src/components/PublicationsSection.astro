@@ -1,0 +1,245 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  publications: CollectionEntry<'publications'>[];
+}
+
+const { publications } = Astro.props;
+
+// Group by year
+const byYear = publications.reduce<Record<string, CollectionEntry<'publications'>[]>>((acc, pub) => {
+  const year = new Date(pub.data.date).getFullYear().toString();
+  if (!acc[year]) acc[year] = [];
+  acc[year].push(pub);
+  return acc;
+}, {});
+
+const years = Object.keys(byYear).sort((a, b) => Number(b) - Number(a));
+---
+
+<section class="section publications-section" id="publications">
+  <div class="container">
+    <span class="section-label">Publications</span>
+    <div class="pub-header">
+      <h2 class="pub-title">Research Papers</h2>
+      <p class="pub-subtitle">
+        35+ peer-reviewed publications in bioinformatics, genomics, and computational biology.
+        <a href="https://scholar.google.co.uk/citations?user=MeQGlRwAAAAJ&hl" target="_blank" rel="noopener" class="scholar-link">
+          View full list on Google Scholar →
+        </a>
+      </p>
+    </div>
+
+    <div class="pub-accordion" id="pub-accordion">
+      {years.map((year, i) => (
+        <details class="pub-year" open={i === 0}>
+          <summary class="pub-year-toggle">
+            <span class="year-label">{year}</span>
+            <span class="year-count">{byYear[year].length} {byYear[year].length === 1 ? 'paper' : 'papers'}</span>
+            <svg class="year-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </summary>
+          <ul class="pub-list">
+            {byYear[year].map((pub) => {
+              const { title, authors, publication, doi, url_pdf, featured } = pub.data;
+              const authorStr = (authors || []).join(', ');
+              const highlightedAuthors = authorStr.replace(
+                /Lorena Pantano/g,
+                '<strong>Lorena Pantano</strong>'
+              );
+
+              return (
+                <li class={`pub-item${featured ? ' featured' : ''}`}>
+                  {featured && <span class="pub-featured-badge">Featured</span>}
+                  <h4 class="pub-item-title">
+                    {doi ? (
+                      <a href={`https://doi.org/${doi}`} target="_blank" rel="noopener">{title}</a>
+                    ) : url_pdf ? (
+                      <a href={url_pdf} target="_blank" rel="noopener">{title}</a>
+                    ) : title}
+                  </h4>
+                  <p class="pub-authors" set:html={highlightedAuthors}></p>
+                  {publication && <p class="pub-journal"><em>{publication}</em></p>}
+                  {doi && (
+                    <p class="pub-doi">
+                      <a href={`https://doi.org/${doi}`} target="_blank" rel="noopener" class="doi-link">
+                        DOI: {doi}
+                      </a>
+                    </p>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .publications-section { background: var(--color-bg); }
+
+  .pub-header {
+    margin-bottom: var(--space-12);
+  }
+
+  .pub-title { margin-bottom: var(--space-3); }
+
+  .pub-subtitle {
+    color: var(--color-text-secondary);
+    font-size: var(--text-md);
+    max-width: 70ch;
+  }
+
+  .scholar-link {
+    color: var(--color-primary);
+    white-space: nowrap;
+  }
+
+  /* Accordion */
+  .pub-accordion {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .pub-year {
+    border: 1px solid var(--color-card-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: var(--color-card);
+  }
+
+  .pub-year-toggle {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-5) var(--space-6);
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    transition: background var(--transition-fast);
+  }
+
+  .pub-year-toggle::-webkit-details-marker { display: none; }
+
+  .pub-year-toggle:hover {
+    background: var(--color-surface);
+  }
+
+  .year-label {
+    font-size: var(--text-md);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    flex: 1;
+  }
+
+  .year-count {
+    font-size: var(--text-sm);
+    color: var(--color-text-tertiary);
+  }
+
+  .year-chevron {
+    color: var(--color-text-tertiary);
+    transition: transform var(--transition-base);
+    flex-shrink: 0;
+  }
+
+  .pub-year[open] .year-chevron {
+    transform: rotate(180deg);
+  }
+
+  /* Publication list */
+  .pub-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid var(--color-card-border);
+  }
+
+  .pub-item {
+    padding: var(--space-5) var(--space-6);
+    border-bottom: 1px solid var(--color-card-border);
+    position: relative;
+  }
+
+  .pub-item:last-child { border-bottom: none; }
+
+  .pub-item.featured {
+    background: linear-gradient(to right, rgba(0, 113, 227, 0.03), transparent);
+    border-left: 3px solid var(--color-primary);
+  }
+
+  [data-theme="dark"] .pub-item.featured {
+    background: linear-gradient(to right, rgba(0, 113, 227, 0.08), transparent);
+  }
+
+  .pub-featured-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    background: var(--color-primary-light);
+    padding: 2px 8px;
+    border-radius: 100px;
+    margin-bottom: var(--space-2);
+  }
+
+  [data-theme="dark"] .pub-featured-badge {
+    background: rgba(0, 113, 227, 0.15);
+    color: var(--color-link);
+  }
+
+  .pub-item-title {
+    font-size: var(--text-base);
+    font-weight: 600;
+    line-height: 1.45;
+    margin-bottom: var(--space-2);
+    color: var(--color-text-primary);
+  }
+
+  .pub-item-title a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+  }
+
+  .pub-item-title a:hover { color: var(--color-primary); }
+
+  .pub-authors {
+    font-size: var(--text-sm);
+    color: var(--color-text-tertiary);
+    line-height: 1.55;
+    margin-bottom: var(--space-1);
+  }
+
+  .pub-authors strong {
+    color: var(--color-text-secondary);
+    font-weight: 600;
+  }
+
+  .pub-journal {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-1);
+  }
+
+  .pub-doi {
+    font-size: var(--text-xs);
+    margin-top: var(--space-1);
+  }
+
+  .doi-link {
+    font-family: var(--font-mono);
+    color: var(--color-text-tertiary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+  }
+
+  .doi-link:hover { color: var(--color-primary); }
+</style>

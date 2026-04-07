@@ -1,0 +1,314 @@
+---
+interface Role {
+  title: string;
+  company: string;
+  url?: string;
+  period: string;
+  location: string;
+  bullets: string[];
+  current?: boolean;
+}
+
+const roles: Role[] = [
+  {
+    title: 'Director, Bioinformatics Platform',
+    company: 'Harvard Chan Bioinformatics Core',
+    url: 'https://bioinformatics.sph.harvard.edu',
+    period: 'Apr 2024 — Present',
+    location: 'Boston, MA',
+    current: true,
+    bullets: [
+      'Lead and manage bioinformatics products to keep genomic, transcriptomic, and omics analysis platforms reliable, efficient, and scalable.',
+      'Guide and mentor bioinformaticians, fostering collaboration and innovation.',
+      'Consult with researchers and external collaborators to align platforms with bioinformatics needs.',
+      'Oversee quality assurance and documentation to ensure analysis accuracy and reproducibility.',
+    ],
+  },
+  {
+    title: 'Director, Head of Computational Biology',
+    company: 'NextRNA Therapeutics',
+    period: 'May 2021 — Feb 2024',
+    location: 'Cambridge, MA',
+    bullets: [
+      'Shaped company strategy for genomics data and sequencing assays as member of executive leadership.',
+      'Directed in-silico target discovery and validation, integrating NGS technologies with advanced visualizations.',
+      'Built an RNA structure and RNA–protein interaction AI engine using SHAPE-Seq and eCLIP-Seq data.',
+      'Managed cloud infrastructure to ensure reproducibility and scalability.',
+    ],
+  },
+  {
+    title: 'Principal Scientist, Computational Biology',
+    company: 'Axcella Health',
+    period: 'Sep 2020 — Apr 2021',
+    location: 'Cambridge, MA',
+    bullets: [
+      'Led R&D pipelines and visualization platforms for multi-omics data.',
+      'Applied machine learning to understand population stratification in pre-clinical studies.',
+      'Built cloud bioinformatics infrastructure for reproducibility and scale.',
+    ],
+  },
+  {
+    title: 'Senior Computational Biologist',
+    company: 'eGenesis Bio',
+    url: 'https://egenesisbio.com/',
+    period: 'Sep 2019 — Sep 2020',
+    location: 'Cambridge, MA',
+    bullets: [
+      'Managed internal NGS teams using Oxford Nanopore and Illumina platforms.',
+      'Researched epigenetic marks to improve transgene expression with machine learning.',
+      'Built QA/QC genomic platforms and multi-omics pipelines.',
+    ],
+  },
+  {
+    title: 'Research Scientist',
+    company: 'Harvard Chan School',
+    period: 'Jun 2017 — Apr 2019',
+    location: 'Boston, MA',
+    bullets: [
+      'Led bioinformatics for a cross-organ fibrosis collaboration with Boehringer Ingelheim.',
+      'Developed scalable, reproducible platforms for NGS data (small RNA-seq, RNA-seq, ChIP-seq, WGS).',
+    ],
+  },
+  {
+    title: 'Research Associate',
+    company: 'Harvard Chan School',
+    period: 'May 2014 — Jun 2017',
+    location: 'Boston, MA',
+    bullets: [
+      'Built tools for NGS analysis (small RNA-seq, scRNA-seq, ChIP-seq, WGS) in bcbio-nextgen and Bioconductor.',
+      'Developed visualization and integration of multi-omics data.',
+    ],
+  },
+  {
+    title: 'Post-doctoral Fellow',
+    company: 'Institute of Biotechnology and Biomedicine',
+    period: 'Feb 2013 — Apr 2014',
+    location: 'Barcelona, Spain',
+    bullets: [
+      'Identified de novo transcripts associated with inversions in the HapMap population.',
+      'Performed expression quantitative trait loci analyses of inversions.',
+    ],
+  },
+  {
+    title: 'Post-doctoral Fellow',
+    company: 'Institute of Predictive and Personalized Medicine of Cancer',
+    period: 'Sep 2011 — Feb 2013',
+    location: 'Barcelona, Spain',
+    bullets: [
+      'Characterized small RNAs in human sperm samples.',
+    ],
+  },
+];
+---
+
+<section class="section experience-section" id="experience">
+  <div class="container">
+    <span class="section-label">Experience</span>
+    <h2 class="section-title">Career Journey</h2>
+
+    <div class="timeline">
+      {roles.map((role, i) => (
+        <article class={`timeline-item${role.current ? ' current' : ''}`}>
+          <div class="timeline-marker">
+            <div class="marker-dot">
+              {role.current && <span class="marker-pulse"></span>}
+            </div>
+            {i < roles.length - 1 && <div class="marker-line"></div>}
+          </div>
+
+          <div class="timeline-content">
+            <header class="timeline-header">
+              <div class="timeline-meta">
+                <span class="timeline-period">{role.period}</span>
+                <span class="timeline-location">{role.location}</span>
+              </div>
+              <h3 class="timeline-title">{role.title}</h3>
+              {role.url ? (
+                <a href={role.url} target="_blank" rel="noopener" class="timeline-company linked">
+                  {role.company}
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+              ) : (
+                <span class="timeline-company">{role.company}</span>
+              )}
+            </header>
+
+            <ul class="timeline-bullets">
+              {role.bullets.map(b => (
+                <li>{b}</li>
+              ))}
+            </ul>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .experience-section { background: var(--color-bg); }
+
+  .section-title {
+    margin-bottom: var(--space-12);
+  }
+
+  .timeline {
+    position: relative;
+    max-width: 860px;
+  }
+
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: var(--space-6);
+    margin-bottom: var(--space-10);
+  }
+
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Marker column */
+  .timeline-marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .marker-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--color-text-tertiary);
+    border: 2px solid var(--color-bg);
+    box-shadow: 0 0 0 2px var(--color-text-tertiary);
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+    margin-top: 6px;
+    transition: all var(--transition-base);
+  }
+
+  .timeline-item.current .marker-dot {
+    background: var(--color-primary);
+    box-shadow: 0 0 0 2px var(--color-primary);
+    width: 14px;
+    height: 14px;
+  }
+
+  .marker-pulse {
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 2px solid var(--color-primary);
+    animation: pulse-ring 2s ease-out infinite;
+  }
+
+  @keyframes pulse-ring {
+    0% { transform: scale(0.8); opacity: 1; }
+    100% { transform: scale(1.8); opacity: 0; }
+  }
+
+  .marker-line {
+    flex: 1;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--color-card-border) 0%, transparent 100%);
+    margin-top: var(--space-2);
+  }
+
+  /* Content column */
+  .timeline-content {
+    padding-bottom: var(--space-2);
+  }
+
+  .timeline-header {
+    margin-bottom: var(--space-4);
+  }
+
+  .timeline-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-bottom: var(--space-2);
+  }
+
+  .timeline-period {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-primary);
+  }
+
+  .timeline-item.current .timeline-period {
+    color: var(--color-primary);
+  }
+
+  .timeline-location {
+    font-size: var(--text-sm);
+    color: var(--color-text-tertiary);
+  }
+
+  .timeline-title {
+    font-size: var(--text-lg);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-1);
+    line-height: 1.25;
+  }
+
+  .timeline-company {
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    font-weight: 400;
+  }
+
+  .timeline-company.linked {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    transition: color var(--transition-fast);
+  }
+
+  .timeline-company.linked:hover {
+    color: var(--color-primary);
+  }
+
+  .timeline-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .timeline-bullets li {
+    position: relative;
+    padding-left: var(--space-5);
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    line-height: 1.65;
+    margin-bottom: var(--space-2);
+  }
+
+  .timeline-bullets li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--color-text-tertiary);
+    font-size: var(--text-xs);
+    top: 0.35em;
+  }
+
+  @media (max-width: 640px) {
+    .timeline-item {
+      grid-template-columns: 24px 1fr;
+      gap: var(--space-4);
+    }
+
+    .timeline-title {
+      font-size: var(--text-md);
+    }
+  }
+</style>

@@ -1,0 +1,145 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import '../../styles/global.css';
+import { getCollection } from 'astro:content';
+
+const talks = (await getCollection('talks', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+const byYear: Record<string, typeof talks> = {};
+talks.forEach(talk => {
+  const year = talk.data.date.getFullYear().toString();
+  if (!byYear[year]) byYear[year] = [];
+  byYear[year].push(talk);
+});
+const years = Object.keys(byYear).sort((a, b) => Number(b) - Number(a));
+---
+
+<BaseLayout
+  title="Talks — Lorena Pantano"
+  description="Conference presentations, panels, and podcasts on bioinformatics, genomics, and women in science."
+>
+  <Nav />
+  <main class="listing-main">
+    <div class="container">
+      <header class="listing-header">
+        <span class="section-label">Speaking</span>
+        <h1 class="listing-title">Talks</h1>
+        <p class="listing-subtitle">
+          Conference presentations, panels, and podcasts on bioinformatics, genomics, and women in science.
+        </p>
+      </header>
+
+      {years.map(year => (
+        <section class="year-section">
+          <h2 class="year-heading">{year}</h2>
+          <div class="talks-grid">
+            {byYear[year].map(talk => {
+              const { title, event, abstract, event_url } = talk.data;
+              const shortAbstract = abstract ? abstract.slice(0, 200) + (abstract.length > 200 ? '…' : '') : '';
+
+              return (
+                <article class="talk-item">
+                  <h3 class="talk-item-title">
+                    <a href={`/talks/${talk.id}/`}>{title}</a>
+                  </h3>
+                  {event && (
+                    <p class="talk-item-event">
+                      {event_url
+                        ? <a href={event_url} target="_blank" rel="noopener" class="event-link">{event}</a>
+                        : event}
+                    </p>
+                  )}
+                  {shortAbstract && <p class="talk-item-abstract">{shortAbstract}</p>}
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      ))}
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .listing-main {
+    padding-top: calc(var(--nav-height) + var(--space-12));
+    padding-bottom: var(--space-24);
+    min-height: 100vh;
+  }
+
+  .listing-header { margin-bottom: var(--space-16); }
+  .listing-title { margin-bottom: var(--space-3); }
+  .listing-subtitle {
+    font-size: var(--text-md);
+    color: var(--color-text-secondary);
+    max-width: 60ch;
+  }
+
+  .year-section { margin-bottom: var(--space-16); }
+
+  .year-heading {
+    font-size: var(--text-sm);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-text-tertiary);
+    margin-bottom: var(--space-6);
+    padding-bottom: var(--space-3);
+    border-bottom: 1px solid var(--color-card-border);
+  }
+
+  .talks-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .talk-item {
+    padding: var(--space-6) 0;
+    border-bottom: 1px solid var(--color-card-border);
+  }
+
+  .talk-item:first-child { border-top: 1px solid var(--color-card-border); }
+
+  .talk-item-title {
+    font-size: var(--text-lg);
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+    line-height: 1.35;
+  }
+
+  .talk-item-title a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+  }
+
+  .talk-item-title a:hover { color: var(--color-primary); }
+
+  .talk-item-event {
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    margin-bottom: var(--space-2);
+  }
+
+  .event-link {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+  }
+
+  .event-link:hover { color: var(--color-primary); }
+
+  .talk-item-abstract {
+    font-size: var(--text-base);
+    color: var(--color-text-tertiary);
+    line-height: 1.6;
+    max-width: 72ch;
+  }
+</style>
