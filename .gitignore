@@ -3,8 +3,11 @@
 
 # Hugo
 /resources/
-public/
+/public/
 tmp/
+
+# Astro build output (not the public source dir)
+/astro/dist/
 
 .env
 content/post/2026/.DS_Store
