@@ -23,19 +23,16 @@ const talks = (await getCollection('talks', ({ data }) => !data.draft)).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
 
-const publications = (await getCollection('publications')).sort(
-  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
-);
 ---
 
 <BaseLayout>
   <Nav />
   <main>
     <Hero />
-    <PortfolioSection items={portfolioItems} />
+    <PortfolioSection items={portfolioItems.slice(0, 3)} showViewAll={true} />
     <ExperienceSection />
     <WritingSection posts={blogPosts} talks={talks} />
-    <PublicationsSection publications={publications} />
+    <PublicationsSection />
   </main>
   <Footer />
 </BaseLayout>

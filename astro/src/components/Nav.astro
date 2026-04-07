@@ -14,7 +14,7 @@ const currentPath = Astro.url.pathname;
   <div class="nav-inner container">
     <!-- Logo -->
     <a href="/" class="nav-logo" aria-label="Lorena Pantano — Home">
-      <span class="nav-logo-text">LP</span>
+      Lorena Pantano
     </a>
 
     <!-- Desktop nav links -->
@@ -61,7 +61,7 @@ const currentPath = Astro.url.pathname;
 <!-- Mobile menu overlay -->
 <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
   <div class="mobile-menu-header">
-    <a href="/" class="nav-logo" onclick="closeMobileMenu()">LP</a>
+    <a href="/" class="nav-logo" onclick="closeMobileMenu()">Lorena Pantano</a>
     <button class="mobile-close" id="menu-close" aria-label="Close menu">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
@@ -164,14 +164,14 @@ const currentPath = Astro.url.pathname;
 
   /* Logo */
   .nav-logo {
-    font-size: 1.125rem;
-    font-weight: 700;
+    font-size: var(--text-base);
+    font-weight: 400;
     color: var(--color-text-primary);
-    letter-spacing: -0.02em;
+    letter-spacing: 0.01em;
     text-decoration: none;
+    white-space: nowrap;
   }
   .nav-logo:hover { color: var(--color-primary); }
-  .nav-logo-text { display: block; }
 
   /* Desktop links */
   .nav-links {
