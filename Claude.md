@@ -517,5 +517,37 @@ tags: ["tag1", "tag2", "tag3"]
 ---
 ```
 
+# Portfolio Structure
+
+Portfolio items live in `astro/src/content/portfolio/<slug>/index.md`.
+Featured images go in `astro/public/portfolio/<slug>/featured.png`.
+
+## Frontmatter fields
+
+```yaml
+---
+title: "Project Title"
+summary: "One-sentence description for the card"
+tags:
+  - React          # short descriptive labels (tech + topic)
+categories:
+  - Web App        # what it is: Web App | Dashboard | Tool | etc.
+audience:
+  - Scientists     # who it's for: Scientists | General Public
+date: "YYYY-MM-DD"
+featured: true
+url_demo: "https://..."   # optional
+url_code: "https://..."   # optional
+links:
+  - name: Label
+    url: https://...
+---
+```
+
+## Audience mapping
+
+- **Scientists** → "Data at Scale" newsletter audience (research tools, pipelines, clinical apps)
+- **General Public** → "The Data in Your Life" newsletter audience (everyday data, health literacy, personal dashboards)
+
 # currentDate
 Today's date is 2026-02-15.

@@ -7,7 +7,9 @@ tags:
   - Fitness
   - Data
 categories:
-  - Visualization
+  - Dashboard
+audience:
+  - General Public
 date: "2025-11-10"
 featured: true
 url_demo: "https://run-training-activities.netlify.app"

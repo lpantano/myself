@@ -10,6 +10,8 @@ tags:
   - Infrastructure
 categories:
   - Web App
+audience:
+  - Scientists
 date: "2026-03-25"
 featured: true
 url_demo: "https://pangeamodels.org"
