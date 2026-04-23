@@ -1,0 +1,7 @@
+Built a system where AI interviews expert reviewers — not answers for them. 🧠
+
+Claude reads the paper, guides reviewers through the classification, then files the structured output. Reproducible reviews at scale.
+
+Link in bio 🔗
+
+#AITools #ScientificReview #Research #DataScience #HealthData

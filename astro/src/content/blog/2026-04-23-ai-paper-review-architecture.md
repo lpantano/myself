@@ -1,10 +1,20 @@
-# How I Built an AI-Powered Scientific Paper Review System
+---
+title: "How I Built an AI-Powered Scientific Paper Review System"
+subtitle: "Architecture of an AI-guided peer review system for evaluating health claims at scale"
+summary: "Architecture walkthrough of an AI-guided peer review system using Claude, GitHub, Supabase, and Next.js to evaluate health claim evidence at scale."
+authors: []
+tags: ["AI", "architecture", "peer-review", "Claude", "Next.js", "Supabase", "scientific-computing"]
+categories: ["Data at Scale"]
+date: 2026-04-23T12:00:00-04:00
+featured: false
+draft: false
+---
 
 ## Overview
 
 This is the architecture behind a system I built to help expert reviewers evaluate scientific papers against health and wellness claims. The core idea: instead of giving reviewers a blank form, Claude (Anthropic's AI) guides them through a structured classification workflow — asking questions, checking their reasoning, and ultimately generating a structured review. GitHub handles storage and audit trails. Supabase handles auth and the database. Next.js ties it together.
 
-Here's how all the pieces fit, from the reviewer's first click to a submitted review. 
+Here's how all the pieces fit, from the reviewer's first click to a submitted review.
 
 Most importantly, your review gets shared so you can share it with your friends and family about that health question they keep asking you.
 
@@ -178,5 +188,3 @@ This means the first message in a new session after the file expires is slightly
 **Skill improvement feedback loop is manual.** Claude flags potential improvements and the system files GitHub issues, but someone still has to read those issues and update the system prompt. A better version would have a scheduled job that aggregates flagged improvements, clusters similar suggestions, and drafts prompt changes for human review.
 
 **PDF storage in GitHub is convenient but not ideal.** At scale, S3 with proper access controls is more robust. GitHub's API has rate limits and isn't designed for large binary storage.
-
-

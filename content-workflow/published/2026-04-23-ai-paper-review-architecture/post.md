@@ -1,3 +1,12 @@
+---
+title: "How I Built an AI-Powered Scientific Paper Review System"
+date: 2026-04-23
+draft: false
+description: "Architecture walkthrough of an AI-guided peer review system using Claude, GitHub, Supabase, and Next.js to evaluate health claim evidence at scale."
+categories: ["Data at Scale"]
+tags: ["AI", "architecture", "peer review", "Claude", "Next.js", "Supabase", "scientific computing"]
+---
+
 # How I Built an AI-Powered Scientific Paper Review System
 
 ## Overview
