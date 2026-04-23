@@ -32,7 +32,7 @@ load_dotenv(env_path)
 
 # Configuration
 CHANNEL_USERNAME = "LorenaPantano"
-CONTENT_DIR = Path(__file__).parent.parent / "content" / "tutorials"
+CONTENT_DIR = Path(__file__).parent.parent / "astro" / "src" / "content" / "tutorials"
 API_KEY = os.environ.get("YOUTUBE_API_KEY")
 
 if not API_KEY:

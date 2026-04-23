@@ -1,0 +1,267 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  videos: CollectionEntry<'tutorials'>[];
+  showViewAll?: boolean;
+}
+const { videos, showViewAll = true } = Astro.props;
+---
+
+<section class="section videos-section" id="videos">
+  <div class="container">
+    <span class="section-label">Videos</span>
+    <div class="videos-header">
+      <h2 class="videos-title">Tutorials & Talks</h2>
+      <p class="videos-subtitle">
+        Video content on bioinformatics, data science, and career development.
+      </p>
+    </div>
+
+    <div class="videos-scroll-container">
+      <div class="videos-scroll">
+        {videos.map((video) => {
+          const { title, summary, date, video: videoData, views } = video.data;
+          const dateStr = date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+          const youtubeId = videoData?.youtube;
+          const thumbnail = youtubeId
+            ? `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`
+            : null;
+
+          return (
+            <article class="video-card">
+              {thumbnail && youtubeId && (
+                <a
+                  href={`https://youtube.com/watch?v=${youtubeId}`}
+                  target="_blank"
+                  rel="noopener"
+                  class="video-link"
+                  aria-label={`Watch: ${title}`}
+                >
+                  <div class="video-thumbnail">
+                    <img src={thumbnail} alt={title} loading="lazy" />
+                    <div class="video-overlay">
+                      <div class="play-button">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+                          <path d="M8 5v14l11-7z"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="video-info">
+                    <h3 class="video-title">{title}</h3>
+                    <div class="video-meta">
+                      <time class="video-date">{dateStr}</time>
+                      {views !== undefined && (
+                        <>
+                          <span class="video-dot">•</span>
+                          <span class="video-views">{views.toLocaleString()} views</span>
+                        </>
+                      )}
+                    </div>
+                  </div>
+                </a>
+              )}
+            </article>
+          );
+        })}
+      </div>
+    </div>
+
+    {showViewAll && (
+      <div class="videos-footer">
+        <a href="/tutorials/" class="view-all-link">
+          View all videos
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </a>
+      </div>
+    )}
+  </div>
+</section>
+
+<style>
+  .videos-section {
+    background: var(--color-background);
+  }
+
+  .videos-header {
+    margin-bottom: var(--space-10);
+  }
+
+  .videos-title {
+    margin-bottom: var(--space-3);
+  }
+
+  .videos-subtitle {
+    color: var(--color-text-secondary);
+    font-size: var(--text-md);
+    max-width: 56ch;
+  }
+
+  /* Horizontal scroll container */
+  .videos-scroll-container {
+    margin: 0 calc(-1 * var(--container-padding));
+    padding: 0 var(--container-padding);
+    overflow: hidden;
+  }
+
+  .videos-scroll {
+    display: flex;
+    gap: var(--space-6);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: var(--container-padding);
+    padding-bottom: var(--space-4);
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .videos-scroll::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .videos-scroll::-webkit-scrollbar-track {
+    background: var(--color-surface);
+    border-radius: 3px;
+  }
+
+  .videos-scroll::-webkit-scrollbar-thumb {
+    background: var(--color-card-border);
+    border-radius: 3px;
+  }
+
+  .videos-scroll::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text-tertiary);
+  }
+
+  /* Video card */
+  .video-card {
+    flex: 0 0 320px;
+    scroll-snap-align: start;
+  }
+
+  @media (max-width: 640px) {
+    .video-card {
+      flex: 0 0 280px;
+    }
+  }
+
+  .video-link {
+    display: block;
+    background: var(--color-card);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-card-border);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .video-link:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .video-thumbnail {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--color-surface);
+  }
+
+  .video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .video-link:hover .video-thumbnail img {
+    transform: scale(1.05);
+  }
+
+  .video-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+  }
+
+  .video-link:hover .video-overlay {
+    opacity: 1;
+  }
+
+  .play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: rgba(255, 0, 0, 0.9);
+    border-radius: 50%;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+    transition: transform var(--transition-fast);
+  }
+
+  .video-link:hover .play-button {
+    transform: scale(1.1);
+  }
+
+  .video-info {
+    padding: var(--space-4);
+  }
+
+  .video-title {
+    font-size: var(--text-base);
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: var(--space-2);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--color-text-primary);
+  }
+
+  .video-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-xs);
+    color: var(--color-text-tertiary);
+  }
+
+  .video-date {
+    font-weight: 500;
+  }
+
+  .video-dot {
+    opacity: 0.5;
+  }
+
+  .video-views {
+    font-weight: 400;
+  }
+
+  .videos-footer {
+    margin-top: var(--space-10);
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .videos-header {
+      margin-bottom: var(--space-8);
+    }
+
+    .videos-scroll {
+      gap: var(--space-4);
+    }
+  }
+</style>

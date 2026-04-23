@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import ExperienceSection from '../../components/ExperienceSection.astro';
+import '../../styles/global.css';
+---
+
+<BaseLayout
+  title="Experience — Lorena Pantano"
+  description="Career journey from postdoctoral research to director roles in bioinformatics, computational biology, and genomics platforms."
+>
+  <Nav />
+  <main class="listing-main">
+    <ExperienceSection />
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .listing-main {
+    padding-top: var(--nav-height);
+    min-height: 100vh;
+  }
+</style>

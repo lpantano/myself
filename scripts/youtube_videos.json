@@ -1,13 +1,33 @@
 [
   {
+    "id": "SkTZXcAadiY",
+    "title": "Accessible MM progression risk score tool for researchers",
+    "description": "A new Nature Medicine paper (10.1038/s41591-026-04304-x) introduces PANGEA-SMM — a dynamic risk calculator for smoldering multiple myeloma (SMM) that tracks longitudinal biomarkers to predict progression without requiring a bone marrow biopsy.\n\nThe model is free and live at pangeamodels.org.",
+    "published_at": "2026-03-25T14:17:49Z",
+    "thumbnail": "https://i.ytimg.com/vi/SkTZXcAadiY/hqdefault.jpg",
+    "duration": "PT2M14S",
+    "view_count": "2",
+    "like_count": "0"
+  },
+  {
+    "id": "_qPsqCyFsgg",
+    "title": "Integrated Genomic Data Visualization and Automation Platform",
+    "description": "Building collaborative research infrastructure doesn't require a development team. We solved multi-collaborator genomics data sharing by composing existing tools (IGV), automating format conversion, and deploying via GitHub Actions + AWS. Scales without hiring.\n\nhttps://decodingdata.substack.com/p/multi-lab-genomics-data-sharing-with?r=ywcpz\n\nhttps://github.com/lpantano/igv-web-genomics-platform/tree/main",
+    "published_at": "2026-02-25T22:14:19Z",
+    "thumbnail": "https://i.ytimg.com/vi/_qPsqCyFsgg/hqdefault.jpg",
+    "duration": "PT10M",
+    "view_count": "24",
+    "like_count": "0"
+  },
+  {
     "id": "YZry3CwDwAw",
     "title": "Systematic Paper Reviews with Claude Custom Commands/Skills",
     "description": "Reviewing 100+ papers for Health Integrity Project taught me: consistency beats speed. Custom AI commands now run identical evaluations every time—same conflict checks, same quality criteria, same workflow.\n\nResult: 30min reviews, zero missed steps, reproducible standards. Works for any systematic workflow you repeat.\n\nhttps://decodingdata.substack.com/p/systematic-paper-reviews-with-claude",
     "published_at": "2026-01-28T22:20:16Z",
     "thumbnail": "https://i.ytimg.com/vi/YZry3CwDwAw/hqdefault.jpg",
     "duration": "PT9M44S",
-    "view_count": "20",
-    "like_count": "0"
+    "view_count": "38",
+    "like_count": "1"
   },
   {
     "id": "eWHCsjd30_A",
@@ -16,7 +36,7 @@
     "published_at": "2026-01-21T21:42:07Z",
     "thumbnail": "https://i.ytimg.com/vi/eWHCsjd30_A/hqdefault.jpg",
     "duration": "PT3M27S",
-    "view_count": "43",
+    "view_count": "52",
     "like_count": "1"
   },
   {
@@ -36,7 +56,7 @@
     "published_at": "2026-01-10T20:23:43Z",
     "thumbnail": "https://i.ytimg.com/vi/sjw0bceAHB0/hqdefault.jpg",
     "duration": "PT14M11S",
-    "view_count": "3",
+    "view_count": "4",
     "like_count": "0"
   },
   {
@@ -86,7 +106,7 @@
     "published_at": "2017-09-13T13:50:51Z",
     "thumbnail": "https://i.ytimg.com/vi/95_kMyzxiVU/hqdefault.jpg",
     "duration": "PT1H4M50S",
-    "view_count": "161",
+    "view_count": "163",
     "like_count": "3"
   }
 ]
