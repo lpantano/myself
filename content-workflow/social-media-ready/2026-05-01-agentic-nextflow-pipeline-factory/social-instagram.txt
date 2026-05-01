@@ -1,0 +1,5 @@
+One sentence starts the whole chain: "Trinity, I need a nextflow pipeline using this tool."
+
+The agent handles the rest — container, test data, local run, cloud run. 🧬
+
+Link in bio
