@@ -9,6 +9,8 @@ tags: ["Nextflow", "AI agents", "bioinformatics", "GCP", "Docker", "pipeline aut
 
 > Presented at Nextflow Summit 2026. Technical architecture behind the talk — for bioinformaticians who know Nextflow but are new to agentic tooling.
 
+[Watch the talk on YouTube](https://youtu.be/JmTUHyt4Xkc?si=0BEI97BcnLVWzzGK)
+
 ---
 
 ## The Problem
