@@ -13,7 +13,7 @@ Part of my job is finding fast ways to run open-source pipelines on sequencing d
 
 Biological material that's hard to isolate gave me two separate problems: DNA that wasn't diverse enough, and too much data.
 
-## Problem one: when the DNA itself fights back
+## Problem one: when the DNA is low quality
 
 When DNA material isn't diverse, some low-complexity regions in the genome get over-amplified. I'd see more than 500,000 reads piled into a single 1kb region, where I was expecting around 50x coverage. It happened repeatedly, in different regions each time.
 
@@ -21,7 +21,7 @@ If the regions had stayed the same, I could have blacklisted them and moved on. 
 
 The real fix is downsampling any region that crosses the threshold, wherever it turns up. There aren't many tools built for exactly that. The closest I found was [variantBAM](https://github.com/walaj/VariantBam). It has its own set of shortcuts I won't get into here, but it did the job well enough. The catch: when it drops reads to bring a region back down, it can turn a paired read into an orphan without updating the SAM flags on the mate that survives. Downstream tools read those flags, see a mate that no longer exists, and choke on it. I (with Claude) wrote a small Python script to fix the flags before the BAM moved further down the pipeline.
 
-## Problem two: too much data, or so I thought
+## Problem two: too much data
 
 This one looked easy. If a sample came in with more than a billion read pairs, I'd use a percentage of the input instead of all of it. nf-core/sarek already splits input files into chunks before alignment, using [fastp](https://github.com/OpenGene/fastp). So I didn't need new logic, just a way to use some of the existing chunks instead of all of them.
 
