@@ -2,12 +2,12 @@
 title: "AI Won't Solve This Alone"
 date: 2026-08-24
 draft: false
-summary: "Two bugs in a WGS pipeline — a downsampling tool that silently orphaned paired reads, and a chunking assumption that cut coverage by 37% — and how Claude helped trace both."
+summary: "But it will help. Testing with the right files is always the breakthrough."
 categories: ["Data at Scale"]
 tags: ["nf-core/sarek", "fastp", "variantBAM", "Nextflow", "bioinformatics", "Claude", "debugging"]
 ---
 
-> But it will make finding the bug and fixing it much faster.
+This post is about two bugs in a WGS pipeline: a downsampling tool that silently orphaned paired reads, and a chunking assumption that cut coverage by 37%. Here's how Claude helped trace both after the right testing was done.
 
 Part of my job is finding fast ways to run open-source pipelines on sequencing data. For this story that means whole genome sequencing, and [nf-core/sarek](https://nf-co.re/sarek/) is one of the best pipelines for it. The pipeline works well. Real patient samples don't cooperate.
 
